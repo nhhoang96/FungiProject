@@ -1,0 +1,295 @@
+<html>
+<head>
+	
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<style>
+	.shape-box {
+		width: 200px;
+		height: 325px;
+		<!-- border: 3px dotted black; -->
+		padding: 5px;
+		background-color: #CCCCFF;
+		float:left;
+		margin: 25px;
+	}
+	
+	#left {
+		margin-left: 150px;
+	}
+	
+	#nest{
+		content: url("img/birds nest.jpg");
+		width: 150px;
+		height: 150px;
+		margin-left: 25px;
+	}
+	
+	.text{
+		color: #000033;
+		text-align: center;
+	}
+	
+	.text:hover {
+		color: white;
+		text-decoration: underline;
+		<!--text-shadow: 3px 3px #000033-->
+	}
+	
+	.description{
+		border: 2px solid black;
+		width: 500px;
+		height: 100px;
+		visibility: hidden;
+	}
+	
+	#description-box{
+		position: fixed;
+		bottom: 3px;
+		left: 12.5%;
+		height: 150px;
+		width: 75%;
+		border: 2px solid black;
+		background: white;
+	}
+	
+	.button-wrap{
+		text-align: center;
+	}
+	
+	.long-title{
+		font-size: 23px;
+	}
+	
+	#des-box-top {
+		width: 100%;
+		height: 25px;
+		background: #00005C;
+	}
+	
+	#des-title {
+		color: white;
+		margin-top: 0;
+	}
+	
+	.des-wrapper {
+		/*margin-left: 20%;*/
+		margin: 0px auto;
+		width: 1000px;
+		/*padding-left: 50px;
+		padding-right: 50px;*/
+		height: 1500px;
+		background-color: white; /*#FFD685;*/
+	}
+	
+	body {
+		margin: 0px;
+		padding: 0px;
+		background: #D7D3B8;
+		text-align: center;
+		text-indent: 10px;
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		font-size: 13px;
+		color: #283851;
+	}
+	
+	/************* MENU ************/
+
+	#menu {
+		width: 1000px;
+		margin: 0px auto;
+		text-align: left;
+		padding: 5px 0px 5px 0px;
+		background-color:  #3C5277;
+	}
+
+	#menu ul {
+		margin: 0px;
+		padding: 0px;
+		list-style: none;
+		text-align: center;
+	}
+
+	#menu li {
+		display: inline;
+	}
+
+	#menu a {
+		padding: 5px 15px;
+		text-transform: uppercase;
+		text-decoration: none;
+		font-size: 14px;
+		font-weight: bold;
+		text-align: left;
+		color: #D7D3B8;
+	}
+
+	#menu a:hover {
+		color: #FFFFFF;
+
+	}
+	
+	#header {
+		width: 1000px;
+		height: 115px;
+		margin: 0px auto;
+		background:  url(img/header.JPG);
+	}
+	
+</style>
+
+<script>
+	function myFunction() {
+		document.getElementById("description").innerHTML = "Bird's Nest: These fungi look like miniature bird's nests with egg-shaped structures inside called peridioles. Bird's nest fungi are small, only 0.5 to 1 cm in diameter. Drops of water splash the peridioles out of the cups, dispersing the fungus.";
+	}
+</script>
+
+<script src="js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+ <!-- Menu Toggle Script -->
+ <script>
+ $("#menu-toggle").click(function(e) {
+    e.preventDefault();
+    $("#wrapper").toggleClass("toggled");
+ });
+ </script>
+
+</head>
+
+<body>
+<div id="header"> </div>
+
+<div id="menu">
+	<ul>
+	 <li><a href="indexcopy.htm">Home</a></li>
+	 <li><a href="introduction_page/introductioncopy.htm">Introduction</a>  </li>
+	 <li> <a href="https://www.messiah.edu/">Messiah College</a></li>
+	 <li><a href="shapekeycopy.htm">Shape Key</a>  </li>
+	 <li> <a href="SpeciesListcopy.htm">Species List</a></li>
+	 <li> <a href=about.html>About</a></li>
+	 <li> <a href=admin.html>Control Panel</a></li>
+	 
+
+	</ul>
+</div>
+
+<div class = "des-wrapper">
+	<div id = "left" class = "shape-box">
+		<div class = "wrapper">
+			<h1 align = "center"> Bird's Nest </h1>
+			<div id = "nest"></div>
+			<p align="center" onclick = "myFunction()" class = "text" id = "text1"> Description </p>
+			<!--<div class="description"> </div> -->
+			<div class = "button-wrap"><button align = "center" type="button" value="Bird">Search</button> </div>
+		</div>
+	</div>
+
+	<div class = "shape-box">
+		<div class = "wrapper">
+			<h1 align = "center" class= "long-title"> Club, Coral and Leafy </h1>
+			<div id = "nest"></div>
+			<p align="center" onclick = "myFunction()" class = "text" id = "text1"> Description </p>
+			<!--<div class="description"> </div> -->
+			<div class = "button-wrap"><button align = "center" type="button" value="Bird">Search</button> </div>
+		</div>
+	</div>
+	
+	<div class = "shape-box">
+		<div class = "wrapper">
+			<h1 align = "center" class= "long-title"> Crust and Parchment </h1>
+			<div id = "nest"></div>
+			<p align="center" onclick = "myFunction()" class = "text" id = "text1"> Description </p>
+			<!--<div class="description"> </div> -->
+			<div class = "button-wrap"><button align = "center" type="button" value="Bird">Search</button> </div>
+		</div>
+	</div>
+	
+	<div id = "left" class = "shape-box">
+		<div class = "wrapper">
+			<h1 align = "center" class= "long-title"> Cup and Saucer </h1>
+			<div id = "nest"></div>
+			<p align="center" onclick = "myFunction()" class = "text" id = "text1"> Description </p>
+			<!--<div class="description"> </div> -->
+			<div class = "button-wrap"><button align = "center" type="button" value="Bird">Search</button> </div>
+		</div>
+	</div>
+	
+	<div class = "shape-box">
+		<div class = "wrapper">
+			<h1 align = "center"> Gilled </h1>
+			<div id = "nest"></div>
+			<p align="center" onclick = "myFunction()" class = "text" id = "text1"> Description </p>
+			<!--<div class="description"> </div> -->
+			<div class = "button-wrap"><button align = "center" type="button" value="Bird">Search</button> </div>
+		</div>
+	</div>
+	
+	<div class = "shape-box">
+		<div class = "wrapper">
+			<h1 align = "center"> Jelly </h1>
+			<div id = "nest"></div>
+			<p align="center" onclick = "myFunction()" class = "text" id = "text1"> Description </p>
+			<!--<div class="description"> </div> -->
+			<div class = "button-wrap"><button align = "center" type="button" value="Bird">Search</button> </div>
+		</div>
+	</div>
+
+	<div id = "left" class = "shape-box">
+		<div class = "wrapper">
+			<h1 align = "center"> Poroid </h1>
+			<div id = "nest"></div>
+			<p align="center" onclick = "myFunction()" class = "text" id = "text1"> Description </p>
+			<!--<div class="description"> </div> -->
+			<div class = "button-wrap"><button align = "center" type="button" value="Bird">Search</button> </div>
+		</div>
+	</div>
+
+	<div class = "shape-box">
+		<div class = "wrapper">
+			<h1 align = "center" class= "long-title"> Puffball and Cushion </h1>
+			<div id = "nest"></div>
+			<p align="center" onclick = "myFunction()" class = "text" id = "text1"> Description </p>
+			<!--<div class="description"> </div> -->
+			<div class = "button-wrap"><button align = "center" type="button" value="Bird">Search</button> </div>
+		</div>
+	</div>
+	
+	<div class = "shape-box">
+		<div class = "wrapper">
+			<h1 align = "center"> Stinkhorn </h1>
+			<div id = "nest"></div>
+			<p align="center" onclick = "myFunction()" class = "text" id = "text1"> Description </p>
+			<!--<div class="description"> </div> -->
+			<div class = "button-wrap"><button align = "center" type="button" value="Bird">Search</button> </div>
+		</div>
+	</div>
+	
+	<div id = "left" class = "shape-box">
+		<div class = "wrapper">
+			<h1 align = "center" class= "long-title"> Teeth and Spine </h1>
+			<div id = "nest"></div>
+			<p align="center" onclick = "myFunction()" class = "text" id = "text1"> Description </p>
+			<!--<div class="description"> </div> -->
+			<div class = "button-wrap"><button align = "center" type="button" value="Bird">Search</button> </div>
+		</div>
+	</div>
+</div>
+
+	<div id = "description-box"> 
+		<div id = "des-box-top"> <p id = "des-title">Description </p></div>
+		<p id="description"> </p>
+	</div>
+
+</body>
+
+
+</html>
