@@ -1,31 +1,72 @@
-<!DOCTYPE html>
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-05-05 15:06:58
+         compiled from "smarty/views/head.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:12789214695526c6001f7d06-51600830%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    'ba7f88f54ad8f676105ff4c23b545df3363693bc' => 
+    array (
+      0 => 'smarty/views/head.tpl',
+      1 => 1430852816,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '12789214695526c6001f7d06-51600830',
+  'function' => 
+  array (
+  ),
+  'version' => 'Smarty-3.1.21-dev',
+  'unifunc' => 'content_5526c600204c74_81262752',
+  'variables' => 
+  array (
+    'title' => 0,
+    'active' => 0,
+  ),
+  'has_nocache_code' => false,
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_5526c600204c74_81262752')) {function content_5526c600204c74_81262752($_smarty_tpl) {?><!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>{$title}</title>
+	<title><?php echo $_smarty_tpl->tpl_vars['title']->value;?>
+</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://bootswatch.com/cosmo/bootstrap.min.css">
 	<link href="css/navigation.css" type=text/css rel="stylesheet" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-	<script src="js/cards.js"></script>
-	<script src="js/collapse.js"></script>
+    <?php echo '<script'; ?>
+ src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+ src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"><?php echo '</script'; ?>
+>
+	<?php echo '<script'; ?>
+ src="js/cards.js"><?php echo '</script'; ?>
+>
+	<?php echo '<script'; ?>
+ src="js/collapse.js"><?php echo '</script'; ?>
+>
 	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.7.0/bootstrap-table.min.css">
-		<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.7.0/bootstrap-table.min.js"></script>
-		<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.7.0/locale/bootstrap-table-zh-CN.min.js"></script>
+		<?php echo '<script'; ?>
+ src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.7.0/bootstrap-table.min.js"><?php echo '</script'; ?>
+>
+		<?php echo '<script'; ?>
+ src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.7.0/locale/bootstrap-table-zh-CN.min.js"><?php echo '</script'; ?>
+>
 	<!--Change stylesheet based on page-->
-	{if $active eq 'about'}
+	<?php if ($_smarty_tpl->tpl_vars['active']->value=='about') {?>
 		<link href="css/about.css" type=text/css rel="stylesheet" />
-	{elseif $active eq 'species'}
+	<?php } elseif ($_smarty_tpl->tpl_vars['active']->value=='species') {?>
 		<link href="css/species.css" type=text/css rel="stylesheet" />
 		<!-- Table sorting -->
-	{elseif $active eq 'result'}
+	<?php } elseif ($_smarty_tpl->tpl_vars['active']->value=='result') {?>
 		<link href="css/result.css" type=text/css rel="stylesheet" />
-		<script src="js/lightbox.min.js"></script>
+		<?php echo '<script'; ?>
+ src="js/lightbox.min.js"><?php echo '</script'; ?>
+>
 		<link href="css/lightbox.css" rel="stylesheet" />
-	{else}
+	<?php } else { ?>
 		<link href="css/cards.css" type=text/css rel="stylesheet" />
-	{/if}
+	<?php }?>
 </head>
 <nav role="navigation" class="navbar navbar-default navbar-fixed-top">
     <div class="container">
@@ -42,23 +83,23 @@
         <!-- Collection of nav links and other content for toggling -->
         <div id="navbarCollapse" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-				{if $active eq 'app'}
+				<?php if ($_smarty_tpl->tpl_vars['active']->value=='app') {?>
 					<li class="active"><a href="app.php">Application</a></li>
                 	<li><a href="species.php">Species</a></li>
                 	<li><a href="about.php">About</a></li>
-				{elseif $active eq 'species'}
+				<?php } elseif ($_smarty_tpl->tpl_vars['active']->value=='species') {?>
 					<li><a href="app.php">Application</a></li>
                 	<li class="active"><a href="species.php">Species</a></li>
                 	<li><a href="about.php">About</a></li>
-				{else}
+				<?php } else { ?>
 					<li><a href="app.php">Application</a></li>
                 	<li><a href="species.php">Species</a></li>
                 	<li class="active"><a href="about.php">About</a></li>
-				{/if}
+				<?php }?>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="admin.html">Control Panel</a></li>
             </ul>
         </div>
     </div>
-</nav>
+</nav><?php }} ?>
