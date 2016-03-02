@@ -26,7 +26,7 @@
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+              <caret line="22" column="2" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -36,7 +36,7 @@
         <entry file="file://$PROJECT_DIR$/smarty/views/index.tpl">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="76" column="18" selection-start-line="76" selection-start-column="18" selection-end-line="76" selection-end-column="18" />
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -46,7 +46,7 @@
         <entry file="file://$PROJECT_DIR$/setup.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+              <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -92,13 +92,13 @@
             <state vertical-scroll-proportion="-0.0">
               <caret line="33" column="39" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
               <folding>
-                <marker date="1456884769300" expanded="true" signature="2342:2416" placeholder="SELECT * FRO..Characteristic..." />
-                <marker date="1456884769300" expanded="true" signature="2943:3165" placeholder="SELECT * FRO..C_Option..." />
-                <marker date="1456884769300" expanded="true" signature="3017:3103" placeholder="SELECT Chara..Characteristic..." />
-                <marker date="1456884769300" expanded="true" signature="4317:4572" placeholder="SELECT * FRO..Species..." />
-                <marker date="1456884769300" expanded="true" signature="4366:4568" placeholder="SELECT Speci..Species_ID..." />
-                <marker date="1456884769300" expanded="true" signature="4393:4556" placeholder="SELECT Speci..Species_Opt..." />
-                <marker date="1456884769300" expanded="true" signature="5014:5077" placeholder="SELECT * FRO..Species..." />
+                <marker date="1456888635243" expanded="true" signature="2340:2414" placeholder="SELECT * FRO..Characteristic..." />
+                <marker date="1456888635243" expanded="true" signature="2941:3163" placeholder="SELECT * FRO..C_Option..." />
+                <marker date="1456888635243" expanded="true" signature="3015:3101" placeholder="SELECT Chara..Characteristic..." />
+                <marker date="1456888635243" expanded="true" signature="4315:4570" placeholder="SELECT * FRO..Species..." />
+                <marker date="1456888635243" expanded="true" signature="4364:4566" placeholder="SELECT Speci..Species_ID..." />
+                <marker date="1456888635243" expanded="true" signature="4391:4554" placeholder="SELECT Speci..Species_Opt..." />
+                <marker date="1456888635243" expanded="true" signature="5012:5075" placeholder="SELECT * FRO..Species..." />
               </folding>
             </state>
           </provider>
@@ -121,11 +121,11 @@
         <entry file="file://$PROJECT_DIR$/speciesList.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-22.0">
-              <caret line="31" column="36" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="36" />
+              <caret line="32" column="22" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
               <folding>
-                <marker date="1430436440000" expanded="true" signature="363:618" placeholder="SELECT * FRO..Species..." />
-                <marker date="1430436440000" expanded="true" signature="412:614" placeholder="SELECT Speci..Species_ID..." />
-                <marker date="1430436440000" expanded="true" signature="439:602" placeholder="SELECT Speci..Species_Opt..." />
+                <marker date="1456888634429" expanded="true" signature="363:618" placeholder="SELECT * FRO..Species..." />
+                <marker date="1456888634429" expanded="true" signature="412:614" placeholder="SELECT Speci..Species_ID..." />
+                <marker date="1456888634429" expanded="true" signature="439:602" placeholder="SELECT Speci..Species_Opt..." />
               </folding>
             </state>
           </provider>
@@ -401,13 +401,13 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="33" column="39" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
           <folding>
-            <marker date="1456884769300" expanded="true" signature="2342:2416" placeholder="SELECT * FRO..Characteristic..." />
-            <marker date="1456884769300" expanded="true" signature="2943:3165" placeholder="SELECT * FRO..C_Option..." />
-            <marker date="1456884769300" expanded="true" signature="3017:3103" placeholder="SELECT Chara..Characteristic..." />
-            <marker date="1456884769300" expanded="true" signature="4317:4572" placeholder="SELECT * FRO..Species..." />
-            <marker date="1456884769300" expanded="true" signature="4366:4568" placeholder="SELECT Speci..Species_ID..." />
-            <marker date="1456884769300" expanded="true" signature="4393:4556" placeholder="SELECT Speci..Species_Opt..." />
-            <marker date="1456884769300" expanded="true" signature="5014:5077" placeholder="SELECT * FRO..Species..." />
+            <marker date="1456888635243" expanded="true" signature="2340:2414" placeholder="SELECT * FRO..Characteristic..." />
+            <marker date="1456888635243" expanded="true" signature="2941:3163" placeholder="SELECT * FRO..C_Option..." />
+            <marker date="1456888635243" expanded="true" signature="3015:3101" placeholder="SELECT Chara..Characteristic..." />
+            <marker date="1456888635243" expanded="true" signature="4315:4570" placeholder="SELECT * FRO..Species..." />
+            <marker date="1456888635243" expanded="true" signature="4364:4566" placeholder="SELECT Speci..Species_ID..." />
+            <marker date="1456888635243" expanded="true" signature="4391:4554" placeholder="SELECT Speci..Species_Opt..." />
+            <marker date="1456888635243" expanded="true" signature="5012:5075" placeholder="SELECT * FRO..Species..." />
           </folding>
         </state>
       </provider>
@@ -417,9 +417,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="31" column="36" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="36" />
           <folding>
-            <marker date="1430436440000" expanded="true" signature="363:618" placeholder="SELECT * FRO..Species..." />
-            <marker date="1430436440000" expanded="true" signature="412:614" placeholder="SELECT Speci..Species_ID..." />
-            <marker date="1430436440000" expanded="true" signature="439:602" placeholder="SELECT Speci..Species_Opt..." />
+            <marker date="1456888634429" expanded="true" signature="363:618" placeholder="SELECT * FRO..Species..." />
+            <marker date="1456888634429" expanded="true" signature="412:614" placeholder="SELECT Speci..Species_ID..." />
+            <marker date="1456888634429" expanded="true" signature="439:602" placeholder="SELECT Speci..Species_Opt..." />
           </folding>
         </state>
       </provider>
@@ -481,13 +481,13 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
           <folding>
-            <marker date="1456884769300" expanded="true" signature="2342:2416" placeholder="SELECT * FRO..Characteristic..." />
-            <marker date="1456884769300" expanded="true" signature="2943:3165" placeholder="SELECT * FRO..C_Option..." />
-            <marker date="1456884769300" expanded="true" signature="3017:3103" placeholder="SELECT Chara..Characteristic..." />
-            <marker date="1456884769300" expanded="true" signature="4317:4572" placeholder="SELECT * FRO..Species..." />
-            <marker date="1456884769300" expanded="true" signature="4366:4568" placeholder="SELECT Speci..Species_ID..." />
-            <marker date="1456884769300" expanded="true" signature="4393:4556" placeholder="SELECT Speci..Species_Opt..." />
-            <marker date="1456884769300" expanded="true" signature="5014:5077" placeholder="SELECT * FRO..Species..." />
+            <marker date="1456888635243" expanded="true" signature="2340:2414" placeholder="SELECT * FRO..Characteristic..." />
+            <marker date="1456888635243" expanded="true" signature="2941:3163" placeholder="SELECT * FRO..C_Option..." />
+            <marker date="1456888635243" expanded="true" signature="3015:3101" placeholder="SELECT Chara..Characteristic..." />
+            <marker date="1456888635243" expanded="true" signature="4315:4570" placeholder="SELECT * FRO..Species..." />
+            <marker date="1456888635243" expanded="true" signature="4364:4566" placeholder="SELECT Speci..Species_ID..." />
+            <marker date="1456888635243" expanded="true" signature="4391:4554" placeholder="SELECT Speci..Species_Opt..." />
+            <marker date="1456888635243" expanded="true" signature="5012:5075" placeholder="SELECT * FRO..Species..." />
           </folding>
         </state>
       </provider>
@@ -497,9 +497,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="31" column="36" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="36" />
           <folding>
-            <marker date="1430436440000" expanded="true" signature="363:618" placeholder="SELECT * FRO..Species..." />
-            <marker date="1430436440000" expanded="true" signature="412:614" placeholder="SELECT Speci..Species_ID..." />
-            <marker date="1430436440000" expanded="true" signature="439:602" placeholder="SELECT Speci..Species_Opt..." />
+            <marker date="1456888634429" expanded="true" signature="363:618" placeholder="SELECT * FRO..Species..." />
+            <marker date="1456888634429" expanded="true" signature="412:614" placeholder="SELECT Speci..Species_ID..." />
+            <marker date="1456888634429" expanded="true" signature="439:602" placeholder="SELECT Speci..Species_Opt..." />
           </folding>
         </state>
       </provider>
@@ -525,9 +525,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
-            <marker date="1430436440000" expanded="true" signature="363:618" placeholder="SELECT * FRO..Species..." />
-            <marker date="1430436440000" expanded="true" signature="412:614" placeholder="SELECT Speci..Species_ID..." />
-            <marker date="1430436440000" expanded="true" signature="439:602" placeholder="SELECT Speci..Species_Opt..." />
+            <marker date="1456888634429" expanded="true" signature="363:618" placeholder="SELECT * FRO..Species..." />
+            <marker date="1456888634429" expanded="true" signature="412:614" placeholder="SELECT Speci..Species_ID..." />
+            <marker date="1456888634429" expanded="true" signature="439:602" placeholder="SELECT Speci..Species_Opt..." />
           </folding>
         </state>
       </provider>
@@ -601,7 +601,7 @@
     <entry file="file://$PROJECT_DIR$/setup.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -609,7 +609,7 @@
     <entry file="file://$PROJECT_DIR$/smarty/views/index.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="76" column="18" selection-start-line="76" selection-start-column="18" selection-end-line="76" selection-end-column="18" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -624,7 +624,7 @@
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+          <caret line="22" column="2" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
           <folding />
         </state>
       </provider>
@@ -659,13 +659,13 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="33" column="39" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
           <folding>
-            <marker date="1456884769300" expanded="true" signature="2342:2416" placeholder="SELECT * FRO..Characteristic..." />
-            <marker date="1456884769300" expanded="true" signature="2943:3165" placeholder="SELECT * FRO..C_Option..." />
-            <marker date="1456884769300" expanded="true" signature="3017:3103" placeholder="SELECT Chara..Characteristic..." />
-            <marker date="1456884769300" expanded="true" signature="4317:4572" placeholder="SELECT * FRO..Species..." />
-            <marker date="1456884769300" expanded="true" signature="4366:4568" placeholder="SELECT Speci..Species_ID..." />
-            <marker date="1456884769300" expanded="true" signature="4393:4556" placeholder="SELECT Speci..Species_Opt..." />
-            <marker date="1456884769300" expanded="true" signature="5014:5077" placeholder="SELECT * FRO..Species..." />
+            <marker date="1456888635243" expanded="true" signature="2340:2414" placeholder="SELECT * FRO..Characteristic..." />
+            <marker date="1456888635243" expanded="true" signature="2941:3163" placeholder="SELECT * FRO..C_Option..." />
+            <marker date="1456888635243" expanded="true" signature="3015:3101" placeholder="SELECT Chara..Characteristic..." />
+            <marker date="1456888635243" expanded="true" signature="4315:4570" placeholder="SELECT * FRO..Species..." />
+            <marker date="1456888635243" expanded="true" signature="4364:4566" placeholder="SELECT Speci..Species_ID..." />
+            <marker date="1456888635243" expanded="true" signature="4391:4554" placeholder="SELECT Speci..Species_Opt..." />
+            <marker date="1456888635243" expanded="true" signature="5012:5075" placeholder="SELECT * FRO..Species..." />
           </folding>
         </state>
       </provider>
@@ -694,11 +694,11 @@
     <entry file="file://$PROJECT_DIR$/speciesList.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-22.0">
-          <caret line="31" column="36" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="36" />
+          <caret line="32" column="22" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
           <folding>
-            <marker date="1430436440000" expanded="true" signature="363:618" placeholder="SELECT * FRO..Species..." />
-            <marker date="1430436440000" expanded="true" signature="412:614" placeholder="SELECT Speci..Species_ID..." />
-            <marker date="1430436440000" expanded="true" signature="439:602" placeholder="SELECT Speci..Species_Opt..." />
+            <marker date="1456888634429" expanded="true" signature="363:618" placeholder="SELECT * FRO..Species..." />
+            <marker date="1456888634429" expanded="true" signature="412:614" placeholder="SELECT Speci..Species_ID..." />
+            <marker date="1456888634429" expanded="true" signature="439:602" placeholder="SELECT Speci..Species_Opt..." />
           </folding>
         </state>
       </provider>

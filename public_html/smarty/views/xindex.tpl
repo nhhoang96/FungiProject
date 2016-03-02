@@ -1,25 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-04-22 14:21:09
-         compiled from "smarty/views/xindex.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:16909929795526c6001c9bc9-83745424%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
-$_valid = $_smarty_tpl->decodeProperties(array (
-  'file_dependency' => 
-  array (
-    '0eab69140b3efafbb76c58107ac9e3a3fc323b9d' => 
-    array (
-      0 => 'smarty/views/xindex.tpl',
-      1 => 1429726837,
-      2 => 'file',
-    ),
-  ),
-  'nocache_hash' => '16909929795526c6001c9bc9-83745424',
-  'function' => 
-  array (
-  ),
-  'version' => 'Smarty-3.1.21-dev',
-  'unifunc' => 'content_5526c6001f4826_20796869',
-  'has_nocache_code' => false,
-),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5526c6001f4826_20796869')) {function content_5526c6001f4826_20796869($_smarty_tpl) {?><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -152,32 +131,21 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     </footer>
 
     <!-- jQuery -->
-    <?php echo '<script'; ?>
- src="js/jquery.js"><?php echo '</script'; ?>
->
+    <script src="js/jquery.js"></script>
 
     <!-- Core Bootstrap JS -->
-    <?php echo '<script'; ?>
- src="js/bootstrap.min.js"><?php echo '</script'; ?>
->
+    <script src="js/bootstrap.min.js"></script>
 
     <!-- JavaScript Plugin -->
-    <?php echo '<script'; ?>
- src="js/jquery.easing.min.js"><?php echo '</script'; ?>
->
+    <script src="js/jquery.easing.min.js"></script>
 
     <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-    <?php echo '<script'; ?>
- type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1ToYK5qP_bqRg5Ivw_siqFYQLtR_USlY"><?php echo '</script'; ?>
->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1ToYK5qP_bqRg5Ivw_siqFYQLtR_USlY"></script>
 
     <!-- Some Extra Stuff -->
-    <?php echo '<script'; ?>
- src="js/theme.js"><?php echo '</script'; ?>
->
+    <script src="js/theme.js"></script>
 
 </body>
 
 </html>
 
-<?php }} ?>
