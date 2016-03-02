@@ -1,8 +1,13 @@
+<<<<<<< HEAD
 {include "head.tpl"}
+=======
+{include "head.tpl" title="About" active="about"}
+
+>>>>>>> eb40b79910b6cb79f15b1b1192a8a53e8e58d2b3
 <!--Fungi Team 2015-->
 
 	 <!-- Image Background Page Header -->
-	 
+
 	<!-- Note: The background image is set within the business-casual.css file. -->
 
 	<header class="business-header">

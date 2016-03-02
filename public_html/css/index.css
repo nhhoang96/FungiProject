@@ -1,3 +1,4 @@
+
 .shape-box {
 		width: 200px;
 		height: 325px;
@@ -13,7 +14,7 @@
 	}
 	
 	#nest{
-		content: url("img/birds nest.jpg");
+		content: url("../img/birds nest.jpg");
 		width: 150px;
 		height: 150px;
 		margin-left: 25px;
@@ -127,5 +128,5 @@
 		width: 1000px;
 		height: 115px;
 		margin: 0px auto;
-		background:  url(img/header.jpg);
+		background:  url('img/header.jpg');
 	}
