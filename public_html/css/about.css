@@ -11,8 +11,16 @@ body {
 }
 
 .business-header {
+    background: url('../img/mushroom-header.jpg') center center no-repeat scroll;
     height: 400px;
-    background: url('http://camelot.cs.messiah.edu/~fungiadmin/img/mushroom-header.jpg') center center no-repeat scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+.index-header {
+    height: 400px;
+    background: url('../img/mushroom-header.jpg') center center no-repeat scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
