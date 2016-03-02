@@ -52,6 +52,8 @@ try {
 
 		echo 'ERROR: ' . $e->getMessage();
 
+=======
+>>>>>>> f9108f3750be23109c979dc8c700ee8cb33ffea1
 		exit();
 	}
 
