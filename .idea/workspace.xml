@@ -2,392 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ad55570-7be7-4e8d-9e49-28db17607b35" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\contributors.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\about.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\bootstrap\css\bootstrap-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\bootstrap\css\bootstrap-theme.css.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\bootstrap\css\bootstrap-theme.min.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\bootstrap\css\bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\bootstrap\css\bootstrap.css.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\bootstrap\css\bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\bootstrap\fonts\glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\bootstrap\fonts\glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\bootstrap\fonts\glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\bootstrap\fonts\glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\bootstrap\fonts\glyphicons-halflings-regular.woff2" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\bootstrap\js\bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\bootstrap\js\bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\bootstrap\js\npm.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\cache\09db40de2d11ad294bac4cf51493bb91e172acb9.fungusResult.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\cache\1975289c82ab52942775fe96c4ff1aba5c30c356.fungusResult2.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\cache\24884e2a54678e46f24505a77880030b4eab9827.fungusResult.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\cache\c0293ec60949b7a51aee5388c5f6bfed18328f67.fungusResult.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\css\fungusResult.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\css\fungusResult.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\css\reset.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\fonts\Intro.otf" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\fonts\leaguegothic-regular-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\fonts\leaguegothic-regular-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\fonts\leaguegothic-regular-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\fonts\leaguegothic-regular-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\fungusResult.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\index.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\index.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\jquery-2.1.3.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\README" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\demo\cache\10b058f4c6dc05eed30bd32924fc51ea07150bad.index.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\demo\configs\test.conf" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\demo\index.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\demo\plugins\cacheresource.apc.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\demo\plugins\cacheresource.memcache.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\demo\plugins\cacheresource.mysql.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\demo\plugins\resource.extendsall.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\demo\plugins\resource.mysql.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\demo\plugins\resource.mysqls.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\demo\templates\footer.tpl" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\demo\templates\header.tpl" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\demo\templates\index.tpl" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\demo\templates_c\10b058f4c6dc05eed30bd32924fc51ea07150bad.file.index.tpl.cache.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\demo\templates_c\51ee552389f86a4c208b91dd7d8fee4588c75ecd.file.debug.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\demo\templates_c\77715b81f573e28d369f6b963b15d7e043bc276d.file.footer.tpl.cache.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\demo\templates_c\9e48afecc34b581d4d99b7c6192b1ad5ef8e23ef.file.header.tpl.cache.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\demo\templates_c\ed99acca2accfeb0b938977d7c38ab94abb7a9e0.test.conf.config.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\Smarty.class.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\SmartyBC.class.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\debug.tpl" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\plugins\block.textformat.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\plugins\function.counter.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\plugins\function.cycle.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\plugins\function.fetch.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\plugins\function.html_checkboxes.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\plugins\function.html_image.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\plugins\function.html_options.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\plugins\function.html_radios.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\plugins\function.html_select_date.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\plugins\function.html_select_time.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\plugins\function.html_table.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\plugins\function.mailto.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\plugins\function.math.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\plugins\modifier.capitalize.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\plugins\modifier.date_format.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\plugins\modifier.debug_print_var.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\plugins\modifier.escape.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\plugins\modifier.regex_replace.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\plugins\modifier.replace.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\plugins\modifier.spacify.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\plugins\modifier.truncate.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\plugins\modifiercompiler.cat.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\plugins\modifiercompiler.count_characters.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\plugins\modifiercompiler.count_paragraphs.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\plugins\modifiercompiler.count_sentences.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\plugins\modifiercompiler.count_words.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\plugins\modifiercompiler.default.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\plugins\modifiercompiler.escape.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\plugins\modifiercompiler.from_charset.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\plugins\modifiercompiler.indent.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\plugins\modifiercompiler.lower.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\plugins\modifiercompiler.noprint.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\plugins\modifiercompiler.string_format.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\plugins\modifiercompiler.strip.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\plugins\modifiercompiler.strip_tags.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\plugins\modifiercompiler.to_charset.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\plugins\modifiercompiler.unescape.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\plugins\modifiercompiler.upper.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\plugins\modifiercompiler.wordwrap.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\plugins\outputfilter.trimwhitespace.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\plugins\shared.escape_special_chars.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\plugins\shared.literal_compiler_param.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\plugins\shared.make_timestamp.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\plugins\shared.mb_str_replace.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\plugins\shared.mb_unicode.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\plugins\shared.mb_wordwrap.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\plugins\variablefilter.htmlspecialchars.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\sysplugins\smarty_cacheresource.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\sysplugins\smarty_cacheresource_custom.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\sysplugins\smarty_cacheresource_keyvaluestore.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\sysplugins\smarty_config_source.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\sysplugins\smarty_internal_cacheresource_file.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\sysplugins\smarty_internal_compile_append.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\sysplugins\smarty_internal_compile_assign.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\sysplugins\smarty_internal_compile_block.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\sysplugins\smarty_internal_compile_break.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\sysplugins\smarty_internal_compile_call.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\sysplugins\smarty_internal_compile_capture.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\sysplugins\smarty_internal_compile_config_load.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\sysplugins\smarty_internal_compile_continue.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\sysplugins\smarty_internal_compile_debug.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\sysplugins\smarty_internal_compile_eval.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\sysplugins\smarty_internal_compile_extends.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\sysplugins\smarty_internal_compile_for.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\sysplugins\smarty_internal_compile_foreach.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\sysplugins\smarty_internal_compile_function.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\sysplugins\smarty_internal_compile_if.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\sysplugins\smarty_internal_compile_include.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\sysplugins\smarty_internal_compile_include_php.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\sysplugins\smarty_internal_compile_insert.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\sysplugins\smarty_internal_compile_ldelim.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\sysplugins\smarty_internal_compile_nocache.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\sysplugins\smarty_internal_compile_private_block_plugin.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\sysplugins\smarty_internal_compile_private_function_plugin.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\sysplugins\smarty_internal_compile_private_modifier.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\sysplugins\smarty_internal_compile_private_object_block_function.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\sysplugins\smarty_internal_compile_private_object_function.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\sysplugins\smarty_internal_compile_private_print_expression.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\sysplugins\smarty_internal_compile_private_registered_block.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\sysplugins\smarty_internal_compile_private_registered_function.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\sysplugins\smarty_internal_compile_private_special_variable.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\sysplugins\smarty_internal_compile_rdelim.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\sysplugins\smarty_internal_compile_section.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\sysplugins\smarty_internal_compile_setfilter.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\sysplugins\smarty_internal_compile_while.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\sysplugins\smarty_internal_compilebase.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\sysplugins\smarty_internal_config.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\sysplugins\smarty_internal_config_file_compiler.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\sysplugins\smarty_internal_configfilelexer.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\sysplugins\smarty_internal_configfileparser.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\sysplugins\smarty_internal_data.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\sysplugins\smarty_internal_debug.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\sysplugins\smarty_internal_filter_handler.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\sysplugins\smarty_internal_function_call_handler.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\sysplugins\smarty_internal_get_include_path.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\sysplugins\smarty_internal_nocache_insert.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\sysplugins\smarty_internal_parsetree.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\sysplugins\smarty_internal_resource_eval.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\sysplugins\smarty_internal_resource_extends.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\sysplugins\smarty_internal_resource_file.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\sysplugins\smarty_internal_resource_php.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\sysplugins\smarty_internal_resource_registered.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\sysplugins\smarty_internal_resource_stream.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\sysplugins\smarty_internal_resource_string.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\sysplugins\smarty_internal_smartytemplatecompiler.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\sysplugins\smarty_internal_template.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\sysplugins\smarty_internal_templatebase.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\sysplugins\smarty_internal_templatecompilerbase.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\sysplugins\smarty_internal_templatelexer.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\sysplugins\smarty_internal_templateparser.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\sysplugins\smarty_internal_utility.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\sysplugins\smarty_internal_write_file.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\sysplugins\smarty_resource.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\sysplugins\smarty_resource_custom.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\sysplugins\smarty_resource_recompiled.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\sysplugins\smarty_resource_uncompiled.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\smarty\libs\sysplugins\smarty_security.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\template\fungusResult.tpl" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\template\header.tpl" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\template\index.tpl" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\templates_c\09db40de2d11ad294bac4cf51493bb91e172acb9.file.fungusResult.tpl.cache.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\templates_c\1975289c82ab52942775fe96c4ff1aba5c30c356.file.fungusResult2.tpl.cache.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\templates_c\24884e2a54678e46f24505a77880030b4eab9827.file.fungusResult.tpl.cache.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\templates_c\32836b9c852ce68349f2760ff0fcf370fca66e83.file.debug.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\templates_c\51ee552389f86a4c208b91dd7d8fee4588c75ecd.file.debug.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\templates_c\bbb878d9f81f6368de58973f216459f4cd19193e.file.fungusResult.tpl.cache.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\templates_c\c0293ec60949b7a51aee5388c5f6bfed18328f67.file.fungusResult.tpl.cache.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\templates_c\d7798fa4e23249a036e741cb3e3cf2acc5d7ca1c.file.index.tpl.cache.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bentest\templates_c\fe5156b122f85591096bc1f15043eb1220a9994d.file.index.tpl.cache.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\blank-page.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bootstrap-elements.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\bootstrap-grid.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\charts.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\css\bootstrap-rtl.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\css\bootstrap-rtl.min.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\css\bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\css\bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\css\fungi-admin.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\css\plugins\morris.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\font-awesome\css\font-awesome.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\font-awesome\css\font-awesome.min.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\font-awesome\fonts\FontAwesome.otf" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\font-awesome\fonts\fontawesome-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\font-awesome\fonts\fontawesome-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\font-awesome\fonts\fontawesome-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\font-awesome\fonts\fontawesome-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\font-awesome\less\bordered-pulled.less" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\font-awesome\less\core.less" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\font-awesome\less\fixed-width.less" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\font-awesome\less\font-awesome.less" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\font-awesome\less\icons.less" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\font-awesome\less\larger.less" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\font-awesome\less\list.less" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\font-awesome\less\mixins.less" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\font-awesome\less\path.less" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\font-awesome\less\rotated-flipped.less" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\font-awesome\less\spinning.less" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\font-awesome\less\stacked.less" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\font-awesome\less\variables.less" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\font-awesome\scss\_bordered-pulled.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\font-awesome\scss\_core.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\font-awesome\scss\_fixed-width.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\font-awesome\scss\_icons.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\font-awesome\scss\_larger.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\font-awesome\scss\_list.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\font-awesome\scss\_mixins.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\font-awesome\scss\_path.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\font-awesome\scss\_rotated-flipped.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\font-awesome\scss\_spinning.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\font-awesome\scss\_stacked.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\font-awesome\scss\_variables.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\font-awesome\scss\font-awesome.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\fonts\glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\fonts\glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\fonts\glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\fonts\glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\fonts\glyphicons-halflings-regular.woff2" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\forms.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\img\Emberger.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\img\birds nest.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\img\coral.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\img\crust and parchment.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\img\cup and saucer.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\img\gilled.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\img\header.JPG" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\img\jelly.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\img\poroid.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\img\puffball.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\img\spines and teeth.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\img\stinkhorn.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\index.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\index.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\js\bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\js\bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\js\jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\js\plugins\flot\excanvas.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\js\plugins\flot\flot-data.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\js\plugins\flot\jquery.flot.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\js\plugins\flot\jquery.flot.pie.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\js\plugins\flot\jquery.flot.resize.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\js\plugins\flot\jquery.flot.tooltip.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\js\plugins\morris\morris-data.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\js\plugins\morris\morris.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\js\plugins\morris\morris.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\js\plugins\morris\raphael.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\Smarty.class.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\SmartyBC.class.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\debug.tpl" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\plugins\block.textformat.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\plugins\function.counter.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\plugins\function.cycle.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\plugins\function.fetch.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\plugins\function.html_checkboxes.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\plugins\function.html_image.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\plugins\function.html_options.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\plugins\function.html_radios.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\plugins\function.html_select_date.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\plugins\function.html_select_time.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\plugins\function.html_table.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\plugins\function.mailto.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\plugins\function.math.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\plugins\modifier.capitalize.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\plugins\modifier.date_format.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\plugins\modifier.debug_print_var.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\plugins\modifier.escape.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\plugins\modifier.regex_replace.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\plugins\modifier.replace.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\plugins\modifier.spacify.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\plugins\modifier.truncate.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\plugins\modifiercompiler.cat.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\plugins\modifiercompiler.count_characters.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\plugins\modifiercompiler.count_paragraphs.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\plugins\modifiercompiler.count_sentences.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\plugins\modifiercompiler.count_words.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\plugins\modifiercompiler.default.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\plugins\modifiercompiler.escape.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\plugins\modifiercompiler.from_charset.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\plugins\modifiercompiler.indent.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\plugins\modifiercompiler.lower.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\plugins\modifiercompiler.noprint.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\plugins\modifiercompiler.string_format.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\plugins\modifiercompiler.strip.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\plugins\modifiercompiler.strip_tags.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\plugins\modifiercompiler.to_charset.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\plugins\modifiercompiler.unescape.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\plugins\modifiercompiler.upper.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\plugins\modifiercompiler.wordwrap.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\plugins\outputfilter.trimwhitespace.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\plugins\shared.escape_special_chars.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\plugins\shared.literal_compiler_param.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\plugins\shared.make_timestamp.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\plugins\shared.mb_str_replace.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\plugins\shared.mb_unicode.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\plugins\shared.mb_wordwrap.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\plugins\variablefilter.htmlspecialchars.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\sysplugins\smarty_cacheresource.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\sysplugins\smarty_cacheresource_custom.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\sysplugins\smarty_cacheresource_keyvaluestore.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\sysplugins\smarty_config_source.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\sysplugins\smarty_internal_cacheresource_file.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\sysplugins\smarty_internal_compile_append.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\sysplugins\smarty_internal_compile_assign.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\sysplugins\smarty_internal_compile_block.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\sysplugins\smarty_internal_compile_break.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\sysplugins\smarty_internal_compile_call.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\sysplugins\smarty_internal_compile_capture.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\sysplugins\smarty_internal_compile_config_load.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\sysplugins\smarty_internal_compile_continue.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\sysplugins\smarty_internal_compile_debug.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\sysplugins\smarty_internal_compile_eval.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\sysplugins\smarty_internal_compile_extends.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\sysplugins\smarty_internal_compile_for.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\sysplugins\smarty_internal_compile_foreach.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\sysplugins\smarty_internal_compile_function.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\sysplugins\smarty_internal_compile_if.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\sysplugins\smarty_internal_compile_include.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\sysplugins\smarty_internal_compile_include_php.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\sysplugins\smarty_internal_compile_insert.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\sysplugins\smarty_internal_compile_ldelim.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\sysplugins\smarty_internal_compile_nocache.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\sysplugins\smarty_internal_compile_private_block_plugin.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\sysplugins\smarty_internal_compile_private_function_plugin.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\sysplugins\smarty_internal_compile_private_modifier.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\sysplugins\smarty_internal_compile_private_object_block_function.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\sysplugins\smarty_internal_compile_private_object_function.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\sysplugins\smarty_internal_compile_private_print_expression.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\sysplugins\smarty_internal_compile_private_registered_block.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\sysplugins\smarty_internal_compile_private_registered_function.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\sysplugins\smarty_internal_compile_private_special_variable.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\sysplugins\smarty_internal_compile_rdelim.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\sysplugins\smarty_internal_compile_section.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\sysplugins\smarty_internal_compile_setfilter.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\sysplugins\smarty_internal_compile_while.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\sysplugins\smarty_internal_compilebase.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\sysplugins\smarty_internal_config.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\sysplugins\smarty_internal_config_file_compiler.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\sysplugins\smarty_internal_configfilelexer.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\sysplugins\smarty_internal_configfileparser.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\sysplugins\smarty_internal_data.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\sysplugins\smarty_internal_debug.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\sysplugins\smarty_internal_filter_handler.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\sysplugins\smarty_internal_function_call_handler.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\sysplugins\smarty_internal_get_include_path.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\sysplugins\smarty_internal_nocache_insert.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\sysplugins\smarty_internal_parsetree.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\sysplugins\smarty_internal_resource_eval.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\sysplugins\smarty_internal_resource_extends.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\sysplugins\smarty_internal_resource_file.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\sysplugins\smarty_internal_resource_php.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\sysplugins\smarty_internal_resource_registered.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\sysplugins\smarty_internal_resource_stream.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\sysplugins\smarty_internal_resource_string.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\sysplugins\smarty_internal_smartytemplatecompiler.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\sysplugins\smarty_internal_template.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\sysplugins\smarty_internal_templatebase.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\sysplugins\smarty_internal_templatecompilerbase.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\sysplugins\smarty_internal_templatelexer.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\sysplugins\smarty_internal_templateparser.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\sysplugins\smarty_internal_utility.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\sysplugins\smarty_internal_write_file.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\sysplugins\smarty_resource.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\sysplugins\smarty_resource_custom.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\sysplugins\smarty_resource_recompiled.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\sysplugins\smarty_resource_uncompiled.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\libs\sysplugins\smarty_security.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\tmp\30ed694b2cb97f64e27cbb44aaecb464ce157627.file.head.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\tmp\a753fdb253544e4d2c72ef5f726fda9208dccad0.file.index.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\tmp\b52642dfc24db04c35418df67a7ec8d5646b58e8.file.head.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\smarty\tmp\fe17595f32802693f0420c0db16abc51a4b570f4.file.index.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\public_html\tables.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\stationlocations" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\Fungi\supplies.txt" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public_html/setup.php" afterPath="$PROJECT_DIR$/public_html/setup.php" />
     </list>
     <ignored path="Fungi.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -419,8 +34,36 @@
       <file leaf-file-name="setup.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public_html/setup.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.8461537">
-              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+            <state vertical-scroll-proportion="-18.307692">
+              <caret line="37" column="23" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="query.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public_html/query.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1456861816099" expanded="true" signature="2331:2405" placeholder="SELECT * FRO..Characteristic..." />
+                <marker date="1456861816099" expanded="true" signature="2932:3154" placeholder="SELECT * FRO..C_Option..." />
+                <marker date="1456861816099" expanded="true" signature="3006:3092" placeholder="SELECT Chara..Characteristic..." />
+                <marker date="1456861816099" expanded="true" signature="4306:4561" placeholder="SELECT * FRO..Species..." />
+                <marker date="1456861816099" expanded="true" signature="4355:4557" placeholder="SELECT Speci..Species_ID..." />
+                <marker date="1456861816099" expanded="true" signature="4382:4545" placeholder="SELECT Speci..Species_Opt..." />
+                <marker date="1456861816099" expanded="true" signature="5003:5066" placeholder="SELECT * FRO..Species..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="forms.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public_html/forms.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -432,28 +75,38 @@
             <state vertical-scroll-proportion="-9.153846">
               <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding>
-                <marker date="1456860285858" expanded="true" signature="94:173" placeholder="SELECT Scien..Species..." />
+                <marker date="1456861816982" expanded="true" signature="94:173" placeholder="SELECT Scien..Species..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="app.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public_html/app.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.52380955">
+              <caret line="22" column="2" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
               <folding>
-                <marker date="1456860285290" expanded="true" signature="57:85" placeholder="SELECT * FRO..Shape_Category..." />
+                <marker date="1456861815004" expanded="true" signature="57:85" placeholder="SELECT * FRO..Shape_Category..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="about.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="about.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public_html/about.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="-3.2692308">
+              <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public_html/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -464,6 +117,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/public_html/about.php" />
+        <option value="$PROJECT_DIR$/public_html/setup.php" />
+      </list>
+    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" />
   <component name="JsBuildToolPackageJson" detection-done="true" />
@@ -478,8 +139,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP from XAMPP" />
   <component name="ProjectFrameBounds">
-    <option name="width" value="1206" />
-    <option name="height" value="860" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1616" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -525,6 +188,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="public_html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Fungi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Fungi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public_html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smarty" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -589,10 +270,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1206" height="860" extended-state="0" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33277312" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2475" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -628,39 +309,71 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public_html/setup.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.8461537">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public_html/species.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.153846">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
-            <marker date="1456860285858" expanded="true" signature="94:173" placeholder="SELECT Scien..Species..." />
+            <marker date="1456861816982" expanded="true" signature="94:173" placeholder="SELECT Scien..Species..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/app.php">
+    <entry file="file://$PROJECT_DIR$/public_html/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1456860285290" expanded="true" signature="57:85" placeholder="SELECT * FRO..Shape_Category..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public_html/about.php">
       <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.2692308">
+          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/query.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1456861816099" expanded="true" signature="2331:2405" placeholder="SELECT * FRO..Characteristic..." />
+            <marker date="1456861816099" expanded="true" signature="2932:3154" placeholder="SELECT * FRO..C_Option..." />
+            <marker date="1456861816099" expanded="true" signature="3006:3092" placeholder="SELECT Chara..Characteristic..." />
+            <marker date="1456861816099" expanded="true" signature="4306:4561" placeholder="SELECT * FRO..Species..." />
+            <marker date="1456861816099" expanded="true" signature="4355:4557" placeholder="SELECT Speci..Species_ID..." />
+            <marker date="1456861816099" expanded="true" signature="4382:4545" placeholder="SELECT Speci..Species_Opt..." />
+            <marker date="1456861816099" expanded="true" signature="5003:5066" placeholder="SELECT * FRO..Species..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/forms.html">
+      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/setup.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.307692">
+          <caret line="37" column="23" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.52380955">
+          <caret line="22" column="2" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
+          <folding>
+            <marker date="1456861815004" expanded="true" signature="57:85" placeholder="SELECT * FRO..Shape_Category..." />
+          </folding>
         </state>
       </provider>
     </entry>
