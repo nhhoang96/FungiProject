@@ -34,9 +34,6 @@ define('BASE_PATH', implode(DIRECTORY_SEPARATOR, $tmp) . DIRECTORY_SEPARATOR);
 define('WEB_PATH', BASE_PATH . 'public_html/');
 define('URL', webRoot());
 
-echo BASE_PATH . '<br>';
-echo WEB_PATH . '<br>';
-echo URL . '<br>';
 //Smarty
 require_once('smarty/libs/Smarty.class.php');
 $smarty = new Smarty();
