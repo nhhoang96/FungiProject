@@ -18,7 +18,7 @@
 ?>
 
 <?php
-	include "setup.php";	
+	include "../private_html/setup.php";
 
 	$query2 = "SELECT * FROM Species 
 		WHERE Species_ID IN

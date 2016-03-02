@@ -1,6 +1,6 @@
 {include "head.tpl" title="Select Shape" active="app"}
-<!--Fungi Team 2015-->
 
+<!--Fungi Team 2015-->
 <body>
 	
 <div class="container">
