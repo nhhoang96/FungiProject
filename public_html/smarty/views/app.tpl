@@ -1,9 +1,20 @@
 {include "head.tpl" title="Select Shape" active="app"}
+<<<<<<< HEAD
 {include "index.tpl"}
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> c638ad4d605de8ea0708d4913cd1b1d3e3951cc0
 
 
 <!--Fungi Team 2015-->
+>>>>>>> d28c0e6ab820732dfced5e9f1652cbfca7e4f521
 
+<<<<<<< HEAD
+=======
+<!--Fungi Team 2015-->
+<body>
+>>>>>>> c638ad4d605de8ea0708d4913cd1b1d3e3951cc0
 	
 <div class="container">
   <div class="row">

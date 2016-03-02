@@ -1,6 +1,6 @@
 <?php
 //Fungi Team 2015
-include "setup.php";
+include "../private_html/setup.php";
 
 $tableIndex=0;
 
