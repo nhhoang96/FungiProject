@@ -11,8 +11,8 @@
 	<link href="css/navigation.css" type=text/css rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-	<script src="js/cards.js"></script>
-	<script src="js/collapse.js"></script>
+	<script src="XXjs/cards.js"></script>
+	<script src="XXjs/collapse.js"></script>
 	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.7.0/bootstrap-table.min.css">
 		<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.7.0/bootstrap-table.min.js"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.7.0/locale/bootstrap-table-zh-CN.min.js"></script>
@@ -27,7 +27,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="index.php" class="navbar-brand">Fungi Growing on Wood</a>
+            <a href="app.php" class="navbar-brand">Fungi Growing on Wood</a>
         </div>
         <!-- Collection of nav links and other content for toggling -->
         <div id="navbarCollapse" class="collapse navbar-collapse">
@@ -44,7 +44,7 @@
 </nav>
 <?php 
 //Get passed ID
-$id = $_GET["id"];
+$id = $_GET["birdsnest"];
 ?>
 
 <form action = "<?php echo $_SERVER['PHP_SELF']."?id=".$id?>" method="post">

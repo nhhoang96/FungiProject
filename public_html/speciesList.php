@@ -31,6 +31,7 @@
 		)";
 	$stmt2 = $pdo->prepare($query2);
 	$stmt2->execute();
+
 ?><ul> <?php
 	while($row2=$stmt2->fetch(PDO::FETCH_ASSOC)){
 ?>
