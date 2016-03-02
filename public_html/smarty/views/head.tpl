@@ -6,26 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://bootswatch.com/cosmo/bootstrap.min.css">
 	<link href="css/navigation.css" type=text/css rel="stylesheet" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-	<script src="js/cards.js"></script>
-	<script src="js/collapse.js"></script>
 	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.7.0/bootstrap-table.min.css">
-		<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.7.0/bootstrap-table.min.js"></script>
-		<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.7.0/locale/bootstrap-table-zh-CN.min.js"></script>
 	<!--Change stylesheet based on page-->
-	{if $active eq 'about'}
-		<link href="css/about.css" type=text/css rel="stylesheet" />
-	{elseif $active eq 'species'}
-		<link href="css/species.css" type=text/css rel="stylesheet" />
+	<link href="css/about.css" type=text/css rel="stylesheet" />
+	<link href="css/species.css" type=text/css rel="stylesheet" />
 		<!-- Table sorting -->
-	{elseif $active eq 'result'}
-		<link href="css/result.css" type=text/css rel="stylesheet" />
-		<script src="js/lightbox.min.js"></script>
-		<link href="css/lightbox.css" rel="stylesheet" />
-	{else}
-		<link href="css/cards.css" type=text/css rel="stylesheet" />
-	{/if}
+	<link href="css/result.css" type=text/css rel="stylesheet" />
+	<link href="css/lightbox.css" type=text/css rel="stylesheet" />
+	<link href="css/cards.css" type=text/css rel="stylesheet" />
 </head>
 
 <body>
@@ -44,19 +32,10 @@
         <!-- Collection of nav links and other content for toggling -->
         <div id="navbarCollapse" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-				{if $active eq 'app'}
-					<li class="active"><a href="app.php">Application</a></li>
-                	<li><a href="species.php">Species</a></li>
-                	<li><a href="about.php">About</a></li>
-				{elseif $active eq 'species'}
-					<li><a href="app.php">Application</a></li>
-                	<li class="active"><a href="species.php">Species</a></li>
-                	<li><a href="about.php">About</a></li>
-				{else}
-					<li><a href="app.php">Application</a></li>
-                	<li><a href="species.php">Species</a></li>
-                	<li class="active"><a href="about.php">About</a></li>
-				{/if}
+					<li class="{$appActive}"><a href="app.php">Application</a></li>
+                	<li class="{$speciesActive}"><a href="species.php">Species</a></li>
+                	<li class="{$aboutActive}"><a href="about.php">About</a></li>
+
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="admin.html">Control Panel</a></li>

@@ -1,4 +1,4 @@
-{include "head.tpl" title="About" active="about"} 
+{include "head.tpl"}
 <!--Fungi Team 2015-->
 
 	 <!-- Image Background Page Header -->

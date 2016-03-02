@@ -2,7 +2,8 @@
 //Fungi Team 2015
 
 include "../private_html/setup.php";
-$smarty->display('head.tpl');
+
+$smarty->assign("appActive", "active");
 
 $query = "SELECT * FROM Shape_Category";
 $stmt = $pdo->prepare($query);
