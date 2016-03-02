@@ -18,7 +18,6 @@
 		<link href="css/about.css" type=text/css rel="stylesheet" />
 	{elseif $active eq 'species'}
 		<link href="css/species.css" type=text/css rel="stylesheet" />
-		<!-- Table sorting -->
 	{elseif $active eq 'result'}
 		<link href="css/result.css" type=text/css rel="stylesheet" />
 		<script src="js/lightbox.min.js"></script>

@@ -1,9 +1,9 @@
 {include "head.tpl" title="Select Shape" active="app"}
+{include "index.tpl"}
 
 
 <!--Fungi Team 2015-->
 
-<body>
 	
 <div class="container">
   <div class="row">

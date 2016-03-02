@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-03-02 21:00:07
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-03-03 00:19:43
          compiled from "smarty\views\head.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:2706856d740be432da2-79862852%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '1d63aef6a398df58eca982598bcac91d477def93' => 
     array (
       0 => 'smarty\\views\\head.tpl',
-      1 => 1456948800,
+      1 => 1456960777,
       2 => 'file',
     ),
   ),
@@ -57,7 +57,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		<link href="css/about.css" type=text/css rel="stylesheet" />
 	<?php } elseif ($_smarty_tpl->tpl_vars['active']->value=='species') {?>
 		<link href="css/species.css" type=text/css rel="stylesheet" />
-		<!-- Table sorting -->
 	<?php } elseif ($_smarty_tpl->tpl_vars['active']->value=='result') {?>
 		<link href="css/result.css" type=text/css rel="stylesheet" />
 		<?php echo '<script'; ?>

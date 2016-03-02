@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-03-02 21:00:07
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-03-03 00:04:59
          compiled from "smarty\views\about.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:3206956d740c35a6d57-73794449%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '6fb9bd86d46ffa37ff2e705764ab98ec34bf7c98' => 
     array (
       0 => 'smarty\\views\\about.tpl',
-      1 => 1456948800,
+      1 => 1456959894,
       2 => 'file',
     ),
   ),
@@ -20,11 +20,12 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_56d740c3679fd3_09394741')) {function content_56d740c3679fd3_09394741($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("head.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('title'=>"About",'active'=>"about"), 0);?>
- 
+
+
 <!--Fungi Team 2015-->
 
 	 <!-- Image Background Page Header -->
-	 
+
 	<!-- Note: The background image is set within the business-casual.css file. -->
 
 	<header class="business-header">
