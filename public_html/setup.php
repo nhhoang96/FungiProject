@@ -47,11 +47,10 @@ try {
 		$pdo = new PDO("mysql:dbname=Fungi; host=localhost","fungiweb","lich3n");
 		$pdo-> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
 	} catch(PDOException $e) {
-<<<<<<< HEAD
+
 		echo $e->getMessage();
-=======
+
 		echo 'ERROR: ' . $e->getMessage();
->>>>>>> b9cce1ec2faac9ee8acd1abe7b43b3083094b067
 		exit();
 	}
 
