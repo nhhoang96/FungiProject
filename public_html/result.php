@@ -13,19 +13,19 @@ $statement->bindParam(':parameter', $name, PDO::PARAM_STR);
 $statement->execute();
 $result = $statement->fetchAll();
 
-$sciName = $result[0][0];
-$commonName = $result[0][1];
-$nameDerivation = $result[0][2];
-$phylum = $result[0][3];
-$spOrder = $result[0][4];
-$family = $result[0][5];
-$comment = $result[0][6];
-$woodSubstrate = $result[0][7];
-$dimensions = $result[0][8];
+$sciName = $result['Scientific_Name'];
+$commonName = $result['Common_Name'];
+$nameDerivation = $result['Name_Derivation'];
+$phylum = $result['Phylum'];
+$spOrder = $result['Sp_Order'];
+$family = $result['Family'];
+$comment = $result['Comments'];
+$woodSubstrate = $result['Wood_Substrate'];
+$dimensions = $result['Dimensions'];
 
 // Retrieve images
 
-$speciesID = $result[0][9];
+$speciesID = $result['Species_ID'];
 
 $query = "SELECT Photo_ID, Photo_Name, Caption FROM Photo WHERE Photo_Species_ID = :id";
 $statement = $pdo->prepare($query);
@@ -33,10 +33,10 @@ $statement->bindParam(':id', $speciesID, PDO::PARAM_STR);
 $statement->execute();
 $result = $statement->fetchAll();
 
-$photoID = $result[0][0];
-$photoName = $result[0][1];
+$photoID = $result['Photo_ID'];
+$photoName = $result['Photo_Name'];
 $photoName = "img/".$photoName;
-$caption = $result[0][2];
+$caption = $result['Caption'];
 
 
 $smarty->assign('sciName', $sciName);
