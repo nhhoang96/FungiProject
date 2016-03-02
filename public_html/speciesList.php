@@ -1,6 +1,6 @@
 <?php
 	$c = count($_POST) - 1;
-	$firstTime = 1; 
+	$firstTime = 1;
 	$build = "";
 	foreach($_POST as $key=>$val){
 		if(strcmp("$val", "Submit") == 0){}
@@ -12,20 +12,24 @@
 			}
 			$firstTime = $firstTime + 1;
 		}
-		
+
 	}
 
 ?>
 
 <?php
+<<<<<<< HEAD
 	include "../private_html/setup.php";
+=======
+	include "setup.php";
+>>>>>>> d28c0e6ab820732dfced5e9f1652cbfca7e4f521
 
-	$query2 = "SELECT * FROM Species 
+	$query2 = "SELECT * FROM Species
 		WHERE Species_ID IN
-			(SELECT Species_ID FROM 
+			(SELECT Species_ID FROM
 		(SELECT Species_ID, count(*) AS num
 			FROM Species_Opt LEFT JOIN Species ON Species_ID = SO_Species_ID
-			WHERE ".$build."  
+			WHERE ".$build."
 			GROUP BY Species_ID
 			HAVING num =".$c.") AS s
 		)";

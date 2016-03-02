@@ -18,6 +18,7 @@ foreach($rows as $row) {
 }
 
 $smarty->assign('shapeData', $shapeData);
+$smarty->display('index.tpl');
 
 $smarty->display('app.tpl');
 ?>

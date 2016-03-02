@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="0ad55570-7be7-4e8d-9e49-28db17607b35" name="Default" comment="">
       <change type="MOVED" beforePath="C:\Users\lenovo\Desktop\Fungi\public_html\setup.php" afterPath="$PROJECT_DIR$/private_html/setup.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public_html/smarty/tmp/4c2ae86a49474804694dbe91343cc94f75f8a73b.file.head.tpl.php" afterPath="$PROJECT_DIR$/public_html/smarty/tmp/4c2ae86a49474804694dbe91343cc94f75f8a73b.file.head.tpl.php" />
@@ -18,6 +22,15 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public_html/.idea/workspace.xml" afterPath="$PROJECT_DIR$/public_html/.idea/workspace.xml" />
     </list>
+=======
+<<<<<<< HEAD
+    <list default="true" id="0ad55570-7be7-4e8d-9e49-28db17607b35" name="Default" comment="" />
+=======
+    <list default="true" id="0ad55570-7be7-4e8d-9e49-28db17607b35" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public_html/about.php" afterPath="$PROJECT_DIR$/public_html/about.php" />
+    </list>
+>>>>>>> c717ea4acce4b139c1d77a8f17b179938c954b6d
+>>>>>>> d28c0e6ab820732dfced5e9f1652cbfca7e4f521
     <ignored path="Fungi.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -44,6 +57,7 @@
     <favorites_list name="Fungi" />
   </component>
   <component name="FileEditorManager">
+<<<<<<< HEAD
     <leaf>
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public_html/index.php">
@@ -60,14 +74,38 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-28.333334">
               <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+=======
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="speciesList.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public_html/speciesList.php">
+          <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state vertical-scroll-proportion="-8.538462">
+              <caret line="29" column="36" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
+              <folding>
+                <marker date="1456886013825" expanded="true" signature="359:380" placeholder="SELECT * FRO... Species" />
+                <marker date="1456886013825" expanded="true" signature="359:536" placeholder="SELECT * FRO... Species" />
+                <marker date="1456886013825" expanded="true" signature="359:610" placeholder="SELECT * FRO... Species" />
+                <marker date="1456886013825" expanded="true" signature="407:536" placeholder="SELECT Speci... Species_ID" />
+                <marker date="1456886013825" expanded="true" signature="433:536" placeholder="SELECT Speci... Species_Opt" />
+                <marker date="1456886013825" expanded="true" signature="613:645" placeholder="SELECT * FRO... Species" />
+                <marker date="1456886013825" expanded="true" signature="672:746" placeholder="..." />
+              </folding>
+=======
+            <state vertical-scroll-proportion="-18.307692">
+              <caret line="39" column="39" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
+>>>>>>> d28c0e6ab820732dfced5e9f1652cbfca7e4f521
               <folding />
+>>>>>>> c717ea4acce4b139c1d77a8f17b179938c954b6d
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="query.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public_html/query.php">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state vertical-scroll-proportion="-8.904762">
               <caret line="46" column="25" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
               <folding>
@@ -78,6 +116,51 @@
                 <marker date="1456941494234" expanded="true" signature="4380:4582" placeholder="SELECT Speci..Species_ID..." />
                 <marker date="1456941494234" expanded="true" signature="4407:4570" placeholder="SELECT Speci..Species_Opt..." />
                 <marker date="1456941494234" expanded="true" signature="5028:5091" placeholder="SELECT * FRO..Species..." />
+=======
+            <state vertical-scroll-proportion="17.73077">
+              <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+              <folding>
+                <marker date="1456859281750" expanded="true" signature="2331:2405" placeholder="SELECT * FRO... Characteristic" />
+                <marker date="1456859281750" expanded="true" signature="2932:3154" placeholder="SELECT * FRO... C_Option" />
+                <marker date="1456859281750" expanded="true" signature="4306:4561" placeholder="SELECT * FRO... Species" />
+                <marker date="1456859281750" expanded="true" signature="4355:4557" placeholder="SELECT Speci... Species_ID" />
+                <marker date="1456859281750" expanded="true" signature="4382:4545" placeholder="SELECT Speci... Species_Opt" />
+                <marker date="1456859281750" expanded="true" signature="5003:5066" placeholder="SELECT * FRO... Species" />
+=======
+      <file leaf-file-name="speciesDB.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public_html/smarty/views/speciesDB.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="species.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public_html/smarty/views/species.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="query.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public_html/query.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="135" column="11" selection-start-line="135" selection-start-column="11" selection-end-line="135" selection-end-column="11" />
+              <folding>
+                <marker date="1456889047266" expanded="true" signature="2340:2414" placeholder="SELECT * FRO..Characteristic..." />
+                <marker date="1456889047266" expanded="true" signature="2941:3163" placeholder="SELECT * FRO..C_Option..." />
+                <marker date="1456889047266" expanded="true" signature="3015:3101" placeholder="SELECT Chara..Characteristic..." />
+                <marker date="1456889047266" expanded="true" signature="4315:4570" placeholder="SELECT * FRO..Species..." />
+                <marker date="1456889047266" expanded="true" signature="4364:4566" placeholder="SELECT Speci..Species_ID..." />
+                <marker date="1456889047266" expanded="true" signature="4391:4554" placeholder="SELECT Speci..Species_Opt..." />
+                <marker date="1456889047266" expanded="true" signature="5012:5075" placeholder="SELECT * FRO..Species..." />
+>>>>>>> d28c0e6ab820732dfced5e9f1652cbfca7e4f521
               </folding>
             </state>
           </provider>
@@ -86,11 +169,18 @@
       <file leaf-file-name="result.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public_html/result.php">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state vertical-scroll-proportion="-1.5714285">
               <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
               <folding>
                 <marker date="1456941494246" expanded="true" signature="120:297" placeholder="SELECT Scien..Species..." />
                 <marker date="1456941494246" expanded="true" signature="848:924" placeholder="SELECT Photo..Photo..." />
+=======
+            <state vertical-scroll-proportion="0.0">
+              <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
+              <folding>
+                <marker date="1456889047269" expanded="true" signature="104:281" placeholder="SELECT Scien..Species..." />
+>>>>>>> d28c0e6ab820732dfced5e9f1652cbfca7e4f521
               </folding>
             </state>
           </provider>
@@ -99,25 +189,65 @@
       <file leaf-file-name="species.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public_html/species.php">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state vertical-scroll-proportion="-1.5714285">
               <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
               <folding>
                 <marker date="1456941494365" expanded="true" signature="110:189" placeholder="SELECT Scien..Species..." />
+=======
+<<<<<<< HEAD
+            <state vertical-scroll-proportion="-27.67742">
+=======
+            <state vertical-scroll-proportion="0.0">
+>>>>>>> 222a4b2fff70460eebd8fcc91f8cdd62693595ef
+              <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+              <folding>
+                <marker date="1430442262000" expanded="true" signature="94:173" placeholder="SELECT Scien... Species" />
+>>>>>>> c717ea4acce4b139c1d77a8f17b179938c954b6d
+>>>>>>> d28c0e6ab820732dfced5e9f1652cbfca7e4f521
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="head.tpl" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public_html/smarty/views/head.tpl">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.53488374">
               <caret line="37" column="12" selection-start-line="37" selection-start-column="12" selection-end-line="50" selection-end-column="17" />
+=======
+<<<<<<< HEAD
+      <file leaf-file-name="species.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public_html/smarty/views/species.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="species.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public_html/species.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.107981">
+              <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+              <folding>
+                <marker date="1456888726309" expanded="true" signature="94:173" placeholder="SELECT Scien... Species" />
+=======
+      <file leaf-file-name="head.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public_html/smarty/views/head.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+>>>>>>> d28c0e6ab820732dfced5e9f1652cbfca7e4f521
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
       <file leaf-file-name="app.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public_html/app.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -126,10 +256,63 @@
               <folding>
                 <marker date="1456958268955" expanded="true" signature="103:131" placeholder="SELECT * FRO..Shape_Category..." />
               </folding>
+=======
+<<<<<<< HEAD
+      <file leaf-file-name="about.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public_html/about.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.4193548">
+              <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+              <folding />
+=======
+      <file leaf-file-name="app.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public_html/app.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+              <folding>
+                <marker date="1456861815004" expanded="true" signature="57:85" placeholder="SELECT * FRO..Shape_Category..." />
+>>>>>>> c717ea4acce4b139c1d77a8f17b179938c954b6d
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="result.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public_html/result.php">
+          <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state vertical-scroll-proportion="-22.884615">
+              <caret line="35" column="23" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
+              <folding>
+                <marker date="1456889602036" expanded="true" signature="104:281" placeholder="SELECT Scien... Species" />
+                <marker date="1456889602036" expanded="true" signature="749:825" placeholder="SELECT Photo... Photo" />
+              </folding>
+=======
+            <state vertical-scroll-proportion="0.42857143">
+              <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+              <folding>
+                <marker date="1456889404394" expanded="true" signature="56:84" placeholder="SELECT * FRO..Shape_Category..." />
+              </folding>
+>>>>>>> 222a4b2fff70460eebd8fcc91f8cdd62693595ef
+>>>>>>> c717ea4acce4b139c1d77a8f17b179938c954b6d
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
+      <file leaf-file-name="result.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public_html/smarty/views/result.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-15.038462">
+              <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="32" />
+              <folding />
+>>>>>>> d28c0e6ab820732dfced5e9f1652cbfca7e4f521
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
       <file leaf-file-name="about.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public_html/about.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -138,10 +321,19 @@
               <folding>
                 <marker date="1456941494298" expanded="true" signature="72:100" placeholder="SELECT * FRO..Shape_Category..." />
               </folding>
+=======
+      <file leaf-file-name="speciesDB.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public_html/smarty/views/speciesDB.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="13.115385">
+              <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+              <folding />
+>>>>>>> d28c0e6ab820732dfced5e9f1652cbfca7e4f521
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="speciesList.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public_html/speciesList.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -152,15 +344,46 @@
                 <marker date="1456941494332" expanded="true" signature="427:629" placeholder="SELECT Speci..Species_ID..." />
                 <marker date="1456941494332" expanded="true" signature="454:617" placeholder="SELECT Speci..Species_Opt..." />
               </folding>
+=======
+      <file leaf-file-name="index.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public_html/smarty/views/index.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="47.53846">
+              <caret line="14" column="55" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
+              <folding />
+>>>>>>> d28c0e6ab820732dfced5e9f1652cbfca7e4f521
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="app.tpl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public_html/smarty/views/app.tpl">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-0.78571427">
               <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+=======
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public_html/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.6153846">
+              <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+=======
+<<<<<<< HEAD
+      <file leaf-file-name="about.tpl" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public_html/smarty/views/about.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.165249">
+              <caret line="12" column="73" selection-start-line="12" selection-start-column="73" selection-end-line="12" selection-end-column="73" />
+=======
+      <file leaf-file-name="app.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public_html/smarty/views/app.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-18.961538">
+              <caret line="31" column="32" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
+>>>>>>> 222a4b2fff70460eebd8fcc91f8cdd62693595ef
+>>>>>>> c717ea4acce4b139c1d77a8f17b179938c954b6d
+>>>>>>> d28c0e6ab820732dfced5e9f1652cbfca7e4f521
               <folding />
             </state>
           </provider>
@@ -174,6 +397,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/public_html/setup.php" />
         <option value="$PROJECT_DIR$/public_html/about.php" />
         <option value="$PROJECT_DIR$/public_html/index.php" />
@@ -184,6 +408,19 @@
         <option value="$PROJECT_DIR$/public_html/app.php" />
         <option value="$PROJECT_DIR$/public_html/smarty/views/app.tpl" />
         <option value="$PROJECT_DIR$/public_html/smarty/views/head.tpl" />
+=======
+<<<<<<< HEAD
+        <option value="$PROJECT_DIR$/public_html/smarty/views/speciesDB.tpl" />
+        <option value="$PROJECT_DIR$/public_html/speciesList.php" />
+        <option value="$PROJECT_DIR$/public_html/index.php" />
+        <option value="$PROJECT_DIR$/public_html/smarty/views/index.tpl" />
+        <option value="$PROJECT_DIR$/public_html/species.php" />
+        <option value="$PROJECT_DIR$/public_html/result.php" />
+=======
+        <option value="$PROJECT_DIR$/public_html/setup.php" />
+        <option value="$PROJECT_DIR$/public_html/about.php" />
+>>>>>>> c717ea4acce4b139c1d77a8f17b179938c954b6d
+>>>>>>> d28c0e6ab820732dfced5e9f1652cbfca7e4f521
       </list>
     </option>
   </component>
@@ -192,18 +429,36 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
   </component>
-  <component name="NamedScopeManager">
-    <order />
-  </component>
   <component name="PhpServers">
     <servers />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP from XAMPP" />
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP" />
   <component name="ProjectFrameBounds">
+<<<<<<< HEAD
     <option name="x" value="-13" />
     <option name="y" value="-13" />
     <option name="width" value="3226" />
     <option name="height" value="1754" />
+=======
+<<<<<<< HEAD
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1040" />
+    <option name="height" value="576" />
+=======
+<<<<<<< HEAD
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1048" />
+=======
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1616" />
+    <option name="height" value="876" />
+>>>>>>> 222a4b2fff70460eebd8fcc91f8cdd62693595ef
+>>>>>>> c717ea4acce4b139c1d77a8f17b179938c954b6d
+>>>>>>> d28c0e6ab820732dfced5e9f1652cbfca7e4f521
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -214,6 +469,9 @@
     <OptionsSetting value="true" id="Edit" />
     <ConfirmationsSetting value="0" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="1" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -226,25 +484,33 @@
       <autoscrollToSource />
       <autoscrollFromSource />
       <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+<<<<<<< HEAD
       <pane id="Scratches" />
+      <pane id="Scope">
+        <subPane subId="Project Files" />
+      </pane>
+=======
+      <pane id="Scope" />
+>>>>>>> c717ea4acce4b139c1d77a8f17b179938c954b6d
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Fungi" />
+              <option name="myItemId" value="fungi" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Fungi" />
+              <option name="myItemId" value="fungi" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Fungi" />
+              <option name="myItemId" value="fungi" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -254,11 +520,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Fungi" />
+              <option name="myItemId" value="fungi" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Fungi" />
+              <option name="myItemId" value="fungi" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -276,11 +542,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Fungi" />
+              <option name="myItemId" value="fungi" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Fungi" />
+              <option name="myItemId" value="fungi" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -308,10 +574,15 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+<<<<<<< HEAD
     <property name="last_opened_file_path" value="C:/xampp/htdocs/MusicFactory" />
+=======
+    <property name="last_opened_file_path" value="C:/xampp/php/php.exe" />
+>>>>>>> d28c0e6ab820732dfced5e9f1652cbfca7e4f521
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
@@ -319,7 +590,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+<<<<<<< HEAD
       <recent name="C:\Users\lenovo\Desktop\Fungi\private_html" />
+=======
+      <recent name="C:\Users\Z-Ean\Documents\fungi\public_html\fetching" />
+>>>>>>> d28c0e6ab820732dfced5e9f1652cbfca7e4f521
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.about.html">
@@ -340,7 +615,11 @@
     <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
       <method />
     </configuration>
+<<<<<<< HEAD
+    <configuration default="true" type="PhpRemoteDebugRunConfigurationType" factoryName="PHP Remote Debug">
+=======
     <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+>>>>>>> c717ea4acce4b139c1d77a8f17b179938c954b6d
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
@@ -349,6 +628,12 @@
       <tasks />
       <arguments />
       <pass-parent-envs>true</pass-parent-envs>
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
       <envs />
       <method />
     </configuration>
@@ -375,15 +660,68 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
+<<<<<<< HEAD
     <frame x="-13" y="-13" width="3226" height="1754" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12275064" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+=======
+<<<<<<< HEAD
+    <frame x="-8" y="-8" width="1040" height="576" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19897959" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882884" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32959184" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+=======
+<<<<<<< HEAD
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25348338" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+>>>>>>> c717ea4acce4b139c1d77a8f17b179938c954b6d
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+<<<<<<< HEAD
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39864865" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+>>>>>>> c717ea4acce4b139c1d77a8f17b179938c954b6d
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+<<<<<<< HEAD
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+=======
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2475" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+>>>>>>> d28c0e6ab820732dfced5e9f1652cbfca7e4f521
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297943" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+=======
+>>>>>>> d28c0e6ab820732dfced5e9f1652cbfca7e4f521
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -394,9 +732,38 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+<<<<<<< HEAD
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+>>>>>>> 222a4b2fff70460eebd8fcc91f8cdd62693595ef
+>>>>>>> c717ea4acce4b139c1d77a8f17b179938c954b6d
+>>>>>>> d28c0e6ab820732dfced5e9f1652cbfca7e4f521
     </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882884" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19897959" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32959184" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39864865" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -410,18 +777,60 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="3" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/private_html/setup.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+=======
+    <entry file="file://$PROJECT_DIR$/public_html/speciesList.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1456886013825" expanded="true" signature="359:380" placeholder="SELECT * FRO... Species" />
+            <marker date="1456886013825" expanded="true" signature="359:536" placeholder="SELECT * FRO... Species" />
+            <marker date="1456886013825" expanded="true" signature="359:610" placeholder="SELECT * FRO... Species" />
+            <marker date="1456886013825" expanded="true" signature="407:536" placeholder="SELECT Speci... Species_ID" />
+            <marker date="1456886013825" expanded="true" signature="433:536" placeholder="SELECT Speci... Species_Opt" />
+            <marker date="1456886013825" expanded="true" signature="613:645" placeholder="SELECT * FRO... Species" />
+            <marker date="1456886013825" expanded="true" signature="672:746" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/query.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+          <folding>
+            <marker date="1456859281750" expanded="true" signature="2331:2405" placeholder="SELECT * FRO... Characteristic" />
+            <marker date="1456859281750" expanded="true" signature="2932:3154" placeholder="SELECT * FRO... C_Option" />
+            <marker date="1456859281750" expanded="true" signature="4306:4561" placeholder="SELECT * FRO... Species" />
+            <marker date="1456859281750" expanded="true" signature="4355:4557" placeholder="SELECT Speci... Species_ID" />
+            <marker date="1456859281750" expanded="true" signature="4382:4545" placeholder="SELECT Speci... Species_Opt" />
+            <marker date="1456859281750" expanded="true" signature="5003:5066" placeholder="SELECT * FRO... Species" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/setup.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+<<<<<<< HEAD
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+>>>>>>> d28c0e6ab820732dfced5e9f1652cbfca7e4f521
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/public_html/query.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -435,6 +844,180 @@
             <marker date="1456941494234" expanded="true" signature="4407:4570" placeholder="SELECT Speci..Species_Opt..." />
             <marker date="1456941494234" expanded="true" signature="5028:5091" placeholder="SELECT * FRO..Species..." />
           </folding>
+=======
+    <entry file="file://$PROJECT_DIR$/public_html/species.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1456888726309" expanded="true" signature="94:173" placeholder="SELECT Scien... Species" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1456859279491" expanded="true" signature="57:85" placeholder="SELECT * FRO... Shape_Category" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/about.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/setup.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+=======
+<<<<<<< HEAD
+          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+=======
+          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+>>>>>>> 222a4b2fff70460eebd8fcc91f8cdd62693595ef
+>>>>>>> c717ea4acce4b139c1d77a8f17b179938c954b6d
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/query.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="135" column="11" selection-start-line="135" selection-start-column="11" selection-end-line="135" selection-end-column="11" />
+          <folding>
+<<<<<<< HEAD
+            <marker date="1456882749864" expanded="true" signature="2329:2403" placeholder="SELECT * FRO... Characteristic" />
+            <marker date="1456882749864" expanded="true" signature="2930:3152" placeholder="SELECT * FRO... C_Option" />
+            <marker date="1456882749864" expanded="true" signature="4304:4559" placeholder="SELECT * FRO... Species" />
+            <marker date="1456882749864" expanded="true" signature="4353:4555" placeholder="SELECT Speci... Species_ID" />
+            <marker date="1456882749864" expanded="true" signature="4380:4543" placeholder="SELECT Speci... Species_Opt" />
+            <marker date="1456882749864" expanded="true" signature="5001:5064" placeholder="SELECT * FRO... Species" />
+=======
+            <marker date="1456889047266" expanded="true" signature="2340:2414" placeholder="SELECT * FRO..Characteristic..." />
+            <marker date="1456889047266" expanded="true" signature="2941:3163" placeholder="SELECT * FRO..C_Option..." />
+            <marker date="1456889047266" expanded="true" signature="3015:3101" placeholder="SELECT Chara..Characteristic..." />
+            <marker date="1456889047266" expanded="true" signature="4315:4570" placeholder="SELECT * FRO..Species..." />
+            <marker date="1456889047266" expanded="true" signature="4364:4566" placeholder="SELECT Speci..Species_ID..." />
+            <marker date="1456889047266" expanded="true" signature="4391:4554" placeholder="SELECT Speci..Species_Opt..." />
+            <marker date="1456889047266" expanded="true" signature="5012:5075" placeholder="SELECT * FRO..Species..." />
+>>>>>>> 222a4b2fff70460eebd8fcc91f8cdd62693595ef
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/result.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
+<<<<<<< HEAD
+          <folding />
+=======
+          <folding>
+            <marker date="1456889047269" expanded="true" signature="104:281" placeholder="SELECT Scien..Species..." />
+          </folding>
+>>>>>>> 222a4b2fff70460eebd8fcc91f8cdd62693595ef
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/species.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+<<<<<<< HEAD
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <marker date="1456888726309" expanded="true" signature="94:173" placeholder="SELECT Scien... Species" />
+=======
+          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding>
+<<<<<<< HEAD
+            <marker date="1430442262000" expanded="true" signature="94:173" placeholder="SELECT Scien... Species" />
+=======
+            <marker date="1456861816982" expanded="true" signature="94:173" placeholder="SELECT Scien..Species..." />
+>>>>>>> 222a4b2fff70460eebd8fcc91f8cdd62693595ef
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/smarty/views/head.tpl">
+<<<<<<< HEAD
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/blank-page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+>>>>>>> 222a4b2fff70460eebd8fcc91f8cdd62693595ef
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+<<<<<<< HEAD
+=======
+          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+          <folding>
+            <marker date="1456861815004" expanded="true" signature="57:85" placeholder="SELECT * FRO..Shape_Category..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/about.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="2" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
+          <folding>
+            <marker date="1456889404394" expanded="true" signature="56:84" placeholder="SELECT * FRO..Shape_Category..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/smarty/views/app.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+>>>>>>> 222a4b2fff70460eebd8fcc91f8cdd62693595ef
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/about.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+          <folding />
+=======
+        <state vertical-scroll-proportion="-0.65384614">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+>>>>>>> d28c0e6ab820732dfced5e9f1652cbfca7e4f521
         </state>
       </provider>
     </entry>
@@ -443,8 +1026,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
           <folding>
+<<<<<<< HEAD
             <marker date="1456941494246" expanded="true" signature="120:297" placeholder="SELECT Scien..Species..." />
             <marker date="1456941494246" expanded="true" signature="848:924" placeholder="SELECT Photo..Photo..." />
+=======
+            <marker date="1456889047269" expanded="true" signature="104:281" placeholder="SELECT Scien..Species..." />
+>>>>>>> d28c0e6ab820732dfced5e9f1652cbfca7e4f521
           </folding>
         </state>
       </provider>
@@ -452,10 +1039,118 @@
     <entry file="file://$PROJECT_DIR$/public_html/species.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+<<<<<<< HEAD
           <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
           <folding>
             <marker date="1456941494365" expanded="true" signature="110:189" placeholder="SELECT Scien..Species..." />
+=======
+          <caret line="135" column="11" selection-start-line="135" selection-start-column="11" selection-end-line="135" selection-end-column="11" />
+          <folding>
+            <marker date="1456889047266" expanded="true" signature="2340:2414" placeholder="SELECT * FRO..Characteristic..." />
+            <marker date="1456889047266" expanded="true" signature="2941:3163" placeholder="SELECT * FRO..C_Option..." />
+            <marker date="1456889047266" expanded="true" signature="3015:3101" placeholder="SELECT Chara..Characteristic..." />
+            <marker date="1456889047266" expanded="true" signature="4315:4570" placeholder="SELECT * FRO..Species..." />
+            <marker date="1456889047266" expanded="true" signature="4364:4566" placeholder="SELECT Speci..Species_ID..." />
+            <marker date="1456889047266" expanded="true" signature="4391:4554" placeholder="SELECT Speci..Species_Opt..." />
+            <marker date="1456889047266" expanded="true" signature="5012:5075" placeholder="SELECT * FRO..Species..." />
+>>>>>>> c717ea4acce4b139c1d77a8f17b179938c954b6d
+>>>>>>> d28c0e6ab820732dfced5e9f1652cbfca7e4f521
           </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/public_html/smarty/views/head.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+=======
+    <entry file="file://$PROJECT_DIR$/public_html/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+          <folding>
+            <marker date="1456861815004" expanded="true" signature="57:85" placeholder="SELECT * FRO..Shape_Category..." />
+          </folding>
+>>>>>>> 222a4b2fff70460eebd8fcc91f8cdd62693595ef
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/smarty/views/app.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+<<<<<<< HEAD
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.65384614">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/forms.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/result.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/blank-page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> d28c0e6ab820732dfced5e9f1652cbfca7e4f521
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+<<<<<<< HEAD
+          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+          <folding>
+            <marker date="1456958268955" expanded="true" signature="103:131" placeholder="SELECT * FRO..Shape_Category..." />
+          </folding>
+=======
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+>>>>>>> d28c0e6ab820732dfced5e9f1652cbfca7e4f521
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/about.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+<<<<<<< HEAD
+          <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+          <folding>
+            <marker date="1456941494298" expanded="true" signature="72:100" placeholder="SELECT * FRO..Shape_Category..." />
+=======
+          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+          <folding />
+=======
+          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding>
+<<<<<<< HEAD
+            <marker date="1456859279491" expanded="true" signature="57:85" placeholder="SELECT * FRO... Shape_Category" />
+=======
+            <marker date="1456861816982" expanded="true" signature="94:173" placeholder="SELECT Scien..Species..." />
+          </folding>
+>>>>>>> 222a4b2fff70460eebd8fcc91f8cdd62693595ef
         </state>
       </provider>
     </entry>
@@ -467,22 +1162,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/app.php">
+    <entry file="file://$PROJECT_DIR$/public_html/smarty/views/app.tpl">
+<<<<<<< HEAD
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
-          <folding>
-            <marker date="1456958268955" expanded="true" signature="103:131" placeholder="SELECT * FRO..Shape_Category..." />
-          </folding>
+        <state vertical-scroll-proportion="-6.516129">
+          <caret line="13" column="44" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/about.php">
+    <entry file="file://$PROJECT_DIR$/public_html/query.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+        <state vertical-scroll-proportion="-0.7096774">
+          <caret line="135" column="11" selection-start-line="135" selection-start-column="11" selection-end-line="135" selection-end-column="11" />
           <folding>
-            <marker date="1456941494298" expanded="true" signature="72:100" placeholder="SELECT * FRO..Shape_Category..." />
+            <marker date="1456882749864" expanded="true" signature="2329:2403" placeholder="SELECT * FRO... Characteristic" />
+            <marker date="1456882749864" expanded="true" signature="2930:3152" placeholder="SELECT * FRO... C_Option" />
+            <marker date="1456882749864" expanded="true" signature="4304:4559" placeholder="SELECT * FRO... Species" />
+            <marker date="1456882749864" expanded="true" signature="4353:4555" placeholder="SELECT Speci... Species_ID" />
+            <marker date="1456882749864" expanded="true" signature="4380:4543" placeholder="SELECT Speci... Species_Opt" />
+            <marker date="1456882749864" expanded="true" signature="5001:5064" placeholder="SELECT * FRO... Species" />
+>>>>>>> d28c0e6ab820732dfced5e9f1652cbfca7e4f521
           </folding>
         </state>
       </provider>
@@ -497,8 +1197,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/private_html/setup.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="-28.333334">
           <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+=======
+        <state vertical-scroll-proportion="-27.67742">
+          <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+>>>>>>> d28c0e6ab820732dfced5e9f1652cbfca7e4f521
           <folding />
         </state>
       </provider>
@@ -540,67 +1245,296 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public_html/species.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="-1.5714285">
           <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
           <folding>
             <marker date="1456941494365" expanded="true" signature="110:189" placeholder="SELECT Scien..Species..." />
+=======
+        <state vertical-scroll-proportion="-27.67742">
+          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding>
+            <marker date="1430442262000" expanded="true" signature="94:173" placeholder="SELECT Scien... Species" />
+>>>>>>> c717ea4acce4b139c1d77a8f17b179938c954b6d
+>>>>>>> d28c0e6ab820732dfced5e9f1652cbfca7e4f521
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/public_html/smarty/tmp/1d3b6242994fbe1e1ff4632710db1de44fb70465.file.head.tpl.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.023223082">
           <caret line="1" column="37" selection-start-line="1" selection-start-column="37" selection-end-line="1" selection-end-column="37" />
+=======
+    <entry file="file://$PROJECT_DIR$/public_html/about.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.4193548">
+          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+=======
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.961538">
+          <caret line="31" column="32" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
+>>>>>>> 222a4b2fff70460eebd8fcc91f8cdd62693595ef
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/public_html/smarty/views/about.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.165249">
+          <caret line="12" column="73" selection-start-line="12" selection-start-column="73" selection-end-line="12" selection-end-column="73" />
+=======
+    <entry file="file://$PROJECT_DIR$/public_html/setup.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.307692">
+          <caret line="39" column="39" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
+>>>>>>> 222a4b2fff70460eebd8fcc91f8cdd62693595ef
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/smarty/views/speciesDB.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/smarty/views/species.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/public_html/admin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/setup.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.8461537">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+>>>>>>> d28c0e6ab820732dfced5e9f1652cbfca7e4f521
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public_html/about.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="-1.5714285">
           <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
           <folding>
             <marker date="1456941494298" expanded="true" signature="72:100" placeholder="SELECT * FRO..Shape_Category..." />
           </folding>
+=======
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/forms.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="7.4615383">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+>>>>>>> d28c0e6ab820732dfced5e9f1652cbfca7e4f521
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public_html/speciesList.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="-12.619047">
           <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
           <folding>
             <marker date="1456941494332" expanded="true" signature="378:633" placeholder="SELECT * FRO..Species..." />
             <marker date="1456941494332" expanded="true" signature="427:629" placeholder="SELECT Speci..Species_ID..." />
             <marker date="1456941494332" expanded="true" signature="454:617" placeholder="SELECT Speci..Species_Opt..." />
+=======
+        <state vertical-scroll-proportion="-8.538462">
+          <caret line="29" column="36" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
+          <folding>
+            <marker date="1456886013825" expanded="true" signature="359:380" placeholder="SELECT * FRO... Species" />
+            <marker date="1456886013825" expanded="true" signature="359:536" placeholder="SELECT * FRO... Species" />
+            <marker date="1456886013825" expanded="true" signature="359:610" placeholder="SELECT * FRO... Species" />
+            <marker date="1456886013825" expanded="true" signature="407:536" placeholder="SELECT Speci... Species_ID" />
+            <marker date="1456886013825" expanded="true" signature="433:536" placeholder="SELECT Speci... Species_Opt" />
+            <marker date="1456886013825" expanded="true" signature="613:645" placeholder="SELECT * FRO... Species" />
+            <marker date="1456886013825" expanded="true" signature="672:746" placeholder="..." />
+>>>>>>> d28c0e6ab820732dfced5e9f1652cbfca7e4f521
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public_html/app.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="-3.142857">
           <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
           <folding>
             <marker date="1456958268955" expanded="true" signature="103:131" placeholder="SELECT * FRO..Shape_Category..." />
           </folding>
+=======
+        <state vertical-scroll-proportion="-0.1923077">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1456859279491" expanded="true" signature="57:85" placeholder="SELECT * FRO... Shape_Category" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/query.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="17.73077">
+          <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+          <folding>
+            <marker date="1456859281750" expanded="true" signature="2331:2405" placeholder="SELECT * FRO... Characteristic" />
+            <marker date="1456859281750" expanded="true" signature="2932:3154" placeholder="SELECT * FRO... C_Option" />
+            <marker date="1456859281750" expanded="true" signature="4306:4561" placeholder="SELECT * FRO... Species" />
+            <marker date="1456859281750" expanded="true" signature="4355:4557" placeholder="SELECT Speci... Species_ID" />
+            <marker date="1456859281750" expanded="true" signature="4382:4545" placeholder="SELECT Speci... Species_Opt" />
+            <marker date="1456859281750" expanded="true" signature="5003:5066" placeholder="SELECT * FRO... Species" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/css/species.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6153846">
+          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+          <folding />
+>>>>>>> d28c0e6ab820732dfced5e9f1652cbfca7e4f521
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public_html/smarty/views/app.tpl">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="-0.78571427">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+=======
+        <state vertical-scroll-proportion="-1.9615384">
+          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+>>>>>>> d28c0e6ab820732dfced5e9f1652cbfca7e4f521
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public_html/smarty/views/head.tpl">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="0.53488374">
           <caret line="37" column="12" selection-start-line="37" selection-start-column="12" selection-end-line="50" selection-end-column="17" />
+=======
+        <state vertical-scroll-proportion="2.7461538">
+          <caret line="63" column="6" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="6" />
+>>>>>>> d28c0e6ab820732dfced5e9f1652cbfca7e4f521
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/old_presmarty/species.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/old_presmarty/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/old_presmarty/app.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/smarty/views/speciesDB.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="13.115385">
+          <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/smarty/views/species.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/smarty/views/index.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="47.53846">
+          <caret line="14" column="55" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/smarty/views/result.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.038462">
+          <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/result.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-22.884615">
+          <caret line="35" column="23" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
+          <folding>
+            <marker date="1456889602036" expanded="true" signature="104:281" placeholder="SELECT Scien... Species" />
+            <marker date="1456889602036" expanded="true" signature="749:825" placeholder="SELECT Photo... Photo" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/species.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.107981">
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+          <folding>
+            <marker date="1456888726309" expanded="true" signature="94:173" placeholder="SELECT Scien... Species" />
+=======
+    <entry file="file://$PROJECT_DIR$/public_html/about.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.42857143">
+          <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+          <folding>
+            <marker date="1456889404394" expanded="true" signature="56:84" placeholder="SELECT * FRO..Shape_Category..." />
+>>>>>>> c717ea4acce4b139c1d77a8f17b179938c954b6d
+          </folding>
         </state>
       </provider>
     </entry>

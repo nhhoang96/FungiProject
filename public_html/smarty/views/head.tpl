@@ -27,6 +27,8 @@
 		<link href="css/cards.css" type=text/css rel="stylesheet" />
 	{/if}
 </head>
+
+<body>
 <nav role="navigation" class="navbar navbar-default navbar-fixed-top">
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->

@@ -1,7 +1,6 @@
 {include "head.tpl" title="About" active="about"} 
 <!--Fungi Team 2015-->
 
-<body>
 	 <!-- Image Background Page Header -->
 	 
 	<!-- Note: The background image is set within the business-casual.css file. -->
