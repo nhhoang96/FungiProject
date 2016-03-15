@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-03-02 20:36:30
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-03-15 04:00:37
          compiled from "smarty\views\index.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:961456d740be38fa01-14829434%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'e32132b8b03258c8108838f93819d389860367d3' => 
     array (
       0 => 'smarty\\views\\index.tpl',
-      1 => 1456935223,
+      1 => 1458010836,
       2 => 'file',
     ),
   ),
@@ -15,17 +15,22 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
-  'has_nocache_code' => false,
   'version' => 'Smarty-3.1.21-dev',
   'unifunc' => 'content_56d740be3c4c44_35749843',
+  'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_56d740be3c4c44_35749843')) {function content_56d740be3c4c44_35749843($_smarty_tpl) {?>
 
+
 <header class="index-header">
+    <link href="css/index.css" type=text/css rel="stylesheet" />
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="tagline">Messiah College</h1><small class="tagline">Department of Biological Sciences</small>
+                
+                <h2 class="tagline">a web site devoted to the <br><strong>identification</strong>
+                    and <strong>appreciation</strong><br> of fungi growing
+                    in close association <br> with living and dead wood</h2>
             </div>
         </div>
     </div>

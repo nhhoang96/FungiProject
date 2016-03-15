@@ -1,10 +1,15 @@
 {*{include "head.tpl" title="About" active="about"}*}
 
+
 <header class="index-header">
+    <link href="css/index.css" type=text/css rel="stylesheet" />
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="tagline">Messiah College</h1><small class="tagline">Department of Biological Sciences</small>
+                {*<h1 class="tagline">Messiah College</h1><small class="tagline">Department of Biological Sciences</small>*}
+                <h2 class="tagline">a web site devoted to the <br><strong>identification</strong>
+                    and <strong>appreciation</strong><br> of fungi growing
+                    in close association <br> with living and dead wood</h2>
             </div>
         </div>
     </div>
@@ -15,6 +20,10 @@
 
     <div class="row">
         <div class="col-sm-8 collapse-group">
+            <p><a class="btn btn-default btn-lg" href="app.php">Go To Application!
+                    &raquo;</a></p>
+            <p><a class="btn btn-default btn-lg" href="about.php">Learn More!
+                    &raquo;</a></p>
             <h2>What We Do</h2>
 
             <p><strong>Purpose:</strong> Fungi Growing on Wood is a web

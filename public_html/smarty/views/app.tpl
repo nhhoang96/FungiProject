@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {include "head.tpl"}
 
 
@@ -7,6 +8,20 @@
 <body>
 
 
+=======
+
+{include "head.tpl"}
+
+{*{include "head.tpl" title="Select Shape" active="app"}*}
+
+{include "index.tpl"}
+
+
+<!--Fungi Team 2015-->
+<!--Fungi Team 2015-->
+<body>
+
+>>>>>>> 930ce30493b8f876d0f45b3b18bc66b597f193a3
 <div class="container">
 	{foreach $shapeData as $shape}
   <div class="row">
