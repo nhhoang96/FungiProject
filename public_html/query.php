@@ -44,7 +44,7 @@
 </nav>
 <?php 
 //Get passed ID
-$id = $_GET["birdsnest"];
+$id = $_GET["id"];
 ?>
 
 <form action = "<?php echo $_SERVER['PHP_SELF']."?id=".$id?>" method="post">

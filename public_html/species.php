@@ -2,6 +2,7 @@
 //Fungi Team 2015
 include "../private_html/setup.php";
 $smarty->assign("speciesActive", "active");
+$smarty->assign("title", "Species");
 
 $tableIndex=0;
 
@@ -69,5 +70,5 @@ for ($k = 0; $k < count($result); $k++) {
 
 $smarty->assign('data', $data);
 $smarty->assign('newdata', $newdata);
-$smarty->display('speciesDB.tpl');
+$smarty->display('species.tpl');
 ?>
