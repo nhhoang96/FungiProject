@@ -1,5 +1,25 @@
-/*
-.shape-box {
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-03-15 03:58:28
+         compiled from "css\index.css" */ ?>
+<?php /*%%SmartyHeaderCode:1455156e77a54d14359-22370088%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    '634d5f8abc47cddfee750f3f388f88bda4de0c82' => 
+    array (
+      0 => 'css\\index.css',
+      1 => 1458010552,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '1455156e77a54d14359-22370088',
+  'function' => 
+  array (
+  ),
+  'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.21-dev',
+  'unifunc' => 'content_56e77a54d28e99_86479893',
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_56e77a54d28e99_86479893')) {function content_56e77a54d28e99_86479893($_smarty_tpl) {?>.shape-box {
 		width: 200px;
 		height: 325px;
 		
@@ -67,13 +87,13 @@
 	}
 	
 	.des-wrapper {
-		!*margin-left: 20%;*!
+		/*margin-left: 20%;*/
 		margin: 0px auto;
 		width: 1000px;
-		!*padding-left: 50px;
-		padding-right: 50px;*!
+		/*padding-left: 50px;
+		padding-right: 50px;*/
 		height: 1500px;
-		background-color: white; !*#FFD685;*!
+		background-color: white; /*#FFD685;*/
 	}
 	
 	body {
@@ -87,7 +107,7 @@
 		color: #283851;
 	}
 	
-	!************* MENU ************!
+	/************* MENU ************/
 
 	#menu {
 		width: 1000px;
@@ -129,7 +149,6 @@
 		margin: 0px auto;
 		background:  url('img/header.jpg');
 	}
-*/
 
 .tagline {
 	text-shadow: 0 0 10px #000;
@@ -144,3 +163,4 @@
 footer {
 	margin: 50px 0;
 }
+<?php }} ?>

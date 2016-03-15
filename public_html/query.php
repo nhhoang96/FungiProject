@@ -49,7 +49,7 @@ $id = $_GET["birdsnest"];
 
 <form action = "<?php echo $_SERVER['PHP_SELF']."?id=".$id?>" method="post">
 <?php
-	include "setup.php";
+	include "../private_html/setup.php";
 	
 	$query = "SELECT * FROM Characteristic 
 			WHERE Char_Shape_Category_ID = :parameter";

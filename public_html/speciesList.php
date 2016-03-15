@@ -18,7 +18,11 @@
 ?>
 
 <?php
+<<<<<<< HEAD
+	include "../private_html/setup.php";
+=======
 	include "setup.php";
+>>>>>>> d28c0e6ab820732dfced5e9f1652cbfca7e4f521
 
 	$query2 = "SELECT * FROM Species
 		WHERE Species_ID IN

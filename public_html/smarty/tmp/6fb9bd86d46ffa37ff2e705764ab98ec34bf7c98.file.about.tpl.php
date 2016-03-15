@@ -1,31 +1,33 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-03-02 00:00:18
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-03-15 04:15:09
          compiled from "smarty\views\about.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:765756d61f020ad046-76651487%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:3206956d740c35a6d57-73794449%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    '8f13766a3c1de2cee7d35c859e075a9c8e6f2c69' => 
+    '6fb9bd86d46ffa37ff2e705764ab98ec34bf7c98' => 
     array (
       0 => 'smarty\\views\\about.tpl',
-      1 => 1456859282,
+      1 => 1458011349,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '765756d61f020ad046-76651487',
+  'nocache_hash' => '3206956d740c35a6d57-73794449',
   'function' => 
   array (
   ),
-  'has_nocache_code' => false,
   'version' => 'Smarty-3.1.21-dev',
-  'unifunc' => 'content_56d61f02331951_06916293',
+  'unifunc' => 'content_56d740c3679fd3_09394741',
+  'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_56d61f02331951_06916293')) {function content_56d61f02331951_06916293($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("head.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('title'=>"About",'active'=>"about"), 0);?>
- 
+<?php if ($_valid && !is_callable('content_56d740c3679fd3_09394741')) {function content_56d740c3679fd3_09394741($_smarty_tpl) {?>
+
+<?php echo $_smarty_tpl->getSubTemplate ("head.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('title'=>"About",'active'=>"about"), 0);?>
+
+
 <!--Fungi Team 2015-->
 
-<body>
 	 <!-- Image Background Page Header -->
-	 
+
 	<!-- Note: The background image is set within the business-casual.css file. -->
 
 	<header class="business-header">
@@ -40,7 +42,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 	</header><!-- Page Content -->
 
 	<div class="container">
-		<hr>
+		
 
 		<div class="row">
 			<div class="col-sm-8 collapse-group">

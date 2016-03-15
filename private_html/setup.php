@@ -51,6 +51,7 @@ try {
 		echo $e->getMessage();
 
 		echo 'ERROR: ' . $e->getMessage();
+
 		exit();
 	}
 
