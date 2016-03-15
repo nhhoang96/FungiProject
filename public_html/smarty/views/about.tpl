@@ -20,7 +20,7 @@
 	</header><!-- Page Content -->
 
 	<div class="container">
-		{*<hr>*}
+		<hr>
 
 		<div class="row">
 			<div class="col-sm-8 collapse-group">
@@ -337,7 +337,7 @@
 			<div class="col-sm-1"></div>
 		</div><!-- /.row -->
 		<hr>
-		<div class="row">
+	{*	<div class="row">
 			<div class="col-sm-12 dev-padding">
 				<h1 class="text-center">The Development Team</h1>
 			</div>
@@ -368,7 +368,7 @@
 				<p>Database integration.</p>
 			</div>
 		</div><!-- /.row -->
-		<hr>
+		<hr>*}
 		<!-- Footer -->
 
 		<footer>
