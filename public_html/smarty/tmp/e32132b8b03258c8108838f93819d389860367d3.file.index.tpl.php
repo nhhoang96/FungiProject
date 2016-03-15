@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-03-15 22:29:53
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-03-16 00:24:40
          compiled from "smarty\views\index.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:961456d740be38fa01-14829434%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'e32132b8b03258c8108838f93819d389860367d3' => 
     array (
       0 => 'smarty\\views\\index.tpl',
-      1 => 1458077391,
+      1 => 1458084279,
       2 => 'file',
     ),
   ),
@@ -59,10 +59,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                     &raquo;</a></p>
         </div>
         <div class="col-sm-4">
-            <h2>Messiah College</h2><br>
-
-            <p><strong>Department of Biological Science</strong><br>Fungi Growing On Wood is the work of Dr. Gary Emberger, a professor of Biology at Messiah College.</p>
-            <p><a class="btn btn-default btn-md" href="about.php">Learn More!
+            <h2>Messiah College</h2>
+            <h4>Department of Biological Sciences</h4>
+            <p>Fungi Growing On Wood is the work of Dr. Gary Emberger, a professor of Biology at Messiah College.</p>
+            <p><a class="btn btn-default btn-md" href="about.php">Learn More
                     &raquo;</a></p>
         </div>
 

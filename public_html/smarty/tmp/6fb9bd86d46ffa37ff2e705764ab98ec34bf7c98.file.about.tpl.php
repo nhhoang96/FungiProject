@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-03-15 22:14:17
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-03-16 00:35:50
          compiled from "smarty\views\about.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:3206956d740c35a6d57-73794449%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '6fb9bd86d46ffa37ff2e705764ab98ec34bf7c98' => 
     array (
       0 => 'smarty\\views\\about.tpl',
-      1 => 1458076212,
+      1 => 1458084948,
       2 => 'file',
     ),
   ),
@@ -297,12 +297,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		<hr>
 
 		<div class="row">
-			<div class="col-sm-1"></div>
+			
 
-			<div class="col-sm-10">
-				<img alt="" class="img-rounded img-responsive img-center" src=
-				"img/Emberger.jpg">
-
+			<div class="col-sm-8">
+				
 				<h2>Dr. Gary Emberger</h2>
 
 				<p>I'm a professor of biology at Messiah College where I've
@@ -355,6 +353,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 				presented itself to pursue this project. I started work on the
 				web site in 2003.</p>
 			</div>
+			<div class="col-sm-4">
+				<img alt="" class="img-rounded img-responsive img-right" src=
+				"img/Emberger.jpg">
+		</div>
 
 			<div class="col-sm-1"></div>
 		</div><!-- /.row -->

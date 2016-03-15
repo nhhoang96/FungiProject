@@ -275,12 +275,10 @@
 		<hr>
 
 		<div class="row">
-			<div class="col-sm-1"></div>
+			{*<div class="col-sm-1"></div>*}
 
-			<div class="col-sm-10">
-				<img alt="" class="img-rounded img-responsive img-center" src=
-				"img/Emberger.jpg">
-
+			<div class="col-sm-8">
+				
 				<h2>Dr. Gary Emberger</h2>
 
 				<p>I'm a professor of biology at Messiah College where I've
@@ -333,6 +331,10 @@
 				presented itself to pursue this project. I started work on the
 				web site in 2003.</p>
 			</div>
+			<div class="col-sm-4">
+				<img alt="" class="img-rounded img-responsive img-right" src=
+				"img/Emberger.jpg">
+		</div>
 
 			<div class="col-sm-1"></div>
 		</div><!-- /.row -->

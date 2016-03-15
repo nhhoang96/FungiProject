@@ -37,9 +37,9 @@
                     &raquo;</a></p>
         </div>
         <div class="col-sm-4">
-            <h2>Messiah College</h2><br>
-
-            <p><strong>Department of Biological Science</strong><br>Fungi Growing On Wood is the work of Dr. Gary Emberger, a professor of Biology at Messiah College.</p>
+            <h2>Messiah College</h2>
+            <h4>Department of Biological Sciences</h4>
+            <p>Fungi Growing On Wood is the work of Dr. Gary Emberger, a professor of Biology at Messiah College.</p>
             <p><a class="btn btn-default btn-md" href="about.php">Learn More
                     &raquo;</a></p>
         </div>
