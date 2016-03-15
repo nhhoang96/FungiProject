@@ -1,10 +1,15 @@
 {*{include "head.tpl" title="About" active="about"}*}
 
+
 <header class="index-header">
+    <link href="css/index.css" type=text/css rel="stylesheet" />
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="tagline">Messiah College</h1><small class="tagline">Department of Biological Sciences</small>
+                {*<h1 class="tagline">Messiah College</h1><small class="tagline">Department of Biological Sciences</small>*}
+                <h2 class="tagline">a web site devoted to the <br><strong>identification</strong>
+                    and <strong>appreciation</strong><br> of fungi growing
+                    in close association <br> with living and dead wood</h2>
             </div>
         </div>
     </div>

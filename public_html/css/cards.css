@@ -5,14 +5,11 @@
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  margin-top: -30px;
+  /*margin-top: -30px;*/
 }
 .tagline {
   text-shadow: 0 0 10px #000;
   color: #fff;
-}
-body {
-	padding-top: 80px;
 }
 
 .flip {

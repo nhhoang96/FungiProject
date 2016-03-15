@@ -20,7 +20,7 @@
 	</header><!-- Page Content -->
 
 	<div class="container">
-		<hr>
+		{*<hr>*}
 
 		<div class="row">
 			<div class="col-sm-8 collapse-group">
