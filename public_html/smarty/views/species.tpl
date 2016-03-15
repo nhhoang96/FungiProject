@@ -1,4 +1,4 @@
-{include "head.tpl"}
+{include "head.tpl" title="Species List" active="species"}
 <!--Fungi Team 2015-->
 
 <body>
