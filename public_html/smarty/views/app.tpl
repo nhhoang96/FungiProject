@@ -5,7 +5,7 @@
 
 		{foreach $shapeData as $shape}
 
-		<div class="card col-sm-6">
+		<div class="card">
 		<img src="img/{$shape['Image']}">
 		<h2>{$shape['Name']}</h2>
 		<p>{$shape['Description']}</p>
