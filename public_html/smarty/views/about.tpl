@@ -338,7 +338,7 @@
 
 			<div class="col-sm-1"></div>
 		</div><!-- /.row -->
-		<hr>
+
 	{*	<div class="row">
 			<div class="col-sm-12 dev-padding">
 				<h1 class="text-center">The Development Team</h1>
@@ -371,15 +371,7 @@
 			</div>
 		</div><!-- /.row -->
 		<hr>*}
-		<!-- Footer -->
-
-		<footer>
-			<div class="row">
-				<div class="col-lg-12">
-					<p>Copyright &copy; Messiah College</p>
-				</div>
-			</div><!-- /.row -->
-		</footer>
+		{include "footer.tpl"}
 	</div><!-- /.container -->
 	<!-- jQuery -->
 	<script src="js/jquery.js"></script> <!-- Bootstrap Core JavaScript -->

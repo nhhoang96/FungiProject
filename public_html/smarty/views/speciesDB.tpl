@@ -43,5 +43,8 @@
 			</tbody>
 		{/foreach}
 		</table>
+
+		{include "footer.tpl"}
+
 	</div>
 </body>

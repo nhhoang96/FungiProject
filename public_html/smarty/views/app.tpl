@@ -23,6 +23,9 @@
 			{*</div>*}
 		</div>
 		{/foreach}
+
+		{include "footer.tpl"}
+
 	</div>
 
 {*<div class="container">*}
