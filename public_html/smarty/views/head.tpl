@@ -8,6 +8,7 @@
 	<link href="css/navigation.css" type=text/css rel="stylesheet" />
 	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.7.0/bootstrap-table.min.css">
 	<!--Change stylesheet based on page-->
+    <link href="css/application.css" type="text/css" rel="stylesheet" />
 	<link href="css/about.css" type=text/css rel="stylesheet" />
 	<link href="css/species.css" type=text/css rel="stylesheet" />
 		<!-- Table sorting -->

@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-03-02 21:00:07
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-03-16 03:34:37
          compiled from "smarty\views\head.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:2706856d740be432da2-79862852%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '1d63aef6a398df58eca982598bcac91d477def93' => 
     array (
       0 => 'smarty\\views\\head.tpl',
-      1 => 1456948800,
+      1 => 1458095665,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'variables' => 
   array (
     'title' => 0,
-    'active' => 0,
+    'appActive' => 0,
+    'speciesActive' => 0,
+    'aboutActive' => 0,
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
@@ -33,40 +35,15 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://bootswatch.com/cosmo/bootstrap.min.css">
 	<link href="css/navigation.css" type=text/css rel="stylesheet" />
-    <?php echo '<script'; ?>
- src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"><?php echo '</script'; ?>
->
-    <?php echo '<script'; ?>
- src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"><?php echo '</script'; ?>
->
-	<?php echo '<script'; ?>
- src="js/cards.js"><?php echo '</script'; ?>
->
-	<?php echo '<script'; ?>
- src="js/collapse.js"><?php echo '</script'; ?>
->
 	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.7.0/bootstrap-table.min.css">
-		<?php echo '<script'; ?>
- src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.7.0/bootstrap-table.min.js"><?php echo '</script'; ?>
->
-		<?php echo '<script'; ?>
- src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.7.0/locale/bootstrap-table-zh-CN.min.js"><?php echo '</script'; ?>
->
 	<!--Change stylesheet based on page-->
-	<?php if ($_smarty_tpl->tpl_vars['active']->value=='about') {?>
-		<link href="css/about.css" type=text/css rel="stylesheet" />
-	<?php } elseif ($_smarty_tpl->tpl_vars['active']->value=='species') {?>
-		<link href="css/species.css" type=text/css rel="stylesheet" />
+    <link href="css/application.css" type="text/css" rel="stylesheet" />
+	<link href="css/about.css" type=text/css rel="stylesheet" />
+	<link href="css/species.css" type=text/css rel="stylesheet" />
 		<!-- Table sorting -->
-	<?php } elseif ($_smarty_tpl->tpl_vars['active']->value=='result') {?>
-		<link href="css/result.css" type=text/css rel="stylesheet" />
-		<?php echo '<script'; ?>
- src="js/lightbox.min.js"><?php echo '</script'; ?>
->
-		<link href="css/lightbox.css" rel="stylesheet" />
-	<?php } else { ?>
-		<link href="css/cards.css" type=text/css rel="stylesheet" />
-	<?php }?>
+	<link href="css/result.css" type=text/css rel="stylesheet" />
+	<link href="css/lightbox.css" type=text/css rel="stylesheet" />
+	<link href="css/cards.css" type=text/css rel="stylesheet" />
 </head>
 
 <body>
@@ -85,19 +62,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
         <!-- Collection of nav links and other content for toggling -->
         <div id="navbarCollapse" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-				<?php if ($_smarty_tpl->tpl_vars['active']->value=='app') {?>
-					<li class="active"><a href="app.php">Application</a></li>
-                	<li><a href="species.php">Species</a></li>
-                	<li><a href="about.php">About</a></li>
-				<?php } elseif ($_smarty_tpl->tpl_vars['active']->value=='species') {?>
-					<li><a href="app.php">Application</a></li>
-                	<li class="active"><a href="species.php">Species</a></li>
-                	<li><a href="about.php">About</a></li>
-				<?php } else { ?>
-					<li><a href="app.php">Application</a></li>
-                	<li><a href="species.php">Species</a></li>
-                	<li class="active"><a href="about.php">About</a></li>
-				<?php }?>
+					<li class="<?php echo $_smarty_tpl->tpl_vars['appActive']->value;?>
+"><a href="app.php">Application</a></li>
+                	<li class="<?php echo $_smarty_tpl->tpl_vars['speciesActive']->value;?>
+"><a href="species.php">Species</a></li>
+                	<li class="<?php echo $_smarty_tpl->tpl_vars['aboutActive']->value;?>
+"><a href="about.php">About</a></li>
+
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="admin.html">Control Panel</a></li>

@@ -1,9 +1,7 @@
-<<<<<<< HEAD
-{include "head.tpl"}
-=======
+
+
 {include "head.tpl" title="About" active="about"}
 
->>>>>>> eb40b79910b6cb79f15b1b1192a8a53e8e58d2b3
 <!--Fungi Team 2015-->
 
 	 <!-- Image Background Page Header -->
@@ -277,11 +275,9 @@
 		<hr>
 
 		<div class="row">
-			<div class="col-sm-1"></div>
+			{*<div class="col-sm-1"></div>*}
 
-			<div class="col-sm-10">
-				<img alt="" class="img-rounded img-responsive img-center" src=
-				"img/Emberger.jpg">
+			<div class="col-sm-8">
 
 				<h2>Dr. Gary Emberger</h2>
 
@@ -335,11 +331,15 @@
 				presented itself to pursue this project. I started work on the
 				web site in 2003.</p>
 			</div>
+			<div class="col-sm-4">
+				<img alt="" class="img-rounded img-responsive img-right" src=
+				"img/Emberger.jpg">
+		</div>
 
 			<div class="col-sm-1"></div>
 		</div><!-- /.row -->
-		<hr>
-		<div class="row">
+
+	{*	<div class="row">
 			<div class="col-sm-12 dev-padding">
 				<h1 class="text-center">The Development Team</h1>
 			</div>
@@ -370,16 +370,8 @@
 				<p>Database integration.</p>
 			</div>
 		</div><!-- /.row -->
-		<hr>
-		<!-- Footer -->
-
-		<footer>
-			<div class="row">
-				<div class="col-lg-12">
-					<p>Copyright &copy; Messiah College</p>
-				</div>
-			</div><!-- /.row -->
-		</footer>
+		<hr>*}
+		{include "footer.tpl"}
 	</div><!-- /.container -->
 	<!-- jQuery -->
 	<script src="js/jquery.js"></script> <!-- Bootstrap Core JavaScript -->

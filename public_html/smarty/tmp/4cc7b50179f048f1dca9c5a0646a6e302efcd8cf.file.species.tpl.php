@@ -1,4 +1,26 @@
-{include "head.tpl" title="Species List" active="species"}
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-03-16 17:28:09
+         compiled from "smarty\views\species.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:3227856e85f4d41baf0-75512551%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    '4cc7b50179f048f1dca9c5a0646a6e302efcd8cf' => 
+    array (
+      0 => 'smarty\\views\\species.tpl',
+      1 => 1458145688,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '3227856e85f4d41baf0-75512551',
+  'function' => 
+  array (
+  ),
+  'version' => 'Smarty-3.1.21-dev',
+  'unifunc' => 'content_56e85f4d4c1c56_57970724',
+  'has_nocache_code' => false,
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_56e85f4d4c1c56_57970724')) {function content_56e85f4d4c1c56_57970724($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("head.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('title'=>"Species List",'active'=>"species"), 0);?>
+
 <!--Fungi Team 2015-->
 
 <body>
@@ -2815,7 +2837,8 @@
 				</tr>
 			</tbody>
 		</table>
-		{include "footer.tpl"}
+		<?php echo $_smarty_tpl->getSubTemplate ("footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
+
 
 	</div>
-</body>
+</body><?php }} ?>
