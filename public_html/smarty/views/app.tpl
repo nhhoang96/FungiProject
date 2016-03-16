@@ -1,4 +1,4 @@
-{include "head.tpl"}
+{*{include "head.tpl"}*}
 
 {include "head.tpl" title="Select Shape" active="app"}
 

@@ -278,7 +278,7 @@
 			{*<div class="col-sm-1"></div>*}
 
 			<div class="col-sm-8">
-				
+
 				<h2>Dr. Gary Emberger</h2>
 
 				<p>I'm a professor of biology at Messiah College where I've
