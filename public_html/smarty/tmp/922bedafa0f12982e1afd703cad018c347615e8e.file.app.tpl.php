@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-03-16 00:58:38
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-03-16 15:52:34
          compiled from "smarty\views\app.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:2910356d740be3e1f94-74629209%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '922bedafa0f12982e1afd703cad018c347615e8e' => 
     array (
       0 => 'smarty\\views\\app.tpl',
-      1 => 1458086315,
+      1 => 1458139952,
       2 => 'file',
     ),
   ),
@@ -24,49 +24,70 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_56d740be4150c4_57280434')) {function content_56d740be4150c4_57280434($_smarty_tpl) {?>
-
-<?php echo $_smarty_tpl->getSubTemplate ("head.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('title'=>"Select Shape",'active'=>"app"), 0);?>
-
-
+<?php if ($_valid && !is_callable('content_56d740be4150c4_57280434')) {function content_56d740be4150c4_57280434($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("head.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('title'=>"Select Shape",'active'=>"app"), 0);?>
 
 
 <body>
+	<div class="container">
 
-<div class="container">
-	<?php  $_smarty_tpl->tpl_vars['shape'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['shape']->_loop = false;
+		<?php  $_smarty_tpl->tpl_vars['shape'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['shape']->_loop = false;
  $_from = $_smarty_tpl->tpl_vars['shapeData']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
 foreach ($_from as $_smarty_tpl->tpl_vars['shape']->key => $_smarty_tpl->tpl_vars['shape']->value) {
 $_smarty_tpl->tpl_vars['shape']->_loop = true;
 ?>
-  <div class="row">
 
-	<div class="col-sm-6">
+		<div class="col-lg-5 shape">
+			
+				<div class="col-lg-6 left">
+					<img class="pic" src="img/<?php echo $_smarty_tpl->tpl_vars['shape']->value['Image'];?>
+">
+				</div>
+				<div class="col-lg-6 right">
+					<h2><?php echo $_smarty_tpl->tpl_vars['shape']->value['Name'];?>
+</h2>
+					<p><?php echo $_smarty_tpl->tpl_vars['shape']->value['Description'];?>
+</p>
+				</div>
+				<div class="col-lg-12 sort">
+					<a href="query.php?id=<?php echo $_smarty_tpl->tpl_vars['shape']->value['Shape_Category_ID'];?>
+" class="btn btn-default btn-md">Multi-Access Key</a>
+					<a href="query.php?id=<?php echo $_smarty_tpl->tpl_vars['shape']->value['Shape_Category_ID'];?>
+" class="btn btn-default btn-md">Dichotomous Key</a>
+					<a href="query.php?id=<?php echo $_smarty_tpl->tpl_vars['shape']->value['Shape_Category_ID'];?>
+" class="btn btn-default btn-md">Species List</a>
+				</div>
+
+			
+		</div>
+		<?php } ?>
+	</div>
+
+
+
+  
+
+	
 
 
       
 
-          <div class="face back">
+          
 
-            <div class="well well-sm inner">
+            
 
-				<img src="img/<?php echo $_smarty_tpl->tpl_vars['shape']->value['Image'];?>
-" class="img-rounded">
-				<h2>
-					<?php echo $_smarty_tpl->tpl_vars['shape']->value['Name'];?>
-
-				</h2>
-				<p>
-					<?php echo $_smarty_tpl->tpl_vars['shape']->value['Description'];?>
-
-
-				</p>
-				<p>
-					<?php echo $_smarty_tpl->tpl_vars['shape']->value["Shape_Category_ID"];?>
-
-				</p>
 				
-			</div>
+				
+					
+				
+				
+					
+
+				
+				
+					
+				
+				
+			
 
             
 				
@@ -74,15 +95,13 @@ $_smarty_tpl->tpl_vars['shape']->_loop = true;
 				
 				
 				
-			  <?php echo $_smarty_tpl->tpl_vars['shape']->value["Shape_Category_ID"];?>
-
-			</div>
 			  
-          </div> <!-- end face back -->
-        </div>	<!-- end card -->
-	  </div>
-	</div> <!-- end col-sm-6 -->
-	<?php } ?>
+			
+			  
+          
+        
+	  
+	
 
 </body>
 </html><?php }} ?>

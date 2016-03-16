@@ -1,3 +1,29 @@
+.sort {
+  width: 100%;
+  margin: 0 auto;
+}
+.pic {
+  width: 200px;
+  height: 200px;
+}
+
+.shape {
+  margin: 10px 5px 5px 5px;
+  background-color: lightgrey;
+  padding: 10px 10px 10px 10px;
+}
+.left {
+  float: left;
+  height:200px;
+  width: 200px;
+
+}
+.right {
+  float: right;
+  padding: 0;
+  margin: 0;
+  height: 250px;
+}
 .index-header {
   height: 400px;
   background: url('../img/mushroom-header.jpg') center center no-repeat scroll;
@@ -14,10 +40,9 @@
 
 .flip {
   -webkit-perspective: 800;
-perspective: 800;
-
-    position: relative;
- text-align: center;
+  perspective: 800;
+   position: relative;
+  text-align: center;
 }
 
 .flip .card.flipped {
