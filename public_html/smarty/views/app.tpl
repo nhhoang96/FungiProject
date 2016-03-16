@@ -5,7 +5,7 @@
 
 		{foreach $shapeData as $shape}
 
-		<div class="col-lg-5 shape">
+		<div class="col-lg-6 shape">
 			{*<div class="shape">*}
 				<div class="col-lg-6 left">
 					<img class="pic" src="img/{$shape['Image']}">

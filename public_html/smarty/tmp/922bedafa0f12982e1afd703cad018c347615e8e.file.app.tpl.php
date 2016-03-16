@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-03-16 17:21:42
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-03-16 21:33:33
          compiled from "smarty\views\app.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:2910356d740be3e1f94-74629209%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '922bedafa0f12982e1afd703cad018c347615e8e' => 
     array (
       0 => 'smarty\\views\\app.tpl',
-      1 => 1458145298,
+      1 => 1458160408,
       2 => 'file',
     ),
   ),
@@ -36,7 +36,7 @@ foreach ($_from as $_smarty_tpl->tpl_vars['shape']->key => $_smarty_tpl->tpl_var
 $_smarty_tpl->tpl_vars['shape']->_loop = true;
 ?>
 
-		<div class="col-lg-5 shape">
+		<div class="col-lg-6 shape">
 			
 				<div class="col-lg-6 left">
 					<img class="pic" src="img/<?php echo $_smarty_tpl->tpl_vars['shape']->value['Image'];?>

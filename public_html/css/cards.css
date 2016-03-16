@@ -1,14 +1,12 @@
-.sort {
-  width: 100%;
-  margin: 0 auto;
-}
 .pic {
   width: 200px;
   height: 200px;
 }
 
 .shape {
-  margin: 10px 5px 5px 5px;
+  box-sizing: border-box;
+  margin: 10px 0px 0px 0px;
+  border-right: 10px solid white;
   background-color: lightgrey;
   padding: 10px 10px 10px 10px;
 }
