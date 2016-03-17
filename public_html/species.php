@@ -70,5 +70,5 @@ for ($k = 0; $k < count($result); $k++) {
 
 $smarty->assign('data', $data);
 $smarty->assign('newdata', $newdata);
-$smarty->display('species.tpl');
+$smarty->display('speciesDB.tpl');
 ?>
