@@ -7,10 +7,12 @@
 
 		<div class="col-lg-6 shape">
 			{*<div class="shape">*}
-				<div class="col-lg-6 left">
+				<div class="left">
 					<img class="pic" src="img/{$shape['Image']}">
+					<h2>{$shape['Name']}</h2>
+					<p>{$shape['Description']}</p>
 				</div>
-				<div class="col-lg-6 right">
+				<div class="right">
 					<h2>{$shape['Name']}</h2>
 					<p>{$shape['Description']}</p>
 				</div>
