@@ -1,27 +1,4 @@
-.pic {
-  width: 200px;
-  height: 200px;
-}
 
-.shape {
-  box-sizing: border-box;
-  margin: 10px 0px 0px 0px;
-  border-right: 10px solid white;
-  background-color: lightgrey;
-  padding: 10px 10px 10px 10px;
-}
-.left {
-  float: left;
-  height:200px;
-  width: 200px;
-
-}
-.right {
-  float: right;
-  padding: 0;
-  margin: 0;
-  height: 250px;
-}
 .index-header {
   height: 400px;
   background: url('../img/mushroom-header.jpg') center center no-repeat scroll;
