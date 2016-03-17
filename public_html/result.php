@@ -11,7 +11,7 @@ $query = "SELECT Scientific_Name, Common_Name, Name_Derivation, Phylum, Sp_Order
 $statement = $pdo->prepare($query);
 $statement->bindParam(':parameter', $name, PDO::PARAM_STR);
 $statement->execute();
-$result = $statement->fetchAll();
+$result = $statement->fetch(PDO::FETCH_ASSOC);
 
 $sciName = $result['Scientific_Name'];
 $commonName = $result['Common_Name'];
@@ -31,7 +31,7 @@ $query = "SELECT Photo_ID, Photo_Name, Caption FROM Photo WHERE Photo_Species_ID
 $statement = $pdo->prepare($query);
 $statement->bindParam(':id', $speciesID, PDO::PARAM_STR);
 $statement->execute();
-$result = $statement->fetchAll();
+$result = $statement->fetch(PDO::FETCH_ASSOC);
 
 $photoID = $result['Photo_ID'];
 $photoName = $result['Photo_Name'];
