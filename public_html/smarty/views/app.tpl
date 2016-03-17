@@ -9,15 +9,10 @@
 			{*<div class="shape">*}
 				<div class="left">
 					<img class="pic" src="img/{$shape['Image']}">
-					<h2>{$shape['Name']}</h2>
-					<p>{$shape['Description']}</p>
 				</div>
 				<div class="right">
-<<<<<<< HEAD
-					<h2>{$shape['Name']}</h2>
-=======
+
 					<h2 class="app">{$shape['Name']}</h2>
->>>>>>> 82faeaf767b4ca92b871f01ef25f53941c5c41fe
 					<p>{$shape['Description']}</p>
 				</div>
 				<div class="col-lg-12 sort">
