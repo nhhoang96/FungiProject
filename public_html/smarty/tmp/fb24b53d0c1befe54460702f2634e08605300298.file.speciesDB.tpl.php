@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-03-03 00:37:23
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-03-17 18:41:04
          compiled from "smarty\views\speciesDB.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:322656d7456aed42d2-13329474%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'fb24b53d0c1befe54460702f2634e08605300298' => 
     array (
       0 => 'smarty\\views\\speciesDB.tpl',
-      1 => 1456959153,
+      1 => 1458145656,
       2 => 'file',
     ),
   ),
@@ -27,8 +27,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_56d7456b1bbe01_83801226')) {function content_56d7456b1bbe01_83801226($_smarty_tpl) {?><?php if (!is_callable('smarty_function_html_table')) include 'C:\\Users\\Emily\\Documents\\fungi\\public_html\\smarty\\libs\\plugins\\function.html_table.php';
-?><?php echo $_smarty_tpl->getSubTemplate ("head.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('title'=>"Species List",'active'=>"species"), 0);?>
- 
+?><?php echo $_smarty_tpl->getSubTemplate ("head.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
+
 <!--Fungi Team 2015-->
 
 <body>
@@ -83,5 +83,9 @@ $_smarty_tpl->tpl_vars['info']->_loop = true;
 			</tbody>
 		<?php } ?>
 		</table>
+
+		<?php echo $_smarty_tpl->getSubTemplate ("footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
+
+
 	</div>
 </body><?php }} ?>
