@@ -52,7 +52,7 @@ $id = $_GET["id"];
 	include "../private_html/setup.php";
 	
 	$query = "SELECT * FROM Characteristic 
-			WHERE Char_Shape_Category_ID = :parameter";
+			WHERE Category_FK = :parameter";
 	$stmt = $pdo->prepare($query);
 	$stmt->bindParam(':parameter', $id, PDO::PARAM_STR);
 	$stmt->execute();
@@ -72,11 +72,11 @@ $id = $_GET["id"];
 			<?php
 	
 			$query2 = "SELECT * 
-					FROM C_Option 
-					WHERE Opt_Characteristic_ID IN 
+					FROM Option
+					WHERE Characteristic_FK IN
 						(SELECT Characteristic_ID AS T2
 						FROM Characteristic         
-						WHERE Name = '" . $row['Name'] ."' AND Char_Shape_Category_ID = :parameter2)";
+						WHERE Name = '" . $row['Name'] ."' AND Category_FK = :parameter2)";
 				$stmt2 = $pdo->prepare($query2);
 				$stmt2->bindParam(':parameter2', $id, PDO::PARAM_STR);
 				$stmt2->execute();
@@ -129,7 +129,7 @@ if(isset($_POST['submit'])) {
 		WHERE Species_ID IN
 			(SELECT Species_ID FROM 
 		(SELECT Species_ID, count(*) AS num
-			FROM Species_Opt LEFT JOIN Species ON Species_ID = SO_Species_ID
+			FROM Species_Option LEFT JOIN Species ON Species_ID = Species_FK
 			WHERE ".$build."  
 			GROUP BY Species_ID
 			HAVING num =".$c.") AS s
@@ -149,7 +149,7 @@ if(isset($_POST['submit'])) {
 	<?php
 } else {
 	?><br> All species will display until selections are made.<br><h3>Species:</h3><?php
-    $query4 = "SELECT * FROM Species WHERE Spec_Shape_Category_ID= :parameter2";
+    $query4 = "SELECT * FROM Species WHERE Shape_FK= :parameter2";
 	$stmt4 = $pdo->prepare($query4);
 	$stmt4->bindParam(':parameter2', $id, PDO::PARAM_STR);
 	$stmt4->execute();

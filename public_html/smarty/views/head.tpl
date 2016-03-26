@@ -39,7 +39,7 @@
 
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="admin.html">Control Panel</a></li>
+                <li><a href="admin.php">Control Panel</a></li>
             </ul>
         </div>
     </div>

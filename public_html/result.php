@@ -27,7 +27,7 @@ $dimensions = $result['Dimensions'];
 
 $speciesID = $result['Species_ID'];
 
-$query = "SELECT Photo_ID, Photo_Name, Caption FROM Photo WHERE Photo_Species_ID = :id";
+$query = "SELECT Photo_ID, Photo_Name, Caption FROM Photo WHERE Species_FK = :id";
 $statement = $pdo->prepare($query);
 $statement->bindParam(':id', $speciesID, PDO::PARAM_STR);
 $statement->execute();
