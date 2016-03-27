@@ -43,7 +43,6 @@
             <p><a class="btn btn-default btn-md" href="about.php">Learn More
                     &raquo;</a></p>
         </div>
-
     </div>
     {include "footer.tpl"}
 </div>

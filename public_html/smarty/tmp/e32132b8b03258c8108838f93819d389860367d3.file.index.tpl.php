@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-03-16 17:24:26
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-03-26 21:03:02
          compiled from "smarty\views\index.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:961456d740be38fa01-14829434%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'e32132b8b03258c8108838f93819d389860367d3' => 
     array (
       0 => 'smarty\\views\\index.tpl',
-      1 => 1458145464,
+      1 => 1459022580,
       2 => 'file',
     ),
   ),
@@ -65,7 +65,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
             <p><a class="btn btn-default btn-md" href="about.php">Learn More
                     &raquo;</a></p>
         </div>
-
     </div>
     <?php echo $_smarty_tpl->getSubTemplate ("footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
 

@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-03-16 17:23:45
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-03-26 20:35:04
          compiled from "smarty\views\footer.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:2759056e987ac540856-94923297%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '1e264eff2393f8ab88b14d05e96325f7a5f8dfd9' => 
     array (
       0 => 'smarty\\views\\footer.tpl',
-      1 => 1458145424,
+      1 => 1459020901,
       2 => 'file',
     ),
   ),
@@ -26,6 +26,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     <hr>
     <div class="row">
         <div class="col-lg-12">
+            <hr>
             <p>Copyright &copy; Messiah College</p>
         </div>
     </div><!-- /.row -->
