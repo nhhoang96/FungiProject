@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-03-27 20:57:41
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-03-28 02:36:33
          compiled from "smarty\views\admin.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:2194256f4b41a6c85e5-60711128%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'f45951e41a6af186cc9d444e06c8cef33884c955' => 
     array (
       0 => 'smarty\\views\\admin.tpl',
-      1 => 1459105056,
+      1 => 1459125392,
       2 => 'file',
     ),
   ),
@@ -26,9 +26,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 >
 
 <div class="container">
-        <ul class="nav navbar-nav navbar-right logout">
-            <li><a class="out" href="SHOULD LOGOUT">Logout</a></li>
-        </ul>
+        
         <h2>Admin Dashboard</h2>
     <hr>
     <div class="col-sm-2 admin">
@@ -36,15 +34,17 @@ $_valid = $_smarty_tpl->decodeProperties(array (
             <li><a onclick="admin()" class="tab">Edit Admin</a></li>
             <li><a onclick="test()"   class="tab">Edit Shape</a></li>
             <li><a onclick="species()"   class="tab">Edit Species</a></li>
+            <li><a class="tab">Logout</a></li>
+
         </ul>
     </div>
-    <div class="col-lg-10 dashboard" id="editAdmin">
+    <div class="col-lg-10 form-group dashboard" id="editAdmin">
         <form id="newAdmin">
             <h3>New Admin:</h3>
             <div class="updates">
                 Email:
-                <input type="text"><br>
-                <a class="btn btn-default btn-md add">Add</a>
+                <input type="text" class="form-control"><br>
+                <a class="btn btn-default btn-sm add form-control">Add</a>
                 <p>-eb1338 is now an admin.-</p><br>
 
             </div>
@@ -55,27 +55,27 @@ $_valid = $_smarty_tpl->decodeProperties(array (
             <h3>Delete Admin:</h3>
             <div class="updates">
             Email:
-            <select name="cars">
+            <select name="email" class="form-control">
                 <option>eb1338</option>
                 <option>sweaver</option>
                 <option>gemberger</option>
                 <option>hh1234</option>
                 <option>zc5678</option>
             </select><br>
-            <a class="btn btn-default btn-md add">Delete</a>
+            <a class="btn btn-default btn-sm add form-control">Delete</a>
                 <p>-sweaver is no longer an admin.-</p>
             </div>
         </form>
     </div>
-    <div class="col-lg-10 dashboard" id="editShape">
+    <div class="col-lg-10 form-group dashboard" id="editShape">
         <form id="newShape">
             <h3>New Shape:</h3>
                 <div class="updates">
                     Name:
-                    <input type="text"><br>
+                    <input type="text" class="form-control"><br>
                     Description:
-                    <input type="text"><br>
-                    <a class="btn btn-default btn-md add">Add</a>
+                    <input type="text" class="form-control"><br>
+                    <a class="btn btn-default btn-sm add form-control">Add</a>
                     <p>-New shape has been created.-</p>
                 </div>
             <hr>
@@ -83,34 +83,37 @@ $_valid = $_smarty_tpl->decodeProperties(array (
         <form id="updateShape">
             <h3>Update Shape:</h3>
             <div class="updates">
-            <select name="shapes">
+            <select name="shapes" class="form-control">
                 <option>Club, Coral, Leafy</option>
                 <option>Poroid</option>
                 <option>Cup and Saucer</option>
                 <option>Gilled</option>
                 <option>Crust and Parchment</option>
             </select><br>
-            <a class="btn btn-default btn-md add">Select</a>
-            Name:
-            <input type="text"><br>
-            Description:
-            <input type="text"><br>
-            <a class="btn btn-default btn-md add">Update</a>
-            <p>-Shape is now updated.-</p>
+                <a class="btn btn-default btn-md add form-control">Select</a>
+
+                <div class="updates">
+                Name:
+                <input type="text" class="form-control"><br>
+                Description:
+                <input type="text" class="form-control"><br>
+                </div>
+                <a class="btn btn-default btn-md add form-control">Update</a>
+                <p>-Shape is now updated.-</p>
             </div>
             <hr>
         </form>
         <form id="deleteShape">
             <h3>Delete Shape:</h3>
             <div class="updates">
-            <select name="shapes">
+            <select name="shapes" class="form-control">
                 <option>Club, Coral, Leafy</option>
                 <option>Poroid</option>
                 <option>Cup and Saucer</option>
                 <option>Gilled</option>
                 <option>Crust and Parchment</option>
             </select><br>
-            <a class="btn btn-default btn-md add">Delete</a>
+            <a class="btn btn-default btn-md add form-control">Delete</a>
 
             <p>-Shape is now deleted.-</p>
             </div>
@@ -121,28 +124,28 @@ $_valid = $_smarty_tpl->decodeProperties(array (
             <h3>New Species:</h3>
             <div class="updates">
                 Scientific Name:
-                <input type="text"><br>
+                <input type="text" class="form-control"><br>
                 Common Name:
-                <input type="text"><br>
+                <input type="text" class="form-control"><br>
                 Name Derivation:
-                <input type="text"><br>
+                <input type="text" class="form-control"><br>
                 Phylum:
-                <input type="text"><br>
+                <input type="text" class="form-control"><br>
                 Order:
-                <input type="text"><br>
+                <input type="text" class="form-control"><br>
                 Family:
-                <input type="text"><br>
+                <input type="text" class="form-control"><br>
                 Comment:
-                <input type="text"><br>
+                <input type="text" class="form-control"><br>
                 Wood Substrate:
-                <input type="text"><br>
+                <input type="text" class="form-control"><br>
                 Dimensions:
-                <input type="text"><br>
+                <input type="text" class="form-control"><br>
                 Photo:
-                <input type="text"><br>
+                <input type="text" class="form-control"><br>
                 Shape Association:
-                <input type="text"><br>
-                <a class="btn btn-default btn-md add">Add</a>
+                <input type="text" class="form-control"><br>
+                <a class="btn btn-default btn-md add form-control">Add</a>
                 <p>-New species has been created.-</p>
             </div>
             <hr>
@@ -150,19 +153,19 @@ $_valid = $_smarty_tpl->decodeProperties(array (
         <form id="updateSpecies">
             <h3>Update Species:</h3>
             <div class="updates">
-                <select name="shapes">
+                <select name="shapes" class="form-control">
                     <option>Club, Coral, Leafy</option>
                     <option>Poroid</option>
                     <option>Cup and Saucer</option>
                     <option>Gilled</option>
                     <option>Crust and Parchment</option>
                 </select><br>
-                <a class="btn btn-default btn-md add">Select</a>
+                <a class="btn btn-default btn-md add form-control">Select</a>
                 Name:
-                <input type="text"><br>
+                <input type="text" class="form-control"><br>
                 Description:
-                <input type="text"><br>
-                <a class="btn btn-default btn-md add">Update</a>
+                <input type="text" class="form-control"><br>
+                <a class="btn btn-default btn-md add form-control">Update</a>
                 <p>-Shape is now updated.-</p>
             </div>
             <hr>
@@ -170,14 +173,14 @@ $_valid = $_smarty_tpl->decodeProperties(array (
         <form id="deleteSpecies">
             <h3>Delete Species:</h3>
             <div class="updates">
-            <select name="shapes">
+            <select name="shapes" class="form-control">
                 <option>Club, Coral, Leafy</option>
                 <option>Poroid</option>
                 <option>Cup and Saucer</option>
                 <option>Gilled</option>
                 <option>Crust and Parchment</option>
             </select><br>
-            <a class="btn btn-default btn-md add">Delete</a>
+            <a class="btn btn-default btn-md add form-control">Delete</a>
 
             <p>-Shape is now deleted.-</p>
             </div>
