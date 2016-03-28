@@ -1,5 +1,3 @@
-
-
 {include "head.tpl" title="About" active="about"}
 
 <!--Fungi Team 2015-->
@@ -18,7 +16,7 @@
 			</div>
 		</div>
 	</header><!-- Page Content -->
-
+	<body>
 	<div class="container">
 		<hr>
 
@@ -64,7 +62,7 @@
 				beautiful, serving as subjects for photographers and artists.
 				All of them are useful in teaching aspects of mycology.</p>
 
-				<div class="collapse">
+				<div class="collapse" data-target="collapse" id="moreInfo">
 					<p><strong>More Information:</strong> If you are unfamiliar
 					with fungi and using keys, be sure to review the
 					information on keys, the glossary, and some of the
@@ -251,8 +249,9 @@
 					<em>Lycogala epidendrum</em>.</p>
 				</div><!-- end collapsed group -->
 
-				<p><a class="btn btn-default btn-lg" href="#">Read more...
-				&raquo;</a></p>
+				{*<p><a class="btn btn-default btn-lg" href="#">Read more...&raquo;</a></p>*}
+				<input onclick="changeRead()" type="button" data-toggle="collapse" data-target="#moreInfo"value="Read more..." id="readButton" class="btn btn-default btn-lg">
+
 			</div>
 
 			<div class="col-sm-4">
@@ -376,4 +375,14 @@
 	<!-- jQuery -->
 	<script src="js/jquery.js"></script> <!-- Bootstrap Core JavaScript -->
 	 <script src="js/bootstrap.min.js"></script>
-</body>
+		<script>
+			function changeRead()
+			{
+				if (document.getElementById("readButton").value==="Read more...")
+					document.getElementById("readButton").value="Read less...";
+			else
+					document.getElementById("readButton").value="Read more...";
+			}
+		</script>
+
+	</body>
