@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-03-17 00:17:26
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-03-29 20:49:15
          compiled from "smarty\views\head.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:903156e8626eec3357-27324442%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '3cb02134d785cedb5665c8b77ff3e65de3571c6e' => 
     array (
       0 => 'smarty\\views\\head.tpl',
-      1 => 1458170149,
+      1 => 1459277294,
       2 => 'file',
     ),
   ),
@@ -44,6 +44,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 	<link href="css/result.css" type=text/css rel="stylesheet" />
 	<link href="css/lightbox.css" type=text/css rel="stylesheet" />
 	<link href="css/cards.css" type=text/css rel="stylesheet" />
+    <link href="css/admin.css" type=text/css rel="stylesheet" />
+
 </head>
 
 <body>
@@ -71,7 +73,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="admin.html">Control Panel</a></li>
+                <li><a href="admin.php">Control Panel</a></li>
             </ul>
         </div>
     </div>
