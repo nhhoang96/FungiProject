@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-03-28 02:36:33
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-03-29 21:13:40
          compiled from "smarty\views\admin.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:2194256f4b41a6c85e5-60711128%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'f45951e41a6af186cc9d444e06c8cef33884c955' => 
     array (
       0 => 'smarty\\views\\admin.tpl',
-      1 => 1459125392,
+      1 => 1459278819,
       2 => 'file',
     ),
   ),
@@ -31,10 +31,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     <hr>
     <div class="col-sm-2 admin">
         <ul class="nav nav-tabs nav-stacked edits">
-            <li><a onclick="admin()" class="tab">Edit Admin</a></li>
-            <li><a onclick="test()"   class="tab">Edit Shape</a></li>
-            <li><a onclick="species()"   class="tab">Edit Species</a></li>
-            <li><a class="tab">Logout</a></li>
+            <li><a onclick="admin()" class="tab"><h4>Edit Admin</h4><hr></a></li>
+            <li><a onclick="test()"   class="tab"><h4>Edit Shape</h4><hr></a></li>
+            <li><a onclick="species()"   class="tab"><h4>Edit Species</h4><hr></a></li>
+            <li><a class="tab"><h4>Logout</h4><hr></a></li>
 
         </ul>
     </div>
@@ -97,9 +97,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                 <input type="text" class="form-control"><br>
                 Description:
                 <input type="text" class="form-control"><br>
+                    <a class="btn btn-default btn-md add form-control">Update</a>
+                    <p>-Shape is now updated.-</p>
                 </div>
-                <a class="btn btn-default btn-md add form-control">Update</a>
-                <p>-Shape is now updated.-</p>
+
             </div>
             <hr>
         </form>

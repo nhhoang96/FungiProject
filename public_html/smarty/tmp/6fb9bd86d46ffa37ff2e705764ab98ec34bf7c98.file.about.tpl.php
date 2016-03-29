@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-03-26 21:02:11
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-03-29 21:16:42
          compiled from "smarty\views\about.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:3206956d740c35a6d57-73794449%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '6fb9bd86d46ffa37ff2e705764ab98ec34bf7c98' => 
     array (
       0 => 'smarty\\views\\about.tpl',
-      1 => 1459022529,
+      1 => 1459178564,
       2 => 'file',
     ),
   ),
@@ -19,9 +19,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'unifunc' => 'content_56d740c3679fd3_09394741',
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_56d740c3679fd3_09394741')) {function content_56d740c3679fd3_09394741($_smarty_tpl) {?>
-
-<?php echo $_smarty_tpl->getSubTemplate ("head.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('title'=>"About",'active'=>"about"), 0);?>
+<?php if ($_valid && !is_callable('content_56d740c3679fd3_09394741')) {function content_56d740c3679fd3_09394741($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("head.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('title'=>"About",'active'=>"about"), 0);?>
 
 
 <!--Fungi Team 2015-->
@@ -40,7 +38,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 			</div>
 		</div>
 	</header><!-- Page Content -->
-
+	<body>
 	<div class="container">
 		<hr>
 
@@ -86,7 +84,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 				beautiful, serving as subjects for photographers and artists.
 				All of them are useful in teaching aspects of mycology.</p>
 
-				<div class="collapse">
+				<div class="collapse" data-target="collapse" id="moreInfo">
 					<p><strong>More Information:</strong> If you are unfamiliar
 					with fungi and using keys, be sure to review the
 					information on keys, the glossary, and some of the
@@ -273,8 +271,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 					<em>Lycogala epidendrum</em>.</p>
 				</div><!-- end collapsed group -->
 
-				<p><a class="btn btn-default btn-lg" href="#">Read more...
-				&raquo;</a></p>
+				
+				<input onclick="changeRead()" type="button" data-toggle="collapse" data-target="#moreInfo"value="Read more..." id="readButton" class="btn btn-default btn-lg">
+
 			</div>
 
 			<div class="col-sm-4">
@@ -372,4 +371,16 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 	 <?php echo '<script'; ?>
  src="js/bootstrap.min.js"><?php echo '</script'; ?>
 >
-</body><?php }} ?>
+		<?php echo '<script'; ?>
+>
+			function changeRead()
+			{
+				if (document.getElementById("readButton").value==="Read more...")
+					document.getElementById("readButton").value="Read less...";
+			else
+					document.getElementById("readButton").value="Read more...";
+			}
+		<?php echo '</script'; ?>
+>
+
+	</body><?php }} ?>

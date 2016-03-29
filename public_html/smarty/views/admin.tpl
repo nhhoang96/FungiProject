@@ -9,10 +9,10 @@
     <hr>
     <div class="col-sm-2 admin">
         <ul class="nav nav-tabs nav-stacked edits">
-            <li><a onclick="admin()" class="tab">Edit Admin</a></li>
-            <li><a onclick="test()"   class="tab">Edit Shape</a></li>
-            <li><a onclick="species()"   class="tab">Edit Species</a></li>
-            <li><a class="tab">Logout</a></li>
+            <li><a onclick="admin()" class="tab"><h4>Edit Admin</h4><hr></a></li>
+            <li><a onclick="test()"   class="tab"><h4>Edit Shape</h4><hr></a></li>
+            <li><a onclick="species()"   class="tab"><h4>Edit Species</h4><hr></a></li>
+            <li><a class="tab"><h4>Logout</h4><hr></a></li>
 
         </ul>
     </div>
