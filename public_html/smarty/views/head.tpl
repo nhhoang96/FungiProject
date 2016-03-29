@@ -14,6 +14,7 @@
 	<link href="css/result.css" type=text/css rel="stylesheet" />
 	<link href="css/lightbox.css" type=text/css rel="stylesheet" />
 	<link href="css/cards.css" type=text/css rel="stylesheet" />
+    <link href="css/key.css" type=text/css rel="stylesheet" />
 </head>
 
 <body>

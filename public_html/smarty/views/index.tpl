@@ -24,6 +24,8 @@
                     &raquo;</a></p>
             <p><a class="btn btn-default btn-lg" href="about.php">Learn More!
                     &raquo;</a></p>
+            <p><a class="btn btn-default btn-lg" href="key.php">Multi-Access Key Template!
+                    &raquo;</a></p>
             <h2>What We Do</h2>
 
             <p><strong>Purpose:</strong> Fungi Growing on Wood is a web

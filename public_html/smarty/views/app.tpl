@@ -13,7 +13,7 @@
 	<div class="col-sm-6">
 
 
-      {*<div class="card">*}
+      <div class="card">
 
           <div class="face back">
 
@@ -30,18 +30,18 @@
 				<p>
 					{$shape["Shape_Category_ID"]}
 				</p>
-				{*<a href="query.php?id={$shape["Shape_Category_ID"]}">Choose Shape</a>*}
+				<a href="query.php?id={$shape["Shape_Category_ID"]}">Choose Shape</a>
 			</div>
 
-            {*<div class="well well-sm inner">*}
-				{*<img id="birdsnest" src="img/{$shape['Image']}">*}
-				{*<p>*}
-				{*{$shape['Description']}*}
-				{*</p>*}
-				{*<a href="query.php?id={$shape["Shape_Category_ID"]}>Choose Shape</a>*}
+            <div class="well well-sm inner">
+				<img id="birdsnest" src="img/{$shape['Image']}">
+				<p>
+				{$shape['Description']}
+				</p>
+				<a href="query.php?id={$shape["Shape_Category_ID"]}>Choose Shape</a>
 			  {$shape["Shape_Category_ID"]}
 			</div>
-			  {*</div>*}
+			  </div>
           </div> <!-- end face back -->
         </div>	<!-- end card -->
 	  </div>
