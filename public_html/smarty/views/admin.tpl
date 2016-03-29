@@ -75,9 +75,10 @@
                 <input type="text" class="form-control"><br>
                 Description:
                 <input type="text" class="form-control"><br>
+                    <a class="btn btn-default btn-md add form-control">Update</a>
+                    <p>-Shape is now updated.-</p>
                 </div>
-                <a class="btn btn-default btn-md add form-control">Update</a>
-                <p>-Shape is now updated.-</p>
+
             </div>
             <hr>
         </form>
