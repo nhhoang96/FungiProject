@@ -1,5 +1,3 @@
-
-
 {include "head.tpl" title="About" active="about"}
 
 <!--Fungi Team 2015-->
@@ -18,9 +16,9 @@
 			</div>
 		</div>
 	</header><!-- Page Content -->
-
+	<body>
 	<div class="container">
-		{*<hr>*}
+		<hr>
 
 		<div class="row">
 			<div class="col-sm-8 collapse-group">
@@ -64,7 +62,7 @@
 				beautiful, serving as subjects for photographers and artists.
 				All of them are useful in teaching aspects of mycology.</p>
 
-				<div class="collapse">
+				<div class="collapse" data-target="collapse" id="moreInfo">
 					<p><strong>More Information:</strong> If you are unfamiliar
 					with fungi and using keys, be sure to review the
 					information on keys, the glossary, and some of the
@@ -251,8 +249,9 @@
 					<em>Lycogala epidendrum</em>.</p>
 				</div><!-- end collapsed group -->
 
-				<p><a class="btn btn-default btn-lg" href="#">Read more...
-				&raquo;</a></p>
+				{*<p><a class="btn btn-default btn-lg" href="#">Read more...&raquo;</a></p>*}
+				<input onclick="changeRead()" type="button" data-toggle="collapse" data-target="#moreInfo"value="Read more..." id="readButton" class="btn btn-default btn-lg">
+
 			</div>
 
 			<div class="col-sm-4">
@@ -275,11 +274,9 @@
 		<hr>
 
 		<div class="row">
-			<div class="col-sm-1"></div>
+			{*<div class="col-sm-1"></div>*}
 
-			<div class="col-sm-10">
-				<img alt="" class="img-rounded img-responsive img-center" src=
-				"img/Emberger.jpg">
+			<div class="col-sm-8">
 
 				<h2>Dr. Gary Emberger</h2>
 
@@ -333,11 +330,15 @@
 				presented itself to pursue this project. I started work on the
 				web site in 2003.</p>
 			</div>
+			<div class="col-sm-4">
+				<img alt="" class="img-rounded img-responsive img-right" src=
+				"img/Emberger.jpg">
+		</div>
 
-			<div class="col-sm-1"></div>
-		</div><!-- /.row -->
-		<hr>
-		<div class="row">
+			{*<div class="col-sm-1"></div>*}
+		{*</div><!-- /.row -->*}
+
+	{*	<div class="row">
 			<div class="col-sm-12 dev-padding">
 				<h1 class="text-center">The Development Team</h1>
 			</div>
@@ -368,18 +369,20 @@
 				<p>Database integration.</p>
 			</div>
 		</div><!-- /.row -->
-		<hr>
-		<!-- Footer -->
-
-		<footer>
-			<div class="row">
-				<div class="col-lg-12">
-					<p>Copyright &copy; Messiah College</p>
-				</div>
-			</div><!-- /.row -->
-		</footer>
+		<hr>*}
+		{include "footer.tpl"}
 	</div><!-- /.container -->
 	<!-- jQuery -->
 	<script src="js/jquery.js"></script> <!-- Bootstrap Core JavaScript -->
 	 <script src="js/bootstrap.min.js"></script>
-</body>
+		<script>
+			function changeRead()
+			{
+				if (document.getElementById("readButton").value==="Read more...")
+					document.getElementById("readButton").value="Read less...";
+			else
+					document.getElementById("readButton").value="Read more...";
+			}
+		</script>
+
+	</body>

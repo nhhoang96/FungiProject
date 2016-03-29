@@ -2815,5 +2815,7 @@
 				</tr>
 			</tbody>
 		</table>
+		{include "footer.tpl"}
+
 	</div>
 </body>

@@ -24,7 +24,7 @@
 		WHERE Species_ID IN
 			(SELECT Species_ID FROM
 		(SELECT Species_ID, count(*) AS num
-			FROM Species_Opt LEFT JOIN Species ON Species_ID = SO_Species_ID
+			FROM Species_Option LEFT JOIN Species ON Species_ID = SO_Species_ID
 			WHERE ".$build."
 			GROUP BY Species_ID
 			HAVING num =".$c.") AS s

@@ -8,13 +8,15 @@
 	<link href="css/navigation.css" type=text/css rel="stylesheet" />
 	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.7.0/bootstrap-table.min.css">
 	<!--Change stylesheet based on page-->
+    <link href="css/application.css" type="text/css" rel="stylesheet" />
 	<link href="css/about.css" type=text/css rel="stylesheet" />
 	<link href="css/species.css" type=text/css rel="stylesheet" />
 		<!-- Table sorting -->
 	<link href="css/result.css" type=text/css rel="stylesheet" />
 	<link href="css/lightbox.css" type=text/css rel="stylesheet" />
 	<link href="css/cards.css" type=text/css rel="stylesheet" />
-    <link href="css/key.css" type=text/css rel="stylesheet" />
+    <link href="css/admin.css" type=text/css rel="stylesheet" />
+
 </head>
 
 <body>
@@ -39,7 +41,7 @@
 
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="admin.html">Control Panel</a></li>
+                <li><a href="admin.php">Control Panel</a></li>
             </ul>
         </div>
     </div>

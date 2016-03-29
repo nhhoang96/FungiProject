@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-03-15 04:15:09
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-03-26 21:02:11
          compiled from "smarty\views\about.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:3206956d740c35a6d57-73794449%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '6fb9bd86d46ffa37ff2e705764ab98ec34bf7c98' => 
     array (
       0 => 'smarty\\views\\about.tpl',
-      1 => 1458011349,
+      1 => 1459022529,
       2 => 'file',
     ),
   ),
@@ -42,7 +42,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 	</header><!-- Page Content -->
 
 	<div class="container">
-		
+		<hr>
 
 		<div class="row">
 			<div class="col-sm-8 collapse-group">
@@ -297,11 +297,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		<hr>
 
 		<div class="row">
-			<div class="col-sm-1"></div>
+			
 
-			<div class="col-sm-10">
-				<img alt="" class="img-rounded img-responsive img-center" src=
-				"img/Emberger.jpg">
+			<div class="col-sm-8">
 
 				<h2>Dr. Gary Emberger</h2>
 
@@ -355,51 +353,17 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 				presented itself to pursue this project. I started work on the
 				web site in 2003.</p>
 			</div>
+			<div class="col-sm-4">
+				<img alt="" class="img-rounded img-responsive img-right" src=
+				"img/Emberger.jpg">
+		</div>
 
-			<div class="col-sm-1"></div>
-		</div><!-- /.row -->
-		<hr>
-		<div class="row">
-			<div class="col-sm-12 dev-padding">
-				<h1 class="text-center">The Development Team</h1>
-			</div>
-			<div class="col-sm-6 dev-padding">
+			
+		
 
-				<h2>Tommy Martin</h2>
-				<p>The project development leader.</p>
-			</div>
+	
+		<?php echo $_smarty_tpl->getSubTemplate ("footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
 
-			<div class="col-sm-6 dev-padding">
-
-				<h2>Tom Stetson</h2>
-
-				<p>Database integration.</p>
-			</div>
-
-			<div class="col-sm-6 dev-padding">
-
-				<h2>Ben Richardson</h2>
-
-				<p>Client-side interface designer.</p>
-			</div>
-
-			<div class="col-sm-6 dev-padding">
-
-				<h2>Brett Levengood</h2>
-
-				<p>Database integration.</p>
-			</div>
-		</div><!-- /.row -->
-		<hr>
-		<!-- Footer -->
-
-		<footer>
-			<div class="row">
-				<div class="col-lg-12">
-					<p>Copyright &copy; Messiah College</p>
-				</div>
-			</div><!-- /.row -->
-		</footer>
 	</div><!-- /.container -->
 	<!-- jQuery -->
 	<?php echo '<script'; ?>
