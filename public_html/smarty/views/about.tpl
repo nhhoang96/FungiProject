@@ -120,7 +120,7 @@
 				</div><!-- end collapsed group -->
 
 				{*<p><a class="btn btn-default btn-lg" href="#">Read more...&raquo;</a></p>*}
-				<input onclick="changeRead()" type="button" data-toggle="collapse" data-target="#moreInfo"value="Read more..." id="readButton" class="btn btn-default btn-lg">
+				<input onclick="changeRead()" type="button" data-toggle="collapse" data-target="#moreInfo" value="Read more..." id="readButton" class="btn btn-default btn-lg">
 
 			</div>
 

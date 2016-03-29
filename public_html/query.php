@@ -72,7 +72,7 @@ $id = $_GET["id"];
 			<?php
 	
 			$query2 = "SELECT * 
-					FROM Option
+					FROM Characteristic_Option
 					WHERE Characteristic_FK IN
 						(SELECT Characteristic_ID AS T2
 						FROM Characteristic         
