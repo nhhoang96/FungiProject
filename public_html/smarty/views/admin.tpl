@@ -2,10 +2,10 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 
 <div class="container">
-        {*<ul class="nav navbar-nav navbar-right logout">
-            <li><a class="out" href="SHOULD LOGOUT">Logout</a></li>
-        </ul>*}
-        <h2>Admin Dashboard</h2>
+    {*<ul class="nav navbar-nav navbar-right logout">
+        <li><a class="out" href="SHOULD LOGOUT">Logout</a></li>
+    </ul>*}
+    <h2>Admin Dashboard</h2>
     <hr>
     <div class="col-sm-2 admin">
         <ul class="nav nav-tabs nav-stacked edits">
@@ -30,18 +30,17 @@
             <hr>
         </form>
 
-        <form id="deleteAdmin">
+        <form action="admin.php" method="post" id="deleteAdmin">
             <h3>Delete Admin:</h3>
             <div class="updates">
-            Email:
-            <select name="email" class="form-control">
-                <option>eb1338</option>
-                <option>sweaver</option>
-                <option>gemberger</option>
-                <option>hh1234</option>
-                <option>zc5678</option>
-            </select><br>
-            <a class="btn btn-default btn-sm add form-control">Delete</a>
+                Email:
+                <select name="removeAdmin" class="form-control">
+                    {foreach from=$adminArray key=key item=item}
+                        <option value="{$key}">{$item}</option>
+                    {/foreach}
+                </select><br>
+                {*<a class="btn btn-default btn-sm add form-control">Delete</a>*}
+                <input type="submit" class="btn btn-default btn-md add form-control" value="Remove" name="deleteAdmin">
                 <p>-sweaver is no longer an admin.-</p>
             </div>
         </form>
@@ -49,34 +48,34 @@
     <div class="col-lg-10 form-group dashboard" id="editShape">
         <form action="admin.php" method="post" id="newShape">
             <h3>New Shape:</h3>
-                <div class="updates">
-                    Name:
-                    <input type="text" name="shapeName" class="form-control"><br>
-                    Description:
-                    <input type="text" name="description" class="form-control"><br>
-                    {*<a class="btn btn-default btn-sm add form-control">Add</a>*}
-                    <input type="submit" class="btn btn-default btn-md add form-control" value="Add" name="addShape">
-                    <p>-New shape has been created.-</p>
-                </div>
+            <div class="updates">
+                Name:
+                <input type="text" name="shapeName" class="form-control"><br>
+                Description:
+                <input type="text" name="description" class="form-control"><br>
+                {*<a class="btn btn-default btn-sm add form-control">Add</a>*}
+                <input type="submit" class="btn btn-default btn-md add form-control" value="Add" name="addShape">
+                <p>-New shape has been created.-</p>
+            </div>
             <hr>
         </form>
         <form id="updateShape">
             <h3>Update Shape:</h3>
             <div class="updates">
-            <select name="shapes" class="form-control">
-                <option>Club, Coral, Leafy</option>
-                <option>Poroid</option>
-                <option>Cup and Saucer</option>
-                <option>Gilled</option>
-                <option>Crust and Parchment</option>
-            </select><br>
+                <select name="shapes" class="form-control">
+                    <option>Club, Coral, Leafy</option>
+                    <option>Poroid</option>
+                    <option>Cup and Saucer</option>
+                    <option>Gilled</option>
+                    <option>Crust and Parchment</option>
+                </select><br>
                 <a class="btn btn-default btn-md add form-control">Select</a>
 
                 <div class="updates">
-                Name:
-                <input type="text" class="form-control"><br>
-                Description:
-                <input type="text" class="form-control"><br>
+                    Name:
+                    <input type="text" class="form-control"><br>
+                    Description:
+                    <input type="text" class="form-control"><br>
                     <a class="btn btn-default btn-md add form-control">Update</a>
                     <p>-Shape is now updated.-</p>
                 </div>
@@ -87,16 +86,16 @@
         <form id="deleteShape">
             <h3>Delete Shape:</h3>
             <div class="updates">
-            <select name="shapes" class="form-control">
-                <option>Club, Coral, Leafy</option>
-                <option>Poroid</option>
-                <option>Cup and Saucer</option>
-                <option>Gilled</option>
-                <option>Crust and Parchment</option>
-            </select><br>
-            <a class="btn btn-default btn-md add form-control">Delete</a>
+                <select name="shapes" class="form-control">
+                    <option>Club, Coral, Leafy</option>
+                    <option>Poroid</option>
+                    <option>Cup and Saucer</option>
+                    <option>Gilled</option>
+                    <option>Crust and Parchment</option>
+                </select><br>
+                <a class="btn btn-default btn-md add form-control">Delete</a>
 
-            <p>-Shape is now deleted.-</p>
+                <p>-Shape is now deleted.-</p>
             </div>
         </form>
     </div>
@@ -157,16 +156,16 @@
         <form id="deleteSpecies">
             <h3>Delete Species:</h3>
             <div class="updates">
-            <select name="shapes" class="form-control">
-                <option>Club, Coral, Leafy</option>
-                <option>Poroid</option>
-                <option>Cup and Saucer</option>
-                <option>Gilled</option>
-                <option>Crust and Parchment</option>
-            </select><br>
-            <a class="btn btn-default btn-md add form-control">Delete</a>
+                <select name="shapes" class="form-control">
+                    <option>Club, Coral, Leafy</option>
+                    <option>Poroid</option>
+                    <option>Cup and Saucer</option>
+                    <option>Gilled</option>
+                    <option>Crust and Parchment</option>
+                </select><br>
+                <a class="btn btn-default btn-md add form-control">Delete</a>
 
-            <p>-Shape is now deleted.-</p>
+                <p>-Shape is now deleted.-</p>
             </div>
         </form>
     </div>
@@ -175,57 +174,57 @@
 
     <script type="text/javascript">
         //require(['jquery'], function ($){
-            function admin() {
-                //document.getElementById("newAdmin").show();
-                //alert("why is this not working?");
-                $("#newAdmin").show();
-                $("#deleteAdmin").show();
-                $("#newShape").hide();
-                $("#updateShape").hide();
-                $("#deleteShape").hide();
-                $("#newSpecies").hide();
-                $("#updateSpecies").hide();
-                $("#deleteSpecies").hide();
-                //$("editAdmin").show()
-                //$("editShape").hide()
-                //$("editSpecies").hide()
+        function admin() {
+            //document.getElementById("newAdmin").show();
+            //alert("why is this not working?");
+            $("#newAdmin").show();
+            $("#deleteAdmin").show();
+            $("#newShape").hide();
+            $("#updateShape").hide();
+            $("#deleteShape").hide();
+            $("#newSpecies").hide();
+            $("#updateSpecies").hide();
+            $("#deleteSpecies").hide();
+            //$("editAdmin").show()
+            //$("editShape").hide()
+            //$("editSpecies").hide()
 
 
-            }
-            function test() {
-                //alert("species");
-                $("#newAdmin").hide();
-                $("#deleteAdmin").hide();
-                $("#newShape").show();
-                $("#updateShape").show();
-                $("#deleteShape").show();
-                $("#newSpecies").hide();
-                $("#updateSpecies").hide();
-                $("#deleteSpecies").hide();
-                //$("editAdmin").hide()
-                //$("editShape").show()
-                //$("editSpecies").hide()
+        }
+        function test() {
+            //alert("species");
+            $("#newAdmin").hide();
+            $("#deleteAdmin").hide();
+            $("#newShape").show();
+            $("#updateShape").show();
+            $("#deleteShape").show();
+            $("#newSpecies").hide();
+            $("#updateSpecies").hide();
+            $("#deleteSpecies").hide();
+            //$("editAdmin").hide()
+            //$("editShape").show()
+            //$("editSpecies").hide()
 
 
 
 
-            }
+        }
 
-            function species() {
-                //alert("species");
-                $("#newAdmin").hide();
-                $("#deleteAdmin").hide();
-                $("#newShape").hide();
-                $("#updateShape").hide();
-                $("#deleteShape").hide();
-                $("#newSpecies").show();
-                $("#updateSpecies").show();
-                $("#deleteSpecies").show();
-                //$("editAdmin").hide()
-                //$("editShape").hide()
-                //$("editSpecies").show()
-            }
+        function species() {
+            //alert("species");
+            $("#newAdmin").hide();
+            $("#deleteAdmin").hide();
+            $("#newShape").hide();
+            $("#updateShape").hide();
+            $("#deleteShape").hide();
+            $("#newSpecies").show();
+            $("#updateSpecies").show();
+            $("#deleteSpecies").show();
+            //$("editAdmin").hide()
+            //$("editShape").hide()
+            //$("editSpecies").show()
+        }
 
     </script>
-{include "footer.tpl"}
+    {include "footer.tpl"}
 </div>

@@ -26,20 +26,7 @@ Else {
     //Display to Admin Dashboard tpl
     //echo "You are on the admin Dashboard";
 
-    //------ Build Associative Shape Array ------
-    $query = "SELECT Shape_Category_ID, Name FROM shape";
 
-    $statement = $pdo->prepare($query);
-    $statement->execute();
-    $shapeResults = array();
-    if ($statement -> rowCount() > 0){
-        while ($row = $statement->fetch(PDO::FETCH_ASSOC)){
-            $shapeResults[$row['Shape_Category_ID']] = $row['Name'];
-        }
-    }else{
-        $smarty->assign("error1", 'Database Error');
-    }
-    $smarty->assign("shapeArray", $shapeResults);
 
     //------ Determine which submit button was hit ------
     //------ Add Species -----
@@ -57,7 +44,7 @@ Else {
                 $smarty->assign("error1", 'Database Error');
             }
             $smarty->assign("shapeArray", $shapeResults);
-// ------ Input Error Checking ------
+            // ------ Input Error Checking ------
 
             $errorFlag = false;
             $smarty->assign('errorFlag', $errorFlag);
@@ -231,9 +218,66 @@ Else {
             $statement->execute();
 
             $msg3 = "Add Successful!";
+        }elseif (isset($_POST["deleteAdmin"])) {
+            $errorFlag = false;
+            $smarty->assign('errorFlag', $errorFlag);
+
+            $msg = "<strong>Missing Information!</strong>";
+
+            // ------ Input Error Checking ------
+            if ($_POST["removeAdmin"] == "") {
+                $errorFlag = true;
+                $msg .= "<br>Error, No Admin Username Was Passed.";
+            } else {
+                $smarty->assign('removeAdmin', $_POST["removeAdmin"]);
+            }
+
+            if ($errorFlag) {
+                $msg = $msg . "<br>";
+                $smarty->assign('msg', $msg);
+                $smarty->display('admin.tpl');
+                exit();
+            }
+
+            //------ Insert Query -----
+
+            $query = "DELETE FROM administrator WHERE Admin_ID = :removeAdmin";
+
+            $statement = $pdo->prepare($query);
+            $statement->bindValue(':removeAdmin', $_POST["removeAdmin"]);
+            $statement->execute();
+
+            $msg3 = "Removal Successful!";
         }
 
+//------ Build Associative Shape Array ------
+    $query = "SELECT Shape_Category_ID, Name FROM shape";
 
+    $statement = $pdo->prepare($query);
+    $statement->execute();
+    $shapeResults = array();
+    if ($statement -> rowCount() > 0){
+        while ($row = $statement->fetch(PDO::FETCH_ASSOC)){
+            $shapeResults[$row['Shape_Category_ID']] = $row['Name'];
+        }
+    }else{
+        $smarty->assign("error1", 'Database Error');
+    }
+    $smarty->assign("shapeArray", $shapeResults);
+    //------ Build Associative Shape Array ------
+    $query = "SELECT Admin_ID, Username FROM administrator";
+
+    $statement = $pdo->prepare($query);
+    $statement->execute();
+    $adminResults = array();
+    if ($statement->rowCount() > 0) {
+        while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
+            $adminResults[$row['Admin_ID']] = $row['Username'];
+        }
+    } else {
+        $smarty->assign("error1", 'Database Error');
+    }
+    $smarty->assign("adminArray", $adminResults);
     $smarty->display('admin.tpl');
 }
 //include "../private_html/setup.php";
