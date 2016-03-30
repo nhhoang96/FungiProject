@@ -17,12 +17,13 @@
         </ul>
     </div>
     <div class="col-lg-10 form-group dashboard" id="editAdmin">
-        <form id="newAdmin">
+        <form action="admin.php" method="post" id="newAdmin">
             <h3>New Admin:</h3>
             <div class="updates">
                 Email:
-                <input type="text" class="form-control"><br>
-                <a class="btn btn-default btn-sm add form-control">Add</a>
+                <input type="text" name="newAdmin" class="form-control"><br>
+                {*<a class="btn btn-default btn-sm add form-control">Add</a>*}
+                <input type="submit" class="btn btn-default btn-md add form-control" value="Add" name="addAdmin">
                 <p>-eb1338 is now an admin.-</p><br>
 
             </div>
@@ -46,14 +47,15 @@
         </form>
     </div>
     <div class="col-lg-10 form-group dashboard" id="editShape">
-        <form id="newShape">
+        <form action="admin.php" method="post" id="newShape">
             <h3>New Shape:</h3>
                 <div class="updates">
                     Name:
-                    <input type="text" class="form-control"><br>
+                    <input type="text" name="shapeName" class="form-control"><br>
                     Description:
-                    <input type="text" class="form-control"><br>
-                    <a class="btn btn-default btn-sm add form-control">Add</a>
+                    <input type="text" name="description" class="form-control"><br>
+                    {*<a class="btn btn-default btn-sm add form-control">Add</a>*}
+                    <input type="submit" class="btn btn-default btn-md add form-control" value="Add" name="addShape">
                     <p>-New shape has been created.-</p>
                 </div>
             <hr>
@@ -99,32 +101,37 @@
         </form>
     </div>
     <div class="col-lg-10 dashboard" id="editSpecies">
-        <form id="newSpecies">
+        <form action="admin.php" method="post" id="newSpecies">
             <h3>New Species:</h3>
             <div class="updates">
                 Scientific Name:
-                <input type="text" class="form-control"><br>
+                <input type="text" name="commonName" class="form-control"><br>
                 Common Name:
-                <input type="text" class="form-control"><br>
+                <input type="text" class="form-control" name="nameDerivation"><br>
                 Name Derivation:
-                <input type="text" class="form-control"><br>
+                <input type="text" class="form-control" name="scientificName"><br>
                 Phylum:
-                <input type="text" class="form-control"><br>
+                <input type="text" class="form-control" name="phylum"><br>
                 Order:
-                <input type="text" class="form-control"><br>
+                <input type="text" class="form-control" name="order"><br>
                 Family:
-                <input type="text" class="form-control"><br>
+                <input type="text" class="form-control" name="family"><br>
                 Comment:
-                <input type="text" class="form-control"><br>
+                <input type="text" class="form-control" name="comments"><br>
                 Wood Substrate:
-                <input type="text" class="form-control"><br>
+                <input type="text" class="form-control" name="woodSubstrate"><br>
                 Dimensions:
-                <input type="text" class="form-control"><br>
-                Photo:
-                <input type="text" class="form-control"><br>
+                <input type="text" class="form-control" name="dimensions"><br>
+                {*Photo:
+                <input type="text" class="form-control"><br>*}
                 Shape Association:
-                <input type="text" class="form-control"><br>
-                <a class="btn btn-default btn-md add form-control">Add</a>
+                <select name="shape" class="form-control">
+                    {foreach from=$shapeArray key=key item=item}
+                        <option value="{$key}">{$item}</option>
+                    {/foreach}
+                </select><br>
+                {*<a class="btn btn-default btn-md add form-control">Add</a>*}
+                <input type="submit" class="btn btn-default btn-md add form-control" value="Add" name="addSpecies">
                 <p>-New species has been created.-</p>
             </div>
             <hr>
@@ -132,12 +139,10 @@
         <form id="updateSpecies">
             <h3>Update Species:</h3>
             <div class="updates">
-                <select name="shapes" class="form-control">
-                    <option>Club, Coral, Leafy</option>
-                    <option>Poroid</option>
-                    <option>Cup and Saucer</option>
-                    <option>Gilled</option>
-                    <option>Crust and Parchment</option>
+                <select name="shape" class="form-control">
+                    {foreach from=$shapeArray key=key item=item}
+                        <option value="{$key}">{$item}</option>
+                    {/foreach}
                 </select><br>
                 <a class="btn btn-default btn-md add form-control">Select</a>
                 Name:
