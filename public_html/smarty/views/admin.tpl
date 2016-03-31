@@ -59,41 +59,46 @@
             </div>
             <hr>
         </form>
-        <form id="updateShape">
+        <form action="admin.php" method="post" id="updateShape">
             <h3>Update Shape:</h3>
             <div class="updates">
-                <select name="shapes" class="form-control">
-                    <option>Club, Coral, Leafy</option>
-                    <option>Poroid</option>
-                    <option>Cup and Saucer</option>
-                    <option>Gilled</option>
-                    <option>Crust and Parchment</option>
+                Shape Association:
+                <select name="shapeID" class="form-control">
+                    {if isset($editShapeID)}<option value="{$editShapeID}">{$editShapeName}</option>{/if}
+                    {if !isset($editShapeID)}
+                        {foreach from=$shapeArray key=key item=item}
+                            <option value="{$key}">{$item}</option>
+                        {/foreach}
+                    {/if}
                 </select><br>
-                <a class="btn btn-default btn-md add form-control">Select</a>
+
+                {if !isset($editShapeID)}
+                    <input type="submit" class="btn btn-default btn-md add form-control" value="Select" name="selectShape">
+                {/if}
 
                 <div class="updates">
                     Name:
-                    <input type="text" class="form-control"><br>
+                    <input type="text" class="form-control" name="updateShapeName" {if isset($editShapeName)}value="{$editShapeName}"{/if}><br>
                     Description:
-                    <input type="text" class="form-control"><br>
-                    <a class="btn btn-default btn-md add form-control">Update</a>
+                    <input type="text" class="form-control" name="updateShapeDescription" {if isset($editShapeDescription)}
+                    value="{$editShapeDescription}"{/if}><br>
+                    <input type="submit" class="btn btn-default btn-md add form-control" value="Update" name="updateShape">
                     <p>-Shape is now updated.-</p>
                 </div>
 
             </div>
             <hr>
         </form>
-        <form id="deleteShape">
+        <form action="admin.php" method="post" id="deleteShape">
             <h3>Delete Shape:</h3>
             <div class="updates">
-                <select name="shapes" class="form-control">
-                    <option>Club, Coral, Leafy</option>
-                    <option>Poroid</option>
-                    <option>Cup and Saucer</option>
-                    <option>Gilled</option>
-                    <option>Crust and Parchment</option>
+                Shape Association:
+                <select name="shapeID" class="form-control">
+                    {foreach from=$shapeArray key=key item=item}
+                        <option value="{$key}">{$item}</option>
+                    {/foreach}
                 </select><br>
-                <a class="btn btn-default btn-md add form-control">Delete</a>
+                <input type="submit" class="btn btn-default btn-md add form-control" value="Delete" name="deleteShape">
 
                 <p>-Shape is now deleted.-</p>
             </div>
