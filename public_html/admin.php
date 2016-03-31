@@ -1,4 +1,5 @@
 <?php
+
 session_start();
 include "../private_html/setup.php";
 include_once WEB_PATH . 'CAS_includes/CAS.php';
@@ -24,9 +25,9 @@ If($stmt->rowCount() == 0){
 } Else {
     //Display to Admin Dashboard tpl
     //echo "You are on the admin Dashboard";
-    $smarty->display('admin.tpl');
 
-
+    $smarty->assign("adminActive", "active");
+    $smarty->assign("title", "Admin");
 
     //------ Determine which submit button was hit ------
     //------ Add Species -----
@@ -112,6 +113,8 @@ If($stmt->rowCount() == 0){
             } else {
                 $smarty->assign('shape', $_POST["shape"]);
             }
+
+
             $msg = $msg . "<br>";
             if ($errorFlag) {
                 $smarty->assign('msg', $msg);
@@ -166,6 +169,8 @@ If($stmt->rowCount() == 0){
                 $smarty->assign('description', $_POST["description"]);
             }
 
+            move_uploaded_file($_FILES["myimage"]["tmp_name"], "img/" . $_FILES["myimage"]["name"]);
+
 
             if ($errorFlag) {
                 $msg = $msg . "<br>";
@@ -179,11 +184,11 @@ If($stmt->rowCount() == 0){
             $query = "INSERT INTO shape (Shape_Category_ID, Name, Description, Image)
               VALUES (DEFAULT, :shapeName, :description, :image)";
 
-            $testImage = "testImage.jpg";
+//            $testImage = "testImage.jpg";
             $statement = $pdo->prepare($query);
             $statement->bindValue(':shapeName', $_POST["shapeName"]);
             $statement->bindValue(':description', $_POST["description"]);
-            $statement->bindValue(':image', $testImage);
+            $statement->bindValue(':image', $_FILES["myimage"]["name"]);
             $statement->execute();
 
             $msg3 = "Add Successful!";

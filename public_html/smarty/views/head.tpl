@@ -35,14 +35,15 @@
         <!-- Collection of nav links and other content for toggling -->
         <div id="navbarCollapse" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-					<li class="{$appActive}"><a href="app.php">Application</a></li>
-                	<li class="{$speciesActive}"><a href="species.php">Species</a></li>
-                	<li class="{$aboutActive}"><a href="about.php">About</a></li>
+				<li class="{$appActive}"><a href="app.php">Application</a></li>
+                <li class="{$speciesActive}"><a href="species.php">Species</a></li>
+                <li class="{$aboutActive}"><a href="about.php">About</a></li>
 
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="admin.php">Control Panel</a></li>
+            <li class="{$adminActive}"><a href="admin.php">Control Panel</a></li>
             </ul>
+        </div>
         </div>
     </div>
 </nav>

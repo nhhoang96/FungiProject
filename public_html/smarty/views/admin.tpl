@@ -1,4 +1,4 @@
-{include "head.tpl" title="Control Panel" active="Control Panel"}
+{include "head.tpl" title="Admin" active="admin"}
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 
 <div class="container">
@@ -46,7 +46,7 @@
         </form>
     </div>
     <div class="col-lg-10 form-group dashboard" id="editShape">
-        <form action="admin.php" method="post" id="newShape">
+        <form action="admin.php" method="post" id="newShape" enctype="multipart/form-data">
             <h3>New Shape:</h3>
             <div class="updates">
                 Name:
@@ -54,12 +54,15 @@
                 Description:
                 <input type="text" name="description" class="form-control"><br>
                 {*<a class="btn btn-default btn-sm add form-control">Add</a>*}
-                <input type="submit" class="btn btn-default btn-md add form-control" value="Add" name="addShape">
+                {*<input type="submit" class="btn btn-default btn-md add form-control" value="Add" name="addShape">*}
+                Upload Image:
+                <input type="file" name="myimage"><br>
+                <input type="submit" name="addShape"  class="btn btn-default btn-md add form-control" value="Upload">
                 <p>-New shape has been created.-</p>
             </div>
             <hr>
         </form>
-        <form id="updateShape">
+        <form id="updateShape" enctype="multipart/form-data">
             <h3>Update Shape:</h3>
             <div class="updates">
                 <select name="shapes" class="form-control">
@@ -76,7 +79,9 @@
                     <input type="text" class="form-control"><br>
                     Description:
                     <input type="text" class="form-control"><br>
-                    <a class="btn btn-default btn-md add form-control">Update</a>
+                    Update Image:
+                    <input type="file" name="myimage"><br>
+                    <input type="submit" name="addShape"  class="btn btn-default btn-md add form-control" value="Update">
                     <p>-Shape is now updated.-</p>
                 </div>
 
@@ -100,7 +105,7 @@
         </form>
     </div>
     <div class="col-lg-10 dashboard" id="editSpecies">
-        <form action="admin.php" method="post" id="newSpecies">
+        <form action="admin.php" method="post" id="newSpecies" enctype="multipart/form-data">
             <h3>New Species:</h3>
             <div class="updates">
                 Scientific Name:
@@ -121,8 +126,8 @@
                 <input type="text" class="form-control" name="woodSubstrate"><br>
                 Dimensions:
                 <input type="text" class="form-control" name="dimensions"><br>
-                {*Photo:
-                <input type="text" class="form-control"><br>*}
+                Photo:
+                <input type="file" name="myimage"><br>
                 Shape Association:
                 <select name="shape" class="form-control">
                     {foreach from=$shapeArray key=key item=item}
@@ -173,3 +178,5 @@
     <script src="js/admin.js"></script>
     {include "footer.tpl"}
 </div>
+</body>
+</html>
