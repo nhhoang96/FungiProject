@@ -25,6 +25,7 @@ If($stmt->rowCount() == 0){
 Else {
     //Display to Admin Dashboard tpl
     //echo "You are on the admin Dashboard";
+    $smarty->display('admin.tpl');
 
 
 
