@@ -169,66 +169,7 @@
             </div>
         </form>
     </div>
-<<<<<<< HEAD
+
     <script src="js/admin.js"></script>
-=======
-
-
-
-    <script type="text/javascript">
-        //require(['jquery'], function ($){
-        function admin() {
-            //document.getElementById("newAdmin").show();
-            //alert("why is this not working?");
-            $("#newAdmin").show();
-            $("#deleteAdmin").show();
-            $("#newShape").hide();
-            $("#updateShape").hide();
-            $("#deleteShape").hide();
-            $("#newSpecies").hide();
-            $("#updateSpecies").hide();
-            $("#deleteSpecies").hide();
-            //$("editAdmin").show()
-            //$("editShape").hide()
-            //$("editSpecies").hide()
-
-
-        }
-        function test() {
-            //alert("species");
-            $("#newAdmin").hide();
-            $("#deleteAdmin").hide();
-            $("#newShape").show();
-            $("#updateShape").show();
-            $("#deleteShape").show();
-            $("#newSpecies").hide();
-            $("#updateSpecies").hide();
-            $("#deleteSpecies").hide();
-            //$("editAdmin").hide()
-            //$("editShape").show()
-            //$("editSpecies").hide()
-
-
-
-
-        }
-
-        function species() {
-            //alert("species");
-            $("#newAdmin").hide();
-            $("#deleteAdmin").hide();
-            $("#newShape").hide();
-            $("#updateShape").hide();
-            $("#deleteShape").hide();
-            $("#newSpecies").show();
-            $("#updateSpecies").show();
-            $("#deleteSpecies").show();
-            //$("editAdmin").hide()
-            //$("editShape").hide()
-            //$("editSpecies").show()
-        }
-
-    </script>
->>>>>>> 5781a3ab6bed22d338671c479e45a4b8c63ca627
     {include "footer.tpl"}
 </div>
