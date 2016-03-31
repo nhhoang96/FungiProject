@@ -41,7 +41,7 @@
     <option value="{$key}">{$item}</option>
     {/foreach}
     </select><br>
-    <input type="submit" class="btn" value="Submit" name="submit">
+    <input type="submit" class="btn" value="blue" name="submit">
 
 
 </form>

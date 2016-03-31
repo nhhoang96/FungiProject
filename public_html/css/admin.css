@@ -60,3 +60,15 @@ a {
 .dashboard {
     float: right;
 }
+.nav-tabs > li > a {
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+.nav-tabs > li > a:hover {
+    background-color: rgba(255,255,255,.3);
+    border: none;
+    color: white;
+
+}
