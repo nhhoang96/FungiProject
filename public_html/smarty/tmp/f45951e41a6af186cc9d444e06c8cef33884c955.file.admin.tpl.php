@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-03-29 21:13:40
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-03-31 01:59:24
          compiled from "smarty\views\admin.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:2194256f4b41a6c85e5-60711128%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'f45951e41a6af186cc9d444e06c8cef33884c955' => 
     array (
       0 => 'smarty\\views\\admin.tpl',
-      1 => 1459278819,
+      1 => 1459382360,
       2 => 'file',
     ),
   ),
@@ -190,62 +190,12 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 
 
+   
     <?php echo '<script'; ?>
- type="text/javascript">
-        //require(['jquery'], function ($){
-            function admin() {
-                //document.getElementById("newAdmin").show();
-                //alert("why is this not working?");
-                $("#newAdmin").show();
-                $("#deleteAdmin").show();
-                $("#newShape").hide();
-                $("#updateShape").hide();
-                $("#deleteShape").hide();
-                $("#newSpecies").hide();
-                $("#updateSpecies").hide();
-                $("#deleteSpecies").hide();
-                //$("editAdmin").show()
-                //$("editShape").hide()
-                //$("editSpecies").hide()
-
-
-            }
-            function test() {
-                //alert("species");
-                $("#newAdmin").hide();
-                $("#deleteAdmin").hide();
-                $("#newShape").show();
-                $("#updateShape").show();
-                $("#deleteShape").show();
-                $("#newSpecies").hide();
-                $("#updateSpecies").hide();
-                $("#deleteSpecies").hide();
-                //$("editAdmin").hide()
-                //$("editShape").show()
-                //$("editSpecies").hide()
-
-
-
-
-            }
-
-            function species() {
-                //alert("species");
-                $("#newAdmin").hide();
-                $("#deleteAdmin").hide();
-                $("#newShape").hide();
-                $("#updateShape").hide();
-                $("#deleteShape").hide();
-                $("#newSpecies").show();
-                $("#updateSpecies").show();
-                $("#deleteSpecies").show();
-                //$("editAdmin").hide()
-                //$("editShape").hide()
-                //$("editSpecies").show()
-            }
-
-    <?php echo '</script'; ?>
+ src="js/admin.js"><?php echo '</script'; ?>
 >
-<?php echo $_smarty_tpl->getSubTemplate ("footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
+
+
+    <?php echo $_smarty_tpl->getSubTemplate ("footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
 
 </div><?php }} ?>

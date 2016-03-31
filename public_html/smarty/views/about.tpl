@@ -204,55 +204,10 @@
 				<img alt="" class="img-rounded img-responsive img-right" src=
 				"img/Emberger.jpg">
 		</div>
-
-			{*<div class="col-sm-1"></div>*}
-		{*</div><!-- /.row -->*}
-
-	{*	<div class="row">
-			<div class="col-sm-12 dev-padding">
-				<h1 class="text-center">The Development Team</h1>
-			</div>
-			<div class="col-sm-6 dev-padding">
-
-				<h2>Tommy Martin</h2>
-				<p>The project development leader.</p>
-			</div>
-
-			<div class="col-sm-6 dev-padding">
-
-				<h2>Tom Stetson</h2>
-
-				<p>Database integration.</p>
-			</div>
-
-			<div class="col-sm-6 dev-padding">
-
-				<h2>Ben Richardson</h2>
-
-				<p>Client-side interface designer.</p>
-			</div>
-
-			<div class="col-sm-6 dev-padding">
-
-				<h2>Brett Levengood</h2>
-
-				<p>Database integration.</p>
-			</div>
-		</div><!-- /.row -->
-		<hr>*}
 		{include "footer.tpl"}
 	</div><!-- /.container -->
 	<!-- jQuery -->
 	<script src="js/jquery.js"></script> <!-- Bootstrap Core JavaScript -->
-	 <script src="js/bootstrap.min.js"></script>
-		<script>
-			function changeRead()
-			{
-				if (document.getElementById("readButton").value==="Read more...")
-					document.getElementById("readButton").value="Read less...";
-			else
-					document.getElementById("readButton").value="Read more...";
-			}
-		</script>
-
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/about.js"></script>
 	</body>
