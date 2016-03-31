@@ -21,8 +21,7 @@ If($stmt->rowCount() == 0){
     //Jump back to whatever page you’re on
 
     Exit();
-}
-Else {
+} Else {
     //Display to Admin Dashboard tpl
     //echo "You are on the admin Dashboard";
     $smarty->display('admin.tpl');
