@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-03-31 02:06:53
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-04-05 20:46:04
          compiled from "smarty\views\admin.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:2194256f4b41a6c85e5-60711128%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'f45951e41a6af186cc9d444e06c8cef33884c955' => 
     array (
       0 => 'smarty\\views\\admin.tpl',
-      1 => 1459382658,
+      1 => 1459881374,
       2 => 'file',
     ),
   ),
@@ -26,7 +26,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_56f4b41a8d19e9_79427401')) {function content_56f4b41a8d19e9_79427401($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("head.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('title'=>"Control Panel",'active'=>"Control Panel"), 0);?>
+<?php if ($_valid && !is_callable('content_56f4b41a8d19e9_79427401')) {function content_56f4b41a8d19e9_79427401($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("head.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('title'=>"Admin",'active'=>"admin"), 0);?>
 
 <?php echo '<script'; ?>
  src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"><?php echo '</script'; ?>
@@ -83,7 +83,7 @@ $_smarty_tpl->tpl_vars['item']->_loop = true;
         </form>
     </div>
     <div class="col-lg-10 form-group dashboard" id="editShape">
-        <form action="admin.php" method="post" id="newShape">
+        <form action="admin.php" method="post" id="newShape" enctype="multipart/form-data">
             <h3>New Shape:</h3>
             <div class="updates">
                 Name:
@@ -91,12 +91,15 @@ $_smarty_tpl->tpl_vars['item']->_loop = true;
                 Description:
                 <input type="text" name="description" class="form-control"><br>
                 
-                <input type="submit" class="btn btn-default btn-md add form-control" value="Add" name="addShape">
+                
+                Upload Image:
+                <input type="file" name="myimage"><br>
+                <input type="submit" name="addShape"  class="btn btn-default btn-md add form-control" value="Upload">
                 <p>-New shape has been created.-</p>
             </div>
             <hr>
         </form>
-        <form id="updateShape">
+        <form id="updateShape" enctype="multipart/form-data">
             <h3>Update Shape:</h3>
             <div class="updates">
                 <select name="shapes" class="form-control">
@@ -113,7 +116,9 @@ $_smarty_tpl->tpl_vars['item']->_loop = true;
                     <input type="text" class="form-control"><br>
                     Description:
                     <input type="text" class="form-control"><br>
-                    <a class="btn btn-default btn-md add form-control">Update</a>
+                    Update Image:
+                    <input type="file" name="myimage"><br>
+                    <input type="submit" name="addShape"  class="btn btn-default btn-md add form-control" value="Update">
                     <p>-Shape is now updated.-</p>
                 </div>
 
@@ -137,7 +142,7 @@ $_smarty_tpl->tpl_vars['item']->_loop = true;
         </form>
     </div>
     <div class="col-lg-10 dashboard" id="editSpecies">
-        <form action="admin.php" method="post" id="newSpecies">
+        <form action="admin.php" method="post" id="newSpecies" enctype="multipart/form-data">
             <h3>New Species:</h3>
             <div class="updates">
                 Scientific Name:
@@ -158,7 +163,8 @@ $_smarty_tpl->tpl_vars['item']->_loop = true;
                 <input type="text" class="form-control" name="woodSubstrate"><br>
                 Dimensions:
                 <input type="text" class="form-control" name="dimensions"><br>
-                
+                Photo:
+                <input type="file" name="myimage"><br>
                 Shape Association:
                 <select name="shape" class="form-control">
                     <?php  $_smarty_tpl->tpl_vars['item'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['item']->_loop = false;
@@ -227,4 +233,6 @@ $_smarty_tpl->tpl_vars['item']->_loop = true;
 >
     <?php echo $_smarty_tpl->getSubTemplate ("footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
 
-</div><?php }} ?>
+</div>
+</body>
+</html><?php }} ?>

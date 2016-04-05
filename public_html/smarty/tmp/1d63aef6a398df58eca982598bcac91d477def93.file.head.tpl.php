@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-03-28 02:40:07
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-04-05 20:41:26
          compiled from "smarty\views\head.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:2706856d740be432da2-79862852%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '1d63aef6a398df58eca982598bcac91d477def93' => 
     array (
       0 => 'smarty\\views\\head.tpl',
-      1 => 1459125589,
+      1 => 1459881682,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'title' => 0,
     'appActive' => 0,
     'speciesActive' => 0,
+    'glossaryActive' => 0,
     'aboutActive' => 0,
+    'adminActive' => 0,
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
@@ -45,6 +47,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 	<link href="css/lightbox.css" type=text/css rel="stylesheet" />
 	<link href="css/cards.css" type=text/css rel="stylesheet" />
     <link href="css/admin.css" type=text/css rel="stylesheet" />
+    <link href="css/admin.css" type=text/css rel="stylesheet" />
+    <link href="css/glossary.css" type=text/css rel="stylesheet" />
+
 
 </head>
 
@@ -58,23 +63,28 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
             </button>
             <a href="index.php" class="navbar-brand">Fungi Growing on Wood</a>
         </div>
         <!-- Collection of nav links and other content for toggling -->
         <div id="navbarCollapse" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-					<li class="<?php echo $_smarty_tpl->tpl_vars['appActive']->value;?>
+				<li class="<?php echo $_smarty_tpl->tpl_vars['appActive']->value;?>
 "><a href="app.php">Application</a></li>
-                	<li class="<?php echo $_smarty_tpl->tpl_vars['speciesActive']->value;?>
+                <li class="<?php echo $_smarty_tpl->tpl_vars['speciesActive']->value;?>
 "><a href="species.php">Species</a></li>
-                	<li class="<?php echo $_smarty_tpl->tpl_vars['aboutActive']->value;?>
+                <li class="<?php echo $_smarty_tpl->tpl_vars['glossaryActive']->value;?>
+"><a href="glossary.php">Glossary</a></li>
+                <li class="<?php echo $_smarty_tpl->tpl_vars['aboutActive']->value;?>
 "><a href="about.php">About</a></li>
 
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="admin.php">Control Panel</a></li>
+            <li class="<?php echo $_smarty_tpl->tpl_vars['adminActive']->value;?>
+"><a href="admin.php">Control Panel</a></li>
             </ul>
+        </div>
         </div>
     </div>
 </nav><?php }} ?>

@@ -16,6 +16,9 @@
 	<link href="css/lightbox.css" type=text/css rel="stylesheet" />
 	<link href="css/cards.css" type=text/css rel="stylesheet" />
     <link href="css/admin.css" type=text/css rel="stylesheet" />
+    <link href="css/admin.css" type=text/css rel="stylesheet" />
+    <link href="css/glossary.css" type=text/css rel="stylesheet" />
+
 
 </head>
 
@@ -29,6 +32,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
             </button>
             <a href="index.php" class="navbar-brand">Fungi Growing on Wood</a>
         </div>
@@ -37,6 +41,7 @@
             <ul class="nav navbar-nav">
 				<li class="{$appActive}"><a href="app.php">Application</a></li>
                 <li class="{$speciesActive}"><a href="species.php">Species</a></li>
+                <li class="{$glossaryActive}"><a href="glossary.php">Glossary</a></li>
                 <li class="{$aboutActive}"><a href="about.php">About</a></li>
 
             </ul>

@@ -10,6 +10,10 @@ a {
 .tab {
     height: 75px;
 }
+.li:hover {
+    cursor: pointer;
+    /*cursor: pointer; */
+}
 .logout {
     background-color: #d3d3d3;
     color: #000000;
@@ -19,7 +23,6 @@ a {
 
 }
 .out {
-    margin-right: 0;
     margin-right: 0;
     border-right: 10px;
     border-color: white;
