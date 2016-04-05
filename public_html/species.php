@@ -3,14 +3,37 @@
 include "../private_html/setup.php";
 $smarty->assign("speciesActive", "active");
 $smarty->assign("title", "Species");
-
+$data = "";
+$newdata = "";
 $tableIndex=0;
 
 //get list of species
-$query = "SELECT Scientific_Name, URL, Common_Name, Phylum, Sp_Order, Family FROM Species";
-$statement = $pdo->prepare($query);
+if (isset($_GET["id"])) {
+	$query = "SELECT Scientific_Name, URL, Common_Name, Phylum, Sp_Order, Family FROM Species WHERE Shape_FK =:i ";
+
+	$statement = $pdo->prepare($query);
+	$statement-> bindParam(":i", $_GET["id"]);
+
+
+
+} else {
+	$query = "SELECT Scientific_Name, URL, Common_Name, Phylum, Sp_Order, Family FROM Species";
+	$statement = $pdo->prepare($query);
+	$name = "Complete";
+}
 $statement->execute();
 $result = $statement->fetchAll();
+
+if (isset($_GET["id"])) {
+	$query2 = "SELECT * FROM Shape WHERE Shape_Category_ID =:n";
+	$statement2 = $pdo->prepare($query2);
+	$statement2-> bindParam(":n", $_GET["id"]);
+	$statement2->execute();
+	$result2 = $statement2->fetch(PDO::FETCH_ASSOC);
+	$name = $result2["Name"];
+
+}
+
 
 //loop through list of species
 for ($i = 0; $i < count($result); $i++) {
@@ -66,9 +89,9 @@ for ($k = 0; $k < count($result); $k++) {
 	$newdata[$k][$tableIndex] = $result[$k][5];
 	$tableIndex++;
 }
-
-
+$smarty->assign('resultCount', count($result));
+$smarty->assign('name', $name);
 $smarty->assign('data', $data);
 $smarty->assign('newdata', $newdata);
-$smarty->display('species.tpl');
+$smarty->display('speciesDB.tpl');
 ?>

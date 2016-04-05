@@ -5,8 +5,10 @@
 
 	<div class="container">
 		<div class="page-header">
-			<h1 id="species-list">Complete Species List</h1>
+
+			<h1 id="species-list">{$name} Species List</h1>
 		</div>
+		{if $resultCount > 0}
 		<!--{html_table loop=$data cols=5 table_attr="class=table"} -->
 		<!--
 		<table data-toggle="table" data-sort-name="sci_name" 
@@ -43,5 +45,10 @@
 			</tbody>
 		{/foreach}
 		</table>
+		{else} No Species Found
+		{/if}
+
+		{include "footer.tpl"}
+
 	</div>
 </body>

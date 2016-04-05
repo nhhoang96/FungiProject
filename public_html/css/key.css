@@ -1,0 +1,46 @@
+.key-container{
+    margin: 0;
+    align-content: center;
+    /*border: solid;*/
+}
+
+.place-holder-div{
+    overflow: hidden;
+    text-overflow: clip;
+}
+
+.left-boxes{
+    border: solid;
+    min-height: 400px;
+}
+
+.right-boxes{
+    border: solid;
+    min-height: 400px;
+}
+
+.fungi-image img{
+    width: 100%;
+    height: auto;
+
+}
+
+.fungi-class-left{
+    margin: 0;
+    padding: 0;
+    border: dashed;
+    min-height: 100px;
+}
+
+.fungi-class-right{
+    margin: 0;
+    padding: 0;
+    border: dashed;
+    min-height: 100px;
+}
+
+.results-box{
+    border: solid;
+    margin-top: 50px;
+}
+

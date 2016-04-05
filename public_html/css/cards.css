@@ -1,3 +1,4 @@
+
 .index-header {
   height: 400px;
   background: url('../img/mushroom-header.jpg') center center no-repeat scroll;
@@ -14,10 +15,9 @@
 
 .flip {
   -webkit-perspective: 800;
-perspective: 800;
-
-    position: relative;
- text-align: center;
+  perspective: 800;
+   position: relative;
+  text-align: center;
 }
 
 .flip .card.flipped {

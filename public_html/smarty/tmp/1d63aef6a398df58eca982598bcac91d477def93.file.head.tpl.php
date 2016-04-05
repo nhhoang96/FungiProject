@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-03-03 00:37:08
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-03-28 02:40:07
          compiled from "smarty\views\head.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:2706856d740be432da2-79862852%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '1d63aef6a398df58eca982598bcac91d477def93' => 
     array (
       0 => 'smarty\\views\\head.tpl',
-      1 => 1456961816,
+      1 => 1459125589,
       2 => 'file',
     ),
   ),
@@ -37,12 +37,15 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 	<link href="css/navigation.css" type=text/css rel="stylesheet" />
 	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.7.0/bootstrap-table.min.css">
 	<!--Change stylesheet based on page-->
+    <link href="css/application.css" type="text/css" rel="stylesheet" />
 	<link href="css/about.css" type=text/css rel="stylesheet" />
 	<link href="css/species.css" type=text/css rel="stylesheet" />
 		<!-- Table sorting -->
 	<link href="css/result.css" type=text/css rel="stylesheet" />
 	<link href="css/lightbox.css" type=text/css rel="stylesheet" />
 	<link href="css/cards.css" type=text/css rel="stylesheet" />
+    <link href="css/admin.css" type=text/css rel="stylesheet" />
+
 </head>
 
 <body>
@@ -70,7 +73,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="admin.html">Control Panel</a></li>
+                <li><a href="admin.php">Control Panel</a></li>
             </ul>
         </div>
     </div>

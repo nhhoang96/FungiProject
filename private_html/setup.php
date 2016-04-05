@@ -8,6 +8,8 @@
  * by removing unnecessary items.
  * @return string the URL of the server running this script.
  */
+
+
 function webRoot() {
 	$ssl = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on') ? true : false;
 	$sp = strtolower($_SERVER['SERVER_PROTOCOL']);
@@ -54,6 +56,4 @@ try {
 
 		exit();
 	}
-
-
 ?>

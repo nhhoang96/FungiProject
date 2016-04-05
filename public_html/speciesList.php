@@ -1,5 +1,5 @@
 <?php
-
+include "../private_html/setup.php";
 	$c = count($_POST) - 1;
 	$firstTime = 1;
 	$build = "";
@@ -7,9 +7,9 @@
 		if(strcmp("$val", "Submit") == 0){}
 		else{
 			if($firstTime == 1){
-				$build = $build."SO_Option_ID = ".$val;
+				$build = $build."Option_FK = ".$val;
 			} else {
-				$build = $build." OR SO_Option_ID = ".$val;
+				$build = $build." OR Option_FK = ".$val;
 			}
 			$firstTime = $firstTime + 1;
 		}
@@ -24,7 +24,7 @@
 		WHERE Species_ID IN
 			(SELECT Species_ID FROM
 		(SELECT Species_ID, count(*) AS num
-			FROM Species_Opt LEFT JOIN Species ON Species_ID = SO_Species_ID
+			FROM Species_Option LEFT JOIN Species ON Species_ID = Species_FK
 			WHERE ".$build."
 			GROUP BY Species_ID
 			HAVING num =".$c.") AS s
