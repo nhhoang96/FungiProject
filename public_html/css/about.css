@@ -5,7 +5,7 @@ body {
 }
 
 
-#about li.about {
+.about li {
     background-color: gray;
 }
 .dev-padding {

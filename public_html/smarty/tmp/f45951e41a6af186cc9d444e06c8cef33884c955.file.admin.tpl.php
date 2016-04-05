@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-04-05 20:46:04
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-04-05 21:16:33
          compiled from "smarty\views\admin.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:2194256f4b41a6c85e5-60711128%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'f45951e41a6af186cc9d444e06c8cef33884c955' => 
     array (
       0 => 'smarty\\views\\admin.tpl',
-      1 => 1459881374,
+      1 => 1459883148,
       2 => 'file',
     ),
   ),
@@ -22,11 +22,14 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'adminArray' => 0,
     'key' => 0,
     'item' => 0,
+    'editShapeID' => 0,
+    'editShapeName' => 0,
     'shapeArray' => 0,
+    'editShapeDescription' => 0,
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_56f4b41a8d19e9_79427401')) {function content_56f4b41a8d19e9_79427401($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("head.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('title'=>"Admin",'active'=>"admin"), 0);?>
+<?php if ($_valid && !is_callable('content_56f4b41a8d19e9_79427401')) {function content_56f4b41a8d19e9_79427401($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("head.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('title'=>"Admin"), 0);?>
 
 <?php echo '<script'; ?>
  src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"><?php echo '</script'; ?>
@@ -99,43 +102,71 @@ $_smarty_tpl->tpl_vars['item']->_loop = true;
             </div>
             <hr>
         </form>
-        <form id="updateShape" enctype="multipart/form-data">
+
+        <form action="admin.php" method="post" id="updateShape" enctype="multipart/form-data">
+
             <h3>Update Shape:</h3>
             <div class="updates">
-                <select name="shapes" class="form-control">
-                    <option>Club, Coral, Leafy</option>
-                    <option>Poroid</option>
-                    <option>Cup and Saucer</option>
-                    <option>Gilled</option>
-                    <option>Crust and Parchment</option>
+                Shape Association:
+                <select name="shapeID" class="form-control">
+                    <?php if (isset($_smarty_tpl->tpl_vars['editShapeID']->value)) {?><option value="<?php echo $_smarty_tpl->tpl_vars['editShapeID']->value;?>
+"><?php echo $_smarty_tpl->tpl_vars['editShapeName']->value;?>
+</option><?php }?>
+                    <?php if (!isset($_smarty_tpl->tpl_vars['editShapeID']->value)) {?>
+                        <?php  $_smarty_tpl->tpl_vars['item'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['item']->_loop = false;
+ $_smarty_tpl->tpl_vars['key'] = new Smarty_Variable;
+ $_from = $_smarty_tpl->tpl_vars['shapeArray']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+foreach ($_from as $_smarty_tpl->tpl_vars['item']->key => $_smarty_tpl->tpl_vars['item']->value) {
+$_smarty_tpl->tpl_vars['item']->_loop = true;
+ $_smarty_tpl->tpl_vars['key']->value = $_smarty_tpl->tpl_vars['item']->key;
+?>
+                            <option value="<?php echo $_smarty_tpl->tpl_vars['key']->value;?>
+"><?php echo $_smarty_tpl->tpl_vars['item']->value;?>
+</option>
+                        <?php } ?>
+                    <?php }?>
                 </select><br>
-                <a class="btn btn-default btn-md add form-control">Select</a>
+
+                <?php if (!isset($_smarty_tpl->tpl_vars['editShapeID']->value)) {?>
+                    <input type="submit" class="btn btn-default btn-md add form-control" value="Select" name="selectShape">
+                <?php }?>
 
                 <div class="updates">
                     Name:
-                    <input type="text" class="form-control"><br>
+                    <input type="text" class="form-control" name="updateShapeName" <?php if (isset($_smarty_tpl->tpl_vars['editShapeName']->value)) {?>value="<?php echo $_smarty_tpl->tpl_vars['editShapeName']->value;?>
+"<?php }?>><br>
                     Description:
-                    <input type="text" class="form-control"><br>
+                    <input type="text" class="form-control" name="updateShapeDescription" <?php if (isset($_smarty_tpl->tpl_vars['editShapeDescription']->value)) {?>
+                    value="<?php echo $_smarty_tpl->tpl_vars['editShapeDescription']->value;?>
+"<?php }?>><br>
                     Update Image:
                     <input type="file" name="myimage"><br>
-                    <input type="submit" name="addShape"  class="btn btn-default btn-md add form-control" value="Update">
+                    
+                    <input type="submit" class="btn btn-default btn-md add form-control" value="Update" name="updateShape">
                     <p>-Shape is now updated.-</p>
                 </div>
 
             </div>
             <hr>
         </form>
-        <form id="deleteShape">
+        <form action="admin.php" method="post" id="deleteShape">
             <h3>Delete Shape:</h3>
             <div class="updates">
-                <select name="shapes" class="form-control">
-                    <option>Club, Coral, Leafy</option>
-                    <option>Poroid</option>
-                    <option>Cup and Saucer</option>
-                    <option>Gilled</option>
-                    <option>Crust and Parchment</option>
+                Shape Association:
+                <select name="shapeID" class="form-control">
+                    <?php  $_smarty_tpl->tpl_vars['item'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['item']->_loop = false;
+ $_smarty_tpl->tpl_vars['key'] = new Smarty_Variable;
+ $_from = $_smarty_tpl->tpl_vars['shapeArray']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+foreach ($_from as $_smarty_tpl->tpl_vars['item']->key => $_smarty_tpl->tpl_vars['item']->value) {
+$_smarty_tpl->tpl_vars['item']->_loop = true;
+ $_smarty_tpl->tpl_vars['key']->value = $_smarty_tpl->tpl_vars['item']->key;
+?>
+                        <option value="<?php echo $_smarty_tpl->tpl_vars['key']->value;?>
+"><?php echo $_smarty_tpl->tpl_vars['item']->value;?>
+</option>
+                    <?php } ?>
                 </select><br>
-                <a class="btn btn-default btn-md add form-control">Delete</a>
+                <input type="submit" class="btn btn-default btn-md add form-control" value="Delete" name="deleteShape">
 
                 <p>-Shape is now deleted.-</p>
             </div>
@@ -235,4 +266,5 @@ $_smarty_tpl->tpl_vars['item']->_loop = true;
 
 </div>
 </body>
-</html><?php }} ?>
+</html>
+<?php }} ?>

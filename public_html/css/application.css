@@ -1,11 +1,11 @@
-.app {
-    padding-top: 0;
+.app {    padding-top: 0;
     margin: 0;
     text-align: center;
     font-weight: 500;
 }
 
-#app li.app {
+
+.appnav li {
     background-color: gray;
 }
 .pic {

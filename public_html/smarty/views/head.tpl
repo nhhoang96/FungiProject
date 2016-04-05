@@ -35,8 +35,8 @@
         <!-- Collection of nav links and other content for toggling -->
         <div id="navbarCollapse" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-				<li class="app"><a href="app.php">Application</a></li>
-                <li class="species"><a href="species.php">Species</a></li>
+				<li class="appnav"><a href="app.php">Application</a></li>
+                <li class="speciesnav"><a href="species.php">Species</a></li>
                 <li class="about"><a href="about.php">About</a></li>
 
             </ul>
@@ -46,4 +46,8 @@
         </div>
         </div>
     </div>
+
+    <script src="js/jquery.js"></script> <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
 </nav>
