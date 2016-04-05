@@ -1,116 +1,93 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<title>Fungi Query</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://bootswatch.com/cosmo/bootstrap.min.css">
-	
-	<link href="css/cards.css" type=text/css rel="stylesheet" />
-	
-	<link href="css/navigation.css" type=text/css rel="stylesheet" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-	<script src="js/cards.js"></script>
-	<script src="js/collapse.js"></script>
-	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.7.0/bootstrap-table.min.css">
-		<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.7.0/bootstrap-table.min.js"></script>
-		<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.7.0/locale/bootstrap-table-zh-CN.min.js"></script>
-</head>
-<nav role="navigation" class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a href="app.php" class="navbar-brand">Fungi Growing on Wood</a>
-        </div>
-        <!-- Collection of nav links and other content for toggling -->
-        <div id="navbarCollapse" class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
-				<li class="active"><a href="app.php">Application</a></li>
-               	<li><a href="species.php">Species</a></li>
-               	<li><a href="about.php">About</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="admin.html">Control Panel</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
-<?php 
+<?php
+include "../private_html/setup.php";
+
 //Get passed ID
 $id = $_GET["id"];
-?>
+$smarty->assign("serverID", $_SERVER['PHP_SELF']);
+//$query = "SELECT * FROM Characteristic
+//			WHERE Char_Shape_Category_ID = :parameter";
+$query = "SELECT Characteristic_ID, c.Name as Char_Name, Option_ID, o.Name as Opt_Name
+	FROM Characteristic c JOIN C_Option o ON Opt_Characteristic_ID = Characteristic_ID
+	WHERE Char_Shape_Category_ID = :parameter";
+$stmt = $pdo->prepare($query);
+$stmt->bindParam(':parameter', $id, PDO::PARAM_STR);
+$stmt->execute();
 
-<form action = "<?php echo $_SERVER['PHP_SELF']."?id=".$id?>" method="post">
-<?php
-	include "../private_html/setup.php";
-	
-	$query = "SELECT * FROM Characteristic 
-			WHERE Char_Shape_Category_ID = :parameter";
-	$stmt = $pdo->prepare($query);
-	$stmt->bindParam(':parameter', $id, PDO::PARAM_STR);
-	$stmt->execute();
-	$var = 0;
-	$opt_name = 0;
-	while($row=$stmt->fetch(PDO::FETCH_ASSOC)){
-		$var = $var+1;
-		?>
-		<div class="panel panel-default">
-			<div class="panel-heading">
-				<h4 class="panel-title">
-					<a data-toggle="collapse" data-parent="#accordion" href="<?php echo "#collapse".$var ?>"><span class="glyphicon glyphicon-th-list">
-					</span> <?php echo $row['Name']?></a>
-				</h4>
-			</div>
-			
-			<?php
-	
-			$query2 = "SELECT * 
-					FROM C_Option 
-					WHERE Opt_Characteristic_ID IN 
-						(SELECT Characteristic_ID AS T2
-						FROM Characteristic         
-						WHERE Name = '" . $row['Name'] ."' AND Char_Shape_Category_ID = :parameter2)";
-				$stmt2 = $pdo->prepare($query2);
-				$stmt2->bindParam(':parameter2', $id, PDO::PARAM_STR);
-				$stmt2->execute();
-			?>
-			
-			<div id= "<?php echo "collapse".$var ?>" class="panel-collapse collapse">
-				<div class="list-group">
-					
-					<?php
-					while($row2=$stmt2->fetch(PDO::FETCH_ASSOC)){
-						?>
-						<?php echo $row2['Opt_Characteristic_ID']?>
-						<?php echo "".$opt_name?>
-						<input type="checkbox" name="<?php echo "".$opt_name?>" value="<?php echo $row2['Option_ID']?>" onchange= "summary()"> <?php echo $row2['Name'] ?><br>
-						<?php $opt_name = $opt_name + 1; ?>
-					<?php
-					}
-					?>
-				</div>
-			</div>
-		</div>  <?php
+
+//$smarty->assign("collapseVar", "collapse".$var);
+$charID = array();
+$varCount = 0;
+$cc = -1;
+$charList = array();
+
+while ($row=$stmt->fetch(PDO::FETCH_ASSOC)) {
+	if($cc != $row['Characteristic_ID']) {
+		$varCount = $varCount + 1;
+		if($cc != - 1) {
+			$char['options'] = $opt;
+			$charList[$cc] = $char;
 		}
-		?>
-		<input  type = "submit" name = "submit" value = "Submit">
-	</div>
-</form>
+		$char = array(
+			"ID" => $row['Characteristic_ID'],
+			"Name" => $row['Char_Name']
+		);
+		$opt = array();
+		$cc = $row['Characteristic_ID'];
+		$charID[$varCount] = $row['Characteristic_ID'];
+	}
+	$opt[] = array(
+		"Opt_ID" => $row['Option_ID'],
+		"Opt_Name" => $row['Opt_Name']
+	);
+}
+$char['Options'] = $opt;
+$charList[$cc] = $char;
 
+$smarty ->assign("charID", $charID);
+$smarty ->assign("charList", $charList);
+$var = 0;
+//$row2Name = array();
 
-<!--Process form-->
-<?php
+//while($row=$stmt->fetch(PDO::FETCH_ASSOC)){
+//	$var = $var + 1;
+// //SELECT * FROM Characteristic c JOIN
+//	$query2 = "SELECT *
+//					FROM C_Option
+//					WHERE Opt_Characteristic_ID IN
+//						(SELECT Characteristic_ID AS T2
+//						FROM Characteristic
+//						WHERE Name = '" . $row['Name'] ."' AND Char_Shape_Category_ID = :parameter2)";
+//	$stmt2 = $pdo->prepare($query2);
+//	$stmt2->bindParam(':parameter2', $id, PDO::PARAM_STR);
+//	$stmt2->execute();
+//
+
+//
+//	$rowName[$var] =$row['Name'];
+//
+//
+//	while($row2=$stmt2->fetch(PDO::FETCH_ASSOC)){
+//
+//		$row2Var = $row2Var + 1;
+//		$rowFinal = array();
+//		$rowFinal[0] = $row2['Opt_Characteristic_ID'];
+//		$rowFinal[1] = "".$opt_name;
+//		$rowFinal[2] = $row2['Option_ID'];
+//		$rowFinal[3] = $row2['Name'];
+//		$row2Name[$row2Var] = $rowFinal;
+//		$opt_name = $opt_name + 1;
+//	}
+//	//$smarty->assign("optCharID", $row2ID);
+//	$smarty->assign("row2Name", $row2Name);
+//}
+//$smarty->assign("rowName", $rowName);
+
+//<!--Process form-->
+$urlToBePassed = array();
+$count = 0;
 if(isset($_POST['submit'])) {
-	?><h3>Species:</h3><?php
 	$c = count($_POST) - 1;
-	$firstTime = 1; 
+	$firstTime = 1;
 	$build = "";
 	foreach($_POST as $key=>$val){
 		if(strcmp("$val", "Submit") == 0){}
@@ -122,8 +99,8 @@ if(isset($_POST['submit'])) {
 			}
 			$firstTime = $firstTime + 1;
 		}
-		
-	}	
+
+	}
 
 	$query3 = "SELECT * FROM Species 
 		WHERE Species_ID IN
@@ -136,32 +113,34 @@ if(isset($_POST['submit'])) {
 		)";
 	$stmt3 = $pdo->prepare($query3);
 	$stmt3->execute();
-	?><ul> <?php
-		$urlToBePassed = "";
-		while($row2=$stmt3->fetch(PDO::FETCH_ASSOC)){
-			$urlToBePassed = urlencode($row2['Scientific_Name']);
-	?>
-		<li><?php echo "<a href='result.php?name=".$urlToBePassed."'>".$row2['Common_Name']."</a>" ?></li>
-	<?php
+	//$urlToBePassed = "";
+
+
+	while($row2=$stmt3->fetch(PDO::FETCH_ASSOC)){
+		$count=$count + 1;
+		$urlToBePassed[$count] = urlencode($row2['Scientific_Name']);
+		//<li><?php echo "<a href='result.php?name=".$urlToBePassed."'>".$row2['Common_Name']."</a>" </li>
+
+		//$smarty->assign("commonName",$row2['Common_Name']);
 	}
-	?>
-	</ul>
-	<?php
+	$smarty->assign("urlToBePassed",$urlToBePassed);
 } else {
-	?><br> All species will display until selections are made.<br><h3>Species:</h3><?php
-    $query4 = "SELECT * FROM Species WHERE Spec_Shape_Category_ID= :parameter2";
+	$query4 = "SELECT * FROM Species WHERE Spec_Shape_Category_ID= :parameter2";
 	$stmt4 = $pdo->prepare($query4);
-	$stmt4->bindParam(':parameter2', $id, PDO::PARAM_STR);
+	$stmt4->bindParam(':parameter2', $id);
+//	, PDO::PARAM_STR
 	$stmt4->execute();
-	?><ul> <?php
-		$urlToBePassed = "";
-		while($row2=$stmt4->fetch(PDO::FETCH_ASSOC)){
-			$urlToBePassed = urlencode($row2['Scientific_Name']);
-	?>
-		<li><?php echo "<a href='result.php?name=".$urlToBePassed."'>".$row2['Common_Name']."</a>" ?></li>
-	<?php
+	$commonName = array();
+	//$urlToBePassed = "";
+	while($row2=$stmt4->fetch(PDO::FETCH_ASSOC)){
+		$count=$count + 1;
+		$urlToBePassed[$count] = urlencode($row2['Scientific_Name']);
+		$commonName[$count] = $row2['Common_Name'];
+		//$smarty->assign("urlRow2","<a href='result.php?name=".$urlToBePassed."'>".$row2['Common_Name']."</a>");
+		//<li><?php echo "<a href='result.php?name=".$urlToBePassed."'>".$row2['Common_Name']."</a>"</li>
 	}
-	?>
-	</ul>
-	<?php
+	$smarty->assign("commonName", $commonName);
+	$smarty->assign("urlToBePassed", $urlToBePassed);
 }
+$smarty->display('query.tpl');
+?>
