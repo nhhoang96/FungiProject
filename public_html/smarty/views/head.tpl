@@ -16,6 +16,8 @@
 	<link href="css/lightbox.css" type=text/css rel="stylesheet" />
 	<link href="css/cards.css" type=text/css rel="stylesheet" />
     <link href="css/admin.css" type=text/css rel="stylesheet" />
+    <link href="css/glossary.css" type=text/css rel="stylesheet" />
+
 
 </head>
 
@@ -37,7 +39,9 @@
             <ul class="nav navbar-nav">
 				<li class="appnav"><a href="app.php">Application</a></li>
                 <li class="speciesnav"><a href="species.php">Species</a></li>
-                <li class="about"><a href="about.php">About</a></li>
+                <li class="glossary"><a href="glossary.php">Glossary</a></li>
+                <li class="about"><a href="about.php">About</a>
+
 
             </ul>
             <ul class="nav navbar-nav navbar-right">
