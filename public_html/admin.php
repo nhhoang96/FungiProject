@@ -53,7 +53,7 @@ If($stmt->rowCount() == 0){
         $msg = "<strong>Missing Information!</strong>";
         $msg2 = "<strong>Add failed!</strong><br>";
 
-<<<<<<< HEAD
+
             if ($_POST["commonName"] == "") {
                 $errorFlag = true;
                 $msg .= "<br>Common Name: empty";
@@ -122,7 +122,7 @@ If($stmt->rowCount() == 0){
                 $smarty->display('admin.tpl');
                 exit();
             }
-=======
+
         if ($_POST["commonName"] == "") {
             $errorFlag = true;
             $msg .= "<br>Common Name: empty";
@@ -189,7 +189,7 @@ If($stmt->rowCount() == 0){
             $smarty->display('admin.tpl');
             exit();
         }
->>>>>>> e2ac14d... edit and delete shape
+
 
 
         // ------ Queries ------
@@ -253,7 +253,7 @@ If($stmt->rowCount() == 0){
         $query = "INSERT INTO shape (Shape_Category_ID, Name, Description, Image)
               VALUES (DEFAULT, :shapeName, :description, :image)";
 
-<<<<<<< HEAD
+
 //            $testImage = "testImage.jpg";
             $statement = $pdo->prepare($query);
             $statement->bindValue(':shapeName', $_POST["shapeName"]);
@@ -282,7 +282,7 @@ If($stmt->rowCount() == 0){
                 $smarty->display('admin.tpl');
                 exit();
             }
-=======
+
         $testImage = "testImage.jpg";
         $statement = $pdo->prepare($query);
         $statement->bindValue(':shapeName', $_POST["shapeName"]);
@@ -292,7 +292,7 @@ If($stmt->rowCount() == 0){
 
         $msg3 = "Add Successful!";
     } elseif (isset($_POST["deleteShape"])) {
->>>>>>> e2ac14d... edit and delete shape
+
 
         $errorFlag = false;
         $smarty->assign('errorFlag', $errorFlag);

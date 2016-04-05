@@ -62,11 +62,9 @@
             </div>
             <hr>
         </form>
-<<<<<<< HEAD
-        <form id="updateShape" enctype="multipart/form-data">
-=======
-        <form action="admin.php" method="post" id="updateShape">
->>>>>>> e2ac14d... edit and delete shape
+
+        <form action="admin.php" method="post" id="updateShape" enctype="multipart/form-data">
+
             <h3>Update Shape:</h3>
             <div class="updates">
                 Shape Association:
@@ -87,16 +85,12 @@
                     Name:
                     <input type="text" class="form-control" name="updateShapeName" {if isset($editShapeName)}value="{$editShapeName}"{/if}><br>
                     Description:
-<<<<<<< HEAD
-                    <input type="text" class="form-control"><br>
-                    Update Image:
-                    <input type="file" name="myimage"><br>
-                    <input type="submit" name="addShape"  class="btn btn-default btn-md add form-control" value="Update">
-=======
                     <input type="text" class="form-control" name="updateShapeDescription" {if isset($editShapeDescription)}
                     value="{$editShapeDescription}"{/if}><br>
+                    Update Image:
+                    <input type="file" name="myimage"><br>
+                    {*<input type="submit" name="addShape"  class="btn btn-default btn-md add form-control" value="Update">*}
                     <input type="submit" class="btn btn-default btn-md add form-control" value="Update" name="updateShape">
->>>>>>> e2ac14d... edit and delete shape
                     <p>-Shape is now updated.-</p>
                 </div>
 
