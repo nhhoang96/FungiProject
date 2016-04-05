@@ -1,6 +1,9 @@
 a {
     /*color: white;*/
 }
+#admin li.admin {
+    background-color: grey;
+}
 .admin {
     /*margin-top: 10px;*/
     margin-left: 0;

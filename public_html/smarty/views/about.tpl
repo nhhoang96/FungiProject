@@ -1,4 +1,4 @@
-{include "head.tpl" title="About" active="about"}
+{include "head.tpl" title="About"}
 
 <!--Fungi Team 2015-->
 

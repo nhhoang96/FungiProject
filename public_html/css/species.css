@@ -1,7 +1,9 @@
 body {
 	padding-top: 50px;
 }
-
+#species li.species {
+	background-color: grey;
+}
 #species-list {
 	font-size: 38pt;
 }

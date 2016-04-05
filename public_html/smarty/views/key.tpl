@@ -1,6 +1,4 @@
-{include "head.tpl"}
-
-{include "head.tpl" title="Select Shape" active="app"}
+{include "head.tpl" title="Select Shape"}
 
 <body>
 <div class="container">

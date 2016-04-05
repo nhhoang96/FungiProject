@@ -3,8 +3,7 @@
 
 include "../private_html/setup.php";
 
-$smarty->assign("appActive", "active");
-$smarty->assign("title", "Application");
+$smarty ->assign("pageName", "app");
 
 $query = "SELECT * FROM Shape";
 $stmt = $pdo->prepare($query);

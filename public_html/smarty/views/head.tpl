@@ -19,7 +19,7 @@
 
 </head>
 
-<body>
+<body id="{$pageName}">
 <nav role="navigation" class="navbar navbar-default navbar-fixed-top">
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -35,13 +35,13 @@
         <!-- Collection of nav links and other content for toggling -->
         <div id="navbarCollapse" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-				<li class="{$appActive}"><a href="app.php">Application</a></li>
-                <li class="{$speciesActive}"><a href="species.php">Species</a></li>
-                <li class="{$aboutActive}"><a href="about.php">About</a></li>
+				<li class="app"><a href="app.php">Application</a></li>
+                <li class="species"><a href="species.php">Species</a></li>
+                <li class="about"><a href="about.php">About</a></li>
 
             </ul>
             <ul class="nav navbar-nav navbar-right">
-            <li class="{$adminActive}"><a href="admin.php">Control Panel</a></li>
+            <li class="admin"><a href="admin.php">Control Panel</a></li>
             </ul>
         </div>
         </div>

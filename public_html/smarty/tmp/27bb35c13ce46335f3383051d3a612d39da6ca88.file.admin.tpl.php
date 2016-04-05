@@ -1,10 +1,39 @@
-{include "head.tpl" title="Admin"}
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-03-31 18:40:12
+         compiled from "smarty\views\admin.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:3102756fcc9b137a8c1-54886213%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    '27bb35c13ce46335f3383051d3a612d39da6ca88' => 
+    array (
+      0 => 'smarty\\views\\admin.tpl',
+      1 => 1459442377,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '3102756fcc9b137a8c1-54886213',
+  'function' => 
+  array (
+  ),
+  'version' => 'Smarty-3.1.21-dev',
+  'unifunc' => 'content_56fcc9b13c3067_32066125',
+  'variables' => 
+  array (
+    'adminArray' => 0,
+    'key' => 0,
+    'item' => 0,
+    'shapeArray' => 0,
+  ),
+  'has_nocache_code' => false,
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_56fcc9b13c3067_32066125')) {function content_56fcc9b13c3067_32066125($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("head.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('title'=>"Admin"), 0);?>
+
+<?php echo '<script'; ?>
+ src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"><?php echo '</script'; ?>
+>
 
 <div class="container">
-    {*<ul class="nav navbar-nav navbar-right logout">
-        <li><a class="out" href="SHOULD LOGOUT">Logout</a></li>
-    </ul>*}
+    
     <h2>Admin Dashboard</h2>
     <hr>
     <div class="col-sm-2 admin">
@@ -22,7 +51,7 @@
             <div class="updates">
                 Email:
                 <input type="text" name="newAdmin" class="form-control"><br>
-                {*<a class="btn btn-default btn-sm add form-control">Add</a>*}
+                
                 <input type="submit" class="btn btn-default btn-md add form-control" value="Add" name="addAdmin">
                 <p>-eb1338 is now an admin.-</p><br>
 
@@ -35,11 +64,19 @@
             <div class="updates">
                 Email:
                 <select name="removeAdmin" class="form-control">
-                    {foreach from=$adminArray key=key item=item}
-                        <option value="{$key}">{$item}</option>
-                    {/foreach}
+                    <?php  $_smarty_tpl->tpl_vars['item'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['item']->_loop = false;
+ $_smarty_tpl->tpl_vars['key'] = new Smarty_Variable;
+ $_from = $_smarty_tpl->tpl_vars['adminArray']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+foreach ($_from as $_smarty_tpl->tpl_vars['item']->key => $_smarty_tpl->tpl_vars['item']->value) {
+$_smarty_tpl->tpl_vars['item']->_loop = true;
+ $_smarty_tpl->tpl_vars['key']->value = $_smarty_tpl->tpl_vars['item']->key;
+?>
+                        <option value="<?php echo $_smarty_tpl->tpl_vars['key']->value;?>
+"><?php echo $_smarty_tpl->tpl_vars['item']->value;?>
+</option>
+                    <?php } ?>
                 </select><br>
-                {*<a class="btn btn-default btn-sm add form-control">Delete</a>*}
+                
                 <input type="submit" class="btn btn-default btn-md add form-control" value="Remove" name="deleteAdmin">
                 <p>-sweaver is no longer an admin.-</p>
             </div>
@@ -53,8 +90,8 @@
                 <input type="text" name="shapeName" class="form-control"><br>
                 Description:
                 <input type="text" name="description" class="form-control"><br>
-                {*<a class="btn btn-default btn-sm add form-control">Add</a>*}
-                {*<input type="submit" class="btn btn-default btn-md add form-control" value="Add" name="addShape">*}
+                
+                
                 Upload Image:
                 <input type="file" name="myimage"><br>
                 <input type="submit" name="addShape"  class="btn btn-default btn-md add form-control" value="Upload">
@@ -130,11 +167,19 @@
                 <input type="file" name="myimage"><br>
                 Shape Association:
                 <select name="shape" class="form-control">
-                    {foreach from=$shapeArray key=key item=item}
-                        <option value="{$key}">{$item}</option>
-                    {/foreach}
+                    <?php  $_smarty_tpl->tpl_vars['item'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['item']->_loop = false;
+ $_smarty_tpl->tpl_vars['key'] = new Smarty_Variable;
+ $_from = $_smarty_tpl->tpl_vars['shapeArray']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+foreach ($_from as $_smarty_tpl->tpl_vars['item']->key => $_smarty_tpl->tpl_vars['item']->value) {
+$_smarty_tpl->tpl_vars['item']->_loop = true;
+ $_smarty_tpl->tpl_vars['key']->value = $_smarty_tpl->tpl_vars['item']->key;
+?>
+                        <option value="<?php echo $_smarty_tpl->tpl_vars['key']->value;?>
+"><?php echo $_smarty_tpl->tpl_vars['item']->value;?>
+</option>
+                    <?php } ?>
                 </select><br>
-                {*<a class="btn btn-default btn-md add form-control">Add</a>*}
+                
                 <input type="submit" class="btn btn-default btn-md add form-control" value="Add" name="addSpecies">
                 <p>-New species has been created.-</p>
             </div>
@@ -144,9 +189,17 @@
             <h3>Update Species:</h3>
             <div class="updates">
                 <select name="shape" class="form-control">
-                    {foreach from=$shapeArray key=key item=item}
-                        <option value="{$key}">{$item}</option>
-                    {/foreach}
+                    <?php  $_smarty_tpl->tpl_vars['item'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['item']->_loop = false;
+ $_smarty_tpl->tpl_vars['key'] = new Smarty_Variable;
+ $_from = $_smarty_tpl->tpl_vars['shapeArray']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+foreach ($_from as $_smarty_tpl->tpl_vars['item']->key => $_smarty_tpl->tpl_vars['item']->value) {
+$_smarty_tpl->tpl_vars['item']->_loop = true;
+ $_smarty_tpl->tpl_vars['key']->value = $_smarty_tpl->tpl_vars['item']->key;
+?>
+                        <option value="<?php echo $_smarty_tpl->tpl_vars['key']->value;?>
+"><?php echo $_smarty_tpl->tpl_vars['item']->value;?>
+</option>
+                    <?php } ?>
                 </select><br>
                 <a class="btn btn-default btn-md add form-control">Select</a>
                 Name:
@@ -175,8 +228,11 @@
         </form>
     </div>
 
-    <script src="js/admin.js"></script>
-    {include "footer.tpl"}
+    <?php echo '<script'; ?>
+ src="js/admin.js"><?php echo '</script'; ?>
+>
+    <?php echo $_smarty_tpl->getSubTemplate ("footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
+
 </div>
 </body>
-</html>
+</html><?php }} ?>

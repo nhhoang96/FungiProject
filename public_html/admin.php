@@ -25,14 +25,11 @@ If($stmt->rowCount() == 0){
 } Else {
     //Display to Admin Dashboard tpl
     //echo "You are on the admin Dashboard";
-
-    $smarty->assign("adminActive", "active");
-    $smarty->assign("title", "Admin");
-
+    $smarty ->assign("pageName", "admin");
     //------ Determine which submit button was hit ------
     //------ Add Species -----
         if (isset($_POST["addSpecies"])) {
-            $query = "SELECT Shape_Category_ID, Name FROM shape";
+            $query = "SELECT Shape_Category_ID, Name FROM Shape";
 
             $statement = $pdo->prepare($query);
             $statement->execute();
@@ -124,7 +121,7 @@ If($stmt->rowCount() == 0){
 
 
             // ------ Queries ------
-            $query = "INSERT INTO species (Species_ID, Common_Name, Name_Derivation, Scientific_Name, Phylum, Sp_Order, Family,
+            $query = "INSERT INTO Species (Species_ID, Common_Name, Name_Derivation, Scientific_Name, Phylum, Sp_Order, Family,
               Comments, Wood_substrate, Dimensions, Shape_FK, URL)
               VALUES (DEFAULT, :commonName, :nameDerivation, :scientificName, :phylum, :order, :family,
                :comments, :woodSubstrate, :dimensions, :shape, :url)";
@@ -169,7 +166,7 @@ If($stmt->rowCount() == 0){
                 $smarty->assign('description', $_POST["description"]);
             }
 
-            move_uploaded_file($_FILES["myimage"]["tmp_name"], "img/" . $_FILES["myimage"]["name"]);
+            move_uploaded_file($_FILES["myimage"]["tmp_name"], "images/" . $_FILES["myimage"]["name"]);
 
 
             if ($errorFlag) {
@@ -181,7 +178,7 @@ If($stmt->rowCount() == 0){
 
 
             // ------ Queries ------
-            $query = "INSERT INTO shape (Shape_Category_ID, Name, Description, Image)
+            $query = "INSERT INTO Shape (Shape_Category_ID, Name, Description, Image)
               VALUES (DEFAULT, :shapeName, :description, :image)";
 
 //            $testImage = "testImage.jpg";
@@ -246,7 +243,7 @@ If($stmt->rowCount() == 0){
 
             //------ Insert Query -----
 
-            $query = "DELETE FROM administrator WHERE Admin_ID = :removeAdmin";
+            $query = "DELETE FROM Administrator WHERE Admin_ID = :removeAdmin";
 
             $statement = $pdo->prepare($query);
             $statement->bindValue(':removeAdmin', $_POST["removeAdmin"]);
@@ -256,7 +253,7 @@ If($stmt->rowCount() == 0){
         }
 
 //------ Build Associative Shape Array ------
-    $query = "SELECT Shape_Category_ID, Name FROM shape";
+    $query = "SELECT Shape_Category_ID, Name FROM Shape";
 
     $statement = $pdo->prepare($query);
     $statement->execute();
@@ -269,8 +266,8 @@ If($stmt->rowCount() == 0){
         $smarty->assign("error1", 'Database Error');
     }
     $smarty->assign("shapeArray", $shapeResults);
-    //------ Build Associative Shape Array ------
-    $query = "SELECT Admin_ID, Username FROM administrator";
+    //------ Build Administrative Shape Array ------
+    $query = "SELECT Admin_ID, Username FROM Administrator";
 
     $statement = $pdo->prepare($query);
     $statement->execute();
