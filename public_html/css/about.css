@@ -4,6 +4,10 @@ body {
 	padding-top: 50px;
 }
 
+
+.about li {
+    background-color: gray;
+}
 .dev-padding {
 	/*That's us! **/
 	padding-top: 10px;

@@ -1,5 +1,14 @@
+footer {
+    border-top: 0;
+}
+.container {
+    border-bottom: none;
+}
 a {
     /*color: white;*/
+}
+#admin li.admin {
+    background-color: grey;
 }
 .admin {
     /*margin-top: 10px;*/
@@ -7,13 +16,17 @@ a {
     padding-left: 0;
 
 }
+
+.admin-right {
+    margin-right: 5px;
+}
 .tab {
     height: 75px;
 }
-.li:hover {
-    cursor: pointer;
-    /*cursor: pointer; */
-}
+/*.li:hover {*/
+    /*cursor: pointer;*/
+    /*!*cursor: pointer; *!*/
+/*}*/
 .logout {
     background-color: #d3d3d3;
     color: #000000;
@@ -33,9 +46,9 @@ a {
     color: white;
     margin-left: 0px;
 }
-.updates {
-    padding-left: 50px;
-}
+/*.updates {*/
+    /*padding-left: 50px;*/
+/*}*/
 #deleteAdmin {
     display: block;
 }

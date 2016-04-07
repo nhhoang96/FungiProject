@@ -1,8 +1,9 @@
 <?php
 //Fungi Team 2015
 include "../private_html/setup.php";
-$smarty->assign("speciesActive", "active");
-$smarty->assign("title", "Species");
+
+$smarty ->assign("pageName", "species");
+
 $data = "";
 $newdata = "";
 $tableIndex=0;
