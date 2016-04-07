@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-04-05 21:16:42
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-04-07 04:55:55
          compiled from "smarty\views\about.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:3206956d740c35a6d57-73794449%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '6fb9bd86d46ffa37ff2e705764ab98ec34bf7c98' => 
     array (
       0 => 'smarty\\views\\about.tpl',
-      1 => 1459883148,
+      1 => 1459997754,
       2 => 'file',
     ),
   ),
@@ -84,7 +84,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 				beautiful, serving as subjects for photographers and artists.
 				All of them are useful in teaching aspects of mycology.</p>
 
-				<div class="collapse" data-target="collapse" id="moreInfo">
+				<div class="collapse" data-target="collapse" id="button1">
 					<p><strong>More Information:</strong> If you are unfamiliar
 					with fungi and using keys, be sure to review the
 					information on keys, the glossary, and some of the
@@ -141,8 +141,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 					<em>Lycogala epidendrum</em>.</p>
 				</div><!-- end collapsed group -->
 
-				
-				<input onclick="changeRead()" type="button" data-toggle="collapse" data-target="#moreInfo" value="Read more..." id="readButton" class="btn btn-default btn-lg">
+				<input class="btn btn-default btn-md" id="button2" value= "Read More..." type="button"/></br>
 
 			</div>
 
@@ -237,6 +236,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
  src="js/bootstrap.min.js"><?php echo '</script'; ?>
 >
 		<?php echo '<script'; ?>
- src="js/about.js"><?php echo '</script'; ?>
+ src="js/read_more.js"><?php echo '</script'; ?>
 >
+
 	</body><?php }} ?>
