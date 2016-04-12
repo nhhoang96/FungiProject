@@ -1,4 +1,4 @@
-{include "head.tpl" title="Admin"}
+{include "head.tpl" title="Admin" pageName="admin"}
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 
 <div class="container">
@@ -19,9 +19,9 @@
     <div class="navbar navbar-default admin-nav">
         <div class="navbar-left">
         <ul class="nav navbar-nav">
-            <li class="tab"><a onclick="admin()">Edit Admin</a></li>
-            <li class="tab"><a onclick="test()">Edit Shape</a></li>
-            <li class="tab"><a onclick="species()">Edit Species</a></li>
+            <li><a onclick="admin()">Edit Admin</a></li>
+            <li><a onclick="test()">Edit Shape</a></li>
+            <li><a onclick="species()">Edit Species</a></li>
         </ul>
         </div>
         <div class="navbar-right admin-right">

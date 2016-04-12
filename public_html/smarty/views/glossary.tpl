@@ -1,4 +1,4 @@
-{include "head.tpl" title="Glossary" active="glossary"}
+{include "head.tpl" title="Glossary" pageName="glossary"}
 <body>
 
 <div class="container">
