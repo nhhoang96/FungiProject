@@ -1,4 +1,4 @@
-{include "head.tpl" title="Fungi"}
+{include "head.tpl" title="Fungi" pageName=home}
 
 
 <header class="index-header">

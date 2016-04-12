@@ -17,20 +17,21 @@
         in cases where a picture is worth a thousand words,
         the term is illustrated as well.
     </p><hr>
-    <table class="table table-striped table-hover">
-        <thead>
-            <tr>
-                <th>Term</th>
-                <th>Definition</th>
+    <table class="table table-striped">
+        <thead class="thead-default">
+            <tr class="row">
+                <th class="col-md-3">Term</th>
+                <th class="col-md-9">Definition</th>
             <tr>
         </thead>
         <tbody>
         {foreach $terms as $term}
-        <tr>
+        <tr class="row">
+
             <td>{$term['Term']}</td>
-            <td>{$term['Def']}
+            <td>{$term['Def']}<br>
             {foreach $term['Images'] as $image}
-                    <img src="{$image['Image_Name']}" >
+                    <img src="{$image['Image_Name']}" ><br>
                     {$image['Caption']}{/foreach}</td>
         </tr>
         {/foreach}
