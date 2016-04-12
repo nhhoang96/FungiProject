@@ -21,17 +21,19 @@
         <thead>
             <tr>
                 <th>Term</th>
-                <th>Image</th>
                 <th>Definition</th>
             <tr>
         </thead>
         <tbody>
+        {foreach $terms as $term}
         <tr>
-            <td>annulus</td>
-            <td><img src="img/baseoftree.jpg" class="glossarypic"></td>
-            <td>The ring on the stem of some mushrooms. formed by the separation
-            of the partial veil form the margin of the cap.</td>
+            <td>{$term['Term']}</td>
+            <td>{$term['Def']}
+            {foreach $term['Images'] as $image}
+                    <img src="{$image['Image_Name']}" >
+                    {$image['Caption']}{/foreach}</td>
         </tr>
+        {/foreach}
         </tbody>
     </table>
 
