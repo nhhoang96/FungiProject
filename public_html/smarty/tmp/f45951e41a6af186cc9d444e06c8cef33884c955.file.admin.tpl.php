@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-04-06 06:09:11
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-04-07 20:39:08
          compiled from "smarty\views\admin.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:2194256f4b41a6c85e5-60711128%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'f45951e41a6af186cc9d444e06c8cef33884c955' => 
     array (
       0 => 'smarty\\views\\admin.tpl',
-      1 => 1459915716,
+      1 => 1460054345,
       2 => 'file',
     ),
   ),
@@ -29,7 +29,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_56f4b41a8d19e9_79427401')) {function content_56f4b41a8d19e9_79427401($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("head.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('title'=>"Admin"), 0);?>
+<?php if ($_valid && !is_callable('content_56f4b41a8d19e9_79427401')) {function content_56f4b41a8d19e9_79427401($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("head.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('title'=>"Admin",'pageName'=>"admin"), 0);?>
 
 <?php echo '<script'; ?>
  src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"><?php echo '</script'; ?>
@@ -51,9 +51,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     <div class="navbar navbar-default admin-nav">
         <div class="navbar-left">
         <ul class="nav navbar-nav">
-            <li class="tab"><a onclick="admin()">Edit Admin</a></li>
-            <li class="tab"><a onclick="test()">Edit Shape</a></li>
-            <li class="tab"><a onclick="species()">Edit Species</a></li>
+            <li><a onclick="admin()">Edit Admin</a></li>
+            <li><a onclick="test()">Edit Shape</a></li>
+            <li><a onclick="species()">Edit Species</a></li>
         </ul>
         </div>
         <div class="navbar-right admin-right">
