@@ -30,9 +30,12 @@
 
             <td>{$term['Term']}</td>
             <td>{$term['Def']}<br>
+                <div class="row">
+                    <div class="col-md-4">
             {foreach $term['Images'] as $image}
+
                     <img src="{$image['Image_Name']}" ><br>
-                    {$image['Caption']}{/foreach}</td>
+                    {$image['Caption']}{/foreach}</td></div></div>
         </tr>
         {/foreach}
         </tbody>

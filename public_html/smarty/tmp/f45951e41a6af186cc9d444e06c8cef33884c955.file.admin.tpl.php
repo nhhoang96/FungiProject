@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-04-07 20:39:08
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-04-17 21:26:08
          compiled from "smarty\views\admin.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:2194256f4b41a6c85e5-60711128%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'f45951e41a6af186cc9d444e06c8cef33884c955' => 
     array (
       0 => 'smarty\\views\\admin.tpl',
-      1 => 1460054345,
+      1 => 1460921167,
       2 => 'file',
     ),
   ),
@@ -39,31 +39,32 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     
     <h2>Admin Dashboard</h2>
     <hr>
+
+    <ul class="nav nav-pills admin-nav adminNavBar">
+            <li><a class="tab" onclick="admin()">Edit Admin</a></li>
+            <li><a class="tab" onclick="test()">Edit Shape</a></li>
+            <li><a class="tab" onclick="species()">Edit Species</a></li>
+            <li><a class="tab" href="#">Logout</a></li>
+
+
+    </ul>
     
+    
+        
         
             
             
             
+        
+        
+        
             
-
+                
+            
         
     
-    <div class="navbar navbar-default admin-nav">
-        <div class="navbar-left">
-        <ul class="nav navbar-nav">
-            <li><a onclick="admin()">Edit Admin</a></li>
-            <li><a onclick="test()">Edit Shape</a></li>
-            <li><a onclick="species()">Edit Species</a></li>
-        </ul>
-        </div>
-        <div class="navbar-right admin-right">
-            <ul class="nav navbar-nav">
-                <li><a class="tab">Logout</a></li>
-            </ul>
-        </div>
-    </div>
 
-         
+    
     <div class="col-lg-12 form-group dashboard" id="editAdmin">
         <form action="admin.php" method="post" id="newAdmin">
             <h3>New Admin:</h3>
