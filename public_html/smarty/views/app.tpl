@@ -15,10 +15,13 @@
 					<h2 class="app">{$shape['Name']}</h2>
 					<p>{$shape['Description']}</p>
 				</div>
-				<div class="col-lg-12 sort">
-					<a href="query.php?id={$shape['Shape_Category_ID']}" class="btn btn-default btn-md">Multi-Access Key</a>
+				<div class="col-lg-6 paragraph_1">
+					<a href="query.php?id={$shape['Shape_Category_ID']}" class="btn btn-default btn-md form-control space">Multi-Access Key</a>
 					{*<a href="query.php?id={$shape['Shape_Category_ID']}" class="btn btn-default btn-md">Dichotomous Key</a>*}
-					<a href="species.php?id={$shape['Shape_Category_ID']}" class="btn btn-default btn-md">Species List</a>
+					</div>
+					<div class="col-lg-6 paragraph_2">
+
+					<a href="species.php?id={$shape['Shape_Category_ID']}" class="btn btn-default btn-md form-control">Species List</a>
 				</div>
 
 			{*</div>*}

@@ -2,7 +2,6 @@
 <!--Fungi Team 2015-->
 <link href="css/species.css" type=text/css rel="stylesheet" />
 
-
 <body>
 
 	<div class="container">
