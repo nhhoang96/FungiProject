@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-04-18 23:44:12
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-04-18 23:48:36
          compiled from "smarty\views\glossary.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:28975570407a55345c7-69651566%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'dbc3311385686f1bda4a8fa44c9dfb9eeee1aee9' => 
     array (
       0 => 'smarty\\views\\glossary.tpl',
-      1 => 1461015851,
+      1 => 1461016114,
       2 => 'file',
     ),
   ),
@@ -65,6 +65,7 @@ $_smarty_tpl->tpl_vars['term']->_loop = true;
 </strong></td>
             <td><?php echo $_smarty_tpl->tpl_vars['term']->value['Def'];?>
 <br>
+
                 <table class="row">
                     <tr class="col-md-4">
                             <?php  $_smarty_tpl->tpl_vars['image'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['image']->_loop = false;
@@ -84,6 +85,7 @@ $_smarty_tpl->tpl_vars['image']->_loop = true;
                     </tr>
                 </table>
             </td>
+
 
         </tr>
 
