@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-03-15 20:29:48
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-04-15 15:36:57
          compiled from "smarty\views\result.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1756556e862ac73b8b3-86169062%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '14b280d35bacebefdabfde05dae722f0d909e342' => 
     array (
       0 => 'smarty\\views\\result.tpl',
-      1 => 1456859282,
+      1 => 1460727416,
       2 => 'file',
     ),
   ),
@@ -15,6 +15,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.21-dev',
+  'unifunc' => 'content_56e862ac95a8b8_77306190',
   'variables' => 
   array (
     'sciName' => 0,
@@ -26,17 +28,19 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'comment' => 0,
     'woodSubstrate' => 0,
     'dimensions' => 0,
-    'photoName' => 0,
-    'caption' => 0,
+    'photos' => 0,
+    'pic' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.21-dev',
-  'unifunc' => 'content_56e862ac95a8b8_77306190',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_56e862ac95a8b8_77306190')) {function content_56e862ac95a8b8_77306190($_smarty_tpl) {?><?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['sciName']->value;?>
-<?php $_tmp1=ob_get_clean();?><?php echo $_smarty_tpl->getSubTemplate ("head.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('title'=>$_tmp1,'active'=>"app"), 0);?>
- 
+<?php $_tmp1=ob_get_clean();?><?php echo $_smarty_tpl->getSubTemplate ("head.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('title'=>$_tmp1), 0);?>
+
 <!--Fungi Team 2015-->
+<link rel="stylesheet" type="text/css" href="result.css" />
+<?php echo '<script'; ?>
+ type="text/javascript" src="jquery-1.4.2.min.js"><?php echo '</script'; ?>
+>
 <?php echo '<script'; ?>
 >
 		  $(document).ready(function(){
@@ -68,19 +72,52 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 </p>
 					<p><strong>Dimensions:</strong> <?php echo $_smarty_tpl->tpl_vars['dimensions']->value;?>
 </p>
+
+				<div class="hs">
+					<div class="showcase">
+						<ul style="width:1240px;">
+							<tr class="row">
+								<?php  $_smarty_tpl->tpl_vars['pic'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['pic']->_loop = false;
+ $_from = $_smarty_tpl->tpl_vars['photos']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+foreach ($_from as $_smarty_tpl->tpl_vars['pic']->key => $_smarty_tpl->tpl_vars['pic']->value) {
+$_smarty_tpl->tpl_vars['pic']->_loop = true;
+?>
+									<div class = "imageBox">
+										<img src="img/<?php echo $_smarty_tpl->tpl_vars['pic']->value['Photo_Name'];?>
+" width="200" height="197"/><br>
+										<?php echo $_smarty_tpl->tpl_vars['pic']->value['Caption'];?>
+
+									</div>
+								<?php } ?>
+							</tr>
+						</ul>
+					</div>
 			</div>
-			<div class="col-lg-1"></div>
-			<div class="col-lg-4">
+
+
+				
+					
+						
+							 
+							 
+							 
+							 
+					
+				
+
+				
+					
+						
+							 
+							 
+							 
+							 
+					
+				
 				<!--
-				<img src="<?php echo $_smarty_tpl->tpl_vars['photoName']->value;?>
-" alt="Chania">
-				<h5><?php echo $_smarty_tpl->tpl_vars['caption']->value;?>
-</h5> -->
-				<a href="<?php echo $_smarty_tpl->tpl_vars['photoName']->value;?>
-" data-lightbox="<?php echo $_smarty_tpl->tpl_vars['photoName']->value;?>
-" data-title="<?php echo $_smarty_tpl->tpl_vars['caption']->value;?>
-"><img src="<?php echo $_smarty_tpl->tpl_vars['photoName']->value;?>
-" class="thumbnail" alt="Chania"></a>
+				
+				
+				
 				
 			</div>
 		</div> <!-- end row -->
