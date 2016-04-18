@@ -7,17 +7,17 @@
     </ul>*}
     <h2>Admin Dashboard</h2>
     <hr>
-<<<<<<< .merge_file_a24200
-    <div class="col-sm-2 admin">
-        <ul class="nav nav-tabs nav-stacked edits">
-            <li><a onclick="admin()" class="tab"><h4>Edit Admin</h4><hr></a></li>
-            <li><a onclick="test()"   class="tab"><h4>Edit Shape</h4><hr></a></li>
-            <li><a onclick="species()"   class="tab"><h4>Edit Species</h4><hr></a></li>
-            <li><a class="tab"><h4>Logout</h4><hr></a></li>
-        </ul>
-    </div>
-    <div class="col-lg-10 form-group dashboard" id="editAdmin">
-=======
+{*<<<<<<< .merge_file_a24200*}
+    {*<div class="col-sm-2 admin">*}
+        {*<ul class="nav nav-tabs nav-stacked edits">*}
+            {*<li><a onclick="admin()" class="tab"><h4>Edit Admin</h4><hr></a></li>*}
+            {*<li><a onclick="test()"   class="tab"><h4>Edit Shape</h4><hr></a></li>*}
+            {*<li><a onclick="species()"   class="tab"><h4>Edit Species</h4><hr></a></li>*}
+            {*<li><a class="tab"><h4>Logout</h4><hr></a></li>*}
+        {*</ul>*}
+    {*</div>*}
+    {*<div class="col-lg-10 form-group dashboard" id="editAdmin">*}
+{*=======*}
 
     <ul class="nav nav-pills admin-nav adminNavBar">
             <li><a class="tab" onclick="admin()">Edit Admin</a></li>
@@ -45,7 +45,7 @@
 
     {*NEW NAV ENDS HERE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*}
     <div class="col-lg-12 form-group dashboard" id="editAdmin">
->>>>>>> .merge_file_a23792
+{*>>>>>>> .merge_file_a23792*}
         <form action="admin.php" method="post" id="newAdmin">
             <h3>New Admin:</h3>
             <div class="updates">
