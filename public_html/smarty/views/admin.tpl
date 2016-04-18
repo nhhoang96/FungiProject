@@ -23,7 +23,8 @@
             <li><a class="tab" onclick="admin()">Edit Admin</a></li>
             <li><a class="tab" onclick="test()">Edit Shape</a></li>
             <li><a class="tab" onclick="species()">Edit Species</a></li>
-            <li><a class="tab" href="#">Logout</a></li>
+            <li><a class="tab" href="logout.php">Logout</a></li>
+
 
 
     </ul>
