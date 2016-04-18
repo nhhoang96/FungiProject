@@ -31,8 +31,11 @@
             <td>{$term['Term']}</td>
             <td>{$term['Def']}<br>
             {foreach $term['Images'] as $image}
-                    <img src="{$image['Image_Name']}" ><br>
-                    {$image['Caption']}{/foreach}</td>
+                {if !is_null($image['Image_Name'] ) && !empty($image['Image_Name'] )}
+                    <img src="img/{$image['Image_Name']}" ><br>
+                    {$image['Caption']}
+                {/if}
+                    {/foreach}</td>
         </tr>
         {/foreach}
         </tbody>

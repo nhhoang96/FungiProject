@@ -13,6 +13,8 @@ $terms = array();
 $tempPic = array();
 $tempTerm = array();
 $previous_term = -1;
+
+//---- Retrieve images and assign them to given term ----//
 while($row = $statement->fetch(PDO::FETCH_ASSOC)){
     if($previous_term != $row['Term']) {
         if ($previous_term != -1) {
@@ -27,7 +29,7 @@ while($row = $statement->fetch(PDO::FETCH_ASSOC)){
             $tempPic = array();
         }
         $tempPic[] = array(
-            "Image_Name" => "img/".$row['Image_Name'],
+            "Image_Name" => $row['Image_Name'],
             "Caption" => $row['Caption']
         );
 }
@@ -36,6 +38,8 @@ while($row = $statement->fetch(PDO::FETCH_ASSOC)){
 $tempTerm["Images"] = $tempPic;
 $terms[] = $tempTerm;
 
+
 $smarty->assign('terms', $terms);
 $smarty->display('glossary.tpl');
+
 ?>

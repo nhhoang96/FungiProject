@@ -26,7 +26,7 @@
 				<!--
 				<img src="{$photoName}" alt="Chania">
 				<h5>{$caption}</h5> -->
-				<a href="{$photoName}" data-lightbox="{$photoName}" data-title="{$caption}"><img src="{$photoName}" class="thumbnail" alt="Chania"></a>
+				<a href="{$photoName}" data-lightbox="{$photoName}" data-title="{$caption}"><img src="{$photoName}" class="thumbnail" alt="{$photoName}"></a>
 				
 			</div>
 		</div> <!-- end row -->
