@@ -7,7 +7,18 @@ footer {
 a {
     /*color: white;*/
 }
+.adminNavBar {
+    background-color: darkolivegreen;
+    color: white
+}
+a, a:hover, a:focus {
+    color: white;
+    text-decoration: none;
 
+}
+.nav > li > a:hover, .nav > li > a:focus {
+    background-color:black;
+}
 .admin {
     margin-left: 0;
     padding-left: 0;

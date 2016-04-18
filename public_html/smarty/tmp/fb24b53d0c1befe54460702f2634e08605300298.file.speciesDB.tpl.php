@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-04-05 21:16:41
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-04-18 18:05:28
          compiled from "smarty\views\speciesDB.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:322656d7456aed42d2-13329474%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'fb24b53d0c1befe54460702f2634e08605300298' => 
     array (
       0 => 'smarty\\views\\speciesDB.tpl',
-      1 => 1459883148,
+      1 => 1460995524,
       2 => 'file',
     ),
   ),
@@ -32,13 +32,15 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 ?><?php echo $_smarty_tpl->getSubTemplate ("head.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('title'=>"Species List"), 0);?>
 
 <!--Fungi Team 2015-->
+<link href="css/species.css" type=text/css rel="stylesheet" />
+
 
 <body>
 
 	<div class="container">
 		<div class="page-header">
 
-			<h1 id="species-list"><?php echo $_smarty_tpl->tpl_vars['name']->value;?>
+			<h1 id="species-list" class="speciesTitle"><?php echo $_smarty_tpl->tpl_vars['name']->value;?>
  Species List</h1>
 		</div>
 		<?php if ($_smarty_tpl->tpl_vars['resultCount']->value>0) {?>

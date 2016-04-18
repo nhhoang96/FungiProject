@@ -7,32 +7,45 @@
     </ul>*}
     <h2>Admin Dashboard</h2>
     <hr>
+{*<<<<<<< .merge_file_a24200*}
     {*<div class="col-sm-2 admin">*}
         {*<ul class="nav nav-tabs nav-stacked edits">*}
             {*<li><a onclick="admin()" class="tab"><h4>Edit Admin</h4><hr></a></li>*}
             {*<li><a onclick="test()"   class="tab"><h4>Edit Shape</h4><hr></a></li>*}
             {*<li><a onclick="species()"   class="tab"><h4>Edit Species</h4><hr></a></li>*}
             {*<li><a class="tab"><h4>Logout</h4><hr></a></li>*}
-
         {*</ul>*}
     {*</div>*}
-    <div class="navbar navbar-default admin-nav">
-        <div class="navbar-left">
-        <ul class="nav navbar-nav">
-            <li><a onclick="admin()">Edit Admin</a></li>
-            <li><a onclick="test()">Edit Shape</a></li>
-            <li><a onclick="species()">Edit Species</a></li>
-        </ul>
-        </div>
-        <div class="navbar-right admin-right">
-            <ul class="nav navbar-nav">
-                <li><a class="tab">Logout</a></li>
-            </ul>
-        </div>
-    </div>
+    {*<div class="col-lg-10 form-group dashboard" id="editAdmin">*}
+{*=======*}
 
-         {*NEW NAV ENDS HERE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*}
+    <ul class="nav nav-pills admin-nav adminNavBar">
+            <li><a class="tab" onclick="admin()">Edit Admin</a></li>
+            <li><a class="tab" onclick="test()">Edit Shape</a></li>
+            <li><a class="tab" onclick="species()">Edit Species</a></li>
+            <li><a class="tab" href="#">Logout</a></li>
+
+
+    </ul>
+    {*Old Nav starts here.........*}
+    {*<div class="navbar navbar-default admin-nav">*}
+        {*<div class="navbar-left">*}
+        {*<ul class="nav navbar-nav">*}
+            {*<li><a onclick="admin()">Edit Admin</a></li>*}
+            {*<li><a onclick="test()">Edit Shape</a></li>*}
+            {*<li><a onclick="species()">Edit Species</a></li>*}
+        {*</ul>*}
+        {*</div>*}
+        {*<div class="navbar-right admin-right">*}
+            {*<ul class="nav navbar-nav">*}
+                {*<li><a class="tab">Logout</a></li>*}
+            {*</ul>*}
+        {*</div>*}
+    {*</div>*}
+
+    {*NEW NAV ENDS HERE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*}
     <div class="col-lg-12 form-group dashboard" id="editAdmin">
+{*>>>>>>> .merge_file_a23792*}
         <form action="admin.php" method="post" id="newAdmin">
             <h3>New Admin:</h3>
             <div class="updates">
@@ -41,7 +54,6 @@
                 {*<a class="btn btn-default btn-sm add form-control">Add</a>*}
                 <input type="submit" class="btn btn-default btn-md add form-control" value="Add" name="addAdmin">
                 <p>-eb1338 is now an admin.-</p><br>
-
             </div>
             <hr>
         </form>
@@ -127,6 +139,48 @@
                 <p>-Shape is now deleted.-</p>
             </div>
         </form>
+        <form action="admin.php" method="post" id="addCharacteristic">
+            <h3>Add Characteristic:</h3><br>
+            Shape Association:
+            <select name="shapeID" class="form-control">
+                {if isset($charShapeID)}<option value="{$charShapeID}">{$charShapeName}</option>{/if}
+                {if !isset($charShapeID)}
+                    {foreach from=$shapeArray key=key item=item}
+                        <option value="{$key}">{$item}</option>
+                    {/foreach}
+                {/if}
+            </select><br>
+
+            {if !isset($charShapeID)}
+                <input type="submit" class="btn btn-default btn-md add form-control" value="Select" name="selectCharShape">
+            {/if}
+
+            Name:
+            <input type="text" class="form-control" name="newCharName"><br>
+            <input type="submit" class="btn btn-default btn-md add form-control" value="Add" name="addChar">
+        </form>
+
+        <form action="admin.php" method="post" id="addCharOption">
+            <h3>Add Characteristic Option:</h3><br>
+            Characteristic Association:
+            <select name="charID" class="form-control">
+                {if isset($charID)}<option value="{$charID}">{$charName}</option>{/if}
+                {if !isset($charID)}
+                    {foreach from=$charArray key=key item=item}
+                        <option value="{$key}">{$item}</option>
+                    {/foreach}
+                {/if}
+            </select><br>
+
+            {if !isset($charID)}
+                <input type="submit" class="btn btn-default btn-md add form-control" value="Select" name="selectCharOpt">
+            {/if}
+
+            Name:
+            <input type="text" class="form-control" name="newOptName"><br>
+            <input type="submit" class="btn btn-default btn-md add form-control" value="Add" name="addCharOpt">
+        </form>
+    </div>
     </div>
     <div class="col-lg-12 dashboard" id="editSpecies">
         <form action="admin.php" method="post" id="newSpecies" enctype="multipart/form-data">
@@ -164,41 +218,56 @@
             </div>
             <hr>
         </form>
-        <form id="updateSpecies">
+        <form action="admin.php" method="post" id="updateSpecies" enctype="multipart/form-data">
             <h3>Update Species:</h3>
             <div class="updates">
-                <select name="shape" class="form-control">
-                    {foreach from=$shapeArray key=key item=item}
-                        <option value="{$key}">{$item}</option>
-                    {/foreach}
+                <select name="editSpecies" class="form-control">
+                    {if isset($speciesID)}<option value="{$speciesID}">{$commonName}</option>{/if}
+                    {if !isset($speciesID)}
+                        {foreach from=$speciesArray key=key item=item}
+                            <option value="{$key}">{$item}</option>
+                        {/foreach}
+                    {/if}
                 </select><br>
-                <a class="btn btn-default btn-md add form-control">Select</a>
-                Name:
-                <input type="text" class="form-control"><br>
-                Description:
-                <input type="text" class="form-control"><br>
-                <a class="btn btn-default btn-md add form-control">Update</a>
+                {if !isset($speciesID)}
+                    <input type="submit" class="btn btn-default btn-md add form-control" value="Select" name="selectSpecies">
+                {/if}
+                Scientific Name:
+                <input type="text" class="form-control" name="scientificName" {if isset($scientificName)}value="{$scientificName}"{/if}><br>
+                Common Name:
+                <input type="text" name="commonName" class="form-control" {if isset($commonName)}value="{$commonName}"{/if}><br>
+                Name Derivation:
+                <input type="text" class="form-control" name="nameDerivation" {if isset($nameDerivation)}value="{$nameDerivation}"{/if}><br>
+                Phylum:
+                <input type="text" class="form-control" name="phylum" {if isset($phylum)}value="{$phylum}"{/if}><br>
+                Order:
+                <input type="text" class="form-control" name="order" {if isset($order)}value="{$order}"{/if}><br>
+                Family:
+                <input type="text" class="form-control" name="family" {if isset($family)}value="{$family}"{/if}><br>
+                Comment:
+                <input type="text" class="form-control" name="comments" {if isset($comments)}value="{$comments}"{/if}><br>
+                Wood Substrate:
+                <input type="text" class="form-control" name="woodSubstrate" {if isset($woodSubstrate)}value="{$woodSubstrate}"{/if}><br>
+                Dimensions:
+                <input type="text" class="form-control" name="dimensions" {if isset($dimensions)}value="{$dimensions}"{/if}><br>
+                <input type="submit" class="btn btn-default btn-md add form-control" value="Update" name="updateSpecies">
                 <p>-Shape is now updated.-</p>
             </div>
             <hr>
         </form>
-        <form id="deleteSpecies">
+        <form action="admin.php" method="post" enctype="multipart/form-data" id="deleteSpecies">
             <h3>Delete Species:</h3>
             <div class="updates">
-                <select name="shapes" class="form-control">
-                    <option>Club, Coral, Leafy</option>
-                    <option>Poroid</option>
-                    <option>Cup and Saucer</option>
-                    <option>Gilled</option>
-                    <option>Crust and Parchment</option>
+                <select name="removedSpecies" class="form-control">
+                    {foreach from=$speciesArray key=key item=item}
+                        <option value="{$key}">{$item}</option>
+                    {/foreach}
                 </select><br>
-                <a class="btn btn-default btn-md add form-control">Delete</a>
-
+                <input type="submit" class="btn btn-default btn-md add form-control" value="Delete" name="deleteSpecies">
                 <p>-Shape is now deleted.-</p>
             </div>
         </form>
     </div>
-
     <script src="js/admin.js"></script>
     {include "footer.tpl"}
 </div>
