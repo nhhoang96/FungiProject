@@ -1,4 +1,5 @@
 {include "head.tpl" title="Glossary" pageName="glossary"}
+
 <body>
 
 <div class="container">
