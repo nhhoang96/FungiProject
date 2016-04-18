@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-04-05 21:03:43
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-04-12 20:40:25
          compiled from "smarty\views\admin.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:3102756fcc9b137a8c1-54886213%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '27bb35c13ce46335f3383051d3a612d39da6ca88' => 
     array (
       0 => 'smarty\\views\\admin.tpl',
-      1 => 1459882726,
+      1 => 1460430513,
       2 => 'file',
     ),
   ),
@@ -29,7 +29,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_56fcc9b13c3067_32066125')) {function content_56fcc9b13c3067_32066125($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("head.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('title'=>"Admin"), 0);?>
+<?php if ($_valid && !is_callable('content_56fcc9b13c3067_32066125')) {function content_56fcc9b13c3067_32066125($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("head.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('title'=>"Admin",'pageName'=>"admin"), 0);?>
 
 <?php echo '<script'; ?>
  src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"><?php echo '</script'; ?>
@@ -39,16 +39,32 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     
     <h2>Admin Dashboard</h2>
     <hr>
-    <div class="col-sm-2 admin">
-        <ul class="nav nav-tabs nav-stacked edits">
-            <li><a onclick="admin()" class="tab"><h4>Edit Admin</h4><hr></a></li>
-            <li><a onclick="test()"   class="tab"><h4>Edit Shape</h4><hr></a></li>
-            <li><a onclick="species()"   class="tab"><h4>Edit Species</h4><hr></a></li>
-            <li><a class="tab"><h4>Logout</h4><hr></a></li>
+    
+        
+            
+            
+            
+            
 
+        
+    
+    <div class="navbar navbar-default admin-nav">
+        <div class="navbar-left">
+        <ul class="nav navbar-nav">
+            <li><a onclick="admin()">Edit Admin</a></li>
+            <li><a onclick="test()">Edit Shape</a></li>
+            <li><a onclick="species()">Edit Species</a></li>
         </ul>
+        </div>
+        <div class="navbar-right admin-right">
+            <ul class="nav navbar-nav">
+                <li><a class="tab">Logout</a></li>
+            </ul>
+        </div>
     </div>
-    <div class="col-lg-10 form-group dashboard" id="editAdmin">
+
+         
+    <div class="col-lg-12 form-group dashboard" id="editAdmin">
         <form action="admin.php" method="post" id="newAdmin">
             <h3>New Admin:</h3>
             <div class="updates">
@@ -85,7 +101,7 @@ $_smarty_tpl->tpl_vars['item']->_loop = true;
             </div>
         </form>
     </div>
-    <div class="col-lg-10 form-group dashboard" id="editShape">
+    <div class="col-lg-12 form-group dashboard" id="editShape">
         <form action="admin.php" method="post" id="newShape" enctype="multipart/form-data">
             <h3>New Shape:</h3>
             <div class="updates">
@@ -172,7 +188,7 @@ $_smarty_tpl->tpl_vars['item']->_loop = true;
             </div>
         </form>
     </div>
-    <div class="col-lg-10 dashboard" id="editSpecies">
+    <div class="col-lg-12 dashboard" id="editSpecies">
         <form action="admin.php" method="post" id="newSpecies" enctype="multipart/form-data">
             <h3>New Species:</h3>
             <div class="updates">

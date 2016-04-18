@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-04-05 20:19:23
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-04-12 20:23:59
          compiled from "smarty\views\result.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1319056e9eec04cdd72-99413179%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'cfd9e6f671661db84f38de10b6cfca4c4d277abc' => 
     array (
       0 => 'smarty\\views\\result.tpl',
-      1 => 1459442377,
+      1 => 1460485438,
       2 => 'file',
     ),
   ),
@@ -80,7 +80,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 " data-lightbox="<?php echo $_smarty_tpl->tpl_vars['photoName']->value;?>
 " data-title="<?php echo $_smarty_tpl->tpl_vars['caption']->value;?>
 "><img src="<?php echo $_smarty_tpl->tpl_vars['photoName']->value;?>
-" class="thumbnail" alt="Chania"></a>
+" class="thumbnail" alt="<?php echo $_smarty_tpl->tpl_vars['photoName']->value;?>
+"></a>
 				
 			</div>
 		</div> <!-- end row -->
