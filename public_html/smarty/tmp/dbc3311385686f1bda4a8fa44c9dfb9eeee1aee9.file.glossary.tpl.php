@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-04-18 18:04:37
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-04-18 23:44:12
          compiled from "smarty\views\glossary.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:28975570407a55345c7-69651566%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'dbc3311385686f1bda4a8fa44c9dfb9eeee1aee9' => 
     array (
       0 => 'smarty\\views\\glossary.tpl',
-      1 => 1460995470,
+      1 => 1461015851,
       2 => 'file',
     ),
   ),
@@ -72,12 +72,14 @@ $_smarty_tpl->tpl_vars['term']->_loop = true;
 foreach ($_from as $_smarty_tpl->tpl_vars['image']->key => $_smarty_tpl->tpl_vars['image']->value) {
 $_smarty_tpl->tpl_vars['image']->_loop = true;
 ?>
-                                <th class="col-md-12 multiple-images">
-                                    <img src="<?php echo $_smarty_tpl->tpl_vars['image']->value['Image_Name'];?>
+                                <?php if (!is_null($_smarty_tpl->tpl_vars['image']->value['Image_Name'])&&!empty($_smarty_tpl->tpl_vars['image']->value['Image_Name'])) {?>
+                                    <th class="col-md-12 multiple-images">
+                                        <img src="img/<?php echo $_smarty_tpl->tpl_vars['image']->value['Image_Name'];?>
 " class="glossarypic"><br>
-                                    <?php echo $_smarty_tpl->tpl_vars['image']->value['Caption'];?>
+                                        <?php echo $_smarty_tpl->tpl_vars['image']->value['Caption'];?>
 
-                                </th>
+                                    </th>
+                                <?php }?>
                             <?php } ?>
                     </tr>
                 </table>

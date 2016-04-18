@@ -34,10 +34,12 @@
                 <table class="row">
                     <tr class="col-md-4">
                             {foreach $term['Images'] as $image}
-                                <th class="col-md-12 multiple-images">
-                                    <img src="{$image['Image_Name']}" class="glossarypic"><br>
-                                    {$image['Caption']}
-                                </th>
+                                {if !is_null($image['Image_Name']) && !empty($image['Image_Name'])}
+                                    <th class="col-md-12 multiple-images">
+                                        <img src="{$image['Image_Name']}" class="glossarypic"><br>
+                                        {$image['Caption']}
+                                    </th>
+                                {/if}
                             {/foreach}
                     </tr>
                 </table>
