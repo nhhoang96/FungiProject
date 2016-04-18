@@ -176,7 +176,7 @@
             <h2>Messiah College</h2>
             <h4>Department of Biological Sciences</h4>
             <p>Fungi Growing On Wood is the work of Dr. Gary Emberger, a professor of Botany at Messiah College.</p>
-            <p><a class="btn btn-default btn-sm" href="about.php">Learn More
+            <p><a class="btn btn-default btn-md" href="about.php">Learn More
                     &raquo;</a></p>
         </div>
 

@@ -1,4 +1,6 @@
 {include "head.tpl" title="About"}
+<link href="css/about.css" type=text/css rel="stylesheet" />
+
 
 <!--Fungi Team 2015-->
 

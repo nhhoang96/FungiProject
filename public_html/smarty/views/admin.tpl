@@ -1,4 +1,5 @@
 {include "head.tpl" title="Admin" pageName="admin"}
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 
 <div class="container">

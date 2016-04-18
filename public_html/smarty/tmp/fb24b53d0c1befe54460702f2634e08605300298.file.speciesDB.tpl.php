@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-04-18 18:05:28
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-04-18 23:50:50
          compiled from "smarty\views\speciesDB.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:322656d7456aed42d2-13329474%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'fb24b53d0c1befe54460702f2634e08605300298' => 
     array (
       0 => 'smarty\\views\\speciesDB.tpl',
-      1 => 1460995524,
+      1 => 1460995618,
       2 => 'file',
     ),
   ),
@@ -33,7 +33,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 <!--Fungi Team 2015-->
 <link href="css/species.css" type=text/css rel="stylesheet" />
-
 
 <body>
 
