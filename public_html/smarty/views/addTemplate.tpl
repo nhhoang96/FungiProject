@@ -1,4 +1,4 @@
-{include "head.tpl" title="Admin" active="admin"}
+{include "head.tpl" title="Admin"}
 
 {if isset($msg)}{$msg}{/if}
 {if isset($msg3)}{$msg3}{/if}

@@ -1,4 +1,4 @@
-{include "head.tpl" title="About" active="about"}
+{include "head.tpl" title="About"}
 
 <!--Fungi Team 2015-->
 
@@ -62,7 +62,7 @@
 				beautiful, serving as subjects for photographers and artists.
 				All of them are useful in teaching aspects of mycology.</p>
 
-				<div class="collapse" data-target="collapse" id="moreInfo">
+				<div class="collapse" data-target="collapse" id="button1">
 					<p><strong>More Information:</strong> If you are unfamiliar
 					with fungi and using keys, be sure to review the
 					information on keys, the glossary, and some of the
@@ -119,8 +119,7 @@
 					<em>Lycogala epidendrum</em>.</p>
 				</div><!-- end collapsed group -->
 
-				{*<p><a class="btn btn-default btn-lg" href="#">Read more...&raquo;</a></p>*}
-				<input onclick="changeRead()" type="button" data-toggle="collapse" data-target="#moreInfo" value="Read more..." id="readButton" class="btn btn-default btn-lg">
+				<input class="btn btn-default btn-md" id="button2" value= "Read More..." type="button"/></br>
 
 			</div>
 
@@ -209,5 +208,6 @@
 	<!-- jQuery -->
 	<script src="js/jquery.js"></script> <!-- Bootstrap Core JavaScript -->
 		<script src="js/bootstrap.min.js"></script>
-		<script src="js/about.js"></script>
+		<script src="js/read_more.js"></script>
+
 	</body>

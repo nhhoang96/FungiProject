@@ -1,4 +1,4 @@
-{include "head.tpl" title="Admin" active="admin"}
+{include "head.tpl" title="Admin" pageName="admin"}
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 
 <div class="container">
@@ -7,6 +7,7 @@
     </ul>*}
     <h2>Admin Dashboard</h2>
     <hr>
+<<<<<<< .merge_file_a24200
     <div class="col-sm-2 admin">
         <ul class="nav nav-tabs nav-stacked edits">
             <li><a onclick="admin()" class="tab"><h4>Edit Admin</h4><hr></a></li>
@@ -16,6 +17,35 @@
         </ul>
     </div>
     <div class="col-lg-10 form-group dashboard" id="editAdmin">
+=======
+
+    <ul class="nav nav-pills admin-nav adminNavBar">
+            <li><a class="tab" onclick="admin()">Edit Admin</a></li>
+            <li><a class="tab" onclick="test()">Edit Shape</a></li>
+            <li><a class="tab" onclick="species()">Edit Species</a></li>
+            <li><a class="tab" href="#">Logout</a></li>
+
+
+    </ul>
+    {*Old Nav starts here.........*}
+    {*<div class="navbar navbar-default admin-nav">*}
+        {*<div class="navbar-left">*}
+        {*<ul class="nav navbar-nav">*}
+            {*<li><a onclick="admin()">Edit Admin</a></li>*}
+            {*<li><a onclick="test()">Edit Shape</a></li>*}
+            {*<li><a onclick="species()">Edit Species</a></li>*}
+        {*</ul>*}
+        {*</div>*}
+        {*<div class="navbar-right admin-right">*}
+            {*<ul class="nav navbar-nav">*}
+                {*<li><a class="tab">Logout</a></li>*}
+            {*</ul>*}
+        {*</div>*}
+    {*</div>*}
+
+    {*NEW NAV ENDS HERE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*}
+    <div class="col-lg-12 form-group dashboard" id="editAdmin">
+>>>>>>> .merge_file_a23792
         <form action="admin.php" method="post" id="newAdmin">
             <h3>New Admin:</h3>
             <div class="updates">
@@ -43,7 +73,7 @@
             </div>
         </form>
     </div>
-    <div class="col-lg-10 form-group dashboard" id="editShape">
+    <div class="col-lg-12 form-group dashboard" id="editShape">
         <form action="admin.php" method="post" id="newShape" enctype="multipart/form-data">
             <h3>New Shape:</h3>
             <div class="updates">
@@ -152,7 +182,7 @@
         </form>
     </div>
     </div>
-    <div class="col-lg-10 dashboard" id="editSpecies">
+    <div class="col-lg-12 dashboard" id="editSpecies">
         <form action="admin.php" method="post" id="newSpecies" enctype="multipart/form-data">
             <h3>New Species:</h3>
             <div class="updates">

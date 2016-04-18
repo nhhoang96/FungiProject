@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-03-24 23:24:40
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-04-06 01:14:21
          compiled from "smarty\views\result.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:272556f46928e03a34-13963118%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'faebb40c67f40ab422b3e9708fc2a552f553e362' => 
     array (
       0 => 'smarty\\views\\result.tpl',
-      1 => 1430854206,
+      1 => 1459883148,
       2 => 'file',
     ),
   ),
@@ -15,6 +15,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.21-dev',
+  'unifunc' => 'content_56f4692905b1a2_89114385',
   'variables' => 
   array (
     'sciName' => 0,
@@ -30,12 +32,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'caption' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.21-dev',
-  'unifunc' => 'content_56f4692905b1a2_89114385',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_56f4692905b1a2_89114385')) {function content_56f4692905b1a2_89114385($_smarty_tpl) {?><?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['sciName']->value;?>
-<?php $_tmp1=ob_get_clean();?><?php echo $_smarty_tpl->getSubTemplate ("head.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('title'=>$_tmp1,'active'=>"app"), 0);?>
- 
+<?php $_tmp1=ob_get_clean();?><?php echo $_smarty_tpl->getSubTemplate ("head.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('title'=>$_tmp1), 0);?>
+
 <!--Fungi Team 2015-->
 <?php echo '<script'; ?>
 >

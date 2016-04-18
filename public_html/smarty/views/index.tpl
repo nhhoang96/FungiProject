@@ -1,4 +1,4 @@
-{include "head.tpl" title="Fungi" active="about"}
+{include "head.tpl" title="Fungi" pageName=home}
 
 
 <header class="index-header">
@@ -35,6 +35,7 @@
                 images to show as many diagnostic details as possible.</p
             <p><a class="btn btn-default btn-md" href="app.php">Try Application
                     &raquo;</a></p>
+            <hr>
 
             <div style="text-align:justify">
                 <h2>Why Wood Decay Fungi?</h2>
@@ -168,14 +169,14 @@
                         will be found useful to identify many of the fungi found
                         growing on wood.</p>
                 </div>
-                <br><input class="btn btn-default btn-lg" id="button2" value= "Read More" type="button")"/></br>
+                <br><input class="btn btn-default btn-md" id="button2" value= "Read More..." type="button"/></br>
             </div>
         </div>
         <div class="col-sm-4">
             <h2>Messiah College</h2>
             <h4>Department of Biological Sciences</h4>
             <p>Fungi Growing On Wood is the work of Dr. Gary Emberger, a professor of Botany at Messiah College.</p>
-            <p><a class="btn btn-default btn-md" href="about.php">Learn More
+            <p><a class="btn btn-default btn-sm" href="about.php">Learn More
                     &raquo;</a></p>
         </div>
 
@@ -185,25 +186,8 @@
 </div>
 <script src="js/jquery.js"></script> <!-- Bootstrap Core JavaScript -->
 <script src="js/bootstrap.min.js"></script>
-<script type="text/javascript">
-    $("#button1").hide();
-    $("#button2").click(function(){
-        if ( this.value === 'Read Less' ) {
-            // if it's open close it
-            open = false;
-            this.value = 'Read More';
-            $("#button1").hide();
-        }
-        else {
-            // if it's close open it
-            open = true;
-            this.value = 'Read Less';
-            $(this).siblings("[value='Read Less']").click(); //to collapse the open divs
-            $("#button1").show();
-        }
-    });
+<script src="js/read_more.js"></script>
 
-</script>
 
 
 </body>

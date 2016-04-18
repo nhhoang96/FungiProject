@@ -1,4 +1,4 @@
-{include "head.tpl" title={$sciName} active="app"} 
+{include "head.tpl" title={$sciName}}
 <!--Fungi Team 2015-->
 <script>
 		  $(document).ready(function(){
