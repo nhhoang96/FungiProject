@@ -25,12 +25,12 @@
 
 				<div class="hs">
 					<div class="showcase">
-						<ul style="width:1240px;">
+						<ul style="width:2000px;">
 							<tr class="row">
 								{foreach $photos as $pic}
 									<div class = "imageBox">
-										<img src="img/{$pic['Photo_Name']}" width="200" height="197"/><br>
-										{$pic['Caption']}
+										<img src="img/{$pic['Photo_Name']}" width="250" height="200"><br>
+										<strong>{$pic['Caption']}</strong><br>
 									</div>
 								{/foreach}
 							</tr>
