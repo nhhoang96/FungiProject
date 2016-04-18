@@ -28,15 +28,22 @@
         {foreach $terms as $term}
         <tr class="row">
 
-            <td>{$term['Term']}</td>
+            <td><strong>{$term['Term']}</strong></td>
             <td>{$term['Def']}<br>
-                <div class="row">
-                    <div class="col-md-4">
-            {foreach $term['Images'] as $image}
+                <table class="row">
+                    <tr class="col-md-4">
+                            {foreach $term['Images'] as $image}
+                                <th class="col-md-12 multiple-images">
+                                    <img src="{$image['Image_Name']}" class="glossarypic"><br>
+                                    {$image['Caption']}
+                                </th>
+                            {/foreach}
+                    </tr>
+                </table>
+            </td>
 
-                    <img src="{$image['Image_Name']}" ><br>
-                    {$image['Caption']}{/foreach}</td></div></div>
         </tr>
+
         {/foreach}
         </tbody>
     </table>
