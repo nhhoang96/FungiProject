@@ -5,7 +5,7 @@ include "../private_html/setup.php";
 
 $smarty ->assign("pageName", "app");
 
-$query = "SELECT * FROM Shape";
+$query = "SELECT * FROM shape";
 $stmt = $pdo->prepare($query);
 $stmt->execute();
 

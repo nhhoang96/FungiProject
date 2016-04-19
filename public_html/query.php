@@ -6,7 +6,7 @@ $id = $_GET["id"];
 $smarty->assign("serverID", $_SERVER['PHP_SELF']);
 
 $query = "SELECT Characteristic_ID, c.Name as Char_Name, Option_ID, o.Name as Opt_Name
-	FROM Characteristic c JOIN Characteristic_Option o ON o.Characteristic_FK = Characteristic_ID
+	FROM characteristic c JOIN characteristic_option o ON o.Characteristic_FK = Characteristic_ID
 	WHERE c.Category_FK = :parameter";
 $stmt = $pdo->prepare($query);
 $stmt->bindParam(':parameter', $id, PDO::PARAM_STR);
@@ -64,11 +64,11 @@ if(isset($_POST['submit'])) {
 
 	}
 
-	$query3 = "SELECT * FROM Species
+	$query3 = "SELECT * FROM species
 		WHERE Species_ID IN
 			(SELECT Species_ID FROM
 		(SELECT Species_ID, count(*) AS num
-			FROM Species_Opt LEFT JOIN Species ON Species_ID = SO_Species_ID
+			FROM Species_Opt LEFT JOIN species ON Species_ID = SO_Species_ID
 			WHERE ".$build."
 			GROUP BY Species_ID
 			HAVING num =".$c.") AS s
@@ -82,7 +82,7 @@ if(isset($_POST['submit'])) {
 	}
 	$smarty->assign("urlToBePassed",$urlToBePassed);
 } else {
-	$query4 = "SELECT * FROM Species WHERE Shape_FK = :parameter2";
+	$query4 = "SELECT * FROM species WHERE Shape_FK = :parameter2";
 	$stmt4 = $pdo->prepare($query4);
 	$stmt4->bindParam(':parameter2', $id);
 	$stmt4->execute();

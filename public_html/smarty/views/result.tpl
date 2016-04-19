@@ -62,21 +62,18 @@
 							 {*border="0">*}
 					{*</a>*}
 				{*</div>*}
-<<<<<<< HEAD
-				<!--
-				<img src="{$photoName}" alt="Chania">
-				<h5>{$caption}</h5>
-				<a href="{$photoName}" data-lightbox="{$photoName}" data-title="{$caption}"><img src="{$photoName}" class="thumbnail" alt="{$photoName}"></a> -->
+
+
+				{*<img src="{$photoName}" alt="Chania">*}
+				{*<h5>{$caption}</h5>*}
+				{*<a href="{$photoName}" data-lightbox="{$photoName}" data-title="{$caption}"><img src="{$photoName}" class="thumbnail" alt="{$photoName}"></a>*}
 
 				{*<img src="{$photoName}" alt="Chania">*}
 				{*<h5>{$caption}</h5> -->*}
 				{*<a href="{$photoName}" data-lightbox="{$photoName}" data-title="{$caption}"><img src="img/{$photoName}" class="thumbnail" alt="Chania"></a>*}
 				{**}
 			</div>
-=======
 
-
->>>>>>> 23656d8d0bd653f96900253b830521891f28ff77
 		</div> <!-- end row -->
 	</div>
 		

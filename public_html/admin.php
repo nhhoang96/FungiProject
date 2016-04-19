@@ -85,7 +85,7 @@ if($stmt->rowCount() == 0){
 
         //------ Insert Query -----
 
-        $query = "DELETE FROM administrator WHERE Admin_ID = :removeAdmin";
+        $query = "DELETE FROM Administrator WHERE Admin_ID = :removeAdmin";
 
         $statement = $pdo->prepare($query);
         $statement->bindValue(':removeAdmin', $_POST["removeAdmin"]);
@@ -233,7 +233,7 @@ if($stmt->rowCount() == 0){
     }
 
     //------ Build Associative Admin Array ------
-    $query = "SELECT Admin_ID, Username FROM administrator";
+    $query = "SELECT Admin_ID, Username FROM Administrator";
 
     $statement = $pdo->prepare($query);
     $statement->execute();

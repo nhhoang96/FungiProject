@@ -3,7 +3,7 @@
 //Fungi Team 2015
 include "../private_html/setup.php";
 
-$query = "SELECT * FROM Shape";
+$query = "SELECT * FROM shape";
 $stmt = $pdo->prepare($query);
 $stmt->execute();
 

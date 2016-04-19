@@ -7,7 +7,7 @@ $name = $_GET["name"];
 // Retrieve fungi info
 
 $query = "SELECT Scientific_Name, Common_Name, Name_Derivation, Phylum, Sp_Order, Family, Comments, Wood_Substrate, Dimensions, Species_ID
-	FROM Species WHERE Scientific_Name = :parameter";
+	FROM species WHERE Scientific_Name = :parameter";
 $statement = $pdo->prepare($query);
 $statement->bindParam(':parameter', $name, PDO::PARAM_STR);
 $statement->execute();
@@ -27,7 +27,7 @@ $dimensions = $result['Dimensions'];
 
 $speciesID = $result['Species_ID'];
 
-$query = "SELECT Photo_ID, Photo_Name, Caption FROM Photo WHERE Species_FK = :id";
+$query = "SELECT Photo_ID, Photo_Name, Caption FROM photo WHERE Species_FK = :id";
 $statement = $pdo->prepare($query);
 $statement->bindParam(':id', $speciesID, PDO::PARAM_STR);
 $statement->execute();

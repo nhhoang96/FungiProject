@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-04-19 00:02:02
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-04-19 20:25:40
          compiled from "smarty\views\result.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1319056e9eec04cdd72-99413179%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'cfd9e6f671661db84f38de10b6cfca4c4d277abc' => 
     array (
       0 => 'smarty\\views\\result.tpl',
-      1 => 1461016920,
+      1 => 1461089879,
       2 => 'file',
     ),
   ),
@@ -30,8 +30,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'dimensions' => 0,
     'photos' => 0,
     'pic' => 0,
-    'photoName' => 0,
-    'caption' => 0,
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
@@ -77,21 +75,25 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 				<div class="hs">
 					<div class="showcase">
-						<ul style="width:1240px;">
+						<ul style="width:2000px;">
+							<table>
 							<tr class="row">
 								<?php  $_smarty_tpl->tpl_vars['pic'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['pic']->_loop = false;
  $_from = $_smarty_tpl->tpl_vars['photos']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
 foreach ($_from as $_smarty_tpl->tpl_vars['pic']->key => $_smarty_tpl->tpl_vars['pic']->value) {
 $_smarty_tpl->tpl_vars['pic']->_loop = true;
 ?>
-									<div class = "imageBox">
+									<th class = "col-md-6 imageBox">
 										<img src="img/<?php echo $_smarty_tpl->tpl_vars['pic']->value['Photo_Name'];?>
-" width="200" height="197"/><br>
-										<?php echo $_smarty_tpl->tpl_vars['pic']->value['Caption'];?>
+" width="250" height="200"><br>
+										<div class="col-md-12">
+											<?php echo $_smarty_tpl->tpl_vars['pic']->value['Caption'];?>
 
-									</div>
+										</div>
+									</th>
 								<?php } ?>
 							</tr>
+							</table>
 						</ul>
 					</div>
 			</div>
@@ -116,23 +118,18 @@ $_smarty_tpl->tpl_vars['pic']->_loop = true;
 							 
 					
 				
-				<!--
-				<img src="<?php echo $_smarty_tpl->tpl_vars['photoName']->value;?>
-" alt="Chania">
-				<h5><?php echo $_smarty_tpl->tpl_vars['caption']->value;?>
-</h5>
-				<a href="<?php echo $_smarty_tpl->tpl_vars['photoName']->value;?>
-" data-lightbox="<?php echo $_smarty_tpl->tpl_vars['photoName']->value;?>
-" data-title="<?php echo $_smarty_tpl->tpl_vars['caption']->value;?>
-"><img src="<?php echo $_smarty_tpl->tpl_vars['photoName']->value;?>
-" class="thumbnail" alt="<?php echo $_smarty_tpl->tpl_vars['photoName']->value;?>
-"></a> -->
+
+
+				
+				
+				
 
 				
 				
 				
 				
 			</div>
+
 		</div> <!-- end row -->
 	</div>
 		
