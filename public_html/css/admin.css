@@ -43,30 +43,7 @@ a, a:hover, a:focus {
 /*.updates {*/
     /*padding-left: 50px;*/
 /*}*/
-#deleteAdmin {
-    display: block;
-}
-#newAdmin {
-    display: block;
-}
-#newShape {
-    display: none;
-}
-#updateShape {
-    display: none;
-}
-#deleteShape {
-    display: none;
-}
-#newSpecies {
-    display: none;
-}
-#updateSpecies {
-    display: none;
-}
-#deleteSpecies {
-    display: none;
-}
+
 .dashboard {
     float: right;
 }

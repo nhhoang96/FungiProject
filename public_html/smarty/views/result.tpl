@@ -59,17 +59,14 @@
 					{*</a>*}
 				{*</div>*}
 				<!--
-<<<<<<< HEAD
 				<img src="{$photoName}" alt="Chania">
-				<h5>{$caption}</h5> -->
-				<a href="{$photoName}" data-lightbox="{$photoName}" data-title="{$caption}"><img src="{$photoName}" class="thumbnail" alt="{$photoName}"></a>
-				
-=======
+				<h5>{$caption}</h5>
+				<a href="{$photoName}" data-lightbox="{$photoName}" data-title="{$caption}"><img src="{$photoName}" class="thumbnail" alt="{$photoName}"></a> -->
+
 				{*<img src="{$photoName}" alt="Chania">*}
 				{*<h5>{$caption}</h5> -->*}
 				{*<a href="{$photoName}" data-lightbox="{$photoName}" data-title="{$caption}"><img src="img/{$photoName}" class="thumbnail" alt="Chania"></a>*}
 				{**}
->>>>>>> 2eaad2eff927617f6a971e0092eb06a8a7100bb5
 			</div>
 		</div> <!-- end row -->
 	</div>

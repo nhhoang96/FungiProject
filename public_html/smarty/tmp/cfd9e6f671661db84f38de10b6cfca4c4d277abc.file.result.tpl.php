@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-04-12 20:23:59
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-04-19 00:02:02
          compiled from "smarty\views\result.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1319056e9eec04cdd72-99413179%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'cfd9e6f671661db84f38de10b6cfca4c4d277abc' => 
     array (
       0 => 'smarty\\views\\result.tpl',
-      1 => 1460485438,
+      1 => 1461016920,
       2 => 'file',
     ),
   ),
@@ -28,6 +28,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'comment' => 0,
     'woodSubstrate' => 0,
     'dimensions' => 0,
+    'photos' => 0,
+    'pic' => 0,
     'photoName' => 0,
     'caption' => 0,
   ),
@@ -37,6 +39,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <?php $_tmp1=ob_get_clean();?><?php echo $_smarty_tpl->getSubTemplate ("head.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('title'=>$_tmp1), 0);?>
 
 <!--Fungi Team 2015-->
+<link rel="stylesheet" type="text/css" href="result.css" />
+<?php echo '<script'; ?>
+ type="text/javascript" src="jquery-1.4.2.min.js"><?php echo '</script'; ?>
+>
 <?php echo '<script'; ?>
 >
 		  $(document).ready(function(){
@@ -68,20 +74,63 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 </p>
 					<p><strong>Dimensions:</strong> <?php echo $_smarty_tpl->tpl_vars['dimensions']->value;?>
 </p>
+
+				<div class="hs">
+					<div class="showcase">
+						<ul style="width:1240px;">
+							<tr class="row">
+								<?php  $_smarty_tpl->tpl_vars['pic'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['pic']->_loop = false;
+ $_from = $_smarty_tpl->tpl_vars['photos']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+foreach ($_from as $_smarty_tpl->tpl_vars['pic']->key => $_smarty_tpl->tpl_vars['pic']->value) {
+$_smarty_tpl->tpl_vars['pic']->_loop = true;
+?>
+									<div class = "imageBox">
+										<img src="img/<?php echo $_smarty_tpl->tpl_vars['pic']->value['Photo_Name'];?>
+" width="200" height="197"/><br>
+										<?php echo $_smarty_tpl->tpl_vars['pic']->value['Caption'];?>
+
+									</div>
+								<?php } ?>
+							</tr>
+						</ul>
+					</div>
 			</div>
-			<div class="col-lg-1"></div>
-			<div class="col-lg-4">
+
+
+				
+					
+						
+							 
+							 
+							 
+							 
+					
+				
+
+				
+					
+						
+							 
+							 
+							 
+							 
+					
+				
 				<!--
 				<img src="<?php echo $_smarty_tpl->tpl_vars['photoName']->value;?>
 " alt="Chania">
 				<h5><?php echo $_smarty_tpl->tpl_vars['caption']->value;?>
-</h5> -->
+</h5>
 				<a href="<?php echo $_smarty_tpl->tpl_vars['photoName']->value;?>
 " data-lightbox="<?php echo $_smarty_tpl->tpl_vars['photoName']->value;?>
 " data-title="<?php echo $_smarty_tpl->tpl_vars['caption']->value;?>
 "><img src="<?php echo $_smarty_tpl->tpl_vars['photoName']->value;?>
 " class="thumbnail" alt="<?php echo $_smarty_tpl->tpl_vars['photoName']->value;?>
-"></a>
+"></a> -->
+
+				
+				
+				
 				
 			</div>
 		</div> <!-- end row -->

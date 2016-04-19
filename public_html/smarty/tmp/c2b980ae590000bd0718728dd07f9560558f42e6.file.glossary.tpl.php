@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-04-12 20:55:09
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-04-19 00:02:16
          compiled from "smarty\views\glossary.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:86335705a45e175c85-29664617%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'c2b980ae590000bd0718728dd07f9560558f42e6' => 
     array (
       0 => 'smarty\\views\\glossary.tpl',
-      1 => 1460487307,
+      1 => 1461016206,
       2 => 'file',
     ),
   ),
@@ -26,6 +26,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_5705a45e1ab425_32022311')) {function content_5705a45e1ab425_32022311($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("head.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('title'=>"Glossary",'pageName'=>"glossary"), 0);?>
+
 
 <body>
 
@@ -60,23 +61,34 @@ $_smarty_tpl->tpl_vars['term']->_loop = true;
 ?>
         <tr class="row">
 
-            <td><?php echo $_smarty_tpl->tpl_vars['term']->value['Term'];?>
-</td>
+            <td><strong><?php echo $_smarty_tpl->tpl_vars['term']->value['Term'];?>
+</strong></td>
             <td><?php echo $_smarty_tpl->tpl_vars['term']->value['Def'];?>
 <br>
-            <?php  $_smarty_tpl->tpl_vars['image'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['image']->_loop = false;
+
+                <table class="row">
+                    <tr class="col-md-4">
+                            <?php  $_smarty_tpl->tpl_vars['image'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['image']->_loop = false;
  $_from = $_smarty_tpl->tpl_vars['term']->value['Images']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
 foreach ($_from as $_smarty_tpl->tpl_vars['image']->key => $_smarty_tpl->tpl_vars['image']->value) {
 $_smarty_tpl->tpl_vars['image']->_loop = true;
 ?>
-                <?php if (!is_null($_smarty_tpl->tpl_vars['image']->value['Image_Name'])&&!empty($_smarty_tpl->tpl_vars['image']->value['Image_Name'])) {?>
-                    <img src="img/<?php echo $_smarty_tpl->tpl_vars['image']->value['Image_Name'];?>
-" ><br>
-                    <?php echo $_smarty_tpl->tpl_vars['image']->value['Caption'];?>
+                                <?php if (!is_null($_smarty_tpl->tpl_vars['image']->value['Image_Name'])&&!empty($_smarty_tpl->tpl_vars['image']->value['Image_Name'])) {?>
+                                    <th class="col-md-12 multiple-images">
+                                        <img src="img/<?php echo $_smarty_tpl->tpl_vars['image']->value['Image_Name'];?>
+" class="glossarypic"><br>
+                                        <?php echo $_smarty_tpl->tpl_vars['image']->value['Caption'];?>
 
-                <?php }?>
-                    <?php } ?></td>
+                                    </th>
+                                <?php }?>
+                            <?php } ?>
+                    </tr>
+                </table>
+            </td>
+
+
         </tr>
+
         <?php } ?>
         </tbody>
     </table>
