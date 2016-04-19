@@ -6,7 +6,7 @@ $id = $_GET["id"];
 $smarty->assign("serverID", $_SERVER['PHP_SELF']);
 
 $query = "SELECT Characteristic_ID, c.Name as Char_Name, Option_ID, o.Name as Opt_Name
-	FROM Characteristic c JOIN C_Option o ON Opt_Characteristic_ID = Characteristic_ID
+	FROM Characteristic c JOIN Characteristic_Option o ON o.Characteristic_FK = Characteristic_ID
 	WHERE c.Category_FK = :parameter";
 $stmt = $pdo->prepare($query);
 $stmt->bindParam(':parameter', $id, PDO::PARAM_STR);

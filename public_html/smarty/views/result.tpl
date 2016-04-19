@@ -25,15 +25,19 @@
 
 				<div class="hs">
 					<div class="showcase">
-						<ul style="width:1240px;">
+						<ul style="width:2000px;">
+							<table>
 							<tr class="row">
 								{foreach $photos as $pic}
-									<div class = "imageBox">
-										<img src="img/{$pic['Photo_Name']}" width="200" height="197"/><br>
-										{$pic['Caption']}
-									</div>
+									<th class = "col-md-6 imageBox">
+										<img src="img/{$pic['Photo_Name']}" width="250" height="200"><br>
+										<div class="col-md-12">
+											{$pic['Caption']}
+										</div>
+									</th>
 								{/foreach}
 							</tr>
+							</table>
 						</ul>
 					</div>
 			</div>
@@ -58,6 +62,7 @@
 							 {*border="0">*}
 					{*</a>*}
 				{*</div>*}
+<<<<<<< HEAD
 				<!--
 				<img src="{$photoName}" alt="Chania">
 				<h5>{$caption}</h5>
@@ -68,6 +73,10 @@
 				{*<a href="{$photoName}" data-lightbox="{$photoName}" data-title="{$caption}"><img src="img/{$photoName}" class="thumbnail" alt="Chania"></a>*}
 				{**}
 			</div>
+=======
+
+
+>>>>>>> 23656d8d0bd653f96900253b830521891f28ff77
 		</div> <!-- end row -->
 	</div>
 		

@@ -1,22 +1,22 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-04-18 23:42:33
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-04-11 17:57:21
          compiled from "smarty\views\head.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:903156e8626eec3357-27324442%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:679357040900ed6b38-45031509%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    '3cb02134d785cedb5665c8b77ff3e65de3571c6e' => 
+    '49cbcb3919b9e93c232b5e37d425f64c56c77e11' => 
     array (
       0 => 'smarty\\views\\head.tpl',
-      1 => 1461009244,
+      1 => 1460054826,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '903156e8626eec3357-27324442',
+  'nocache_hash' => '679357040900ed6b38-45031509',
   'function' => 
   array (
   ),
   'version' => 'Smarty-3.1.21-dev',
-  'unifunc' => 'content_56e8626f034a85_26539392',
+  'unifunc' => 'content_57040900ef9dc9_39571591',
   'variables' => 
   array (
     'title' => 0,
@@ -24,7 +24,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_56e8626f034a85_26539392')) {function content_56e8626f034a85_26539392($_smarty_tpl) {?><!DOCTYPE html>
+<?php if ($_valid && !is_callable('content_57040900ef9dc9_39571591')) {function content_57040900ef9dc9_39571591($_smarty_tpl) {?><!DOCTYPE html>
 <html lang="en">
 <head>
 	<title><?php echo $_smarty_tpl->tpl_vars['title']->value;?>
@@ -37,13 +37,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 	<!--Change stylesheet based on page-->
     <link href="css/application.css" type="text/css" rel="stylesheet" />
 	<link href="css/about.css" type=text/css rel="stylesheet" />
+	<link href="css/species.css" type=text/css rel="stylesheet" />
 		<!-- Table sorting -->
 	<link href="css/result.css" type=text/css rel="stylesheet" />
 	<link href="css/lightbox.css" type=text/css rel="stylesheet" />
 	<link href="css/cards.css" type=text/css rel="stylesheet" />
     <link href="css/admin.css" type=text/css rel="stylesheet" />
     <link href="css/glossary.css" type=text/css rel="stylesheet" />
-
 
 
 </head>

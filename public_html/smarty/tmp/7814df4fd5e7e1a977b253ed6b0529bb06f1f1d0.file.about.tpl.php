@@ -1,27 +1,25 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-04-19 01:14:12
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-04-05 20:50:40
          compiled from "smarty\views\about.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:3206956d740c35a6d57-73794449%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:2497657040900d53f69-72496056%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    '6fb9bd86d46ffa37ff2e705764ab98ec34bf7c98' => 
+    '7814df4fd5e7e1a977b253ed6b0529bb06f1f1d0' => 
     array (
       0 => 'smarty\\views\\about.tpl',
-      1 => 1461021249,
+      1 => 1459881803,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '3206956d740c35a6d57-73794449',
+  'nocache_hash' => '2497657040900d53f69-72496056',
   'function' => 
   array (
   ),
-  'version' => 'Smarty-3.1.21-dev',
-  'unifunc' => 'content_56d740c3679fd3_09394741',
   'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.21-dev',
+  'unifunc' => 'content_57040900eafa36_09429216',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_56d740c3679fd3_09394741')) {function content_56d740c3679fd3_09394741($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("head.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('title'=>"About"), 0);?>
-
-<link href="css/about.css" type=text/css rel="stylesheet" />
+<?php if ($_valid && !is_callable('content_57040900eafa36_09429216')) {function content_57040900eafa36_09429216($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("head.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('title'=>"About",'active'=>"about"), 0);?>
 
 
 <!--Fungi Team 2015-->
@@ -86,7 +84,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 				beautiful, serving as subjects for photographers and artists.
 				All of them are useful in teaching aspects of mycology.</p>
 
-				<div class="collapse" data-target="collapse" id="button1">
+				<div class="collapse" data-target="collapse" id="moreInfo">
 					<p><strong>More Information:</strong> If you are unfamiliar
 					with fungi and using keys, be sure to review the
 					information on keys, the glossary, and some of the
@@ -143,7 +141,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 					<em>Lycogala epidendrum</em>.</p>
 				</div><!-- end collapsed group -->
 
-				<input class="btn btn-default btn-md" id="button2" value= "Read More..." type="button"/></br>
+				
+				<input onclick="changeRead()" type="button" data-toggle="collapse" data-target="#moreInfo" value="Read more..." id="readButton" class="btn btn-default btn-lg">
 
 			</div>
 
@@ -238,7 +237,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
  src="js/bootstrap.min.js"><?php echo '</script'; ?>
 >
 		<?php echo '<script'; ?>
- src="js/read_more.js"><?php echo '</script'; ?>
+ src="js/about.js"><?php echo '</script'; ?>
 >
-
 	</body><?php }} ?>

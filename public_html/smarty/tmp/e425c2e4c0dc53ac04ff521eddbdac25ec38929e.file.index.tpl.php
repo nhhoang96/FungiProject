@@ -1,25 +1,25 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-04-19 01:15:17
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-04-05 21:10:47
          compiled from "smarty\views\index.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:961456d740be38fa01-14829434%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:2545857040db7afe690-19490701%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    'e32132b8b03258c8108838f93819d389860367d3' => 
+    'e425c2e4c0dc53ac04ff521eddbdac25ec38929e' => 
     array (
       0 => 'smarty\\views\\index.tpl',
-      1 => 1461021314,
+      1 => 1459881803,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '961456d740be38fa01-14829434',
+  'nocache_hash' => '2545857040db7afe690-19490701',
   'function' => 
   array (
   ),
-  'version' => 'Smarty-3.1.21-dev',
-  'unifunc' => 'content_56d740be3c4c44_35749843',
   'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.21-dev',
+  'unifunc' => 'content_57040db7b44ba4_24918226',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_56d740be3c4c44_35749843')) {function content_56d740be3c4c44_35749843($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("head.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('title'=>"Fungi",'pageName'=>'home'), 0);?>
+<?php if ($_valid && !is_callable('content_57040db7b44ba4_24918226')) {function content_57040db7b44ba4_24918226($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("head.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('title'=>"Fungi",'active'=>"about"), 0);?>
 
 
 
@@ -57,7 +57,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                 images to show as many diagnostic details as possible.</p
             <p><a class="btn btn-default btn-md" href="app.php">Try Application
                     &raquo;</a></p>
-            <hr>
 
             <div style="text-align:justify">
                 <h2>Why Wood Decay Fungi?</h2>
@@ -191,7 +190,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                         will be found useful to identify many of the fungi found
                         growing on wood.</p>
                 </div>
-                <br><input class="btn btn-default btn-md" id="button2" value= "Read More..." type="button"/></br>
+                <br><input class="btn btn-default btn-lg" id="button2" value= "Read More" type="button")"/></br>
             </div>
         </div>
         <div class="col-sm-4">
@@ -214,9 +213,26 @@ $_valid = $_smarty_tpl->decodeProperties(array (
  src="js/bootstrap.min.js"><?php echo '</script'; ?>
 >
 <?php echo '<script'; ?>
- src="js/read_more.js"><?php echo '</script'; ?>
->
+ type="text/javascript">
+    $("#button1").hide();
+    $("#button2").click(function(){
+        if ( this.value === 'Read Less' ) {
+            // if it's open close it
+            open = false;
+            this.value = 'Read More';
+            $("#button1").hide();
+        }
+        else {
+            // if it's close open it
+            open = true;
+            this.value = 'Read Less';
+            $(this).siblings("[value='Read Less']").click(); //to collapse the open divs
+            $("#button1").show();
+        }
+    });
 
+<?php echo '</script'; ?>
+>
 
 
 </body>

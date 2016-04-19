@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-04-15 15:36:57
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-04-19 01:46:22
          compiled from "smarty\views\result.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1756556e862ac73b8b3-86169062%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '14b280d35bacebefdabfde05dae722f0d909e342' => 
     array (
       0 => 'smarty\\views\\result.tpl',
-      1 => 1460727416,
+      1 => 1461023039,
       2 => 'file',
     ),
   ),
@@ -75,21 +75,25 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 				<div class="hs">
 					<div class="showcase">
-						<ul style="width:1240px;">
+						<ul style="width:2000px;">
+							<table>
 							<tr class="row">
 								<?php  $_smarty_tpl->tpl_vars['pic'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['pic']->_loop = false;
  $_from = $_smarty_tpl->tpl_vars['photos']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
 foreach ($_from as $_smarty_tpl->tpl_vars['pic']->key => $_smarty_tpl->tpl_vars['pic']->value) {
 $_smarty_tpl->tpl_vars['pic']->_loop = true;
 ?>
-									<div class = "imageBox">
+									<th class = "col-md-6 imageBox">
 										<img src="img/<?php echo $_smarty_tpl->tpl_vars['pic']->value['Photo_Name'];?>
-" width="200" height="197"/><br>
-										<?php echo $_smarty_tpl->tpl_vars['pic']->value['Caption'];?>
+" width="250" height="200"><br>
+										<div class="col-md-12">
+											<?php echo $_smarty_tpl->tpl_vars['pic']->value['Caption'];?>
 
-									</div>
+										</div>
+									</th>
 								<?php } ?>
 							</tr>
+							</table>
 						</ul>
 					</div>
 			</div>
@@ -114,12 +118,8 @@ $_smarty_tpl->tpl_vars['pic']->_loop = true;
 							 
 					
 				
-				<!--
-				
-				
-				
-				
-			</div>
+
+
 		</div> <!-- end row -->
 	</div>
 		

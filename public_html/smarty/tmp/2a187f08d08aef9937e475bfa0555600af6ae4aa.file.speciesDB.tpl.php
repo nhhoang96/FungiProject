@@ -1,22 +1,20 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-04-18 23:42:49
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-04-05 20:50:55
          compiled from "smarty\views\speciesDB.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:2238856e862a1e78a91-30715950%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:17245704090f2ef194-63847535%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    '2b7aa33b450afb640fb3574b0b0a0e641f655888' => 
+    '2a187f08d08aef9937e475bfa0555600af6ae4aa' => 
     array (
       0 => 'smarty\\views\\speciesDB.tpl',
-      1 => 1461009244,
+      1 => 1459881803,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '2238856e862a1e78a91-30715950',
+  'nocache_hash' => '17245704090f2ef194-63847535',
   'function' => 
   array (
   ),
-  'version' => 'Smarty-3.1.21-dev',
-  'unifunc' => 'content_56e862a25f5126_77054928',
   'variables' => 
   array (
     'name' => 0,
@@ -27,19 +25,20 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'info' => 0,
   ),
   'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.21-dev',
+  'unifunc' => 'content_5704090f373eb6_27416343',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_56e862a25f5126_77054928')) {function content_56e862a25f5126_77054928($_smarty_tpl) {?><?php if (!is_callable('smarty_function_html_table')) include 'C:\\Users\\Z-Ean\\Documents\\fungi\\public_html\\smarty\\libs\\plugins\\function.html_table.php';
-?><?php echo $_smarty_tpl->getSubTemplate ("head.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('title'=>"Species List"), 0);?>
+<?php if ($_valid && !is_callable('content_5704090f373eb6_27416343')) {function content_5704090f373eb6_27416343($_smarty_tpl) {?><?php if (!is_callable('smarty_function_html_table')) include 'C:\\Users\\Hoang\\Documents\\fungi\\public_html\\smarty\\libs\\plugins\\function.html_table.php';
+?><?php echo $_smarty_tpl->getSubTemplate ("head.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
 
 <!--Fungi Team 2015-->
-<link href="css/species.css" type=text/css rel="stylesheet" />
 
 <body>
 
 	<div class="container">
 		<div class="page-header">
 
-			<h1 id="species-list" class="speciesTitle"><?php echo $_smarty_tpl->tpl_vars['name']->value;?>
+			<h1 id="species-list"><?php echo $_smarty_tpl->tpl_vars['name']->value;?>
  Species List</h1>
 		</div>
 		<?php if ($_smarty_tpl->tpl_vars['resultCount']->value>0) {?>
