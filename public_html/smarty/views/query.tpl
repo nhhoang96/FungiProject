@@ -91,12 +91,5 @@
 	</li>
 
 </ul>
-{*<script type="text/javascript">*}
-	{*$(document).ready(function(){*}
-		{*$(".panel-title a").click(function(){*}
-			{*var showPanel = $(this).attr('href');*}
-			{*$("#"+showPanel).toggle( "slow" );*}
-		{*});*}
-	{*});*}
-{*</script>*}
+
 </html>
