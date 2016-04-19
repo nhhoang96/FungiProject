@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-03-29 20:56:35
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-04-18 23:42:49
          compiled from "smarty\views\speciesDB.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:2238856e862a1e78a91-30715950%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '2b7aa33b450afb640fb3574b0b0a0e641f655888' => 
     array (
       0 => 'smarty\\views\\speciesDB.tpl',
-      1 => 1458258780,
+      1 => 1461009244,
       2 => 'file',
     ),
   ),
@@ -19,6 +19,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'unifunc' => 'content_56e862a25f5126_77054928',
   'variables' => 
   array (
+    'name' => 0,
+    'resultCount' => 0,
     'data' => 0,
     'newdata' => 0,
     'fungus' => 0,
@@ -27,16 +29,20 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_56e862a25f5126_77054928')) {function content_56e862a25f5126_77054928($_smarty_tpl) {?><?php if (!is_callable('smarty_function_html_table')) include 'C:\\Users\\Z-Ean\\Documents\\fungi\\public_html\\smarty\\libs\\plugins\\function.html_table.php';
-?><?php echo $_smarty_tpl->getSubTemplate ("head.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
+?><?php echo $_smarty_tpl->getSubTemplate ("head.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('title'=>"Species List"), 0);?>
 
 <!--Fungi Team 2015-->
+<link href="css/species.css" type=text/css rel="stylesheet" />
 
 <body>
 
 	<div class="container">
 		<div class="page-header">
-			<h1 id="species-list">Complete Species List</h1>
+
+			<h1 id="species-list" class="speciesTitle"><?php echo $_smarty_tpl->tpl_vars['name']->value;?>
+ Species List</h1>
 		</div>
+		<?php if ($_smarty_tpl->tpl_vars['resultCount']->value>0) {?>
 		<!--<?php echo smarty_function_html_table(array('loop'=>$_smarty_tpl->tpl_vars['data']->value,'cols'=>5,'table_attr'=>"class=table"),$_smarty_tpl);?>
  -->
 		<!--
@@ -83,6 +89,8 @@ $_smarty_tpl->tpl_vars['info']->_loop = true;
 			</tbody>
 		<?php } ?>
 		</table>
+		<?php } else { ?> No Species Found
+		<?php }?>
 
 		<?php echo $_smarty_tpl->getSubTemplate ("footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
 

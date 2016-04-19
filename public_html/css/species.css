@@ -7,3 +7,6 @@ body {
 #species-list {
 	font-size: 38pt;
 }
+a, a:hover, a:focus  {
+	color: darkolivegreen;
+}

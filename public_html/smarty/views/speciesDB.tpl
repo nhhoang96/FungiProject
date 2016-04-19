@@ -1,12 +1,13 @@
 {include "head.tpl" title="Species List"}
 <!--Fungi Team 2015-->
+<link href="css/species.css" type=text/css rel="stylesheet" />
 
 <body>
 
 	<div class="container">
 		<div class="page-header">
 
-			<h1 id="species-list">{$name} Species List</h1>
+			<h1 id="species-list" class="speciesTitle">{$name} Species List</h1>
 		</div>
 		{if $resultCount > 0}
 		<!--{html_table loop=$data cols=5 table_attr="class=table"} -->

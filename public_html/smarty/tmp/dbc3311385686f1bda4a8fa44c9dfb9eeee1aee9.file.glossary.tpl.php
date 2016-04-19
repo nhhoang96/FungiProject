@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-04-06 01:48:57
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-04-18 23:48:36
          compiled from "smarty\views\glossary.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:28975570407a55345c7-69651566%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'dbc3311385686f1bda4a8fa44c9dfb9eeee1aee9' => 
     array (
       0 => 'smarty\\views\\glossary.tpl',
-      1 => 1459900135,
+      1 => 1461016114,
       2 => 'file',
     ),
   ),
@@ -17,9 +17,16 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'version' => 'Smarty-3.1.21-dev',
   'unifunc' => 'content_570407a5535f79_44379073',
+  'variables' => 
+  array (
+    'terms' => 0,
+    'term' => 0,
+    'image' => 0,
+  ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_570407a5535f79_44379073')) {function content_570407a5535f79_44379073($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("head.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('title'=>"Glossary",'active'=>"glossary"), 0);?>
+<?php if ($_valid && !is_callable('content_570407a5535f79_44379073')) {function content_570407a5535f79_44379073($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("head.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('title'=>"Glossary",'pageName'=>"glossary"), 0);?>
+
 
 <body>
 
@@ -39,21 +46,50 @@ $_valid = $_smarty_tpl->decodeProperties(array (
         in cases where a picture is worth a thousand words,
         the term is illustrated as well.
     </p><hr>
-    <table class="table table-striped table-hover">
-        <thead>
-            <tr>
-                <th>Term</th>
-                <th>Image</th>
-                <th>Definition</th>
+    <table class="table table-striped">
+        <thead class="thead-default">
+            <tr class="row">
+                <th class="col-md-3">Term</th>
+                <th class="col-md-9">Definition</th>
             <tr>
         </thead>
         <tbody>
-        <tr>
-            <td>annulus</td>
-            <td><img src="img/baseoftree.jpg" class="glossarypic"></td>
-            <td>The ring on the stem of some mushrooms. formed by the separation
-            of the partial veil form the margin of the cap.</td>
+        <?php  $_smarty_tpl->tpl_vars['term'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['term']->_loop = false;
+ $_from = $_smarty_tpl->tpl_vars['terms']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+foreach ($_from as $_smarty_tpl->tpl_vars['term']->key => $_smarty_tpl->tpl_vars['term']->value) {
+$_smarty_tpl->tpl_vars['term']->_loop = true;
+?>
+        <tr class="row">
+
+            <td><strong><?php echo $_smarty_tpl->tpl_vars['term']->value['Term'];?>
+</strong></td>
+            <td><?php echo $_smarty_tpl->tpl_vars['term']->value['Def'];?>
+<br>
+
+                <table class="row">
+                    <tr class="col-md-4">
+                            <?php  $_smarty_tpl->tpl_vars['image'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['image']->_loop = false;
+ $_from = $_smarty_tpl->tpl_vars['term']->value['Images']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+foreach ($_from as $_smarty_tpl->tpl_vars['image']->key => $_smarty_tpl->tpl_vars['image']->value) {
+$_smarty_tpl->tpl_vars['image']->_loop = true;
+?>
+                                <?php if (!is_null($_smarty_tpl->tpl_vars['image']->value['Image_Name'])&&!empty($_smarty_tpl->tpl_vars['image']->value['Image_Name'])) {?>
+                                    <th class="col-md-12 multiple-images">
+                                        <img src="img/<?php echo $_smarty_tpl->tpl_vars['image']->value['Image_Name'];?>
+" class="glossarypic"><br>
+                                        <?php echo $_smarty_tpl->tpl_vars['image']->value['Caption'];?>
+
+                                    </th>
+                                <?php }?>
+                            <?php } ?>
+                    </tr>
+                </table>
+            </td>
+
+
         </tr>
+
+        <?php } ?>
         </tbody>
     </table>
 

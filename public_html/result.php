@@ -31,14 +31,18 @@ $query = "SELECT Photo_ID, Photo_Name, Caption FROM Photo WHERE Species_FK = :id
 $statement = $pdo->prepare($query);
 $statement->bindParam(':id', $speciesID, PDO::PARAM_STR);
 $statement->execute();
-$result = $statement->fetch(PDO::FETCH_ASSOC);
+$photos = array();
 
-$photoID = $result['Photo_ID'];
-$photoName = $result['Photo_Name'];
-$photoName = "img/".$photoName;
-$caption = $result['Caption'];
+while($row = $statement->fetch(PDO::FETCH_ASSOC)){
 
+    $photos[] = array (
+        "Photo_Name" => $row['Photo_Name'],
+        "Caption" => $row['Caption']
 
+    );
+}
+
+$smarty->assign('photos', $photos);
 $smarty->assign('sciName', $sciName);
 $smarty->assign('commonName', $commonName);
 $smarty->assign('nameDerivation', $nameDerivation);
@@ -47,9 +51,6 @@ $smarty->assign('spOrder', $spOrder);
 $smarty->assign('family', $family);
 $smarty->assign('comment', $comment);
 $smarty->assign('woodSubstrate', $woodSubstrate);
-$smarty->assign('dimensions', $dimensions);
-$smarty->assign('photoID', $photoID);
-$smarty->assign('photoName', $photoName);
-$smarty->assign('caption', $caption);
+$smarty->assign('dimensions', $dimensions);;
 $smarty->display('result.tpl');
 ?>

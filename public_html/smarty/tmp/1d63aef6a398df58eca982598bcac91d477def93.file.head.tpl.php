@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-04-06 01:17:41
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-04-19 01:14:12
          compiled from "smarty\views\head.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:2706856d740be432da2-79862852%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '1d63aef6a398df58eca982598bcac91d477def93' => 
     array (
       0 => 'smarty\\views\\head.tpl',
-      1 => 1459898251,
+      1 => 1461021249,
       2 => 'file',
     ),
   ),
@@ -37,13 +37,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 	<!--Change stylesheet based on page-->
     <link href="css/application.css" type="text/css" rel="stylesheet" />
 	<link href="css/about.css" type=text/css rel="stylesheet" />
-	<link href="css/species.css" type=text/css rel="stylesheet" />
 		<!-- Table sorting -->
 	<link href="css/result.css" type=text/css rel="stylesheet" />
 	<link href="css/lightbox.css" type=text/css rel="stylesheet" />
 	<link href="css/cards.css" type=text/css rel="stylesheet" />
-    <link href="css/admin.css" type=text/css rel="stylesheet" />
     <link href="css/glossary.css" type=text/css rel="stylesheet" />
+    <link href="css/admin.css" type=text/css rel="stylesheet" />
+
 
 
 </head>

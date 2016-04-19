@@ -1,4 +1,5 @@
-{include "head.tpl" title="Glossary" active="glossary"}
+{include "head.tpl" title="Glossary" pageName="glossary"}
+
 <body>
 
 <div class="container">
@@ -17,21 +18,38 @@
         in cases where a picture is worth a thousand words,
         the term is illustrated as well.
     </p><hr>
-    <table class="table table-striped table-hover">
-        <thead>
-            <tr>
-                <th>Term</th>
-                <th>Image</th>
-                <th>Definition</th>
+    <table class="table table-striped">
+        <thead class="thead-default">
+            <tr class="row">
+                <th class="col-md-3">Term</th>
+                <th class="col-md-9">Definition</th>
             <tr>
         </thead>
         <tbody>
-        <tr>
-            <td>annulus</td>
-            <td><img src="img/baseoftree.jpg" class="glossarypic"></td>
-            <td>The ring on the stem of some mushrooms. formed by the separation
-            of the partial veil form the margin of the cap.</td>
+        {foreach $terms as $term}
+        <tr class="row">
+
+            <td><strong>{$term['Term']}</strong></td>
+            <td>{$term['Def']}<br>
+
+                <table class="row">
+                    <tr class="col-md-4">
+                            {foreach $term['Images'] as $image}
+                                {if !is_null($image['Image_Name']) && !empty($image['Image_Name'])}
+                                    <th class="col-md-12 multiple-images">
+                                        <img src="img/{$image['Image_Name']}" class="glossarypic"><br>
+                                        {$image['Caption']}
+                                    </th>
+                                {/if}
+                            {/foreach}
+                    </tr>
+                </table>
+            </td>
+
+
         </tr>
+
+        {/foreach}
         </tbody>
     </table>
 

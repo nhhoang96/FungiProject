@@ -1,5 +1,7 @@
 {include "head.tpl" title={$sciName}}
 <!--Fungi Team 2015-->
+<link rel="stylesheet" type="text/css" href="result.css" />
+<script type="text/javascript" src="jquery-1.4.2.min.js"></script>
 <script>
 		  $(document).ready(function(){
 			$('.carousel').carousel();
@@ -20,15 +22,48 @@
 					<p><strong>Comment:</strong> {$comment}</p>
 					<p><strong>Wood substrate:</strong> {$woodSubstrate}</p>
 					<p><strong>Dimensions:</strong> {$dimensions}</p>
+
+				<div class="hs">
+					<div class="showcase">
+						<ul style="width:2000px;">
+							<table>
+							<tr class="row">
+								{foreach $photos as $pic}
+									<th class = "col-md-6 imageBox">
+										<img src="img/{$pic['Photo_Name']}" width="250" height="200"><br>
+										<div class="col-md-12">
+											{$pic['Caption']}
+										</div>
+									</th>
+								{/foreach}
+							</tr>
+							</table>
+						</ul>
+					</div>
 			</div>
-			<div class="col-lg-1"></div>
-			<div class="col-lg-4">
-				<!--
-				<img src="{$photoName}" alt="Chania">
-				<h5>{$caption}</h5> -->
-				<a href="{$photoName}" data-lightbox="{$photoName}" data-title="{$caption}"><img src="{$photoName}" class="thumbnail" alt="Chania"></a>
-				
-			</div>
+
+
+				{*<div class="left-arrow">*}
+					{*<a href="#prev">*}
+						{*<img src="images/scroller_left.gif"*}
+							 {*name="scroller_left"*}
+							 {*width="22"*}
+							 {*height="197"*}
+							 {*border="0">*}
+					{*</a>*}
+				{*</div>*}
+
+				{*<div class="right-arrow">*}
+					{*<a href="#next">*}
+						{*<img src="images/scroller_right.gif"*}
+							 {*name="scroller_right"*}
+							 {*width="22"*}
+							 {*height="197"*}
+							 {*border="0">*}
+					{*</a>*}
+				{*</div>*}
+
+
 		</div> <!-- end row -->
 	</div>
 		

@@ -53,76 +53,6 @@ If($stmt->rowCount() == 0){
         $msg = "<strong>Missing Information!</strong>";
         $msg2 = "<strong>Add failed!</strong><br>";
 
-
-            if ($_POST["commonName"] == "") {
-                $errorFlag = true;
-                $msg .= "<br>Common Name: empty";
-            } else {
-                $smarty->assign('commonName', $_POST["commonName"]);
-            }
-            if ($_POST["nameDerivation"] == "") {
-                $errorFlag = true;
-                $msg .= "<br>Name Derivation: empty";
-            } else {
-                $smarty->assign('nameDerivation', $_POST["nameDerivation"]);
-            }
-            if ($_POST["scientificName"] == "") {
-                $errorFlag = true;
-                $msg .= "<br>Scientific Name: empty";
-            } else {
-                $smarty->assign('scientificName', $_POST["scientificName"]);
-            }
-            if ($_POST["phylum"] == "") {
-                $errorFlag = true;
-                $msg .= "<br>Phylum: empty";
-            } else {
-                $smarty->assign('phylum', $_POST["phylum"]);
-            }
-            if ($_POST["order"] == "") {
-                $errorFlag = true;
-                $msg .= "<br>Order: empty";
-            } else {
-                $smarty->assign('order', $_POST["order"]);
-            }
-            if ($_POST["family"] == "") {
-                $errorFlag = true;
-                $msg .= "<br>Family: empty";
-            } else {
-                $smarty->assign('family', $_POST["family"]);
-            }
-            if ($_POST["comments"] == "") {
-                $errorFlag = true;
-                $msg .= "<br>Comments: empty";
-            } else {
-                $smarty->assign('comments', $_POST["comments"]);
-            }
-            if ($_POST["woodSubstrate"] == "") {
-                $errorFlag = true;
-                $msg .= "<br>Wood Substrate: empty";
-            } else {
-                $smarty->assign('woodSubstrate', $_POST["woodSubstrate"]);
-            }
-            if ($_POST["dimensions"] == "") {
-                $errorFlag = true;
-                $msg .= "<br>Dimensions: empty";
-            } else {
-                $smarty->assign('dimensions', $_POST["dimensions"]);
-            }
-            if ($_POST["shape"] == "") {
-                $errorFlag = true;
-                $msg .= "<br>Shape: empty";
-            } else {
-                $smarty->assign('shape', $_POST["shape"]);
-            }
-
-
-            $msg = $msg . "<br>";
-            if ($errorFlag) {
-                $smarty->assign('msg', $msg);
-                $smarty->display('admin.tpl');
-                exit();
-            }
-
         if ($_POST["commonName"] == "") {
             $errorFlag = true;
             $msg .= "<br>Common Name: empty";
@@ -406,6 +336,141 @@ If($stmt->rowCount() == 0){
         $smarty->assign("editShapeID", $editShapeID);
         $smarty->assign("editShapeName", $editShapeName);
         $smarty->assign("editShapeDescription", $editShapeDescription);
+    }elseif (isset($_POST["selectCharShape"])){
+
+        $query = "SELECT Shape_Category_ID, Name FROM shape WHERE Shape_Category_ID = :shapeID";
+
+        $statement = $pdo->prepare($query);
+        $statement->bindValue(':shapeID', $_POST["shapeID"]);
+        $statement->execute();
+        $shapeResults = array();
+        if ($statement -> rowCount() > 0){
+            while ($row = $statement->fetch(PDO::FETCH_ASSOC)){
+                $editShapeID = $row['Shape_Category_ID'];
+                $editShapeName = $row['Name'];
+//                $editShapeDescription = $row['Description'];
+
+            }
+        }else{
+            $smarty->assign("error1", 'Database Error');
+        }
+        $smarty->assign("charShapeID", $editShapeID);
+        $smarty->assign("charShapeName", $editShapeName);
+
+//USE FORE EDIT CHARACTERISTIC
+//        $query = "SELECT Characteristic_ID, Name FROM characteristic WHERE Category_FK = :shapeID";
+//
+//        $statement = $pdo->prepare($query);
+//        $statement->bindValue(':shapeID', $_POST["shapeID"]);
+//        $statement->execute();
+//        $shapeResults = array();
+//        if ($statement -> rowCount() > 0){
+//            while ($row = $statement->fetch(PDO::FETCH_ASSOC)){
+//                $charID = $row['Characteristic_ID'];
+//                $charName = $row['Name'];
+////                $editShapeDescription = $row['Description'];
+//
+//            }
+//        }else{
+//            $smarty->assign("error1", 'Database Error');
+//        }
+//        $smarty->assign("editShapeDescription", $editShapeDescription);
+    }elseif (isset($_POST["addChar"])) {
+        $errorFlag = false;
+        $smarty->assign('errorFlag', $errorFlag);
+
+        $msg = "<strong>Missing Information!</strong>";
+
+        // ------ Input Error Checking ------
+        if ($_POST["newCharName"] == "") {
+            $errorFlag = true;
+            $msg .= "<br>Characteristic Name: empty";
+        } else {
+            $smarty->assign('newCharName', $_POST["newCharName"]);
+        }
+        if ($_POST["shapeID"] == "") {
+            $errorFlag = true;
+            $msg .= "<br>Shape ID: empty";
+        } else {
+            $smarty->assign('shapeID', $_POST["shapeID"]);
+        }
+
+        if ($errorFlag) {
+            $msg = $msg . "<br>";
+            $smarty->assign('msg', $msg);
+            $smarty->display('admin.tpl');
+            exit();
+        }
+
+        //------ Insert Query -----
+
+        $query = "INSERT INTO characteristic (Characteristic_ID , Name, Category_FK )
+              VALUES (DEFAULT, :newCharName, :shapeID)";
+
+        $statement = $pdo->prepare($query);
+        $statement->bindValue(':newCharName', $_POST["newCharName"]);
+        $statement->bindValue(':shapeID', $_POST["shapeID"]);
+        $statement->execute();
+
+        $msg3 = "Add Successful!";
+    }elseif (isset($_POST["selectCharOpt"])){
+
+        $query = "SELECT Characteristic_ID, Name FROM characteristic WHERE Characteristic_ID= :charID";
+
+        $statement = $pdo->prepare($query);
+        $statement->bindValue(':charID', $_POST["charID"]);
+        $statement->execute();
+        $charResults = array();
+        if ($statement -> rowCount() > 0){
+            while ($row = $statement->fetch(PDO::FETCH_ASSOC)){
+                $editCharID = $row['Characteristic_ID'];
+                $editCharName = $row['Name'];
+
+            }
+        }else{
+            $smarty->assign("error1", 'Database Error');
+        }
+        $smarty->assign("charID", $editCharID);
+        $smarty->assign("charName", $editCharName);
+
+    }elseif (isset($_POST["addCharOpt"])) {
+        $errorFlag = false;
+        $smarty->assign('errorFlag', $errorFlag);
+
+        $msg = "<strong>Missing Information!</strong>";
+
+        // ------ Input Error Checking ------
+        if ($_POST["charID"] == "") {
+            $errorFlag = true;
+            $msg .= "<br>Characteristic Association: empty";
+        } else {
+            $smarty->assign('charID', $_POST["charID"]);
+        }
+        if ($_POST["newOptName"] == "") {
+            $errorFlag = true;
+            $msg .= "<br>New Characteristic Option: empty";
+        } else {
+            $smarty->assign('newOptName', $_POST["newOptName"]);
+        }
+
+        if ($errorFlag) {
+            $msg = $msg . "<br>";
+            $smarty->assign('msg', $msg);
+            $smarty->display('admin.tpl');
+            exit();
+        }
+
+        //------ Insert Query -----
+
+        $query = "INSERT INTO characteristic_option (Option_ID , Name, Characteristic_FK )
+              VALUES (DEFAULT, :newOptName, :charID)";
+
+        $statement = $pdo->prepare($query);
+        $statement->bindValue(':newOptName', $_POST["newOptName"]);
+        $statement->bindValue(':charID', $_POST["charID"]);
+        $statement->execute();
+
+        $msg3 = "Add Successful!";
     }elseif (isset($_POST["updateShape"])){
 
         $errorFlag = false;
@@ -445,7 +510,117 @@ If($stmt->rowCount() == 0){
         $statement->bindValue(':shapeID', $_POST["shapeID"]);
         $statement->execute();
 
+    }elseif (isset($_POST["selectSpecies"])){
+
+        $query = "SELECT Species_ID, Common_Name, Name_Derivation, Scientific_Name, Phylum, Sp_Order,
+ Family, Comments, Wood_Substrate, Dimensions, Shape_FK  FROM species WHERE Species_ID = :speciesID";
+
+        $statement = $pdo->prepare($query);
+        $statement->bindValue(':speciesID', $_POST["editSpecies"]);
+        $statement->execute();
+        $shapeResults = array();
+        if ($statement -> rowCount() > 0){
+            while ($row = $statement->fetch(PDO::FETCH_ASSOC)){
+                $speciesID = $row['Species_ID'];
+                $commonName = $row['Common_Name'];
+                $nameDerivation = $row['Name_Derivation'];
+                $scientificName = $row['Scientific_Name'];
+                $phylum = $row['Phylum'];
+                $order = $row['Sp_Order'];
+                $family = $row['Family'];
+                $comments = $row['Comments'];
+                $woodSubstrate = $row['Wood_Substrate'];
+                $dimensions = $row['Dimensions'];
+                $shapeID = $row['Shape_FK'];
+
+                $smarty->assign("speciesID", $speciesID);
+                $smarty->assign("commonName", $commonName);
+                $smarty->assign("nameDerivation", $nameDerivation);
+                $smarty->assign("scientificName", $scientificName);
+                $smarty->assign("phylum", $phylum);
+                $smarty->assign("order", $order);
+                $smarty->assign("family", $family);
+                $smarty->assign("comments", $comments);
+                $smarty->assign("woodSubstrate", $woodSubstrate);
+                $smarty->assign("dimensions", $dimensions);
+                $smarty->assign("shapeID", $shapeID);
+
+            }
+        }else{
+            $smarty->assign("error1", 'Database Error');
+        }
+
+
+    }elseif (isset($_POST["updateSpecies"])){
+
+        $errorFlag = false;
+        $smarty->assign('errorFlag', $errorFlag);
+
+        $msg = "<strong>Missing Information!</strong>";
+
+        // ------ Input Error Checking ------
+        if ($_POST["updateShapeName"] == "") {
+            $errorFlag = true;
+            $msg .= "<br> Shape Name: empty.";
+        } else {
+            $smarty->assign('updateShapeName', $_POST["updateShapeName"]);
+        }
+
+        if ($_POST["updateShapeDescription"] == "") {
+            $errorFlag = true;
+            $msg .= "<br> Shape Name: empty.";
+        } else {
+            $smarty->assign('updateShapeDescription', $_POST["updateShapeDescription"]);
+        }
+
+        if ($errorFlag) {
+            $msg = $msg . "<br>";
+            $smarty->assign('msg', $msg);
+            $smarty->display('admin.tpl');
+            exit();
+        }
+
+        $query = "UPDATE shape
+              SET Name = :updateShapeName, Description = :updateShapeDescription
+              WHERE Shape_Category_ID = :shapeID";
+
+        $statement = $pdo->prepare($query);
+        $statement->bindValue(':updateShapeName', $_POST["updateShapeName"]);
+        $statement->bindValue(':updateShapeDescription', $_POST["updateShapeDescription"]);
+        $statement->bindValue(':shapeID', $_POST["shapeID"]);
+        $statement->execute();
+
+    }elseif (isset($_POST["deleteSpecies"])) {
+    $errorFlag = false;
+    $smarty->assign('errorFlag', $errorFlag);
+
+    $msg = "<strong>Missing Information!</strong>";
+
+    // ------ Input Error Checking ------
+    if ($_POST["removedSpecies"] == "") {
+        $errorFlag = true;
+        $msg .= "<br>Error, No Admin Username Was Passed.";
+    } else {
+        $smarty->assign('removedSpecies', $_POST["removedSpecies"]);
     }
+
+    if ($errorFlag) {
+        $msg = $msg . "<br>";
+        $smarty->assign('msg', $msg);
+        $smarty->display('admin.tpl');
+        exit();
+    }
+
+    //---- Delete Query -----
+
+    $query = "DELETE FROM species WHERE Species_ID = :removedSpecies";
+
+    $statement = $pdo->prepare($query);
+    $statement->bindValue(':removedSpecies', $_POST["removedSpecies"]);
+    $statement->execute();
+
+    $msg3 = "Removal Successful!";
+}
 
 //------ Build Associative Shape Array ------
     $query = "SELECT Shape_Category_ID, Name FROM shape";
@@ -461,7 +636,7 @@ If($stmt->rowCount() == 0){
         $smarty->assign("error1", 'Database Error');
     }
     $smarty->assign("shapeArray", $shapeResults);
-    //------ Build Associative Shape Array ------
+    //------ Build Associative Admin Array ------
     $query = "SELECT Admin_ID, Username FROM administrator";
 
     $statement = $pdo->prepare($query);
@@ -475,9 +650,35 @@ If($stmt->rowCount() == 0){
         $smarty->assign("error1", 'Database Error');
     }
     $smarty->assign("adminArray", $adminResults);
+
+    //------ Build Associative Species Array ------
+    $query = "SELECT Species_ID, Common_Name FROM species";
+
+    $statement = $pdo->prepare($query);
+    $statement->execute();
+    $speciesResults = array();
+    if ($statement->rowCount() > 0) {
+        while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
+            $speciesResults[$row['Species_ID']] = $row['Common_Name'];
+        }
+    } else {
+        $smarty->assign("error1", 'Database Error');
+    }
+    $smarty->assign("speciesArray", $speciesResults);
+
+    //------ Build Associative Characteristic Array ------
+    $query = "SELECT Characteristic_ID, Name FROM characteristic";
+
+    $statement = $pdo->prepare($query);
+    $statement->execute();
+    $speciesResults = array();
+    if ($statement->rowCount() > 0) {
+        while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
+            $speciesResults[$row['Characteristic_ID']] = $row['Name'];
+        }
+    } else {
+        $smarty->assign("error1", 'Database Error');
+    }
+    $smarty->assign("charArray", $speciesResults);
     $smarty->display('admin.tpl');
 }
-//include "../private_html/setup.php";
-
-//$smarty->display('admin.tpl');
-

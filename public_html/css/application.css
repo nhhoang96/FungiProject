@@ -25,8 +25,8 @@
     /*!*text-shadow: 5px 5px 5px white;*!*/
 /*}*/
 .pic {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     padding: 0px 15px 15px 0px;
 }
 
@@ -44,9 +44,25 @@
     /*float: right;*/
     padding-left: 10px;
     margin: 0;
-    height: 240px;
+    height: 280px;
 }
 .sort {
     position: relative;
     right: -10%;
+}
+.space {
+    margin-bottom: 10px;
+    padding-left: 0;
+    padding-right: 0;
+}
+.paragraph_1 {
+    margin-left:0;
+    padding: 0 5px 0 0;
+    margin-right: 0;
+
+}
+.paragraph_2 {
+    margin-left:0;
+    padding: 0;
+    margin-right: 0;
 }
