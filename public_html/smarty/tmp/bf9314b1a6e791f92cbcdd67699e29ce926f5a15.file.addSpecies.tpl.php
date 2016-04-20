@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-04-19 03:14:43
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-04-19 21:47:48
          compiled from "smarty\views\addSpecies.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:20475571562f4be98a6-07373650%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'bf9314b1a6e791f92cbcdd67699e29ce926f5a15' => 
     array (
       0 => 'smarty\\views\\addSpecies.tpl',
-      1 => 1461028469,
+      1 => 1461095110,
       2 => 'file',
     ),
   ),
@@ -54,7 +54,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 
 <div class="col-lg-12 dashboard" id="editSpecies">
-<form action=addSpecies.php" method="post" id="newSpecies" enctype="multipart/form-data">
+<form action="addSpecies.php" method="post" id="newSpecies" enctype="multipart/form-data">
 <h3>New Species:</h3>
 <div class="updates">
 Scientific Name:
@@ -97,7 +97,7 @@ $_smarty_tpl->tpl_vars['item']->_loop = true;
 </div>
 <hr>
 </form>
-<form action="admin.php" method="post" id="updateSpecies" enctype="multipart/form-data">
+<form action="addSpecies.php" method="post" id="updateSpecies" enctype="multipart/form-data">
 <h3>Update Species:</h3>
 <div class="updates">
 <select name="editSpecies" class="form-control">
@@ -153,7 +153,7 @@ Dimensions:
 </div>
 <hr>
 </form>
-<form action="admin.php" method="post" enctype="multipart/form-data" id="deleteSpecies">
+<form action="addSpecies.php" method="post" enctype="multipart/form-data" id="deleteSpecies">
 <h3>Delete Species:</h3>
 <div class="updates">
 <select name="removedSpecies" class="form-control">
