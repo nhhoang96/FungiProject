@@ -15,7 +15,7 @@
 
 
 <div class="col-lg-12 dashboard" id="editSpecies">
-<form action=addSpecies.php" method="post" id="newSpecies" enctype="multipart/form-data">
+<form action="addSpecies.php" method="post" id="newSpecies" enctype="multipart/form-data">
 <h3>New Species:</h3>
 <div class="updates">
 Scientific Name:
@@ -50,10 +50,10 @@ Shape Association:
 </div>
 <hr>
 </form>
-<form action="admin.php" method="post" id="updateSpecies" enctype="multipart/form-data">
+<form action="addSpecies.php" method="post" id="updateSpecies" enctype="multipart/form-data">
 <h3>Update Species:</h3>
 <div class="updates">
-<select name="editSpecies" class="form-control">
+<select name="speciesID" class="form-control">
 {if isset($speciesID)}<option value="{$speciesID}">{$commonName}</option>{/if}
 {if !isset($speciesID)}
 {foreach from=$speciesArray key=key item=item}
@@ -87,7 +87,7 @@ Dimensions:
 </div>
 <hr>
 </form>
-<form action="admin.php" method="post" enctype="multipart/form-data" id="deleteSpecies">
+<form action="addspecies.php" method="post" enctype="multipart/form-data" id="deleteSpecies">
 <h3>Delete Species:</h3>
 <div class="updates">
 <select name="removedSpecies" class="form-control">
