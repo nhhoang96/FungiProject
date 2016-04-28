@@ -29,7 +29,7 @@
 							<table>
 							<tr class="row">
 								{foreach $photos as $pic}
-									<th class = "col-md-6 imageBox">
+									<th class = "col-md-1 imageBox">
 										<img src="img/{$pic['Photo_Name']}" width="250" height="200"><br>
 										<div class="col-md-12">
 											{$pic['Caption']}
