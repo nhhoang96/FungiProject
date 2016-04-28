@@ -9,6 +9,7 @@
 <li><a class="tab" href="admin.php">Edit Admin</a></li>
 <li><a class="tab" href="addShape.php">Edit Shape</a></li>
 <li><a class="tab" href="addSpecies.php">Edit Species</a></li>
+    <li><a class="tab" href="characteristic.php">Edit Characteristic</a></li>
 <li><a class="tab" href="logout.php">Logout</a></li>
 
 </ul>
