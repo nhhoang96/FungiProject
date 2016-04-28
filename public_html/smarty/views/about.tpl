@@ -138,7 +138,7 @@
 				<address>
 					<abbr title="Phone">P:</abbr>(717)-796-1800 ext. 3390<br>
 					<abbr title="Email">E:</abbr> <a href=
-					"mailto:#">gemberg@messiah.edu</a>
+					"mailto:gemberg@messiah.edu">gemberg@messiah.edu</a>
 				</address>
 			</div>
 		</div><!-- /.row -->

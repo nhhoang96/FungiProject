@@ -37,9 +37,9 @@
     <input type="text" name="dimensions"><br>
     Shape Category:
     <select name="shape">
-    {foreach from=$shapeArray key=key item=item}
-    <option value="{$key}">{$item}</option>
-    {/foreach}
+        {foreach from=$shapeArray key=key item=item}
+            <option value="{$key}">{$item}</option>
+        {/foreach}
     </select><br>
     <input type="submit" class="btn" value="blue" name="submit">
 
