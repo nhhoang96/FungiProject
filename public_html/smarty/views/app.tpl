@@ -21,7 +21,8 @@
 					</div>
 					<div class="col-lg-6 paragraph_2">
 
-					<a href="species.php?id={$shape['Shape_Category_ID']}" class="btn btn-default btn-md form-control">Species List</a>
+					<a href="species.php?id={$shape['Shape_Category_ID']}" class="btn btn-default btn-md form-control">
+						Species List</a>
 				</div>
 
 			{*</div>*}

@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-04-19 01:14:12
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-04-29 20:00:23
          compiled from "smarty\views\head.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:2706856d740be432da2-79862852%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '1d63aef6a398df58eca982598bcac91d477def93' => 
     array (
       0 => 'smarty\\views\\head.tpl',
-      1 => 1461021249,
+      1 => 1461952817,
       2 => 'file',
     ),
   ),
@@ -59,6 +59,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+
             </button>
             <a href="index.php" class="navbar-brand">Fungi Growing on Wood</a>
         </div>

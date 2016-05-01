@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-04-19 01:14:12
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-04-29 19:53:19
          compiled from "smarty\views\about.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:3206956d740c35a6d57-73794449%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '6fb9bd86d46ffa37ff2e705764ab98ec34bf7c98' => 
     array (
       0 => 'smarty\\views\\about.tpl',
-      1 => 1461021249,
+      1 => 1461896786,
       2 => 'file',
     ),
   ),
@@ -160,7 +160,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 				<address>
 					<abbr title="Phone">P:</abbr>(717)-796-1800 ext. 3390<br>
 					<abbr title="Email">E:</abbr> <a href=
-					"mailto:#">gemberg@messiah.edu</a>
+					"mailto:gemberg@messiah.edu">gemberg@messiah.edu</a>
 				</address>
 			</div>
 		</div><!-- /.row -->

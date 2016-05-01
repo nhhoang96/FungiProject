@@ -31,6 +31,8 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+
             </button>
             <a href="index.php" class="navbar-brand">Fungi Growing on Wood</a>
         </div>

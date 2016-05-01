@@ -3,7 +3,8 @@
 
 <div class="container">
 
-<h2>Admin Dashboard</h2>
+    <h2>Admin Dashboard</h2>
+    <hr>
 
 <ul class="nav nav-pills admin-nav adminNavBar">
 <li><a class="tab" href="admin.php">Edit Admin</a></li>
@@ -15,7 +16,6 @@
 </ul>
 
 
-<div class="col-lg-12 dashboard" id="editSpecies">
 <form action="addSpecies.php" method="post" id="newSpecies" enctype="multipart/form-data">
 <h3>New Species:</h3>
 <div class="updates">
@@ -85,7 +85,7 @@ Dimensions:
 <input type="text" class="form-control" name="dimensions" {if isset($dimensions)}value="{$dimensions}"{/if}><br>
 <input type="submit" class="btn btn-default btn-md add form-control" value="Update" name="updateSpecies">
 <p>-Shape is now updated.-</p>
-</div>
+{*</div>*}
 <hr>
 </form>
 <form action="addspecies.php" method="post" enctype="multipart/form-data" id="deleteSpecies">
