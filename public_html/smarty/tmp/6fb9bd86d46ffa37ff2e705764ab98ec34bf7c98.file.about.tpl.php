@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-04-29 19:53:19
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-02 00:50:23
          compiled from "smarty\views\about.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:3206956d740c35a6d57-73794449%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '6fb9bd86d46ffa37ff2e705764ab98ec34bf7c98' => 
     array (
       0 => 'smarty\\views\\about.tpl',
-      1 => 1461896786,
+      1 => 1462137186,
       2 => 'file',
     ),
   ),
@@ -23,13 +23,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 <link href="css/about.css" type=text/css rel="stylesheet" />
 
-
-<!--Fungi Team 2015-->
-
-	 <!-- Image Background Page Header -->
-
-	<!-- Note: The background image is set within the business-casual.css file. -->
-
 	<header class="business-header">
 		<div class="container">
 			<div class="row">
@@ -40,7 +33,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 			</div>
 		</div>
 	</header><!-- Page Content -->
-	<body>
+<body>
 	<div class="container">
 		<hr>
 
@@ -86,7 +79,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 				beautiful, serving as subjects for photographers and artists.
 				All of them are useful in teaching aspects of mycology.</p>
 
-				<div class="collapse" data-target="collapse" id="button1">
+				<div class="collapse" data-target="collapse" id="button1"><!--begin collapsed group-->
 					<p><strong>More Information:</strong> If you are unfamiliar
 					with fungi and using keys, be sure to review the
 					information on keys, the glossary, and some of the
@@ -167,7 +160,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		<hr>
 
 		<div class="row">
-			
 
 			<div class="col-sm-8">
 
@@ -240,5 +232,4 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		<?php echo '<script'; ?>
  src="js/read_more.js"><?php echo '</script'; ?>
 >
-
 	</body><?php }} ?>

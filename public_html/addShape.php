@@ -173,8 +173,12 @@ if (isset($_POST["addShape"])) {
         } else {
             $smarty->assign("error1", 'Database Error');
         }
+
+
         $smarty->assign("editShapeID", $editShapeID);
         $smarty->assign("editShapeName", $editShapeName);
+        //remove extra white spaces from description string to improve readability
+        $editShapeDescription = preg_replace('/\s\s+/', ' ', $editShapeDescription);
         $smarty->assign("editShapeDescription", $editShapeDescription);
         $smarty->assign("editShapeImage", $editShapeImage);
 
