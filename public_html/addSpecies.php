@@ -242,8 +242,14 @@ if(isset($_POST["addSpecies"])) {
 
 }elseif (isset($_POST["selectSpecies"])) {
 
-    $query = "SELECT Species_ID, Common_Name, Name_Derivation, Scientific_Name, Phylum, Sp_Order,
-                  Family, Comments, Wood_Substrate, Dimensions, Shape_FK  FROM species WHERE Species_ID = :speciesID";
+    $query = "SELECT species.Species_ID, .species.Common_Name,
+                  species.Name_Derivation, species.Scientific_Name, species.Phylum, species.Sp_Order,
+                  species.Family, species.Comments,
+                  species.Wood_Substrate, species.Dimensions, species.Shape_FK, photo.Photo_Name
+                  FROM species
+                  JOIN photo ON
+                  species.Species_ID = photo.Species_FK
+                  WHERE species.Species_ID = :speciesID";
 
     $statement = $pdo->prepare($query);
     $statement->bindValue(':speciesID', $_POST["speciesID"]);
@@ -262,6 +268,7 @@ if(isset($_POST["addSpecies"])) {
             $woodSubstrate = $row['Wood_Substrate'];
             $dimensions = $row['Dimensions'];
             $shapeID = $row['Shape_FK'];
+            $photoName = $row['Photo_Name'];
 
             $smarty->assign("speciesID", $speciesID);
             $smarty->assign("commonName", $commonName);
@@ -274,6 +281,8 @@ if(isset($_POST["addSpecies"])) {
             $smarty->assign("woodSubstrate", $woodSubstrate);
             $smarty->assign("dimensions", $dimensions);
             $smarty->assign("shapeID", $shapeID);
+            $smarty->assign("photoName", $photoName);
+
 
         }
     } else {

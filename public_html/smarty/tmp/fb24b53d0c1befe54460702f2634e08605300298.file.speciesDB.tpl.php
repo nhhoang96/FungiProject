@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-04-18 23:50:50
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-01 23:10:03
          compiled from "smarty\views\speciesDB.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:322656d7456aed42d2-13329474%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'fb24b53d0c1befe54460702f2634e08605300298' => 
     array (
       0 => 'smarty\\views\\speciesDB.tpl',
-      1 => 1460995618,
+      1 => 1462137001,
       2 => 'file',
     ),
   ),
@@ -34,8 +34,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <!--Fungi Team 2015-->
 <link href="css/species.css" type=text/css rel="stylesheet" />
 
-<body>
-
 	<div class="container">
 		<div class="page-header">
 
@@ -46,7 +44,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		<!--<?php echo smarty_function_html_table(array('loop'=>$_smarty_tpl->tpl_vars['data']->value,'cols'=>5,'table_attr'=>"class=table"),$_smarty_tpl);?>
  -->
 		<!--
-		<table data-toggle="table" data-sort-name="sci_name" 
+		<table data-toggle="table" data-sort-name="sci_name"
 			   data-sort-order="desc" class="table table-striped table-hover">
 		<thead>
 			<tr>
