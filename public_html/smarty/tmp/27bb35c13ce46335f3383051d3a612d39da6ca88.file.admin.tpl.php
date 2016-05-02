@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-04-29 00:22:02
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-04-29 00:27:18
          compiled from "smarty\views\admin.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:3102756fcc9b137a8c1-54886213%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '27bb35c13ce46335f3383051d3a612d39da6ca88' => 
     array (
       0 => 'smarty\\views\\admin.tpl',
-      1 => 1461870691,
+      1 => 1461882437,
       2 => 'file',
     ),
   ),
@@ -29,7 +29,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 
 <div class="container">
-
+    
     <h2>Admin Dashboard</h2>
     <hr>
 
@@ -37,6 +37,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
         <li><a class="tab" href="admin.php">Edit Admin</a></li>
         <li><a class="tab" href="addShape.php">Edit Shape</a></li>
         <li><a class="tab" href="addSpecies.php">Edit Species</a></li>
+        <li><a class="tab" href="characteristic.php">Edit Characteristic</a></li>
         <li><a class="tab" href="logout.php">Logout</a></li>
     </ul>
 
@@ -77,8 +78,6 @@ $_smarty_tpl->tpl_vars['item']->_loop = true;
             </div>
         </form>
     </div>
-
-
 </div>
 
 <?php echo $_smarty_tpl->getSubTemplate ("footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>

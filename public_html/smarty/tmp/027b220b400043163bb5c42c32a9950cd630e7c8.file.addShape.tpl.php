@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-04-29 00:22:08
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-04-29 00:26:38
          compiled from "smarty\views\addShape.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:129157156962574c41-26288091%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '027b220b400043163bb5c42c32a9950cd630e7c8' => 
     array (
       0 => 'smarty\\views\\addShape.tpl',
-      1 => 1461870691,
+      1 => 1461882395,
       2 => 'file',
     ),
   ),
@@ -41,6 +41,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
         <li><a class="tab" href="admin.php">Edit Admin</a></li>
         <li><a class="tab" href="addShape.php">Edit Shape</a></li>
         <li><a class="tab" href="addSpecies.php">Edit Species</a></li>
+        <li><a class="tab" href="characteristic.php">Edit Characteristic</a></li>
         <li><a class="tab" href="logout.php">Logout</a></li>
 
     </ul>

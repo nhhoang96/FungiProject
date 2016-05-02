@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-04-29 00:22:07
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-04-29 00:26:36
          compiled from "smarty\views\addSpecies.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:20475571562f4be98a6-07373650%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'bf9314b1a6e791f92cbcdd67699e29ce926f5a15' => 
     array (
       0 => 'smarty\\views\\addSpecies.tpl',
-      1 => 1461882116,
+      1 => 1461882395,
       2 => 'file',
     ),
   ),
@@ -49,9 +49,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
         <li><a class="tab" href="admin.php">Edit Admin</a></li>
         <li><a class="tab" href="addShape.php">Edit Shape</a></li>
         <li><a class="tab" href="addSpecies.php">Edit Species</a></li>
+        <li><a class="tab" href="characteristic.php">Edit Characteristic</a></li>
         <li><a class="tab" href="logout.php">Logout</a></li>
 
     </ul>
+
 
     <div class="col-lg-12 dashboard" id="editSpecies">
         <form action="addSpecies.php" method="post" id="newSpecies" enctype="multipart/form-data">

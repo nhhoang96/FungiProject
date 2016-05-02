@@ -1,12 +1,10 @@
 {include "head.tpl" title="Glossary" pageName="glossary"}
 
 <body>
-
 <div class="container">
     <div class="page-header">
         <h1 class="glossarytitle">Glossary</h1>
     </div>
-
     <p>As with any specialized area of study,
         mycology employs specialized words to convey
         specific meanings. While highly technical language
@@ -20,20 +18,21 @@
     </p><hr>
     <table class="table table-striped">
         <thead class="thead-default">
-            <tr class="row">
-                <th class="col-md-3">Term</th>
-                <th class="col-md-9">Definition</th>
-            <tr>
+        <tr class="row">
+            <th class="col-md-3">Term</th>
+            <th class="col-md-9">Definition</th>
+        <tr>
         </thead>
         <tbody>
         {foreach $terms as $term}
-        <tr class="row">
+            <tr class="row">
+                
+                <td><strong>{$term['Term']}</strong></td>
+                <td>{$term['Def']}<br>
 
-            <td><strong>{$term['Term']}</strong></td>
-            <td>{$term['Def']}<br>
-
-                <table class="row">
-                    <tr class="col-md-4">
+                    <!-- Populate images into appropriate row whether if there's multiple images -->
+                    <table class="row">
+                        <tr class="col-md-4">
                             {foreach $term['Images'] as $image}
                                 {if !is_null($image['Image_Name']) && !empty($image['Image_Name'])}
                                     <th class="col-md-12 multiple-images">
@@ -42,13 +41,10 @@
                                     </th>
                                 {/if}
                             {/foreach}
-                    </tr>
-                </table>
-            </td>
-
-
-        </tr>
-
+                        </tr>
+                    </table>
+                </td>
+            </tr>
         {/foreach}
         </tbody>
     </table>

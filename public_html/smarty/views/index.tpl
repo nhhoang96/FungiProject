@@ -24,15 +24,16 @@
             <h2>What We Do</h2>
 
             <p> Fungi Growing on Wood is a web
-                site devoted to the identification and appreciation of fungi
-                growing in close association with living and dead wood. The
-                fungi described here are those in a parasitic or saprophytic
-                relationship with trees. Mycorrhizal fungi, also in close
-                association with trees, are not strongly represented here even
-                though some of them may be found on well-rotted wood. The
-                organisms described on this web site are often referred to as
-                lignicolous fungi. Most species are illustrated with multiple
-                images to show as many diagnostic details as possible.</p
+                site devoted to the identification and appreciation of fungi growing in close association with living and dead wood. The
+                fungi described here are those in a parasitic or
+                <u data-toggle="tooltip" data-placement="top" title="Mycro-heterotrophs that parasitize fungi, rather than dead organic matter directly">saprophytic</u>
+                relationship with trees.
+                <u data-toggle="tooltip" data-placement="top" title="Filaments in the soil that extend the root systems and improve absorption of nutrient and water">Mycorrhizal fungi</u>,
+                also in close association with trees, are not strongly represented here even
+                though some of them may be found on well-rotted wood. The organisms described on this website are often referred to as
+                <u data-toggle="tooltip" data-placement="top" title="Fungi that not only grow on wood but actually cause it to decay">lignicolous fungi</u>.
+                Most species are illustrated with multiple images to show as many diagnostic details as possible.</p>
+
             <p><a class="btn btn-default btn-md" href="app.php">Try Application
                     &raquo;</a></p>
             <hr>
@@ -44,7 +45,8 @@
                     "lignicolous" fungi. But why develop a set of keys limited
                     to fungi utilizing wood as a substrate? After all, being
                     lignicolous does not define a taxonomic category.
-                    Lignicolous fungi include ascomycetes and basidiomycetes
+                    Lignicolous fungi include <u data-toggle="tooltip" data-placement="top" title="Fungus whose spores develop within asci">ascomycetes</u>
+                    and <u data-toggle="tooltip" data-placement="top" title="Fungus whose spores develop in basidia">basidiomycetes</u>
                     and a large number of classes and orders within each of
                     these groups. Most of these taxa include both lignicolous
                     and terrestrial species. Rather than taxonomy, the keys
@@ -68,7 +70,7 @@
                     the forester determine the likely extent of loss. Different
                     species are associated with different amounts of decay in
                     the tree. Additionally, some species are restricted to
-                    sapwood and will not affect the merchantable volume of
+                    <u data-toggle="tooltip" data-placement="top"title="Soft outer layers of recently formed wood between the heartwood and the bark">sapwood</u> and will not affect the merchantable volume of
                     heartwood. Some fungi can decay sound wood, others decay
                     only decaying wood and bark.</p>
 
@@ -187,6 +189,11 @@
 <script src="js/jquery.js"></script> <!-- Bootstrap Core JavaScript -->
 <script src="js/bootstrap.min.js"></script>
 <script src="js/read_more.js"></script>
+<script>
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+</script>
 
 
 

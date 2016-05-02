@@ -131,6 +131,10 @@
 	}
 */
 
+u {
+	border-bottom: 1px dotted #000;
+	text-decoration: none;
+}
 .tagline {
 	text-shadow: 0 0 10px #000;
 	color: #fff;

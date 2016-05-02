@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-04-19 00:02:16
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-04-30 23:47:36
          compiled from "smarty\views\glossary.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:86335705a45e175c85-29664617%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'c2b980ae590000bd0718728dd07f9560558f42e6' => 
     array (
       0 => 'smarty\\views\\glossary.tpl',
-      1 => 1461016206,
+      1 => 1462052270,
       2 => 'file',
     ),
   ),
@@ -29,12 +29,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 
 <body>
-
 <div class="container">
     <div class="page-header">
         <h1 class="glossarytitle">Glossary</h1>
     </div>
-
     <p>As with any specialized area of study,
         mycology employs specialized words to convey
         specific meanings. While highly technical language
@@ -48,10 +46,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     </p><hr>
     <table class="table table-striped">
         <thead class="thead-default">
-            <tr class="row">
-                <th class="col-md-3">Term</th>
-                <th class="col-md-9">Definition</th>
-            <tr>
+        <tr class="row">
+            <th class="col-md-3">Term</th>
+            <th class="col-md-9">Definition</th>
+        <tr>
         </thead>
         <tbody>
         <?php  $_smarty_tpl->tpl_vars['term'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['term']->_loop = false;
@@ -59,15 +57,16 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 foreach ($_from as $_smarty_tpl->tpl_vars['term']->key => $_smarty_tpl->tpl_vars['term']->value) {
 $_smarty_tpl->tpl_vars['term']->_loop = true;
 ?>
-        <tr class="row">
-
-            <td><strong><?php echo $_smarty_tpl->tpl_vars['term']->value['Term'];?>
+            <tr class="row">
+                
+                <td><strong><?php echo $_smarty_tpl->tpl_vars['term']->value['Term'];?>
 </strong></td>
-            <td><?php echo $_smarty_tpl->tpl_vars['term']->value['Def'];?>
+                <td><?php echo $_smarty_tpl->tpl_vars['term']->value['Def'];?>
 <br>
 
-                <table class="row">
-                    <tr class="col-md-4">
+                    <!-- Populate images into appropriate row whether if there's multiple images -->
+                    <table class="row">
+                        <tr class="col-md-4">
                             <?php  $_smarty_tpl->tpl_vars['image'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['image']->_loop = false;
  $_from = $_smarty_tpl->tpl_vars['term']->value['Images']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
 foreach ($_from as $_smarty_tpl->tpl_vars['image']->key => $_smarty_tpl->tpl_vars['image']->value) {
@@ -82,13 +81,10 @@ $_smarty_tpl->tpl_vars['image']->_loop = true;
                                     </th>
                                 <?php }?>
                             <?php } ?>
-                    </tr>
-                </table>
-            </td>
-
-
-        </tr>
-
+                        </tr>
+                    </table>
+                </td>
+            </tr>
         <?php } ?>
         </tbody>
     </table>
