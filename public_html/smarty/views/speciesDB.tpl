@@ -2,8 +2,6 @@
 <!--Fungi Team 2015-->
 <link href="css/species.css" type=text/css rel="stylesheet" />
 
-<body>
-
 	<div class="container">
 		<div class="page-header">
 
@@ -12,7 +10,7 @@
 		{if $resultCount > 0}
 		<!--{html_table loop=$data cols=5 table_attr="class=table"} -->
 		<!--
-		<table data-toggle="table" data-sort-name="sci_name" 
+		<table data-toggle="table" data-sort-name="sci_name"
 			   data-sort-order="desc" class="table table-striped table-hover">
 		<thead>
 			<tr>

@@ -119,6 +119,7 @@ if (isset($_POST["addShape"])) {
         $statement->bindValue(':updateShapeName', $_POST["updateShapeName"]);
         $statement->bindValue(':updateShapeDescription', $_POST["updateShapeDescription"]);
         $statement->bindValue(':shapeID', $_POST["shapeID"]);
+//        $statement->bindValue(':image', $testImage);
         $statement->execute();
 
 } elseif (isset($_POST["deleteShape"])) {
@@ -155,7 +156,7 @@ if (isset($_POST["addShape"])) {
 
     } elseif (isset($_POST["selectShape"])) {
 
-        $query = "SELECT Shape_Category_ID, Name, Description FROM shape WHERE Shape_Category_ID = :shapeID";
+        $query = "SELECT Shape_Category_ID, Name, Description, Image FROM shape WHERE Shape_Category_ID = :shapeID";
 
         $statement = $pdo->prepare($query);
         $statement->bindValue(':shapeID', $_POST["shapeID"]);
@@ -166,15 +167,22 @@ if (isset($_POST["addShape"])) {
                 $editShapeID = $row['Shape_Category_ID'];
                 $editShapeName = $row['Name'];
                 $editShapeDescription = $row['Description'];
+                $editShapeImage = $row['Image'];
 
             }
         } else {
             $smarty->assign("error1", 'Database Error');
         }
+
+
         $smarty->assign("editShapeID", $editShapeID);
         $smarty->assign("editShapeName", $editShapeName);
+        //remove extra white spaces from description string to improve readability
+        $editShapeDescription = preg_replace('/\s\s+/', ' ', $editShapeDescription);
         $smarty->assign("editShapeDescription", $editShapeDescription);
-    }
+        $smarty->assign("editShapeImage", $editShapeImage);
+
+}
 
     //------ Build Associative Shape Array ------
     $query = "SELECT Shape_Category_ID, Name FROM shape";

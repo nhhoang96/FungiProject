@@ -1,22 +1,22 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-02 23:21:18
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-02 02:12:19
          compiled from "smarty\views\addShape.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:129157156962574c41-26288091%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:2998157226f8d096355-79077914%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    '027b220b400043163bb5c42c32a9950cd630e7c8' => 
+    '7bc6c94f94cd9ff436b6022f8c369e8a93c86530' => 
     array (
       0 => 'smarty\\views\\addShape.tpl',
-      1 => 1462223932,
+      1 => 1462147938,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '129157156962574c41-26288091',
+  'nocache_hash' => '2998157226f8d096355-79077914',
   'function' => 
   array (
   ),
   'version' => 'Smarty-3.1.21-dev',
-  'unifunc' => 'content_571569625d3fe5_14471434',
+  'unifunc' => 'content_57226f8d210446_12160393',
   'variables' => 
   array (
     'editShapeID' => 0,
@@ -29,7 +29,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_571569625d3fe5_14471434')) {function content_571569625d3fe5_14471434($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("head.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('title'=>"Admin",'pageName'=>"admin"), 0);?>
+<?php if ($_valid && !is_callable('content_57226f8d210446_12160393')) {function content_57226f8d210446_12160393($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("head.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('title'=>"Admin",'pageName'=>"admin"), 0);?>
 
 
 
