@@ -16,6 +16,7 @@
 	<link href="css/cards.css" type=text/css rel="stylesheet" />
     <link href="css/glossary.css" type=text/css rel="stylesheet" />
     <link href="css/admin.css" type=text/css rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/css/jquery.dataTables.css">
 
 
 

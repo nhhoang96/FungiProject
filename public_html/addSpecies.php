@@ -5,7 +5,7 @@ include "../private_html/setup.php";
 $smarty->assign("adminActive", "active");
 $smarty->assign("title", "Admin");
 
-//------ Add Species -----
+//------ ADD SPECIES -----
 if(isset($_POST["addSpecies"])) {
     $query = "SELECT Shape_Category_ID, Name FROM shape";
 
@@ -95,7 +95,7 @@ if(isset($_POST["addSpecies"])) {
         exit();
     }
 
-    // ------ Queries ------
+    // ------ Query to add new species ------
     $query = "INSERT INTO species (Species_ID, Common_Name, Name_Derivation, Scientific_Name, Phylum, Sp_Order, Family,
               Comments, Wood_substrate, Dimensions, Shape_FK, URL)
               VALUES (DEFAULT, :commonName, :nameDerivation, :scientificName, :phylum, :order, :family,
@@ -118,6 +118,8 @@ if(isset($_POST["addSpecies"])) {
 
     $msg3 = "Add Successful!";
 
+
+    // ----- UPDATE SPECIES ------
 } elseif (isset($_POST["updateSpecies"])){
 
     $errorFlag = false;
@@ -187,7 +189,7 @@ if(isset($_POST["addSpecies"])) {
         exit();
     }
 
-    //---- Update Query
+    //---- Query to update species ------
     $query = "UPDATE species
               SET Common_Name = :commonName, Name_Derivation = :nameDerivation,
               Scientific_name = :scientificName, Phylum = :phylum, Sp_Order = :order,
@@ -209,6 +211,9 @@ if(isset($_POST["addSpecies"])) {
     $statement->bindValue(':speciesID', $_POST['speciesID']);
     $statement->execute();
 
+    $msg3 = "Update Successful!";
+
+    // ------ DELETE SPECIES ------
 } elseif (isset($_POST["deleteSpecies"])) {
     $errorFlag = false;
     $smarty->assign('errorFlag', $errorFlag);
@@ -230,7 +235,7 @@ if(isset($_POST["addSpecies"])) {
         exit();
     }
 
-    //---- Delete Query -----
+    //---- Query to delete species -----
 
     $query = "DELETE FROM species WHERE Species_ID = :removedSpecies";
 
@@ -238,8 +243,11 @@ if(isset($_POST["addSpecies"])) {
     $statement->bindValue(':removedSpecies', $_POST["removedSpecies"]);
     $statement->execute();
 
-    $msg3 = "Removal Successful!";
+    $msg3 = "Delete Successful!";
 
+
+
+    // ------ SPECIES SELECTOR FOR SPECIES UPDATE ------
 }elseif (isset($_POST["selectSpecies"])) {
 
     $query = "SELECT Species_ID, Common_Name, Name_Derivation, Scientific_Name, Phylum, Sp_Order,
@@ -280,7 +288,7 @@ if(isset($_POST["addSpecies"])) {
         $smarty->assign("error1", 'Database Error');
     }
 }
-//------ Build Associative Species Array ------
+//------ Build Associative Species Array For Use In Species Selectors------
 $query = "SELECT Species_ID, Common_Name FROM species";
 
 $statement = $pdo->prepare($query);
@@ -295,7 +303,7 @@ if ($statement->rowCount() > 0) {
 }
 $smarty->assign("speciesArray", $speciesResults);
 
-//------ Build Associative Shape Array ------
+//------ Build Associative Shape Array For Use In Shape Selectors------
 $query = "SELECT Shape_Category_ID, Name FROM shape";
 
 $statement = $pdo->prepare($query);
@@ -310,19 +318,8 @@ if ($statement -> rowCount() > 0){
 }
 $smarty->assign("shapeArray", $shapeResults);
 
-//------ Build Associative Shape Array ------
-$query = "SELECT Shape_Category_ID, Name FROM shape";
-
-$statement = $pdo->prepare($query);
-$statement->execute();
-$shapeResults = array();
-if ($statement -> rowCount() > 0){
-    while ($row = $statement->fetch(PDO::FETCH_ASSOC)){
-        $shapeResults[$row['Shape_Category_ID']] = $row['Name'];
-    }
-}else{
-    $smarty->assign("error1", 'Database Error');
+if(isset($msg3)){
+    $smarty->assign('success', $msg3);
 }
-$smarty->assign("shapeArray", $shapeResults);
 
 $smarty->display('addSpecies.tpl');

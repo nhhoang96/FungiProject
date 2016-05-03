@@ -9,12 +9,11 @@
 <li><a class="tab" href="admin.php">Edit Admin</a></li>
 <li><a class="tab" href="addShape.php">Edit Shape</a></li>
 <li><a class="tab" href="addSpecies.php">Edit Species</a></li>
-    <li><a class="tab" href="characteristic.php">Edit Characteristic</a></li>
+    <li><a class="tab" href="addCharacteristic.php">Edit Characteristic</a></li>
 <li><a class="tab" href="logout.php">Logout</a></li>
-
 </ul>
 
-
+    {if isset($success)}<h3>{$success}</h3>{/if}
 <div class="col-lg-12 dashboard" id="editSpecies">
 <form action="addSpecies.php" method="post" id="newSpecies" enctype="multipart/form-data">
 <h3>New Species:</h3>
@@ -47,6 +46,7 @@ Shape Association:
 </select><br>
 {*<a class="btn btn-default btn-md add form-control">Add</a>*}
 <input type="submit" class="btn btn-default btn-md add form-control" value="Add" name="addSpecies">
+    <input type="submit" name="reset" value="Reset">
 <p>-New species has been created.-</p>
 </div>
 <hr>
@@ -84,6 +84,7 @@ Wood Substrate:
 Dimensions:
 <input type="text" class="form-control" name="dimensions" {if isset($dimensions)}value="{$dimensions}"{/if}><br>
 <input type="submit" class="btn btn-default btn-md add form-control" value="Update" name="updateSpecies">
+    <input type="submit" name="reset" value="Reset">
 <p>-Shape is now updated.-</p>
 </div>
 <hr>

@@ -5,7 +5,8 @@ include "../private_html/setup.php";
 $smarty->assign("adminActive", "active");
 $smarty->assign("title", "Admin");
 
-//------ Add Shape ------
+
+//------ ADD SHAPE ------
 if (isset($_POST["addShape"])) {
 
     $errorFlag = false;
@@ -38,13 +39,10 @@ if (isset($_POST["addShape"])) {
         exit();
     }
 
-
-    // ------ Queries ------
+    // ------ INSERT NEW SHAPE ------
     $query = "INSERT INTO shape (Shape_Category_ID, Name, Description, Image)
               VALUES (DEFAULT, :shapeName, :description, :image)";
 
-
-//            $testImage = "testImage.jpg";
     $statement = $pdo->prepare($query);
     $statement->bindValue(':shapeName', $_POST["shapeName"]);
     $statement->bindValue(':description', $_POST["description"]);
@@ -52,36 +50,10 @@ if (isset($_POST["addShape"])) {
     $statement->execute();
 
     $msg3 = "Add Successful!";
-} elseif (isset($_POST["addAdmin"])) {
-    $errorFlag = false;
-    $smarty->assign('errorFlag', $errorFlag);
 
-    $msg = "<strong>Missing Information!</strong>";
 
-    // ------ Input Error Checking ------
-    if ($_POST["newAdmin"] == "") {
-        $errorFlag = true;
-        $msg .= "<br>Shape Admin Email: empty";
-    } else {
-        $smarty->assign('newAdmin', $_POST["newAdmin"]);
-    }
 
-    if ($errorFlag) {
-        $msg = $msg . "<br>";
-        $smarty->assign('msg', $msg);
-        $smarty->display('addShape.tpl');
-        exit();
-    }
-
-    $testImage = "testImage.jpg";
-    $statement = $pdo->prepare($query);
-    $statement->bindValue(':shapeName', $_POST["shapeName"]);
-    $statement->bindValue(':description', $_POST["description"]);
-    $statement->bindValue(':image', $testImage);
-    $statement->execute();
-
-    $msg3 = "Add Successful!";
-
+    // ------ UPDATE SHAPE ------
 } elseif (isset($_POST["updateShape"])){
 
         $errorFlag = false;
@@ -110,7 +82,7 @@ if (isset($_POST["addShape"])) {
             $smarty->display('addShape.tpl');
             exit();
         }
-
+        // ------ UPDATE SHAPE QUERY -----
         $query = "UPDATE shape
               SET Name = :updateShapeName, Description = :updateShapeDescription
               WHERE Shape_Category_ID = :shapeID";
@@ -120,7 +92,11 @@ if (isset($_POST["addShape"])) {
         $statement->bindValue(':updateShapeDescription', $_POST["updateShapeDescription"]);
         $statement->bindValue(':shapeID', $_POST["shapeID"]);
         $statement->execute();
+    $msg3 = "Update Successful!";
 
+
+
+// ------ DELETE SHAPE ------
 } elseif (isset($_POST["deleteShape"])) {
 
         $errorFlag = false;
@@ -144,7 +120,7 @@ if (isset($_POST["addShape"])) {
             exit();
         }
 
-        // ------ Queries ------
+        // ------ DELETE SHAPE QUERY ------
         $query = "DELETE FROM shape WHERE Shape_Category_ID = :shapeID";
 
         $statement = $pdo->prepare($query);
@@ -176,7 +152,7 @@ if (isset($_POST["addShape"])) {
         $smarty->assign("editShapeDescription", $editShapeDescription);
     }
 
-    //------ Build Associative Shape Array ------
+    //------ QUERY THAT BUILDS ASSOCIATIVE ARRAY FOR SHAPE SELECTORS ------
     $query = "SELECT Shape_Category_ID, Name FROM shape";
 
     $statement = $pdo->prepare($query);
@@ -190,6 +166,10 @@ if (isset($_POST["addShape"])) {
         $smarty->assign("error1", 'Database Error');
     }
     $smarty->assign("shapeArray", $shapeResults);
+
+if(isset($msg3)){
+    $smarty->assign('success', $msg3);
+}
 
 $smarty->display('addShape.tpl');
 

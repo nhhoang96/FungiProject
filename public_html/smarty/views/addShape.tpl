@@ -9,11 +9,11 @@
 <li><a class="tab" href="admin.php">Edit Admin</a></li>
 <li><a class="tab" href="addShape.php">Edit Shape</a></li>
 <li><a class="tab" href="addSpecies.php">Edit Species</a></li>
-    <li><a class="tab" href="characteristic.php">Edit Characteristic</a></li>
+    <li><a class="tab" href="addCharacteristic.php">Edit Characteristic</a></li>
 <li><a class="tab" href="logout.php">Logout</a></li>
-
 </ul>
 
+    {if isset($success)}<h3>{$success}</h3>{/if}
 <div class="col-lg-12 form-group dashboard" id="editShape">
 <form action="addShape.php" method="post" id="newShape" enctype="multipart/form-data">
 <h3>New Shape:</h3>
@@ -27,6 +27,7 @@ Description:
 Upload Image:
 <input type="file" name="myimage"><br>
 <input type="submit" name="addShape"  class="btn btn-default btn-md add form-control" value="Upload">
+    <input type="submit" name="reset" value="Reset">
 <p>-New shape has been created.-</p>
 </div>
 <hr>
@@ -59,12 +60,13 @@ value="{$editShapeDescription}"{/if}><br>
 Update Image:
 <input type="file" name="myimage"><br>
 <input type="submit" class="btn btn-default btn-md add form-control" value="Update" name="updateShape">
+    <input type="submit" name="reset" value="Reset">
 <p>-Shape is now updated.-</p>
 </div>
-
 </div>
 <hr>
 </form>
+
 <form action="addShape.php" method="post" id="deleteShape">
 <h3>Delete Shape:</h3>
 <div class="updates">
