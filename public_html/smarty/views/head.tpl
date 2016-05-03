@@ -44,7 +44,7 @@
             </ul>
 
             <ul class="nav navbar-nav navbar-right">
-                <li class="admin"><a href="admin.php">Control Panel</a></li>
+                <li class="admin"><a href="addAdmin.php">Control Panel</a></li>
             </ul>
             </div>
         </div>
