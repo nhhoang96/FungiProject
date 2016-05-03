@@ -16,6 +16,10 @@ a, a:hover, a:focus {
 .form-group {
 	padding: 0;
 }
+u {
+	border-bottom: 1px dotted #000;
+	text-decoration: none;
+}
 /*********************BANNER*****************************/
 .tagline {
 	text-shadow: 0 0 10px #000;
