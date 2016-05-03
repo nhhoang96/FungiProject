@@ -15,12 +15,8 @@
             Image:
         <input type="file" name="myimage"><br>
         <input type="submit" name="addShape"  class="btn btn-default btn-md add form-control" value="Upload">
-        <p>-New shape has been created.-</p>
-
-        <hr>
     </form>
 
-
-
+    {include "footer.tpl"}
 
 </div>

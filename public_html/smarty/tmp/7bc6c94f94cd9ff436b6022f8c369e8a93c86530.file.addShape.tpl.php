@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-03 02:29:05
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-03 20:22:58
          compiled from "smarty\views\addShape.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:2998157226f8d096355-79077914%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '7bc6c94f94cd9ff436b6022f8c369e8a93c86530' => 
     array (
       0 => 'smarty\\views\\addShape.tpl',
-      1 => 1462234986,
+      1 => 1462299774,
       2 => 'file',
     ),
   ),
@@ -38,12 +38,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
             Image:
         <input type="file" name="myimage"><br>
         <input type="submit" name="addShape"  class="btn btn-default btn-md add form-control" value="Upload">
-        <p>-New shape has been created.-</p>
-
-        <hr>
     </form>
 
-
+    <?php echo $_smarty_tpl->getSubTemplate ("footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
 
 
 </div><?php }} ?>

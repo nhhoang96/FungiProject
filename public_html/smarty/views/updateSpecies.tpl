@@ -56,8 +56,6 @@
         {/if}
         <input type="file" name="myimage"><br>
         <input type="submit" class="btn btn-default btn-md add form-control" value="Update" name="updateSpecies">
-        <p>-Shape is now updated.-</p>
-        <hr>
     </form>
 
     {include "footer.tpl"}

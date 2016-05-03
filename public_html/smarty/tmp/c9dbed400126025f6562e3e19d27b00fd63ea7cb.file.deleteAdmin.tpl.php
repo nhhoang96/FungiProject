@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-03 02:06:18
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-03 20:22:55
          compiled from "smarty\views\deleteAdmin.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:170405727eb51748ad0-58858673%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'c9dbed400126025f6562e3e19d27b00fd63ea7cb' => 
     array (
       0 => 'smarty\\views\\deleteAdmin.tpl',
-      1 => 1462233976,
+      1 => 1462299774,
       2 => 'file',
     ),
   ),
@@ -51,6 +51,9 @@ $_smarty_tpl->tpl_vars['item']->_loop = true;
             <?php } ?>
         </select><br>
         <input type="submit" class="btn btn-default btn-md add form-control" value="Remove" name="deleteAdmin">
-        <p>-sweaver is no longer an admin.-</p>
     </form>
+
+    <?php echo $_smarty_tpl->getSubTemplate ("footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
+
+
 </div><?php }} ?>

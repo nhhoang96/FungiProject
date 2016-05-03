@@ -11,25 +11,6 @@ include "../private_html/setup.php";
 $smarty->assign("adminActive", "active");
 $smarty->assign("title", "Admin");
 
-//USE FORE EDIT CHARACTERISTIC
-//        $query = "SELECT Characteristic_ID, Name FROM characteristic WHERE Category_FK = :shapeID";
-//
-//        $statement = $pdo->prepare($query);
-//        $statement->bindValue(':shapeID', $_POST["shapeID"]);
-//        $statement->execute();
-//        $shapeResults = array();
-//        if ($statement -> rowCount() > 0){
-//            while ($row = $statement->fetch(PDO::FETCH_ASSOC)){
-//                $charID = $row['Characteristic_ID'];
-//                $charName = $row['Name'];
-////                $editShapeDescription = $row['Description'];
-//
-//            }
-//        }else{
-//            $smarty->assign("error1", 'Database Error');
-//        }
-//        $smarty->assign("editShapeDescription", $editShapeDescription);
-
 if (isset($_POST["selectCharShape"])) {
 
     $query = "SELECT Shape_Category_ID, Name FROM shape WHERE Shape_Category_ID = :shapeID";

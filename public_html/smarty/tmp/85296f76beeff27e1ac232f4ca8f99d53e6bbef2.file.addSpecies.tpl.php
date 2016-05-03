@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-03 02:56:16
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-03 20:24:59
          compiled from "smarty\views\addSpecies.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:2865757226f933c4fb8-50046478%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '85296f76beeff27e1ac232f4ca8f99d53e6bbef2' => 
     array (
       0 => 'smarty\\views\\addSpecies.tpl',
-      1 => 1462236972,
+      1 => 1462299897,
       2 => 'file',
     ),
   ),
@@ -75,12 +75,11 @@ $_smarty_tpl->tpl_vars['item']->_loop = true;
         </select><br>
 
         <input type="submit" class="btn btn-default btn-md add form-control" value="Add" name="addSpecies">
-        <p>-New species has been created.-</p>
-        <hr>
     </form>
 
     <?php echo $_smarty_tpl->getSubTemplate ("footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
 
+    
 </div>
 
 <?php }} ?>

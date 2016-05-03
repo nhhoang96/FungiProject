@@ -6,7 +6,7 @@
     {include "adminNav.tpl"}
 
     <!--Update Shape-->
-    <form action="../../updateShape.php" method="post" id="updateShape" enctype="multipart/form-data">
+    <form action="updateShape.php" method="post" id="updateShape" enctype="multipart/form-data">
         <h3>Update Shape:</h3>
         Shape Association:
         <select name="shapeID" class="form-control">
@@ -44,7 +44,8 @@
         <input type="file" name="myimage"><br>
 
         <input type="submit" class="btn btn-default btn-md add form-control" value="Update" name="updateShape">
-        <p>-Shape is now updated.-</p>
-        <hr>
     </form>
-    </div>
+
+    {include "footer.tpl"}
+
+</div>

@@ -11,46 +11,7 @@ include "../private_html/setup.php";
 $smarty->assign("adminActive", "active");
 $smarty->assign("title", "Admin");
 
-//USE FORE EDIT CHARACTERISTIC
-//        $query = "SELECT Characteristic_ID, Name FROM characteristic WHERE Category_FK = :shapeID";
-//
-//        $statement = $pdo->prepare($query);
-//        $statement->bindValue(':shapeID', $_POST["shapeID"]);
-//        $statement->execute();
-//        $shapeResults = array();
-//        if ($statement -> rowCount() > 0){
-//            while ($row = $statement->fetch(PDO::FETCH_ASSOC)){
-//                $charID = $row['Characteristic_ID'];
-//                $charName = $row['Name'];
-////                $editShapeDescription = $row['Description'];
-//
-//            }
-//        }else{
-//            $smarty->assign("error1", 'Database Error');
-//        }
-//        $smarty->assign("editShapeDescription", $editShapeDescription);
-
-if (isset($_POST["selectCharOpt"])) {
-
-    $query = "SELECT Characteristic_ID, Name FROM characteristic WHERE Characteristic_ID= :charID";
-
-    $statement = $pdo->prepare($query);
-    $statement->bindValue(':charID', $_POST["charID"]);
-    $statement->execute();
-    $charResults = array();
-    if ($statement->rowCount() > 0) {
-        while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
-            $editCharID = $row['Characteristic_ID'];
-            $editCharName = $row['Name'];
-
-        }
-    } else {
-        $smarty->assign("error1", 'Database Error');
-    }
-    $smarty->assign("charID", $editCharID);
-    $smarty->assign("charName", $editCharName);
-
-} elseif (isset($_POST["addCharOpt"])) {
+if (isset($_POST["addCharOpt"])) {
     $errorFlag = false;
     $smarty->assign('errorFlag', $errorFlag);
 
