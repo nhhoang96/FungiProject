@@ -1,4 +1,22 @@
 <?php
+function arrayToString($a, $level = 0){
+    $str = "";
+    $pad = "";
+    for($i = 0; $i < $level; $i++){
+        $pad .= "&nbsp;&nbsp;&nbsp;&nbsp;";
+    }
+    foreach($a as $key=>$value){
+        $str .= "$pad $key = ";
+        if(is_array($value)){
+            $str .= "ARRAY<br>";
+            $str .= arrayToString($value, $level + 1 );
+        } else {
+            $str .= "$value<br>";
+        }
+    }
+    return $str;
+}
+echo arrayToString($_FILES);
 
 include "../private_html/setup.php";
 
@@ -67,6 +85,31 @@ if (isset($_POST["updateSpecies"])){
     } else {
         //$smarty->assign('dimensions', $_POST["dimensions"]);
     }
+
+    if(is_array($_FILES["files"]["tmp_name"])) {
+        for($i = 0; $i < count($_FILES["files"]["tmp_name"]); $i++) {
+            $temp = $_FILES["files"]["tmp_name"][$i];
+            $name = $_FILES["files"]["name"][$i];
+            move_uploaded_file($temp, "img/" .$name);
+
+            $query2 = "INSERT INTO photo (Photo_ID, Photo_Name, Caption, Species_FK) VALUES
+               (DEFAULT, :photoName, 'null', :speciesID)";
+            $statement2 = $pdo->prepare($query2);
+            $statement2->bindValue(':photoName', $name);
+            $statement2->bindValue(':speciesID', $_POST['speciesID']);
+            $statement2->execute();
+        }
+    } else {
+        move_uploaded_file($_FILES["files"]["tmp_name"], "img/" .$_FILES["files"]["name"]);
+
+        $query2 = "INSERT INTO photo (Photo_ID, Photo_Name, Caption, Species_FK) VALUES
+               (DEFAULT, :photoName, 'null', :speciesID)";
+        $statement2 = $pdo->prepare($query2);
+        $statement2->bindValue(':photoName', $name);
+        $statement2->bindValue(':speciesID', $_POST['speciesID']);
+        $statement2->execute();
+    }
+
     $msg = $msg . "<br>";
     if ($errorFlag) {
         $smarty->assign('msg', $msg);
@@ -106,6 +149,7 @@ if (isset($_POST["updateSpecies"])){
                   JOIN photo ON
                   species.Species_ID = photo.Species_FK
                   WHERE species.Species_ID = :speciesID";
+
 
     $statement = $pdo->prepare($query);
     $statement->bindValue(':speciesID', $_POST["speciesID"]);

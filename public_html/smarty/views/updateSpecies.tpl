@@ -50,15 +50,31 @@
         Dimensions:
         <input type="text" class="form-control" name="dimensions"
                {if isset($dimensions)}value="{$dimensions}"{/if}><br>
-        Update Image:<br>
+        Add Image:<br>
         {if isset($photoName)}
             <img class="pic glossarypic" src="img/{$photoName}">
         {/if}
-        <input type="file" name="myimage"><br>
+        {*<input type="file" name="myimage"><br>*}
+        <div class = "uploadDiv">
+        <input type="file" id="file" name="files[]" multiple="multiple" accept="image/*" /><br>
+        Caption: <input type=""text" name = "caption"/><br>
+            <input type="button" value = "Add Photo" id="addDiv"/>
+        </div>
+
         <input type="submit" class="btn btn-default btn-md add form-control" value="Update" name="updateSpecies">
         <p>-Shape is now updated.-</p>
         <hr>
-    </form>
+
+
+        <script>
+            var uploadDiv = "<div class = "uploadDiv">
+                             <input type="file" name="files[]" />
+                             Caption: <input type=""text" name = "caption"/><br>
+                             <input type="button" value = "Add Photo" id="addDiv"/></div>";
+            $("#addDiv").click(function() {
+                $(".uploadDiv : last-of-type").insertAfter(uploadDiv);
+            })
+        </script>
 
     {include "footer.tpl"}
 

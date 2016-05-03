@@ -27,9 +27,6 @@
         <input type="text" class="form-control" name="woodSubstrate"><br>
         Dimensions:
         <input type="text" class="form-control" name="dimensions"><br>
-        Image:
-        <input type="file" name="myimage"><br>
-
         Shape Association:
         <select name="shape" class="form-control">
             {foreach from=$shapeArray key=key item=item}

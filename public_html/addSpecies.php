@@ -88,6 +88,7 @@ if(isset($_POST["addSpecies"])) {
     } else {
         //$smarty->assign('shape', $_POST["shape"]);
     }
+
     $msg = $msg . "<br>";
     if ($errorFlag) {
         $smarty->assign('msg', $msg);
