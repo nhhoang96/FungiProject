@@ -1,13 +1,6 @@
 {include "head.tpl" title="About"}
 <link href="css/about.css" type=text/css rel="stylesheet" />
 
-
-<!--Fungi Team 2015-->
-
-	 <!-- Image Background Page Header -->
-
-	<!-- Note: The background image is set within the business-casual.css file. -->
-
 	<header class="business-header">
 		<div class="container">
 			<div class="row">
@@ -18,7 +11,7 @@
 			</div>
 		</div>
 	</header><!-- Page Content -->
-	<body>
+<body>
 	<div class="container">
 		<hr>
 
@@ -64,7 +57,7 @@
 				beautiful, serving as subjects for photographers and artists.
 				All of them are useful in teaching aspects of mycology.</p>
 
-				<div class="collapse" data-target="collapse" id="button1">
+				<div class="collapse" data-target="collapse" id="button1"><!--begin collapsed group-->
 					<p><strong>More Information:</strong> If you are unfamiliar
 					with fungi and using keys, be sure to review the
 					information on keys, the glossary, and some of the
@@ -138,14 +131,13 @@
 				<address>
 					<abbr title="Phone">P:</abbr>(717)-796-1800 ext. 3390<br>
 					<abbr title="Email">E:</abbr> <a href=
-					"mailto:#">gemberg@messiah.edu</a>
+					"mailto:gemberg@messiah.edu">gemberg@messiah.edu</a>
 				</address>
 			</div>
 		</div><!-- /.row -->
 		<hr>
 
 		<div class="row">
-			{*<div class="col-sm-1"></div>*}
 
 			<div class="col-sm-8">
 
@@ -211,5 +203,4 @@
 	<script src="js/jquery.js"></script> <!-- Bootstrap Core JavaScript -->
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/read_more.js"></script>
-
 	</body>

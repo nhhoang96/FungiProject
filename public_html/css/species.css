@@ -1,9 +1,4 @@
-body {
-	padding-top: 50px;
-}
-.speciesnav li {
-	background-color: grey;
-}
+/************************SPECIES LIST****************************/
 #species-list {
 	font-size: 38pt;
 }

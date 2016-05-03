@@ -3,6 +3,7 @@
 //Fungi Team 2015
 include "../private_html/setup.php";
 
+//---- Query to pull from glossary and glossary_image ----//
 $query = "SELECT Term, Image_Name, Caption, Description FROM glossary
           LEFT JOIN glossary_image ON Glossary_FK = Glossary_ID";
 

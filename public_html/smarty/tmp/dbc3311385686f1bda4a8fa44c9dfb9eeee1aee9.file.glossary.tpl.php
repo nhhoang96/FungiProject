@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-04-18 23:48:36
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-02 00:50:19
          compiled from "smarty\views\glossary.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:28975570407a55345c7-69651566%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'dbc3311385686f1bda4a8fa44c9dfb9eeee1aee9' => 
     array (
       0 => 'smarty\\views\\glossary.tpl',
-      1 => 1461016114,
+      1 => 1462137134,
       2 => 'file',
     ),
   ),
@@ -47,49 +47,47 @@ $_valid = $_smarty_tpl->decodeProperties(array (
         the term is illustrated as well.
     </p><hr>
     <table class="table table-striped">
+
         <thead class="thead-default">
             <tr class="row">
                 <th class="col-md-3">Term</th>
                 <th class="col-md-9">Definition</th>
             <tr>
         </thead>
+
         <tbody>
-        <?php  $_smarty_tpl->tpl_vars['term'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['term']->_loop = false;
+            <?php  $_smarty_tpl->tpl_vars['term'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['term']->_loop = false;
  $_from = $_smarty_tpl->tpl_vars['terms']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
 foreach ($_from as $_smarty_tpl->tpl_vars['term']->key => $_smarty_tpl->tpl_vars['term']->value) {
 $_smarty_tpl->tpl_vars['term']->_loop = true;
 ?>
-        <tr class="row">
-
-            <td><strong><?php echo $_smarty_tpl->tpl_vars['term']->value['Term'];?>
+                <tr class="row">
+                    <td><strong><?php echo $_smarty_tpl->tpl_vars['term']->value['Term'];?>
 </strong></td>
-            <td><?php echo $_smarty_tpl->tpl_vars['term']->value['Def'];?>
+                    <td><?php echo $_smarty_tpl->tpl_vars['term']->value['Def'];?>
 <br>
 
-                <table class="row">
-                    <tr class="col-md-4">
-                            <?php  $_smarty_tpl->tpl_vars['image'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['image']->_loop = false;
+                        <table class="row">
+                            <tr class="col-md-4">
+                                    <?php  $_smarty_tpl->tpl_vars['image'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['image']->_loop = false;
  $_from = $_smarty_tpl->tpl_vars['term']->value['Images']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
 foreach ($_from as $_smarty_tpl->tpl_vars['image']->key => $_smarty_tpl->tpl_vars['image']->value) {
 $_smarty_tpl->tpl_vars['image']->_loop = true;
 ?>
-                                <?php if (!is_null($_smarty_tpl->tpl_vars['image']->value['Image_Name'])&&!empty($_smarty_tpl->tpl_vars['image']->value['Image_Name'])) {?>
-                                    <th class="col-md-12 multiple-images">
-                                        <img src="img/<?php echo $_smarty_tpl->tpl_vars['image']->value['Image_Name'];?>
+                                        <?php if (!is_null($_smarty_tpl->tpl_vars['image']->value['Image_Name'])&&!empty($_smarty_tpl->tpl_vars['image']->value['Image_Name'])) {?>
+                                            <th class="col-md-12 multiple-images">
+                                                <img src="img/<?php echo $_smarty_tpl->tpl_vars['image']->value['Image_Name'];?>
 " class="glossarypic"><br>
-                                        <?php echo $_smarty_tpl->tpl_vars['image']->value['Caption'];?>
+                                                <?php echo $_smarty_tpl->tpl_vars['image']->value['Caption'];?>
 
-                                    </th>
-                                <?php }?>
-                            <?php } ?>
-                    </tr>
-                </table>
-            </td>
-
-
-        </tr>
-
-        <?php } ?>
+                                            </th>
+                                        <?php }?>
+                                    <?php } ?>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            <?php } ?>
         </tbody>
     </table>
 

@@ -1,4 +1,3 @@
-{*<hr>*}
 <!-- Footer -->
 
 <footer>
@@ -7,5 +6,5 @@
             <hr>
             <p>Copyright &copy; Messiah College</p>
         </div>
-    </div><!-- /.row -->
+    </div>
 </footer>
