@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-02 23:21:21
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-03 02:39:33
          compiled from "smarty\views\addSpecies.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:20475571562f4be98a6-07373650%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'bf9314b1a6e791f92cbcdd67699e29ce926f5a15' => 
     array (
       0 => 'smarty\\views\\addSpecies.tpl',
-      1 => 1462223937,
+      1 => 1462235969,
       2 => 'file',
     ),
   ),
@@ -79,7 +79,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
         <input type="text" class="form-control" name="dimensions"><br>
         Image:
         <input type="file" name="myimage"><br>
-
         Shape Association:
         <select name="shape" class="form-control">
             <?php  $_smarty_tpl->tpl_vars['item'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['item']->_loop = false;
