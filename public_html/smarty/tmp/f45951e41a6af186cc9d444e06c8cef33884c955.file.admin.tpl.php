@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-01 23:22:05
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-03 01:36:22
          compiled from "smarty\views\admin.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:2194256f4b41a6c85e5-60711128%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'f45951e41a6af186cc9d444e06c8cef33884c955' => 
     array (
       0 => 'smarty\\views\\admin.tpl',
-      1 => 1462137563,
+      1 => 1462232180,
       2 => 'file',
     ),
   ),
@@ -35,11 +35,19 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
     <!--Navigation-->
     <ul class="nav nav-pills admin-nav adminNavBar">
-            <li><a class="active" href="admin.php">Edit Admin</a></li>
-            <li><a class="tab" href="addShape.php">Edit Shape</a></li>
-            <li><a class="tab" href="addSpecies.php">Edit Species</a></li>
-            <li><a class="tab" href="characteristic.php">Edit Characteristic</a></li>
+            
+            <li class="dropdown">
+                <a href="#" data-toggle="dropdown" class="dropdown-toggle active">Admin <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li><a href="admin.tpl">New Admin</a></li>
+                    <li><a href="#">Delete Admin</a></li>
+                </ul>
+            </li>
+            <li><a class="tab" href="addShape.php">Shape</a></li>
+            <li><a class="tab" href="addSpecies.php">Species</a></li>
+            <li><a class="tab" href="characteristic.php">Characteristic</a></li>
             <li><a class="tab" href="logout.php">Logout</a></li>
+
     </ul>
 
         <!--Add new admin-->

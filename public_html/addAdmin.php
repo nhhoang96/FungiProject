@@ -60,40 +60,40 @@ if($stmt->rowCount() == 0){
         $statement->bindValue(':newAdmin', $_POST["newAdmin"]);
         $statement->execute();
 
-        $msg3 = "Add Successful!";
+        $msg3 = "Add Successful!"; }
 
-    } elseif (isset($_POST["deleteAdmin"])) {
-    $errorFlag = false;
-    $smarty->assign('errorFlag', $errorFlag);
-
-    $msg = "<strong>Missing Information!</strong>";
-
-    // ------ Input Error Checking ------
-    if ($_POST["removeAdmin"] == "") {
-        $errorFlag = true;
-        $msg .= "<br>Error, No Admin Username Was Passed.";
-    } else {
-        $smarty->assign('removeAdmin', $_POST["removeAdmin"]);
-    }
-
-    if ($errorFlag) {
-        $msg = $msg . "<br>";
-        $smarty->assign('msg', $msg);
-        $smarty->display('admin.tpl');
-        exit();
-    }
-
-    //------ Insert Query -----
-
-    $query = "DELETE FROM Administrator WHERE Admin_ID = :removeAdmin";
-
-    $statement = $pdo->prepare($query);
-    $statement->bindValue(':removeAdmin', $_POST["removeAdmin"]);
-    $statement->execute();
-
-    $msg3 = "Removal Successful!";
-}
-
+//    } elseif (isset($_POST["deleteAdmin"])) {
+//    $errorFlag = false;
+//    $smarty->assign('errorFlag', $errorFlag);
+//
+//    $msg = "<strong>Missing Information!</strong>";
+//
+//    // ------ Input Error Checking ------
+//    if ($_POST["removeAdmin"] == "") {
+//        $errorFlag = true;
+//        $msg .= "<br>Error, No Admin Username Was Passed.";
+//    } else {
+//        $smarty->assign('removeAdmin', $_POST["removeAdmin"]);
+//    }
+//
+//    if ($errorFlag) {
+//        $msg = $msg . "<br>";
+//        $smarty->assign('msg', $msg);
+//        $smarty->display('admin.tpl');
+//        exit();
+//    }
+//
+//    //------ Insert Query -----
+//
+//    $query = "DELETE FROM Administrator WHERE Admin_ID = :removeAdmin";
+//
+//    $statement = $pdo->prepare($query);
+//    $statement->bindValue(':removeAdmin', $_POST["removeAdmin"]);
+//    $statement->execute();
+//
+//    $msg3 = "Removal Successful!";
+//}
+//all above this is added back in to make delete admin work...................................................................
 //    } elseif (isset($_POST["selectCharShape"])) {
 //
 //        $query = "SELECT Shape_Category_ID, Name FROM shape WHERE Shape_Category_ID = :shapeID";
@@ -260,4 +260,4 @@ if($stmt->rowCount() == 0){
     }
 
     $smarty->assign("charArray", $speciesResults);
-    $smarty->display('admin.tpl');
+    $smarty->display('addAdmin.tpl');

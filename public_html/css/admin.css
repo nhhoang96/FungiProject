@@ -19,6 +19,14 @@ a, a:hover, a:focus {
 a.active {
     background-color: black;
 }
+
+.nav .open>a, .nav .open>a:hover, .nav .open>a:focus {
+    background-color: black;
+    border-color: black;
+}
+.dropdown-menu li > a:hover, .dropdown-menu li > a:focus, .dropdown-submenu:hover > a {
+    background-color: darkolivegreen;
+}
 /*.out {*/
     /*margin-right: 0;*/
     /*border-right: 10px;*/
