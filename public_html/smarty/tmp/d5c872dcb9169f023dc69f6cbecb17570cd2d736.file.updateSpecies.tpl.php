@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-03 02:55:20
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-03 20:25:23
          compiled from "smarty\views\updateSpecies.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:138165727f66cae0ec5-85897938%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'd5c872dcb9169f023dc69f6cbecb17570cd2d736' => 
     array (
       0 => 'smarty\\views\\updateSpecies.tpl',
-      1 => 1462236917,
+      1 => 1462299922,
       2 => 'file',
     ),
   ),
@@ -116,8 +116,6 @@ $_smarty_tpl->tpl_vars['item']->_loop = true;
         <?php }?>
         <input type="file" name="myimage"><br>
         <input type="submit" class="btn btn-default btn-md add form-control" value="Update" name="updateSpecies">
-        <p>-Shape is now updated.-</p>
-        <hr>
     </form>
 
     <?php echo $_smarty_tpl->getSubTemplate ("footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>

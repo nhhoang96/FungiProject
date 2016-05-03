@@ -14,6 +14,8 @@
             {/foreach}
         </select><br>
         <input type="submit" class="btn btn-default btn-md add form-control" value="Remove" name="deleteAdmin">
-        <p>-sweaver is no longer an admin.-</p>
     </form>
+
+    {include "footer.tpl"}
+
 </div>

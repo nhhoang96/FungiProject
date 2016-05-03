@@ -10,7 +10,6 @@
             Email:
             <input type="text" name="newAdmin" class="form-control"><br>
             <input type="submit" class="btn btn-default btn-md add form-control" value="Add" name="addAdmin">
-            <p>-eb1338 is now an admin.-</p><br>
     </form>
 
         {*<form action="admin.php" method="post" id="addCharacteristic">*}

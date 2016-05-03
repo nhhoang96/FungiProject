@@ -62,6 +62,7 @@
         </div>
 
         <input type="submit" class="btn btn-default btn-md add form-control" value="Update" name="updateSpecies">
+<<<<<<< HEAD
         <p>-Shape is now updated.-</p>
         <hr>
 
@@ -75,6 +76,9 @@
                 $(".uploadDiv : last-of-type").insertAfter(uploadDiv);
             })
         </script>
+=======
+    </form>
+>>>>>>> 93bc069539f712f32ea3558bbb381ec1709838ef
 
     {include "footer.tpl"}
 

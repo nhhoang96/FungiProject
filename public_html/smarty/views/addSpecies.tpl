@@ -35,10 +35,9 @@
         </select><br>
 
         <input type="submit" class="btn btn-default btn-md add form-control" value="Add" name="addSpecies">
-        <p>-New species has been created.-</p>
-        <hr>
     </form>
 
     {include "footer.tpl"}
+
 </div>
 
