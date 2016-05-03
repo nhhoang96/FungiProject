@@ -34,6 +34,7 @@
         <ul class="dropdown-menu">
             <li><a href="addCharacteristic.php">New Characteristic</a></li>
             <li><a href="addCharOption.php">New Characteristic Option</a></li>
+            <li><a href="addLinkOption.php">Link Characteristic Options Option</a></li>
         </ul>
     </li>
     {*<li><a class="tab" href="addShape.php">Shape</a></li>*}
