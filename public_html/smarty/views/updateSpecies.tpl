@@ -51,15 +51,20 @@
         <input type="text" class="form-control" name="dimensions"
                {if isset($dimensions)}value="{$dimensions}"{/if}><br>
         Add Image:<br>
+        <div id="container1" class="container">
         {if isset($photoName)}
             <img class="pic glossarypic" src="img/{$photoName}">
         {/if}
-        {*<input type="file" name="myimage"><br>*}
-        <div class = "uploadDiv">
-        <input type="file" id="file" name="files[]" multiple="multiple" accept="image/*" /><br>
-        Caption: <input type=""text" name = "caption"/><br>
-            <input type="button" value = "Add Photo" id="addDiv"/>
+
         </div>
+        {*<input type="file" name="myimage"><br>*}
+        <div id="addingImages">
+            <div class="uploadDiv">
+                <input name="file[]" type="file" id="file"/>
+            </div>
+            Caption: <input type="text" name = "caption"/><br>
+            </div>
+        <input type="button" id="addDiv" value="Add More Photo"/><br><br>
 
         <input type="submit" class="btn btn-default btn-md add form-control" value="Update" name="updateSpecies">
 
@@ -67,17 +72,17 @@
         <hr>
 
 
-        <script>
-            var uploadDiv = "<div class = "uploadDiv">
-                             <input type="file" name="files[]" />
-                             Caption: <input type=""text" name = "caption"/><br>
-                             <input type="button" value = "Add Photo" id="addDiv"/></div>";
-            $("#addDiv").click(function() {
-                $(".uploadDiv : last-of-type").insertAfter(uploadDiv);
-            })
-        </script>
-
     </form>
+
+
+    <script>
+        var uploadDiv = "<div class='uploadDiv'><input name='file[]' type='file' id='file'/></div>Caption: <input type='text' name = 'caption'/><br>"
+
+        $("#addDiv").click(function() {
+            $("#addingImages").append(uploadDiv);
+        });
+
+    </script>
 
     {include "footer.tpl"}
 

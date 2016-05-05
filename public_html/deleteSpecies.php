@@ -19,6 +19,8 @@ if (isset($_POST["deleteSpecies"])) {
         $smarty->assign('removedSpecies', $_POST["removedSpecies"]);
     }
 
+    $query2 = "DELETE FROM photo WHERE
+
     if ($errorFlag) {
         $msg = $msg . "<br>";
         $smarty->assign('msg', $msg);

@@ -42,6 +42,13 @@
             <img class="pic glossarypic" src="img/{$editShapeImage}">
         {/if}
         <input type="file" name="myimage"><br>
+        {*<div id="addingImages">*}
+            {*<div class="uploadDiv">*}
+                {*<input name="file[]" type="file" id="file"/>*}
+            {*</div>*}
+            {*Caption: <input type="text" name = "caption"/><br>*}
+        {*</div>*}
+        {*<input type="button" id="addDiv" value="Add More Photo"/>*}
 
         <input type="submit" class="btn btn-default btn-md add form-control" value="Update" name="updateShape">
     </form>

@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-03 04:35:11
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-03 22:48:05
          compiled from "smarty\views\addSpecies.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:20475571562f4be98a6-07373650%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'bf9314b1a6e791f92cbcdd67699e29ce926f5a15' => 
     array (
       0 => 'smarty\\views\\addSpecies.tpl',
-      1 => 1462242904,
+      1 => 1462308484,
       2 => 'file',
     ),
   ),
@@ -22,6 +22,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'shapeArray' => 0,
     'key' => 0,
     'item' => 0,
+    'photoName' => 0,
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
@@ -71,12 +72,36 @@ $_smarty_tpl->tpl_vars['item']->_loop = true;
             <?php } ?>
         </select><br>
 
+        Add Image:<br>
+        <?php if (isset($_smarty_tpl->tpl_vars['photoName']->value)) {?>
+            <img class="pic glossarypic" src="img/<?php echo $_smarty_tpl->tpl_vars['photoName']->value;?>
+">
+        <?php }?>
+        
+        <div id="addingImages">
+            <div class="uploadDiv">
+                <input name="file[]" type="file" id="file"/>
+            </div>
+            Caption: <input type="text" name = "caption"/><br>
+        </div>
+        <input type="button" id="addDiv" value="Add More Photo"/>
+
         <input type="submit" class="btn btn-default btn-md add form-control" value="Add" name="addSpecies">
-        <p>-New species has been created.-</p>
-        <hr>
     </form>
 
+    <?php echo '<script'; ?>
+>
+        var uploadDiv = "<div class='uploadDiv'><input name='file[]' type='file' id='file'/></div>Caption: <input type='text' name = 'caption'/><br>"
+
+        $("#addDiv").click(function() {
+            $("#addingImages").append(uploadDiv);
+        });
+
+    <?php echo '</script'; ?>
+>
+
     <?php echo $_smarty_tpl->getSubTemplate ("footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
+
 
 </div>
 

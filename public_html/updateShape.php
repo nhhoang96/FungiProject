@@ -27,6 +27,8 @@ if (isset($_POST["updateShape"])){
         $smarty->assign('updateShapeDescription', $_POST["updateShapeDescription"]);
     }
 
+    move_uploaded_file($_FILES["myimage"]["tmp_name"], "img/" .$_FILES["myimage"]["name"]);
+
     if ($errorFlag) {
         $msg = $msg . "<br>";
         $smarty->assign('msg', $msg);
@@ -35,15 +37,16 @@ if (isset($_POST["updateShape"])){
     }
 
     $query = "UPDATE shape
-              SET Name = :updateShapeName, Description = :updateShapeDescription
+              SET Name = :updateShapeName, Description = :updateShapeDescription, Image = :image,
               WHERE Shape_Category_ID = :shapeID";
 
     $statement = $pdo->prepare($query);
     $statement->bindValue(':updateShapeName', $_POST["updateShapeName"]);
     $statement->bindValue(':updateShapeDescription', $_POST["updateShapeDescription"]);
     $statement->bindValue(':shapeID', $_POST["shapeID"]);
-//        $statement->bindValue(':image', $testImage);
+    $statement->bindValue(':image', $_FILES["myimage"]["name"]);
     $statement->execute();
+//        $statement->bindValue(':image', $testImage);
 
 }elseif (isset($_POST["selectShape"])) {
 

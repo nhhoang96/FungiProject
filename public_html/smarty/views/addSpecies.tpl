@@ -34,8 +34,30 @@
             {/foreach}
         </select><br>
 
+        Add Image:<br>
+        {if isset($photoName)}
+            <img class="pic glossarypic" src="img/{$photoName}">
+        {/if}
+        {*<input type="file" name="myimage"><br>*}
+        <div id="addingImages">
+            <div class="uploadDiv">
+                <input name="file[]" type="file" id="file"/>
+            </div>
+            Caption: <input type="text" name = "caption"/><br>
+        </div>
+        <input type="button" id="addDiv" value="Add More Photo"/>
+
         <input type="submit" class="btn btn-default btn-md add form-control" value="Add" name="addSpecies">
     </form>
+
+    <script>
+        var uploadDiv = "<div class='uploadDiv'><input name='file[]' type='file' id='file'/></div>Caption: <input type='text' name = 'caption'/><br>"
+
+        $("#addDiv").click(function() {
+            $("#addingImages").append(uploadDiv);
+        });
+
+    </script>
 
     {include "footer.tpl"}
 

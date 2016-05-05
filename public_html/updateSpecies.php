@@ -86,26 +86,28 @@ if (isset($_POST["updateSpecies"])){
         //$smarty->assign('dimensions', $_POST["dimensions"]);
     }
 
-    if(is_array($_FILES["files"]["tmp_name"])) {
-        for($i = 0; $i < count($_FILES["files"]["tmp_name"]); $i++) {
-            $temp = $_FILES["files"]["tmp_name"][$i];
-            $name = $_FILES["files"]["name"][$i];
+    if(is_array($_FILES["file"]["tmp_name"])) {
+        for($i = 0; $i < count($_FILES["file"]["tmp_name"]); $i++) {
+            $temp = $_FILES["file"]["tmp_name"][$i];
+            $name = $_FILES["file"]["name"][$i];
             move_uploaded_file($temp, "img/" .$name);
 
             $query2 = "INSERT INTO photo (Photo_ID, Photo_Name, Caption, Species_FK) VALUES
-               (DEFAULT, :photoName, 'null', :speciesID)";
+               (DEFAULT, :photoName, :caption, :speciesID)";
             $statement2 = $pdo->prepare($query2);
             $statement2->bindValue(':photoName', $name);
+            $statement2->bindValue(':caption', $_POST['caption']);
             $statement2->bindValue(':speciesID', $_POST['speciesID']);
             $statement2->execute();
         }
     } else {
-        move_uploaded_file($_FILES["files"]["tmp_name"], "img/" .$_FILES["files"]["name"]);
+        move_uploaded_file($_FILES["file"]["tmp_name"], "img/" .$_FILES["file"]["name"]);
 
         $query2 = "INSERT INTO photo (Photo_ID, Photo_Name, Caption, Species_FK) VALUES
-               (DEFAULT, :photoName, 'null', :speciesID)";
+               (DEFAULT, :photoName, :caption, :speciesID)";
         $statement2 = $pdo->prepare($query2);
         $statement2->bindValue(':photoName', $name);
+        $statement2->bindValue(':caption', $_POST['caption']);
         $statement2->bindValue(':speciesID', $_POST['speciesID']);
         $statement2->execute();
     }

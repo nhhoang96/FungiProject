@@ -89,6 +89,7 @@ if(isset($_POST["addSpecies"])) {
         //$smarty->assign('shape', $_POST["shape"]);
     }
 
+
     $msg = $msg . "<br>";
     if ($errorFlag) {
         $smarty->assign('msg', $msg);
@@ -115,7 +116,35 @@ if(isset($_POST["addSpecies"])) {
     $statement->bindValue(':dimensions', $_POST['dimensions']);
     $statement->bindValue(':shape', $_POST['shape']);
     $statement->bindValue(':url', $url);
+    $speciesFK = $pdo->lastInsertId();
     $statement->execute();
+
+
+    if(is_array($_FILES["file"]["tmp_name"])) {
+        for($i = 0; $i < count($_FILES["file"]["tmp_name"]); $i++) {
+            $temp = $_FILES["file"]["tmp_name"][$i];
+            $name = $_FILES["file"]["name"][$i];
+            move_uploaded_file($temp, "img/" .$name);
+
+            $query2 = "INSERT INTO photo (Photo_ID, Photo_Name, Caption, Species_FK) VALUES
+               (DEFAULT, :photoName, :caption, :speciesFK)";
+            $statement2 = $pdo->prepare($query2);
+            $statement2->bindValue(':photoName', $name);
+            $statement2->bindValue(':caption', $_POST['caption']);
+            $statement2->bindValue(':speciesFK', $speciesFK);
+            $statement2->execute();
+        }
+    } else {
+        move_uploaded_file($_FILES["file"]["tmp_name"], "img/" .$_FILES["file"]["name"]);
+
+        $query2 = "INSERT INTO photo (Photo_ID, Photo_Name, Caption, Species_FK) VALUES
+               (DEFAULT, :photoName, :caption, :speciesFK)";
+        $statement2 = $pdo->prepare($query2);
+        $statement2->bindValue(':photoName', $name);
+        $statement2->bindValue(':caption', $_POST['caption']);
+        $statement2->bindValue(':speciesFK', $speciesFK);
+        $statement2->execute();
+    }
 
     $msg3 = "Add Successful!";
 }
