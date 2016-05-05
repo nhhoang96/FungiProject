@@ -51,6 +51,7 @@
         {*<input type="button" id="addDiv" value="Add More Photo"/>*}
 
         <input type="submit" class="btn btn-default btn-md add form-control" value="Update" name="updateShape">
+        <input type="submit" name="reset" value="Reset">
     </form>
 
     {include "footer.tpl"}

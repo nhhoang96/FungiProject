@@ -5,6 +5,8 @@ include "../private_html/setup.php";
 $smarty->assign("adminActive", "active");
 $smarty->assign("title", "Admin");
 
+
+//----- Check if the delete species submit button was hit ----
 if (isset($_POST["deleteSpecies"])) {
     $errorFlag = false;
     $smarty->assign('errorFlag', $errorFlag);
@@ -29,7 +31,6 @@ if (isset($_POST["deleteSpecies"])) {
     }
 
     //---- Delete Query -----
-
     $query = "DELETE FROM species WHERE Species_ID = :removedSpecies";
 
     $statement = $pdo->prepare($query);
@@ -84,5 +85,7 @@ $shapeResults[$row['Shape_Category_ID']] = $row['Name'];
 $smarty->assign("error1", 'Database Error');
 }
 $smarty->assign("shapeArray", $shapeResults);
-
+if(isset($msg3)){
+    $smarty->assign('success', $msg3);
+}
 $smarty->display('deleteSpecies.tpl');

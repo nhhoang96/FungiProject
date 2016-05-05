@@ -29,7 +29,7 @@ if($stmt->rowCount() == 0){
     $smarty->assign("adminActive", "active");
     $smarty->assign("title", "Admin");
 
-    //------ Determine which submit button was hit ------
+    //----- Check if the add admin submit button was hit ----
     } if (isset($_POST["addAdmin"])) {
         $errorFlag = false;
         $smarty->assign('errorFlag', $errorFlag);
@@ -260,4 +260,7 @@ if($stmt->rowCount() == 0){
     }
 
     $smarty->assign("charArray", $speciesResults);
+if(isset($msg3)){
+    $smarty->assign('success', $msg3);
+}
     $smarty->display('addAdmin.tpl');

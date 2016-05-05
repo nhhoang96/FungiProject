@@ -67,6 +67,7 @@
         <input type="button" id="addDiv" value="Add More Photo"/><br><br>
 
         <input type="submit" class="btn btn-default btn-md add form-control" value="Update" name="updateSpecies">
+        <input type="submit" name="reset" value="Reset">
 
         <p>-Shape is now updated.-</p>
         <hr>

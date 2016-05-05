@@ -23,6 +23,7 @@ include "../private_html/setup.php";
 $smarty->assign("adminActive", "active");
 $smarty->assign("title", "Admin");
 
+//----- Check if the update species submit button was hit ----
 if (isset($_POST["updateSpecies"])){
 
     $errorFlag = false;
@@ -235,5 +236,7 @@ if ($statement -> rowCount() > 0){
     $smarty->assign("error1", 'Database Error');
 }
 $smarty->assign("shapeArray", $shapeResults);
-
+if(isset($msg3)){
+    $smarty->assign('success', $msg3);
+}
 $smarty->display('updateSpecies.tpl');
