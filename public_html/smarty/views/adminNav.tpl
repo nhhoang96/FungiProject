@@ -34,7 +34,7 @@
         <ul class="dropdown-menu">
             <li><a href="addCharacteristic.php">New Characteristic</a></li>
             <li><a href="addCharOption.php">New Characteristic Option</a></li>
-            <li><a href="addLinkOption.php">Link Characteristic Options Option</a></li>
+            <li><a href="addLinkOption.php">Link Characteristic Options</a></li>
         </ul>
     </li>
     {*<li><a class="tab" href="addShape.php">Shape</a></li>*}
@@ -42,3 +42,5 @@
     {*<li><a class="tab" href="characteristic.php">Characteristic</a></li>*}
     <li><a class="tab" href="logout.php">Logout</a></li>
 </ul>
+
+{if isset($success)}<h3>{$success}</h3>{/if}

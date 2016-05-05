@@ -11,6 +11,7 @@ include "../private_html/setup.php";
 $smarty->assign("adminActive", "active");
 $smarty->assign("title", "Admin");
 
+//----- Check if the select characteristic shape submit button was hit ----
 if (isset($_POST["selectCharShape"])) {
 
     $query = "SELECT Shape_Category_ID, Name FROM shape WHERE Shape_Category_ID = :shapeID";
@@ -24,7 +25,6 @@ if (isset($_POST["selectCharShape"])) {
         while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
             $editShapeID = $row['Shape_Category_ID'];
             $editShapeName = $row['Name'];
-//                $editShapeDescription = $row['Description'];
 
         }
     } else {
@@ -33,6 +33,7 @@ if (isset($_POST["selectCharShape"])) {
     $smarty->assign("charShapeID", $editShapeID);
     $smarty->assign("charShapeName", $editShapeName);
 
+    //----- Check if the add characteristic submit button was hit ----
 } elseif (isset($_POST["addChar"])) {
     $errorFlag = false;
     $smarty->assign('errorFlag', $errorFlag);
@@ -102,7 +103,9 @@ if (isset($_POST["selectCharShape"])) {
     }
 
     $smarty->assign("charArray", $speciesResults);
-
+if(isset($msg3)){
+    $smarty->assign('success', $msg3);
+}
     $smarty->display('addCharacteristic.tpl');
 
 

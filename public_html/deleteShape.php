@@ -4,7 +4,7 @@ include "../private_html/setup.php";
 
 $smarty->assign("adminActive", "active");
 $smarty->assign("title", "Admin");
-
+//----- Check if the delete shape submit button was hit ----
 if (isset($_POST["deleteShape"])) {
 
     $errorFlag = false;
@@ -51,6 +51,8 @@ $shapeResults[$row['Shape_Category_ID']] = $row['Name'];
 $smarty->assign("error1", 'Database Error');
 }
 $smarty->assign("shapeArray", $shapeResults);
-
+if(isset($msg3)){
+    $smarty->assign('success', $msg3);
+}
 $smarty->display('deleteShape.tpl');
 

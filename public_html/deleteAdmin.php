@@ -29,6 +29,8 @@ if($stmt->rowCount() == 0){
     $smarty->assign("adminActive", "active");
     $smarty->assign("title", "Admin");
 
+
+    //----- Check if the delete admin submit button was hit ----
     if(isset($_POST["deleteAdmin"])) {
         $errorFlag = false;
         $smarty->assign('errorFlag', $errorFlag);
@@ -50,7 +52,7 @@ if($stmt->rowCount() == 0){
             exit();
         }
 
-        //------ Insert Query -----
+        //------ Delete Query -----
 
         $query = "DELETE FROM Administrator WHERE Admin_ID = :removeAdmin";
 
@@ -58,7 +60,7 @@ if($stmt->rowCount() == 0){
         $statement->bindValue(':removeAdmin', $_POST["removeAdmin"]);
         $statement->execute();
 
-        $msg3 = "Removal Successful!";
+        $msg3 = "Delete Successful!";
     }
 }
 //------ Build Associative Admin Array ------
@@ -106,4 +108,7 @@ if ($statement->rowCount() > 0) {
 }
 
 $smarty->assign("charArray", $speciesResults);
+if(isset($msg3)){
+    $smarty->assign('success', $msg3);
+}
 $smarty->display('deleteAdmin.tpl');

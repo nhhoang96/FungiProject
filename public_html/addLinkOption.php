@@ -11,6 +11,8 @@ include "../private_html/setup.php";
 $smarty->assign("adminActive", "active");
 $smarty->assign("title", "Admin");
 
+
+//----- Check if the select species submit button was hit ----
 if (isset($_POST["selectSpecies"])) {
 
     $query = "SELECT Species_ID, Common_Name, Name_Derivation, Scientific_Name, Phylum, Sp_Order,
@@ -67,11 +69,61 @@ if (isset($_POST["selectSpecies"])) {
             "Opt_Name" => $row['Opt_Name']
         );
     }
-    $char['options'] = $opt;
-    $charList[$cc] = $char;
+    if (isset ($opt)) {
+        $char['options'] = $opt;
+    }
+        if (isset ($opt)) {
+            $charList[$cc] = $char;
+        }
 
     $smarty ->assign("charID", $charID);
     $smarty ->assign("charList", $charList);
+
+    $query = "SELECT Option_FK FROM species_option
+              WHERE Species_FK = :speciesID";
+
+    $statement = $pdo->prepare($query);
+    $statement->bindValue(':speciesID', $_POST["speciesID"]);
+    $statement->execute();
+
+    $options = array();
+    if ($statement->rowCount() > 0) {
+        while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
+            $options[] = $row['Option_FK'];
+
+            $smarty->assign("options", $options);
+        }
+    } else {
+        $smarty->assign("error1", 'Database Error');
+    }
+
+    // ------- Check if the add links submit button was hit
+}elseif (isset($_POST['addLinks'])) {
+
+    //------ Delete old links so there are no duplicates or outdated values -----
+
+    $query = "DELETE FROM species_option WHERE Species_FK = :speciesID";
+
+    $statement = $pdo->prepare($query);
+    $statement->bindValue(':speciesID', $_POST['speciesID']);
+    $statement->execute();
+
+    //------ Insert new links ------
+    //------ Query Loops for each checkbox that was checked-----
+    if (isset ($_POST['optionIDs'])) {
+        if (is_array($_POST['optionIDs'])) {
+            foreach ($_POST['optionIDs'] as $optionID) {
+                echo "array";
+                $query = "INSERT INTO species_option (Species_FK , Option_FK )
+              VALUES (:speciesID, :optionID)";
+
+                $statement = $pdo->prepare($query);
+                $statement->bindValue(':speciesID', $_POST['speciesID']);
+                $statement->bindValue(':optionID', $optionID);
+                $statement->execute();
+            }
+        }
+    }
 }
 
 //------ Build Associative Species Array For Use In Species Selectors------

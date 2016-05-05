@@ -3,8 +3,6 @@
 
 {include "adminNav.tpl"}
 
-    {if isset($success)}<h3>{$success}</h3>{/if}
-
     <form action="addLinkOption.php" method="post" id="linkOption">
         <h3>Link Characteristic Options to Species:</h3><br>
         Species Association:
@@ -19,6 +17,7 @@
         {if !isset($speciesID)}
             <input type="submit" class="btn btn-default btn-md add form-control" value="Select" name="selectSpecies">
         {/if}
+        {if isset($speciesID)}
         Name:
 
         <table id="example">
@@ -33,7 +32,11 @@
                 {foreach $char.options as $opt}
                     <tr>
                         <td> {$char.Name}</td>
-                        <td> <input type="checkbox" name="characteristics" value="{$opt.Opt_ID}">{$opt.Opt_Name}</td>
+                        <td>
+                            <input type="checkbox" name="optionIDs[]" value="{$opt.Opt_ID}"
+                                    {if isset($options)}{foreach $options as $option}{if $opt.Opt_ID == $option}checked{/if}{/foreach}{/if}>
+                            {$opt.Opt_Name}
+                        </td>
                     </tr>
                 {/foreach}
             {/foreach}
@@ -47,12 +50,11 @@
                 $("#example").DataTable();
             });
         </script>
-        <input type="submit" class="btn btn-default btn-md add form-control" value="Add" name="linkOpt">
+
+        <input type="submit" class="btn btn-default btn-md add form-control" value="Add" name="addLinks">
+        {/if}
         <input type="submit" name="reset" value="Reset">
     </form>
-
-
-    <input type="submit" name="reset" value="Reset">
 
 
     {include "footer.tpl"}

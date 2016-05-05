@@ -11,6 +11,8 @@ include "../private_html/setup.php";
 $smarty->assign("adminActive", "active");
 $smarty->assign("title", "Admin");
 
+
+//----- Check if the add character option submit button was hit ----
 if (isset($_POST["addCharOpt"])) {
     $errorFlag = false;
     $smarty->assign('errorFlag', $errorFlag);
@@ -39,7 +41,6 @@ if (isset($_POST["addCharOpt"])) {
     }
 
     //------ Insert Query -----
-
     $query = "INSERT INTO characteristic_option (Option_ID , Name, Characteristic_FK )
               VALUES (DEFAULT, :newOptName, :charID)";
 
@@ -80,6 +81,10 @@ if ($statement->rowCount() > 0) {
 }
 
 $smarty->assign("charArray", $speciesResults);
+
+if(isset($msg3)){
+    $smarty->assign('success', $msg3);
+}
 
 $smarty->display('addCharOption.tpl');
 

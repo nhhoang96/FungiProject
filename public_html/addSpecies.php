@@ -5,7 +5,7 @@ include "../private_html/setup.php";
 $smarty->assign("adminActive", "active");
 $smarty->assign("title", "Admin");
 
-//------ Add Species -----
+//----- Check if the add species submit button was hit ----
 if(isset($_POST["addSpecies"])) {
     $query = "SELECT Shape_Category_ID, Name FROM shape";
 
@@ -335,5 +335,7 @@ if ($statement -> rowCount() > 0){
     $smarty->assign("error1", 'Database Error');
 }
 $smarty->assign("shapeArray", $shapeResults);
-
+if(isset($msg3)){
+    $smarty->assign('success', $msg3);
+}
 $smarty->display('addSpecies.tpl');
