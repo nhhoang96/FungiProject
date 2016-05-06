@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-01 23:00:46
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-03 21:05:41
          compiled from "smarty\views\index.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:961456d740be38fa01-14829434%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'e32132b8b03258c8108838f93819d389860367d3' => 
     array (
       0 => 'smarty\\views\\index.tpl',
-      1 => 1462136417,
+      1 => 1462300055,
       2 => 'file',
     ),
   ),
@@ -44,12 +44,12 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                 <p> Fungi Growing on Wood is a web
                     site devoted to the identification and appreciation of fungi
                     growing in close association with living and dead wood. The
-                    fungi described here are those in a parasitic or saprophytic
-                    relationship with trees. Mycorrhizal fungi, also in close
+                    fungi described here are those in a parasitic or <u data-toggle="tooltip" data-placement="top" title="Myco-heterotrophs that parasitize fungi rather than dead organic matter directly">saprophytic</u>
+                    relationship with trees. <u data-toggle="tooltip" data-placement="top" title="Filaments of root systems that are more effective in absorbing nutrients and water">Mycorrhizal fungi</u>, also in close
                     association with trees, are not strongly represented here even
                     though some of them may be found on well-rotted wood. The
                     organisms described on this web site are often referred to as
-                    lignicolous fungi. Most species are illustrated with multiple
+                    <u data-toggle="tooltip" data-placement="top" title="Fungi that decays wood by attacking the carbohydrates in wood and decaying lignin">lignicolous fungi</u>. Most species are illustrated with multiple
                     images to show as many diagnostic details as possible.</p
                 <p><a class="btn btn-default btn-md" href="app.php">Try Application
                         &raquo;</a></p>
@@ -62,7 +62,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                         "lignicolous" fungi. But why develop a set of keys limited
                         to fungi utilizing wood as a substrate? After all, being
                         lignicolous does not define a taxonomic category.
-                        Lignicolous fungi include ascomycetes and basidiomycetes
+                        Lignicolous fungi include <u data-toggle="tooltip" data-placement="top" title="A fungus whose spores develop within asci including molds, mildews, and yeasts">ascomycetes</u> and
+                        <u data-toggle="tooltip" data-placement="top" title="A fungus whose spores develop in basidia including the majority of mushrooms and toadstools">basidiomycetes</u>
                         and a large number of classes and orders within each of
                         these groups. Most of these taxa include both lignicolous
                         and terrestrial species. Rather than taxonomy, the keys
@@ -86,7 +87,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                         the forester determine the likely extent of loss. Different
                         species are associated with different amounts of decay in
                         the tree. Additionally, some species are restricted to
-                        sapwood and will not affect the merchantable volume of
+                        <u data-toggle="tooltip" data-placement="top" title="The soft outer layers of reccently formed wood between the heartwood and the bark">sapwood</u> and will not affect the merchantable volume of
                         heartwood. Some fungi can decay sound wood, others decay
                         only decaying wood and bark.</p>
 
@@ -104,13 +105,14 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                             fungi responsible for decaying the wood of the different
                             species of hardwood and softwood trees is of ecological
                             interest. Wood decay fungi include many sought-after edible
-                            species such as <i>Pleurotus ostreatus</i>, <i>Grifola
-                                frondosa</i>, and <i>Laetiporus sulphureus</i>.</p>
+                            species such as <u data-toggle="tooltip" data-placement="top" title="An edible agaric with a soft greyish cap growing in shelving masses on dead wood"><i>Pleurotus ostreatus</i></u>,
+                            <u data-toggle="tooltip" data-placement="top" title="A polypore mushroom that grows in clusters at the base of trees, particularly oaks"><i>Grifola frondosa</i></u>, and
+                            <u data-toggle="tooltip" data-placement="top" title="A species of bracket fungus found in Europe and North America (grows on trees)"><i>Laetiporus sulphureus</i></u>.</p>
 
                         <ul>
                             <li>Wood decay fungi are used as mycomedicinals.
-                                Preparations made from species such as <em>Ganoderma
-                                    lucidum</em> and <em>Trametes versicolor</em> are the
+                                Preparations made from species such as <u data-toggle="tooltip" data-placement="top" title="Known as Reishi mushroom, is a popular medicinal mushroom used in Traditional Chinese Medicine"><em>Ganoderma
+                                    lucidum</em></u> and <u data-toggle="tooltip" data-placement="top" title="Known as Coriolus versicolor and Polyporus versicolor, is a common polypore mushroom found through the world. Also commonly called Turkey Tail"><em>Trametes versicolor</em></u> are the
                                 mycological equivalent of herbal medicinals.</li>
 
                             <li>Wood decay fungi are screened for pharmaceutical
@@ -120,7 +122,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                                 photographers and other artists.</li>
 
                             <li>Wood decay fungi are used by hobbyists to dye wool
-                                and other fabrics. <em>Trametes suaveolens</em>, for
+                                and other fabrics. <u data-toggle="tooltip" data-placement="top" title="Trametes means 'one who is thin'; Suaveolens means 'sweet-smelling' in reference to the anise scent of fresh specimens"><em>Trametes suaveolens</em></u>, for
                                 example, yields a much sought purple dye.</li>
 
                             <li>Wood decay fungi are used by hobbyists to make
@@ -132,8 +134,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                                 cellulose and lignin from wood, leading to what is
                                 termed white rot or brown rot. This character is
                                 sometimes given taxonomic importance. For example, most
-                                species now in the genus <em>Oligoporus</em> were
-                                formally included in the genus <em>Tyromyces</em>.
+                                species now in the genus <u data-toggle="tooltip" data-placement="top" title="A genus of fungi belonging to the family Polyporaceae"><em>Oligoporus</em></u> were
+                                formally included in the genus <u data-toggle="tooltip" data-placement="top" title="A genus of fungi in the Polyporaceae family"><em>Tyromyces</em></u>.
                                 <em>Tyromyces</em>, however, is now restricted to white
                                 rot species and any brown rot species formally in it
                                 were transferred to the genus <em>Oligoporus</em> which
@@ -142,12 +144,12 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                                     caesius</em>.</li>
 
                             <li>Wood decay fungi provide fascinating examples of
-                                biological relationships. For example, <em>Armillaria
-                                    mellea</em> is a much sought edible species. It is also
+                                biological relationships. For example, <u data-toggle="tooltip" data-placement="top" title="Commonly known as honey fungus, is a basidiomycete fungus in genus Armillaria"><em>Armillaria
+                                    mellea</em></u> is a much sought edible species. It is also
                                 one of the few gilled mushrooms that is an important
                                 forest tree parasite. <em>Armillaria mellea</em> is
                                 sometimes parasitized by another gilled mushroom called
-                                <em>Entoloma abortivum</em>, or the Aborted Entoloma. A
+                                <u data-toggle="tooltip" data-placement="top" title="A steely gray entolomatoid mushroom found near decaying wood in eastern North America's hardwood forests"><em>Entoloma abortivum</em></u>, or the Aborted Entoloma. A
                                 parasitized <em>Armillaria</em> becomes a more or less
                                 solid mass of flesh and never develops gills. The two
                                 species often grow near each other and for many years
@@ -211,6 +213,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 >
 <?php echo '<script'; ?>
  src="js/read_more.js"><?php echo '</script'; ?>
+>
+<?php echo '<script'; ?>
+>
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+<?php echo '</script'; ?>
 >
 
 </body>
