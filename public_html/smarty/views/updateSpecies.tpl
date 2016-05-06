@@ -76,6 +76,7 @@
     </form>
 
 
+   <--- JQuery function to upload more images--->
     <script>
         var uploadDiv = "<div class='uploadDiv'><input name='file[]' type='file' id='file'/></div>Caption: <input type='text' name = 'caption'/><br>"
 

@@ -10,6 +10,8 @@ phpCAS::forceAuthentication();
 $logout_url = "https://sso.messiah.edu/cas/logout";
 $_SERVER['REMOTE_USER'] = strtolower(phpCAS::getUser());
 
+
+
 //echo strtolower(phpCAS::getUser());
 
 //::getUser();
@@ -21,8 +23,9 @@ $stmt->execute();
 if($stmt->rowCount() == 0){
     //Jump back to whatever page you’re on
     $smarty->display("index.tpl");
-    Exit();
+    exit();
 } else {
+    $_SESSION['admin'] = true;
     //Display to Admin Dashboard tpl
     //echo "You are on the admin Dashboard";
 

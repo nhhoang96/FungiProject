@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-04 15:37:59
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-05 21:18:11
          compiled from "smarty\views\updateSpecies.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:2356457280e70108af8-25069815%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'baf8ca1a3b193f031e5bbe1581f3da6690cc5603' => 
     array (
       0 => 'smarty\\views\\updateSpecies.tpl',
-      1 => 1462369048,
+      1 => 1462467028,
       2 => 'file',
     ),
   ),
@@ -127,6 +127,7 @@ $_smarty_tpl->tpl_vars['item']->_loop = true;
         <input type="button" id="addDiv" value="Add More Photo"/><br><br>
 
         <input type="submit" class="btn btn-default btn-md add form-control" value="Update" name="updateSpecies">
+        <input type="submit" name="reset" value="Reset">
 
         <p>-Shape is now updated.-</p>
         <hr>
@@ -135,6 +136,7 @@ $_smarty_tpl->tpl_vars['item']->_loop = true;
     </form>
 
 
+   <--- JQuery function to upload more images--->
     <?php echo '<script'; ?>
 >
         var uploadDiv = "<div class='uploadDiv'><input name='file[]' type='file' id='file'/></div>Caption: <input type='text' name = 'caption'/><br>"

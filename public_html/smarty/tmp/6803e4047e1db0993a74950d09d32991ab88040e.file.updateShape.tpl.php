@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-04 15:21:01
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-05 21:22:50
          compiled from "smarty\views\updateShape.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:481257280cf3e50992-69534890%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '6803e4047e1db0993a74950d09d32991ab88040e' => 
     array (
       0 => 'smarty\\views\\updateShape.tpl',
-      1 => 1462368048,
+      1 => 1462467028,
       2 => 'file',
     ),
   ),
@@ -89,15 +89,9 @@ echo $_smarty_tpl->tpl_vars['editShapeDescription']->value;
 ">
         <?php }?>
         <input type="file" name="myimage"><br>
-        
-            
-                
-            
-            
-        
-        
 
         <input type="submit" class="btn btn-default btn-md add form-control" value="Update" name="updateShape">
+        <input type="submit" name="reset" value="Reset">
     </form>
 
     <?php echo $_smarty_tpl->getSubTemplate ("footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
