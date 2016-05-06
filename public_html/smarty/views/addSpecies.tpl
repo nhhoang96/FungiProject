@@ -27,9 +27,6 @@
         <input type="text" class="form-control" name="woodSubstrate"><br>
         Dimensions:
         <input type="text" class="form-control" name="dimensions"><br>
-        Image:
-        <input type="file" name="myimage"><br>
-
         Shape Association:
         <select name="shape" class="form-control">
             {foreach from=$shapeArray key=key item=item}
@@ -37,8 +34,30 @@
             {/foreach}
         </select><br>
 
+        Add Image:<br>
+        {if isset($photoName)}
+            <img class="pic glossarypic" src="img/{$photoName}">
+        {/if}
+        {*<input type="file" name="myimage"><br>*}
+        <div id="addingImages">
+            <div class="uploadDiv">
+                <input name="file[]" type="file" id="file"/>
+            </div>
+            Caption: <input type="text" name = "caption"/><br>
+        </div>
+        <input type="button" id="addDiv" value="Add More Photo"/>
+
         <input type="submit" class="btn btn-default btn-md add form-control" value="Add" name="addSpecies">
     </form>
+
+    <script>
+        var uploadDiv = "<div class='uploadDiv'><input name='file[]' type='file' id='file'/></div>Caption: <input type='text' name = 'caption'/><br>"
+
+        $("#addDiv").click(function() {
+            $("#addingImages").append(uploadDiv);
+        });
+
+    </script>
 
     {include "footer.tpl"}
 

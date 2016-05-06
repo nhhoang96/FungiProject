@@ -1,4 +1,29 @@
-<h2>Admin Dashboard</h2>
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-05 16:50:48
+         compiled from "smarty\views\adminNav.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:2175957280cedcc7317-83369368%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    '501fd5e7a171f1d74b82b702f8a8f506d083d32d' => 
+    array (
+      0 => 'smarty\\views\\adminNav.tpl',
+      1 => 1462459842,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '2175957280cedcc7317-83369368',
+  'function' => 
+  array (
+  ),
+  'version' => 'Smarty-3.1.21-dev',
+  'unifunc' => 'content_57280cedcce302_84595040',
+  'variables' => 
+  array (
+    'success' => 0,
+  ),
+  'has_nocache_code' => false,
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_57280cedcce302_84595040')) {function content_57280cedcce302_84595040($_smarty_tpl) {?><h2>Admin Dashboard</h2>
 <hr>
 
 <!--Navigation-->
@@ -37,10 +62,11 @@
             <li><a href="addLinkOption.php">Link Characteristic Options</a></li>
         </ul>
     </li>
-    {*<li><a class="tab" href="addShape.php">Shape</a></li>*}
-    {*<li><a class="tab" href="addSpecies.php">Species</a></li>*}
-    {*<li><a class="tab" href="characteristic.php">Characteristic</a></li>*}
+    
+    
+    
     <li><a class="tab" href="logout.php">Logout</a></li>
 </ul>
 
-{if isset($success)}<h3>{$success}</h3>{/if}
+<?php if (isset($_smarty_tpl->tpl_vars['success']->value)) {?><h3><?php echo $_smarty_tpl->tpl_vars['success']->value;?>
+</h3><?php }?><?php }} ?>

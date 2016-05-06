@@ -19,6 +19,7 @@
         Name:
         <input type="text" class="form-control" name="newOptName"><br>
         <input type="submit" class="btn btn-default btn-md add form-control" value="Add" name="addCharOpt">
+        <input type="submit" name="reset" value="Reset">
     </form>
 
     {include "footer.tpl"}

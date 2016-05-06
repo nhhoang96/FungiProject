@@ -12,6 +12,10 @@
     text-shadow: 0 0 20px #000;
     color: #fff;
 }
+u {
+    border-bottom: 1px dotted #000;
+    text-decoration: none;
+}
 .img-center {
     margin: 0 auto;
 }

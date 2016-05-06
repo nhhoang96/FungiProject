@@ -10,6 +10,8 @@ phpCAS::forceAuthentication();
 $logout_url = "https://sso.messiah.edu/cas/logout";
 $_SERVER['REMOTE_USER'] = strtolower(phpCAS::getUser());
 
+
+
 //echo strtolower(phpCAS::getUser());
 
 //::getUser();
@@ -21,15 +23,16 @@ $stmt->execute();
 if($stmt->rowCount() == 0){
     //Jump back to whatever page you’re on
     $smarty->display("index.tpl");
-    Exit();
+    exit();
 } else {
+    $_SESSION['admin'] = true;
     //Display to Admin Dashboard tpl
     //echo "You are on the admin Dashboard";
 
     $smarty->assign("adminActive", "active");
     $smarty->assign("title", "Admin");
 
-    //------ Determine which submit button was hit ------
+    //----- Check if the add admin submit button was hit ----
     } if (isset($_POST["addAdmin"])) {
         $errorFlag = false;
         $smarty->assign('errorFlag', $errorFlag);
@@ -260,4 +263,7 @@ if($stmt->rowCount() == 0){
     }
 
     $smarty->assign("charArray", $speciesResults);
+if(isset($msg3)){
+    $smarty->assign('success', $msg3);
+}
     $smarty->display('addAdmin.tpl');
