@@ -38,7 +38,7 @@
         <br>
 
         Update Image:<br>
-        {if isset($editShapeImage)}
+        {if $editShapeImage!= ""}
             <img class="pic glossarypic" src="img/{$editShapeImage}">
         {/if}
         <input type="file" name="myimage"><br>

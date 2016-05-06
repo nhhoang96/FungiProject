@@ -162,7 +162,7 @@ if(!isset($_SESSION['admin'])){
         $query = "SELECT species.Species_ID, .species.Common_Name,
                   species.Name_Derivation, species.Scientific_Name, species.Phylum, species.Sp_Order,
                   species.Family, species.Comments,
-                  species.Wood_Substrate, species.Dimensions, species.Shape_FK, photo.Photo_Name
+                  species.Wood_Substrate, species.Dimensions, species.Shape_FK, photo.Photo_Name, photo.Caption
                   FROM species
                   JOIN photo ON
                   species.Species_ID = photo.Species_FK
@@ -186,7 +186,12 @@ if(!isset($_SESSION['admin'])){
                 $woodSubstrate = $row['Wood_Substrate'];
                 $dimensions = $row['Dimensions'];
                 $shapeID = $row['Shape_FK'];
-                $photoName = $row['Photo_Name'];
+//                $photoName = $row['Photo_Name'];
+                $photos[] = array (
+                        "Photo_Name" => $row['Photo_Name'],
+                        "Caption" => $row['Caption']
+
+                    );
 
                 $smarty->assign("speciesID", $speciesID);
                 $smarty->assign("commonName", $commonName);
@@ -199,9 +204,26 @@ if(!isset($_SESSION['admin'])){
                 $smarty->assign("woodSubstrate", $woodSubstrate);
                 $smarty->assign("dimensions", $dimensions);
                 $smarty->assign("shapeID", $shapeID);
-                $smarty->assign("photoName", $photoName);
+                //$smarty->assign("photoName", $photoName);
+                $smarty->assign('photos', $photos);
 
 
+//                $query = "SELECT Photo_ID, Photo_Name, Caption FROM photo WHERE Species_FK = :id";
+//                $statement = $pdo->prepare($query);
+//                $statement->bindParam(':id', $speciesID, PDO::PARAM_STR);
+//                $statement->execute();
+//                $photos = array();
+//
+//                while($row = $statement->fetch(PDO::FETCH_ASSOC)){
+//
+//                    $photos[] = array (
+//                        "Photo_Name" => $row['Photo_Name'],
+//                        "Caption" => $row['Caption']
+//
+//                    );
+//                }
+//
+//                $smarty->assign('photos', $photos);
             }
         } else {
             $smarty->assign("error1", 'Database Error');

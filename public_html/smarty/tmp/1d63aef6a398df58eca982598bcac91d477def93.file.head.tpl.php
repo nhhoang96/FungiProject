@@ -1,30 +1,30 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-03 01:43:03
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-06 19:58:01
          compiled from "smarty\views\head.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:2706856d740be432da2-79862852%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:26894572cdb29c8a014-05903459%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '1d63aef6a398df58eca982598bcac91d477def93' => 
     array (
       0 => 'smarty\\views\\head.tpl',
-      1 => 1462232581,
+      1 => 1462556719,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '2706856d740be432da2-79862852',
+  'nocache_hash' => '26894572cdb29c8a014-05903459',
   'function' => 
   array (
   ),
-  'version' => 'Smarty-3.1.21-dev',
-  'unifunc' => 'content_56d740be4c0418_85165007',
   'variables' => 
   array (
     'title' => 0,
     'pageName' => 0,
   ),
   'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.21-dev',
+  'unifunc' => 'content_572cdb29c91354_55958675',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_56d740be4c0418_85165007')) {function content_56d740be4c0418_85165007($_smarty_tpl) {?><!DOCTYPE html>
+<?php if ($_valid && !is_callable('content_572cdb29c91354_55958675')) {function content_572cdb29c91354_55958675($_smarty_tpl) {?><!DOCTYPE html>
 <html lang="en">
 <head>
 	<title><?php echo $_smarty_tpl->tpl_vars['title']->value;?>
@@ -42,6 +42,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 	<link href="css/cards.css" type=text/css rel="stylesheet" />
     <link href="css/glossary.css" type=text/css rel="stylesheet" />
     <link href="css/admin.css" type=text/css rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/css/jquery.dataTables.css">
+
 </head>
 
 <body id="<?php echo $_smarty_tpl->tpl_vars['pageName']->value;?>
@@ -84,4 +86,5 @@ $_valid = $_smarty_tpl->decodeProperties(array (
  src="js/bootstrap.min.js"><?php echo '</script'; ?>
 >
 
-    </nav><?php }} ?>
+    </nav>
+<?php }} ?>

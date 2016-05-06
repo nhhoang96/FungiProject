@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-02 00:50:19
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-06 21:04:37
          compiled from "smarty\views\glossary.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:28975570407a55345c7-69651566%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:4947572ceac59ccfd2-54180647%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,12 +11,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '28975570407a55345c7-69651566',
+  'nocache_hash' => '4947572ceac59ccfd2-54180647',
   'function' => 
   array (
   ),
-  'version' => 'Smarty-3.1.21-dev',
-  'unifunc' => 'content_570407a5535f79_44379073',
   'variables' => 
   array (
     'terms' => 0,
@@ -24,8 +22,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'image' => 0,
   ),
   'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.21-dev',
+  'unifunc' => 'content_572ceac5b59956_57044847',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_570407a5535f79_44379073')) {function content_570407a5535f79_44379073($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("head.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('title'=>"Glossary",'pageName'=>"glossary"), 0);?>
+<?php if ($_valid && !is_callable('content_572ceac5b59956_57044847')) {function content_572ceac5b59956_57044847($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("head.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('title'=>"Glossary",'pageName'=>"glossary"), 0);?>
 
 
 <body>

@@ -1,4 +1,4 @@
-{include "head.tpl" title={$sciName}}
+{include "head.tpl"  title={$sciName}}
 <!--Fungi Team 2015-->
 <link rel="stylesheet" type="text/css" href="result.css" />
 <script type="text/javascript" src="jquery-1.4.2.min.js"></script>

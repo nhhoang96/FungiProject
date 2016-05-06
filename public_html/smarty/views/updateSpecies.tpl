@@ -50,35 +50,37 @@
         Dimensions:
         <input type="text" class="form-control" name="dimensions"
                {if isset($dimensions)}value="{$dimensions}"{/if}><br>
+
         Add Image:<br>
-        <div id="container1" class="container">
-        {if isset($photoName)}
-            <img class="pic glossarypic" src="img/{$photoName}">
+        {if isset($photos)}
+            <table class="row">
+                <tr class="col-md-4">
+                    {foreach $photos as $pic}
+                        <th class="col-md-12 multiple-images">
+                            <img src="img/{$pic['Photo_Name']}" class="glossarypic"><br>
+                                     {$pic['Caption']}
+                        </th>
+                    {/foreach}
+                </tr>
+            </table><br>
         {/if}
 
-        </div>
-        {*<input type="file" name="myimage"><br>*}
         <div id="addingImages">
             <div class="uploadDiv">
                 <input name="file[]" type="file" id="file"/>
             </div>
-            Caption: <input type="text" name = "caption"/><br>
+            Caption: <input type="text" class="form-control" name="caption"/><br>
             </div>
-        <input type="button" id="addDiv" value="Add More Photo"/><br><br>
-
-        <input type="submit" class="btn btn-default btn-md add form-control" value="Update" name="updateSpecies">
-        <input type="submit" name="reset" value="Reset">
-
-        <p>-Shape is now updated.-</p>
-        <hr>
-
+        <input type="button" id="addDiv" class="btn btn-default form-control sub resetSpace" value="Add Another Photo">
+        <input type="submit" class="btn btn-default btn-md add form-control resetSpace" value="Update" name="updateSpecies">
+        <input type="submit" class="btn btn-danger btn-md add form-control resetSpace" name="reset" value="Reset">
 
     </form>
 
 
    <--- JQuery function to upload more images--->
     <script>
-        var uploadDiv = "<div class='uploadDiv'><input name='file[]' type='file' id='file'/></div>Caption: <input type='text' name = 'caption'/><br>"
+        var uploadDiv = "<div class='uploadDiv'><input name='file[]' type='file' id='file'/></div>Caption: <input type='text' class='form-control' name='caption'/><br>"
 
         $("#addDiv").click(function() {
             $("#addingImages").append(uploadDiv);
