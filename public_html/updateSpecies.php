@@ -1,25 +1,22 @@
 <?php
-<<<<<<< HEAD
+//function arrayToString($a, $level = 0){
+//    $str = "";
+//    $pad = "";
+//    for($i = 0; $i < $level; $i++){
+//        $pad .= "&nbsp;&nbsp;&nbsp;&nbsp;";
+//    }
+//    foreach($a as $key=>$value){
+//        $str .= "$pad $key = ";
+//        if(is_array($value)){
+//            $str .= "ARRAY<br>";
+//            $str .= arrayToString($value, $level + 1 );
+//        } else {
+//            $str .= "$value<br>";
+//        }
+//    }
+//    return $str;
+//}
 
-=======
-function arrayToString($a, $level = 0){
-    $str = "";
-    $pad = "";
-    for($i = 0; $i < $level; $i++){
-        $pad .= "&nbsp;&nbsp;&nbsp;&nbsp;";
-    }
-    foreach($a as $key=>$value){
-        $str .= "$pad $key = ";
-        if(is_array($value)){
-            $str .= "ARRAY<br>";
-            $str .= arrayToString($value, $level + 1 );
-        } else {
-            $str .= "$value<br>";
-        }
-    }
-    return $str;
-}
->>>>>>> 717b552a2aab9bc7469d9738f94f43297d7f2fd4
 session_start();
 include "../private_html/setup.php";
 include_once WEB_PATH . 'CAS_includes/CAS.php';

@@ -1,8 +1,4 @@
 <?php
-<<<<<<< HEAD
-
-=======
->>>>>>> 717b552a2aab9bc7469d9738f94f43297d7f2fd4
 session_start();
 include "../private_html/setup.php";
 include_once WEB_PATH . 'CAS_includes/CAS.php';

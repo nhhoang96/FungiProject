@@ -1,11 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Admin
- * Date: 4/26/2016
- * Time: 2:28 PM
- */
-<<<<<<< HEAD
 
 session_start();
 include "../private_html/setup.php";
@@ -16,9 +9,7 @@ phpCAS::handleLogoutRequests(false);
 phpCAS::forceAuthentication();
 $logout_url = "https://sso.messiah.edu/cas/logout";
 $_SERVER['REMOTE_USER'] = strtolower(phpCAS::getUser());
-=======
-session_start();
-include "../private_html/setup.php";
+
 if(!isset($_SESSION['admin'])){
     $smarty->display('index.tpl');
     exit();
@@ -26,7 +17,7 @@ if(!isset($_SESSION['admin'])){
     $smarty->assign("isAdmin", true);
     $smarty->assign("adminActive", "active");
     $smarty->assign("title", "Admin");
->>>>>>> 717b552a2aab9bc7469d9738f94f43297d7f2fd4
+
 
 //----- Check if the select characteristic shape submit button was hit ----
     if (isset($_POST["selectCharShape"])) {
