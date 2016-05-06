@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-06 22:10:48
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-06 22:37:15
          compiled from "smarty\views\updateSpecies.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:8764572ce31d9c4dd3-87736313%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'd5c872dcb9169f023dc69f6cbecb17570cd2d736' => 
     array (
       0 => 'smarty\\views\\updateSpecies.tpl',
-      1 => 1462565445,
+      1 => 1462567032,
       2 => 'file',
     ),
   ),
@@ -99,9 +99,11 @@ $_smarty_tpl->tpl_vars['item']->_loop = true;
                <?php if (isset($_smarty_tpl->tpl_vars['family']->value)) {?>value="<?php echo $_smarty_tpl->tpl_vars['family']->value;?>
 "<?php }?>><br>
         Comment:
-        <input type="text" class="form-control" name="comments"
-               <?php if (isset($_smarty_tpl->tpl_vars['comments']->value)) {?>value="<?php echo $_smarty_tpl->tpl_vars['comments']->value;?>
-"<?php }?>><br>
+        <textarea type="text" class="form-control" name="comments">
+               <?php if (isset($_smarty_tpl->tpl_vars['comments']->value)) {
+echo $_smarty_tpl->tpl_vars['comments']->value;
+}?>
+        </textarea><br>
         Wood Substrate:
         <input type="text" class="form-control" name="woodSubstrate"
                <?php if (isset($_smarty_tpl->tpl_vars['woodSubstrate']->value)) {?>value="<?php echo $_smarty_tpl->tpl_vars['woodSubstrate']->value;?>

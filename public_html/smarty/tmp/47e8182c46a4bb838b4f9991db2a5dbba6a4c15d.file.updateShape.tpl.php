@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-06 19:58:59
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-06 22:40:49
          compiled from "smarty\views\updateShape.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:29449572cdb29c0c0e4-06200615%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '47e8182c46a4bb838b4f9991db2a5dbba6a4c15d' => 
     array (
       0 => 'smarty\\views\\updateShape.tpl',
-      1 => 1462557536,
+      1 => 1462567246,
       2 => 'file',
     ),
   ),
@@ -84,14 +84,14 @@ echo $_smarty_tpl->tpl_vars['editShapeDescription']->value;
         <br>
 
         Update Image:<br>
-        <?php if ($_smarty_tpl->tpl_vars['editShapeImage']->value!='') {?>
+        <?php if (isset($_smarty_tpl->tpl_vars['editShapeImage']->value)) {?>
             <img class="pic glossarypic" src="img/<?php echo $_smarty_tpl->tpl_vars['editShapeImage']->value;?>
 ">
         <?php }?>
         <input type="file" name="myimage"><br>
 
-        <input type="submit" class="btn btn-default btn-md add form-control" value="Update" name="updateShape">
-        <input type="submit" name="reset" value="Reset">
+        <input type="submit" class="btn btn-default btn-md add form-control resetSpace" value="Update" name="updateShape">
+        <input type="submit" class="btn btn-danger btn-md add form-control" name="reset" value="Reset">
     </form>
 
     <?php echo $_smarty_tpl->getSubTemplate ("footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>

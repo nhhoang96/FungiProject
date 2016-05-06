@@ -85,6 +85,7 @@ if(!isset($_SESSION['admin'])){
         $smarty->assign("editShapeID", $editShapeID);
         $smarty->assign("editShapeName", $editShapeName);
         //remove extra white spaces from description string to improve readability
+        //$editShapeDescription = trim($editShapeDescription);
         $editShapeDescription = preg_replace('/\s\s+/', ' ', $editShapeDescription);
         $smarty->assign("editShapeDescription", $editShapeDescription);
         $smarty->assign("editShapeImage", $editShapeImage);

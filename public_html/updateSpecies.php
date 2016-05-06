@@ -200,8 +200,14 @@ if(!isset($_SESSION['admin'])){
                 $smarty->assign("phylum", $phylum);
                 $smarty->assign("order", $order);
                 $smarty->assign("family", $family);
+
+                $comments = preg_replace('/\s\s+/', ' ', $comments);
                 $smarty->assign("comments", $comments);
+
+                $woodSubstrate = preg_replace('/\s\s+/', ' ', $woodSubstrate);
                 $smarty->assign("woodSubstrate", $woodSubstrate);
+
+                $dimensions = preg_replace('/\s\s+/', ' ', $dimensions);
                 $smarty->assign("dimensions", $dimensions);
                 $smarty->assign("shapeID", $shapeID);
                 //$smarty->assign("photoName", $photoName);

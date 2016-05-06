@@ -42,8 +42,9 @@
         <input type="text" class="form-control" name="family"
                {if isset($family)}value="{$family}"{/if}><br>
         Comment:
-        <input type="text" class="form-control" name="comments"
-               {if isset($comments)}value="{$comments}"{/if}><br>
+        <textarea type="text" class="form-control" name="comments">
+               {if isset($comments)}{$comments}{/if}
+        </textarea><br>
         Wood Substrate:
         <input type="text" class="form-control" name="woodSubstrate"
                {if isset($woodSubstrate)}value="{$woodSubstrate}"{/if}><br>
@@ -73,7 +74,7 @@
             </div>
         <input type="button" id="addDiv" class="btn btn-default form-control sub resetSpace" value="Add Another Photo">
         <input type="submit" class="btn btn-default btn-md add form-control resetSpace" value="Update" name="updateSpecies">
-        <input type="submit" class="btn btn-danger btn-md add form-control resetSpace" name="reset" value="Reset">
+        <input type="submit" class="btn btn-danger btn-md add form-control" name="reset" value="Reset">
 
     </form>
 
