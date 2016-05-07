@@ -50,7 +50,7 @@
         Dimensions:
         <input type="text" class="form-control" name="dimensions"
                {if isset($dimensions)}value="{$dimensions}"{/if}><br>
-        Add Image:<br>
+        Images:<br>
         <div id="container1" class="container">
         {if isset($photoName)}
             <img class="pic glossarypic" src="img/{$photoName}">
@@ -69,7 +69,6 @@
         <input type="submit" class="btn btn-default btn-md add form-control" value="Update" name="updateSpecies">
         <input type="submit" name="reset" value="Reset">
 
-        <p>-Shape is now updated.-</p>
         <hr>
 
 

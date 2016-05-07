@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-04 00:07:58
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-06 19:58:10
          compiled from "smarty\views\deleteSpecies.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:83565729213e5e5885-91522324%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '2d1c53d163947480cff4ba104567c6bbe3cba032' => 
     array (
       0 => 'smarty\\views\\deleteSpecies.tpl',
-      1 => 1462241771,
+      1 => 1462557444,
       2 => 'file',
     ),
   ),
@@ -15,6 +15,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.21-dev',
+  'unifunc' => 'content_5729213e62b603_28095733',
   'variables' => 
   array (
     'speciesArray' => 0,
@@ -22,8 +24,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'item' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.21-dev',
-  'unifunc' => 'content_5729213e62b603_28095733',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_5729213e62b603_28095733')) {function content_5729213e62b603_28095733($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("head.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('title'=>"Admin",'pageName'=>"admin"), 0);?>
 
@@ -51,7 +51,6 @@ $_smarty_tpl->tpl_vars['item']->_loop = true;
             <?php } ?>
         </select><br>
         <input type="submit" class="btn btn-default btn-md add form-control" value="Delete" name="deleteSpecies">
-        <p>-Shape is now deleted.-</p>
     </form>
 
     <?php echo $_smarty_tpl->getSubTemplate ("footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>

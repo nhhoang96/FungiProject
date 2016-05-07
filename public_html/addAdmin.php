@@ -26,6 +26,7 @@ if($stmt->rowCount() == 0){
     exit();
 } else {
     $_SESSION['admin'] = true;
+    $smarty->assign("isAdmin", true);
     //Display to Admin Dashboard tpl
     //echo "You are on the admin Dashboard";
 

@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-05 21:18:11
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-07 00:19:19
          compiled from "smarty\views\updateSpecies.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:2356457280e70108af8-25069815%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'baf8ca1a3b193f031e5bbe1581f3da6690cc5603' => 
     array (
       0 => 'smarty\\views\\updateSpecies.tpl',
-      1 => 1462467028,
+      1 => 1462573157,
       2 => 'file',
     ),
   ),
@@ -109,7 +109,7 @@ $_smarty_tpl->tpl_vars['item']->_loop = true;
         <input type="text" class="form-control" name="dimensions"
                <?php if (isset($_smarty_tpl->tpl_vars['dimensions']->value)) {?>value="<?php echo $_smarty_tpl->tpl_vars['dimensions']->value;?>
 "<?php }?>><br>
-        Add Image:<br>
+        Images:<br>
         <div id="container1" class="container">
         <?php if (isset($_smarty_tpl->tpl_vars['photoName']->value)) {?>
             <img class="pic glossarypic" src="img/<?php echo $_smarty_tpl->tpl_vars['photoName']->value;?>
@@ -129,7 +129,6 @@ $_smarty_tpl->tpl_vars['item']->_loop = true;
         <input type="submit" class="btn btn-default btn-md add form-control" value="Update" name="updateSpecies">
         <input type="submit" name="reset" value="Reset">
 
-        <p>-Shape is now updated.-</p>
         <hr>
 
 
