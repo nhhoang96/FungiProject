@@ -49,6 +49,7 @@
             {*<input type="submit" class="btn btn-default btn-md add form-control" value="Add" name="addCharOpt">*}
         {*</form>*}
     {include "footer.tpl"}
+
 </div>
 
 

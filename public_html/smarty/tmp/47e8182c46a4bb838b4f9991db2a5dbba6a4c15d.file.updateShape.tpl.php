@@ -1,22 +1,22 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-03 20:24:14
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-06 22:40:49
          compiled from "smarty\views\updateShape.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:214165728e983ac07d1-30293235%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:29449572cdb29c0c0e4-06200615%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '47e8182c46a4bb838b4f9991db2a5dbba6a4c15d' => 
     array (
       0 => 'smarty\\views\\updateShape.tpl',
-      1 => 1462299852,
+      1 => 1462567246,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '214165728e983ac07d1-30293235',
+  'nocache_hash' => '29449572cdb29c0c0e4-06200615',
   'function' => 
   array (
   ),
   'version' => 'Smarty-3.1.21-dev',
-  'unifunc' => 'content_5728e983d68016_44522739',
+  'unifunc' => 'content_572cdb29c73b96_37332712',
   'variables' => 
   array (
     'editShapeID' => 0,
@@ -29,7 +29,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5728e983d68016_44522739')) {function content_5728e983d68016_44522739($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("head.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('title'=>"Admin",'pageName'=>"admin"), 0);?>
+<?php if ($_valid && !is_callable('content_572cdb29c73b96_37332712')) {function content_572cdb29c73b96_37332712($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("head.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('title'=>"Admin",'pageName'=>"admin"), 0);?>
 
 
 
@@ -90,9 +90,10 @@ echo $_smarty_tpl->tpl_vars['editShapeDescription']->value;
         <?php }?>
         <input type="file" name="myimage"><br>
 
-        <input type="submit" class="btn btn-default btn-md add form-control" value="Update" name="updateShape">
+        <input type="submit" class="btn btn-default btn-md add form-control resetSpace" value="Update" name="updateShape">
+        <input type="submit" class="btn btn-danger btn-md add form-control" name="reset" value="Reset">
     </form>
-    
+
     <?php echo $_smarty_tpl->getSubTemplate ("footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
 
 

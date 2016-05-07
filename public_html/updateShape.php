@@ -1,6 +1,13 @@
 <?php
 session_start();
 include "../private_html/setup.php";
+include_once WEB_PATH . 'CAS_includes/CAS.php';
+phpCAS::client(CAS_VERSION_2_0, 'sso.messiah.edu', 443, '/cas/',false);
+phpCAS::setNoCasServerValidation();
+phpCAS::handleLogoutRequests(false);
+phpCAS::forceAuthentication();
+$logout_url = "https://sso.messiah.edu/cas/logout";
+$_SERVER['REMOTE_USER'] = strtolower(phpCAS::getUser());
 
 if(!isset($_SESSION['admin'])){
     $smarty->display('index.tpl');
@@ -57,7 +64,21 @@ if (isset($_POST["updateShape"])) {
 
 } elseif (isset($_POST["selectShape"])) {
 
+<<<<<<< HEAD
     $query = "SELECT Shape_Category_ID, Name, Description, Image FROM shape WHERE Shape_Category_ID = :shapeID";
+=======
+        $smarty->assign("editShapeID", $editShapeID);
+        $smarty->assign("editShapeName", $editShapeName);
+        //remove extra white spaces from description string to improve readability
+        //$editShapeDescription = trim($editShapeDescription);
+        $editShapeDescription = preg_replace('/\s\s+/', ' ', $editShapeDescription);
+        $smarty->assign("editShapeDescription", $editShapeDescription);
+        $smarty->assign("editShapeImage", $editShapeImage);
+
+    }
+//------ Build Associative Shape Array ------
+    $query = "SELECT Shape_Category_ID, Name FROM shape";
+>>>>>>> 6c7846d8ee66afb483a199a2317278fcd2e19ba4
 
     $statement = $pdo->prepare($query);
     $statement->bindValue(':shapeID', $_POST["shapeID"]);
