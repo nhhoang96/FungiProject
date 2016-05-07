@@ -19,19 +19,12 @@
 
 session_start();
 include "../private_html/setup.php";
-include_once WEB_PATH . 'CAS_includes/CAS.php';
-phpCAS::client(CAS_VERSION_2_0, 'sso.messiah.edu', 443, '/cas/',false);
-phpCAS::setNoCasServerValidation();
-phpCAS::handleLogoutRequests(false);
-phpCAS::forceAuthentication();
-$logout_url = "https://sso.messiah.edu/cas/logout";
-$_SERVER['REMOTE_USER'] = strtolower(phpCAS::getUser());
 
 if(!isset($_SESSION['admin'])){
     $smarty->display('index.tpl');
     exit();
 }
-$smarty->assign("isAdmin", true);
+
 $smarty->assign("isAdmin", true);
 $smarty->assign("adminActive", "active");
 $smarty->assign("title", "Admin");
@@ -169,78 +162,77 @@ if (isset($_POST["updateSpecies"])) {
                   WHERE species.Species_ID = :speciesID";
 
 
-<<<<<<< HEAD
-=======
-        $statement = $pdo->prepare($query);
-        $statement->bindValue(':speciesID', $_POST["speciesID"]);
-        $statement->execute();
-        $shapeResults = array();
-        if ($statement->rowCount() > 0) {
-            while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
-                $speciesID = $row['Species_ID'];
-                $commonName = $row['Common_Name'];
-                $nameDerivation = $row['Name_Derivation'];
-                $scientificName = $row['Scientific_Name'];
-                $phylum = $row['Phylum'];
-                $order = $row['Sp_Order'];
-                $family = $row['Family'];
-                $comments = $row['Comments'];
-                $woodSubstrate = $row['Wood_Substrate'];
-                $dimensions = $row['Dimensions'];
-                $shapeID = $row['Shape_FK'];
-//                $photoName = $row['Photo_Name'];
-                $photos[] = array (
-                        "Photo_Name" => $row['Photo_Name'],
-                        "Caption" => $row['Caption']
 
-                    );
-
-                $smarty->assign("speciesID", $speciesID);
-                $smarty->assign("commonName", $commonName);
-                $smarty->assign("nameDerivation", $nameDerivation);
-                $smarty->assign("scientificName", $scientificName);
-                $smarty->assign("phylum", $phylum);
-                $smarty->assign("order", $order);
-                $smarty->assign("family", $family);
-
-                $comments = preg_replace('/\s\s+/', ' ', $comments);
-                $smarty->assign("comments", $comments);
-
-                $woodSubstrate = preg_replace('/\s\s+/', ' ', $woodSubstrate);
-                $smarty->assign("woodSubstrate", $woodSubstrate);
-
-                $dimensions = preg_replace('/\s\s+/', ' ', $dimensions);
-                $smarty->assign("dimensions", $dimensions);
-                $smarty->assign("shapeID", $shapeID);
-                //$smarty->assign("photoName", $photoName);
-                $smarty->assign('photos', $photos);
-
-
-//                $query = "SELECT Photo_ID, Photo_Name, Caption FROM photo WHERE Species_FK = :id";
-//                $statement = $pdo->prepare($query);
-//                $statement->bindParam(':id', $speciesID, PDO::PARAM_STR);
-//                $statement->execute();
-//                $photos = array();
-//
-//                while($row = $statement->fetch(PDO::FETCH_ASSOC)){
-//
-//                    $photos[] = array (
+//        $statement = $pdo->prepare($query);
+//        $statement->bindValue(':speciesID', $_POST["speciesID"]);
+//        $statement->execute();
+//        $shapeResults = array();
+//        if ($statement->rowCount() > 0) {
+//            while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
+//                $speciesID = $row['Species_ID'];
+//                $commonName = $row['Common_Name'];
+//                $nameDerivation = $row['Name_Derivation'];
+//                $scientificName = $row['Scientific_Name'];
+//                $phylum = $row['Phylum'];
+//                $order = $row['Sp_Order'];
+//                $family = $row['Family'];
+//                $comments = $row['Comments'];
+//                $woodSubstrate = $row['Wood_Substrate'];
+//                $dimensions = $row['Dimensions'];
+//                $shapeID = $row['Shape_FK'];
+////                $photoName = $row['Photo_Name'];
+//                $photos[] = array (
 //                        "Photo_Name" => $row['Photo_Name'],
 //                        "Caption" => $row['Caption']
 //
 //                    );
-//                }
 //
+//                $smarty->assign("speciesID", $speciesID);
+//                $smarty->assign("commonName", $commonName);
+//                $smarty->assign("nameDerivation", $nameDerivation);
+//                $smarty->assign("scientificName", $scientificName);
+//                $smarty->assign("phylum", $phylum);
+//                $smarty->assign("order", $order);
+//                $smarty->assign("family", $family);
+//
+//                $comments = preg_replace('/\s\s+/', ' ', $comments);
+//                $smarty->assign("comments", $comments);
+//
+//                $woodSubstrate = preg_replace('/\s\s+/', ' ', $woodSubstrate);
+//                $smarty->assign("woodSubstrate", $woodSubstrate);
+//
+//                $dimensions = preg_replace('/\s\s+/', ' ', $dimensions);
+//                $smarty->assign("dimensions", $dimensions);
+//                $smarty->assign("shapeID", $shapeID);
+//                //$smarty->assign("photoName", $photoName);
 //                $smarty->assign('photos', $photos);
-            }
-        } else {
-            $smarty->assign("error1", 'Database Error');
-        }
-    }
-//------ Build Associative Species Array ------
-    $query = "SELECT Species_ID, Common_Name FROM species";
+//
+//
+////                $query = "SELECT Photo_ID, Photo_Name, Caption FROM photo WHERE Species_FK = :id";
+////                $statement = $pdo->prepare($query);
+////                $statement->bindParam(':id', $speciesID, PDO::PARAM_STR);
+////                $statement->execute();
+////                $photos = array();
+////
+////                while($row = $statement->fetch(PDO::FETCH_ASSOC)){
+////
+////                    $photos[] = array (
+////                        "Photo_Name" => $row['Photo_Name'],
+////                        "Caption" => $row['Caption']
+////
+////                    );
+////                }
+////
+////                $smarty->assign('photos', $photos);
+//            }
+//        } else {
+//            $smarty->assign("error1", 'Database Error');
+//        }
+//    }
+////------ Build Associative Species Array ------
+//    $query = "SELECT Species_ID, Common_Name FROM species";
+//
 
->>>>>>> 6c7846d8ee66afb483a199a2317278fcd2e19ba4
     $statement = $pdo->prepare($query);
     $statement->bindValue(':speciesID', $_POST["speciesID"]);
     $statement->execute();

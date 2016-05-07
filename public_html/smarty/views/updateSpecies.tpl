@@ -51,27 +51,27 @@
         Dimensions:
         <input type="text" class="form-control" name="dimensions"
                {if isset($dimensions)}value="{$dimensions}"{/if}><br>
-<<<<<<< HEAD
-        Images:<br>
-        <div id="container1" class="container">
-        {if isset($photoName)}
-            <img class="pic glossarypic" src="img/{$photoName}">
-=======
+{*<<<<<<< HEAD*}
+        {*Images:<br>*}
+        {*<div id="container1" class="container">*}
+        {*{if isset($photoName)}*}
+            {*<img class="pic glossarypic" src="img/{$photoName}">*}
+{*=======*}
 
-        Add Image:<br>
-        {if isset($photos)}
-            <table class="row">
-                <tr class="col-md-4">
-                    {foreach $photos as $pic}
-                        <th class="col-md-12 multiple-images">
-                            <img src="img/{$pic['Photo_Name']}" class="glossarypic"><br>
-                                     {$pic['Caption']}
-                        </th>
-                    {/foreach}
-                </tr>
-            </table><br>
->>>>>>> 6c7846d8ee66afb483a199a2317278fcd2e19ba4
-        {/if}
+        {*Add Image:<br>*}
+        {*{if isset($photos)}*}
+            {*<table class="row">*}
+                {*<tr class="col-md-4">*}
+                    {*{foreach $photos as $pic}*}
+                        {*<th class="col-md-12 multiple-images">*}
+                            {*<img src="img/{$pic['Photo_Name']}" class="glossarypic"><br>*}
+                                     {*{$pic['Caption']}*}
+                        {*</th>*}
+                    {*{/foreach}*}
+                {*</tr>*}
+            {*</table><br>*}
+{*>>>>>>> 6c7846d8ee66afb483a199a2317278fcd2e19ba4*}
+        {*{/if}*}
 
         <div id="addingImages">
             <div class="uploadDiv">
@@ -79,19 +79,19 @@
             </div>
             Caption: <input type="text" class="form-control" name="caption"/><br>
             </div>
-<<<<<<< HEAD
-        <input type="button" id="addDiv" value="Add More Photo"/><br><br>
+{*<<<<<<< HEAD*}
+        {*<input type="button" id="addDiv" value="Add More Photo"/><br><br>*}
 
-        <input type="submit" class="btn btn-default btn-md add form-control" value="Update" name="updateSpecies">
-        <input type="submit" name="reset" value="Reset">
+        {*<input type="submit" class="btn btn-default btn-md add form-control" value="Update" name="updateSpecies">*}
+        {*<input type="submit" name="reset" value="Reset">*}
 
-        <hr>
+        {*<hr>*}
 
-=======
-        <input type="button" id="addDiv" class="btn btn-default form-control sub resetSpace" value="Add Another Photo">
-        <input type="submit" class="btn btn-default btn-md add form-control resetSpace" value="Update" name="updateSpecies">
-        <input type="submit" class="btn btn-danger btn-md add form-control" name="reset" value="Reset">
->>>>>>> 6c7846d8ee66afb483a199a2317278fcd2e19ba4
+{*=======*}
+        {*<input type="button" id="addDiv" class="btn btn-default form-control sub resetSpace" value="Add Another Photo">*}
+        {*<input type="submit" class="btn btn-default btn-md add form-control resetSpace" value="Update" name="updateSpecies">*}
+        {*<input type="submit" class="btn btn-danger btn-md add form-control" name="reset" value="Reset">*}
+{*>>>>>>> 6c7846d8ee66afb483a199a2317278fcd2e19ba4*}
 
     </form>
 

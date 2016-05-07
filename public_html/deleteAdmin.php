@@ -5,7 +5,7 @@ if(!isset($_SESSION['admin'])){
     $smarty->display('index.tpl');
     exit();
 }
-$smarty->assign("isAdmin", true);
+
 $smarty->assign("isAdmin", true);
 $smarty->assign("adminActive", "active");
 $smarty->assign("title", "Admin");

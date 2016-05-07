@@ -10,8 +10,6 @@ phpCAS::forceAuthentication();
 $logout_url = "https://sso.messiah.edu/cas/logout";
 $_SERVER['REMOTE_USER'] = strtolower(phpCAS::getUser());
 
-
-
 //echo strtolower(phpCAS::getUser());
 
 //::getUser();
