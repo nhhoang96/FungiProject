@@ -1,13 +1,31 @@
+<<<<<<< HEAD
 <?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-08 23:26:37
+=======
+<<<<<<< HEAD
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-06 22:37:15
+         compiled from "smarty\templates\updateSpecies.tpl" */ ?>
+=======
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-07 21:15:41
+>>>>>>> 06d297aaf03db40f1248c1b39ba5045b0199bee5
          compiled from "smarty\views\updateSpecies.tpl" */ ?>
+>>>>>>> 2dfc690b47791314e3d0e87c32033748467b9b0a
 <?php /*%%SmartyHeaderCode:8764572ce31d9c4dd3-87736313%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'd5c872dcb9169f023dc69f6cbecb17570cd2d736' => 
     array (
+<<<<<<< HEAD
+      0 => 'smarty\\templates\\updateSpecies.tpl',
+      1 => 1462567032,
+=======
       0 => 'smarty\\views\\updateSpecies.tpl',
+<<<<<<< HEAD
       1 => 1462742791,
+=======
+      1 => 1462648534,
+>>>>>>> 2dfc690b47791314e3d0e87c32033748467b9b0a
+>>>>>>> 06d297aaf03db40f1248c1b39ba5045b0199bee5
       2 => 'file',
     ),
   ),

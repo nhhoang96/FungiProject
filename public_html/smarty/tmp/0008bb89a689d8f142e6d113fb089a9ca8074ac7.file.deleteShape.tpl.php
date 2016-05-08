@@ -1,12 +1,12 @@
 <?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-07 04:44:17
-         compiled from "smarty\views\deleteShape.tpl" */ ?>
+         compiled from "smarty\templates\deleteShape.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:13614572d56812f4e17-53336456%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '0008bb89a689d8f142e6d113fb089a9ca8074ac7' => 
     array (
-      0 => 'smarty\\views\\deleteShape.tpl',
+      0 => 'smarty\\templates\\deleteShape.tpl',
       1 => 1462304782,
       2 => 'file',
     ),

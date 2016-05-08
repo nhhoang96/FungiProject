@@ -1,12 +1,12 @@
 <?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-07 04:43:46
-         compiled from "smarty\views\addAdmin.tpl" */ ?>
+         compiled from "smarty\templates\addAdmin.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:10355572d56621238a9-94052174%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '5126ec9810b23dfde0adbebcd241b13c139ebc46' => 
     array (
-      0 => 'smarty\\views\\addAdmin.tpl',
+      0 => 'smarty\\templates\\addAdmin.tpl',
       1 => 1462588386,
       2 => 'file',
     ),

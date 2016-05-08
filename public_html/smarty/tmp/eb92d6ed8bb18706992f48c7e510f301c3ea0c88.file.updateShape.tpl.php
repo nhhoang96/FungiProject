@@ -1,40 +1,20 @@
-<<<<<<< HEAD
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-06 22:40:49
-=======
-<<<<<<< HEAD
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-06 22:40:49
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-08 22:14:53
          compiled from "smarty\templates\updateShape.tpl" */ ?>
-=======
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-07 21:06:52
->>>>>>> 06d297aaf03db40f1248c1b39ba5045b0199bee5
-         compiled from "smarty\views\updateShape.tpl" */ ?>
->>>>>>> 2dfc690b47791314e3d0e87c32033748467b9b0a
-<?php /*%%SmartyHeaderCode:29449572cdb29c0c0e4-06200615%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:16648572f9e3d775a49-26463825%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    '47e8182c46a4bb838b4f9991db2a5dbba6a4c15d' => 
+    'eb92d6ed8bb18706992f48c7e510f301c3ea0c88' => 
     array (
-<<<<<<< HEAD
       0 => 'smarty\\templates\\updateShape.tpl',
-      1 => 1462567246,
-=======
-      0 => 'smarty\\views\\updateShape.tpl',
-<<<<<<< HEAD
-      1 => 1462567246,
-=======
-      1 => 1462648008,
->>>>>>> 2dfc690b47791314e3d0e87c32033748467b9b0a
->>>>>>> 06d297aaf03db40f1248c1b39ba5045b0199bee5
+      1 => 1462588386,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '29449572cdb29c0c0e4-06200615',
+  'nocache_hash' => '16648572f9e3d775a49-26463825',
   'function' => 
   array (
   ),
-  'version' => 'Smarty-3.1.21-dev',
-  'unifunc' => 'content_572cdb29c73b96_37332712',
   'variables' => 
   array (
     'editShapeID' => 0,
@@ -46,8 +26,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'editShapeImage' => 0,
   ),
   'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.21-dev',
+  'unifunc' => 'content_572f9e3d7d1988_26907497',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_572cdb29c73b96_37332712')) {function content_572cdb29c73b96_37332712($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("head.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('title'=>"Admin",'pageName'=>"admin"), 0);?>
+<?php if ($_valid && !is_callable('content_572f9e3d7d1988_26907497')) {function content_572f9e3d7d1988_26907497($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("head.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('title'=>"Admin",'pageName'=>"admin"), 0);?>
 
 
 

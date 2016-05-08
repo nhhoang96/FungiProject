@@ -1,7 +1,35 @@
-<!DOCTYPE html>
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-08 22:14:21
+         compiled from "smarty\templates\head.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:12227572f9e1d476227-60091196%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    'e793b158e9e53386739798075922c6a03e97668a' => 
+    array (
+      0 => 'smarty\\templates\\head.tpl',
+      1 => 1462738348,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '12227572f9e1d476227-60091196',
+  'function' => 
+  array (
+  ),
+  'variables' => 
+  array (
+    'title' => 0,
+    'pageName' => 0,
+    'isAdmin' => 0,
+  ),
+  'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.21-dev',
+  'unifunc' => 'content_572f9e1d4a7bd7_52501801',
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_572f9e1d4a7bd7_52501801')) {function content_572f9e1d4a7bd7_52501801($_smarty_tpl) {?><!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>{$title}</title>
+    <title><?php echo $_smarty_tpl->tpl_vars['title']->value;?>
+</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://bootswatch.com/cosmo/bootstrap.min.css">
@@ -11,8 +39,8 @@
     <link href="css/application.css" type="text/css" rel="stylesheet" />
     <link href="css/about.css" type=text/css rel="stylesheet" />
     <link href="css/result.css" type=text/css rel="stylesheet" />
-    {*<link href="css/lightbox.css" type=text/css rel="stylesheet" />*}
-    <link href="css/cards.css" type=text/css rel="stylesheet" />
+    
+    
     <link href="css/head.css" type=text/css rel="stylesheet" />
     <link href="css/glossary.css" type=text/css rel="stylesheet" />
     <link href="css/admin.css" type=text/css rel="stylesheet" />
@@ -20,7 +48,8 @@
 
 </head>
 
-<body id="{$pageName}">
+<body id="<?php echo $_smarty_tpl->tpl_vars['pageName']->value;?>
+">
 <!--navigation-->
 <nav role="navigation" class="navbar navbar-default navbar-fixed-top">
     <div class="container">
@@ -48,34 +77,44 @@
             <div>
                 <ul class="nav navbar-nav navbar-right">
                     <li class="admin"><a href="addAdmin.php">Control Panel</a></li>
-                    {if isset($isAdmin)}
+                    <?php if (isset($_smarty_tpl->tpl_vars['isAdmin']->value)) {?>
                     <li><button id="helpBtn" class="btn btn-default">
                         <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
                     </button>
                     </li>
-                    {/if}
+                    <?php }?>
                 </ul>
                 <div>
-                    {if isset($isAdmin)}
+                    <?php if (isset($_smarty_tpl->tpl_vars['isAdmin']->value)) {?>
 
-                        <div id="help">{include "userGuide.tpl"}</div>
+                        <div id="help"><?php echo $_smarty_tpl->getSubTemplate ("userGuide.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
+</div>
 
-                    {/if}
+                    <?php }?>
                 </div>
             </div>
         </div>
 
     </div>
 
-    <script src="js/jquery.js"></script> <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-    <script>
+    <?php echo '<script'; ?>
+ src="js/jquery.js"><?php echo '</script'; ?>
+> <!-- Bootstrap Core JavaScript -->
+    <?php echo '<script'; ?>
+ src="js/bootstrap.min.js"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+>
         $("#helpBtn").click(function(){
             $("#help").toggle();
         });
-    </script>
-    <script>
+    <?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+>
 
-    </script>
+    <?php echo '</script'; ?>
+>
 
 </nav>
+<?php }} ?>

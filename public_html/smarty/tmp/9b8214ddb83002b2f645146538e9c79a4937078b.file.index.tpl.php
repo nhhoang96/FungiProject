@@ -1,43 +1,25 @@
-<<<<<<< HEAD
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-08 23:17:10
-=======
-<<<<<<< HEAD
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-06 22:13:20
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-08 22:14:21
          compiled from "smarty\templates\index.tpl" */ ?>
-=======
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-08 19:15:06
->>>>>>> 06d297aaf03db40f1248c1b39ba5045b0199bee5
-         compiled from "smarty\views\index.tpl" */ ?>
->>>>>>> 2dfc690b47791314e3d0e87c32033748467b9b0a
-<?php /*%%SmartyHeaderCode:19494572cfae00c46d6-74507192%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:32626572f9e1d414021-90701414%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    'e32132b8b03258c8108838f93819d389860367d3' => 
+    '9b8214ddb83002b2f645146538e9c79a4937078b' => 
     array (
-<<<<<<< HEAD
       0 => 'smarty\\templates\\index.tpl',
-      1 => 1462556719,
-=======
-      0 => 'smarty\\views\\index.tpl',
-<<<<<<< HEAD
-      1 => 1462735298,
-=======
-      1 => 1462727704,
->>>>>>> 2dfc690b47791314e3d0e87c32033748467b9b0a
->>>>>>> 06d297aaf03db40f1248c1b39ba5045b0199bee5
+      1 => 1462249624,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '19494572cfae00c46d6-74507192',
+  'nocache_hash' => '32626572f9e1d414021-90701414',
   'function' => 
   array (
   ),
-  'version' => 'Smarty-3.1.21-dev',
-  'unifunc' => 'content_572cfae0104520_29528608',
   'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.21-dev',
+  'unifunc' => 'content_572f9e1d460db4_12367021',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_572cfae0104520_29528608')) {function content_572cfae0104520_29528608($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("head.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('title'=>"Fungi",'pageName'=>'home'), 0);?>
+<?php if ($_valid && !is_callable('content_572f9e1d460db4_12367021')) {function content_572f9e1d460db4_12367021($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("head.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('title'=>"Fungi",'pageName'=>'home'), 0);?>
 
 
 <header class="index-header">

@@ -1,22 +1,20 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-06 20:11:48
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-08 22:14:27
          compiled from "smarty\templates\speciesDB.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:17917572cdc869a8ed8-45920756%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:9691572f9e235c0439-34831863%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    'fb24b53d0c1befe54460702f2634e08605300298' => 
+    'eb31b66d917f260371c8d57b42b2a44818db5d61' => 
     array (
       0 => 'smarty\\templates\\speciesDB.tpl',
-      1 => 1462558305,
+      1 => 1462588386,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '17917572cdc869a8ed8-45920756',
+  'nocache_hash' => '9691572f9e235c0439-34831863',
   'function' => 
   array (
   ),
-  'version' => 'Smarty-3.1.21-dev',
-  'unifunc' => 'content_572cdc86afb445_74217294',
   'variables' => 
   array (
     'name' => 0,
@@ -27,8 +25,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'info' => 0,
   ),
   'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.21-dev',
+  'unifunc' => 'content_572f9e23625254_42456192',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_572cdc86afb445_74217294')) {function content_572cdc86afb445_74217294($_smarty_tpl) {?><?php if (!is_callable('smarty_function_html_table')) include 'C:\\Users\\Emily\\Documents\\fungi\\public_html\\smarty\\libs\\plugins\\function.html_table.php';
+<?php if ($_valid && !is_callable('content_572f9e23625254_42456192')) {function content_572f9e23625254_42456192($_smarty_tpl) {?><?php if (!is_callable('smarty_function_html_table')) include 'C:\\Users\\lenovo\\Desktop\\Fungi\\public_html\\smarty\\libs\\plugins\\function.html_table.php';
 ?><?php echo $_smarty_tpl->getSubTemplate ("head.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('title'=>"Species List"), 0);?>
 
 

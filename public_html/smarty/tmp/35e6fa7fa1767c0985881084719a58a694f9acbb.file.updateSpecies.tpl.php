@@ -1,22 +1,20 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-07 04:51:20
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-08 22:14:58
          compiled from "smarty\templates\updateSpecies.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:2356457280e70108af8-25069815%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:647572f9e4284b323-65037815%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    'baf8ca1a3b193f031e5bbe1581f3da6690cc5603' => 
+    '35e6fa7fa1767c0985881084719a58a694f9acbb' => 
     array (
       0 => 'smarty\\templates\\updateSpecies.tpl',
-      1 => 1462589480,
+      1 => 1462733534,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '2356457280e70108af8-25069815',
+  'nocache_hash' => '647572f9e4284b323-65037815',
   'function' => 
   array (
   ),
-  'version' => 'Smarty-3.1.21-dev',
-  'unifunc' => 'content_57280e701804b2_48520847',
   'variables' => 
   array (
     'speciesID' => 0,
@@ -34,8 +32,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'dimensions' => 0,
   ),
   'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.21-dev',
+  'unifunc' => 'content_572f9e428cb7b2_61082361',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_57280e701804b2_48520847')) {function content_57280e701804b2_48520847($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("head.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('title'=>"Admin",'pageName'=>"admin"), 0);?>
+<?php if ($_valid && !is_callable('content_572f9e428cb7b2_61082361')) {function content_572f9e428cb7b2_61082361($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("head.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('title'=>"Admin",'pageName'=>"admin"), 0);?>
 
 
 
@@ -139,17 +139,17 @@ echo $_smarty_tpl->tpl_vars['comments']->value;
             Caption: <input type="text" class="form-control" name="caption"/><br>
             </div>
 
-        <input type="button" id="addDiv" value="Add More Photo"/><br><br>
+        
 
-        <input type="submit" class="btn btn-default btn-md add form-control" value="Update" name="updateSpecies">
-        <input type="submit" name="reset" value="Reset">
+        
+        
 
         
 
 
-        <input type="button" id="addDiv" class="btn btn-default form-control sub resetSpace" value="Add Another Photo">
-        <input type="submit" class="btn btn-default btn-md add form-control resetSpace" value="Update" name="updateSpecies">
-        <input type="submit" class="btn btn-danger btn-md add form-control" name="reset" value="Reset">
+        
+        
+        
 
 
     </form>
