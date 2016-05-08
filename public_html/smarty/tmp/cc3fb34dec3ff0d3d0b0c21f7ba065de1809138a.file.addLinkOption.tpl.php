@@ -1,12 +1,12 @@
 <?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-07 04:40:28
-         compiled from "smarty\views\addLinkOption.tpl" */ ?>
+         compiled from "smarty\templates\addLinkOption.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:14156572d559c067ab3-83291332%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'cc3fb34dec3ff0d3d0b0c21f7ba065de1809138a' => 
     array (
-      0 => 'smarty\\views\\addLinkOption.tpl',
+      0 => 'smarty\\templates\\addLinkOption.tpl',
       1 => 1462459842,
       2 => 'file',
     ),

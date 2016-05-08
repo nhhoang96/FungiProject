@@ -39,7 +39,7 @@ define('URL', webRoot());
 //Smarty
 require_once('smarty/libs/Smarty.class.php');
 $smarty = new Smarty();
-$smarty->template_dir = 'smarty/views';
+$smarty->template_dir = 'smarty/templates';
 $smarty->compile_dir = 'smarty/tmp';
 $smarty -> setCacheDir('smarty/cache');
 $smarty -> setConfigDir('smarty/configs');

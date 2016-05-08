@@ -1,22 +1,20 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-06 22:37:15
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-08 22:14:58
          compiled from "smarty\templates\updateSpecies.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:8764572ce31d9c4dd3-87736313%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:647572f9e4284b323-65037815%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    'd5c872dcb9169f023dc69f6cbecb17570cd2d736' => 
+    '35e6fa7fa1767c0985881084719a58a694f9acbb' => 
     array (
       0 => 'smarty\\templates\\updateSpecies.tpl',
-      1 => 1462567032,
+      1 => 1462733534,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '8764572ce31d9c4dd3-87736313',
+  'nocache_hash' => '647572f9e4284b323-65037815',
   'function' => 
   array (
   ),
-  'version' => 'Smarty-3.1.21-dev',
-  'unifunc' => 'content_572ce31da59e54_72697506',
   'variables' => 
   array (
     'speciesID' => 0,
@@ -32,12 +30,12 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'comments' => 0,
     'woodSubstrate' => 0,
     'dimensions' => 0,
-    'photos' => 0,
-    'pic' => 0,
   ),
   'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.21-dev',
+  'unifunc' => 'content_572f9e428cb7b2_61082361',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_572ce31da59e54_72697506')) {function content_572ce31da59e54_72697506($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("head.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('title'=>"Admin",'pageName'=>"admin"), 0);?>
+<?php if ($_valid && !is_callable('content_572f9e428cb7b2_61082361')) {function content_572f9e428cb7b2_61082361($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("head.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('title'=>"Admin",'pageName'=>"admin"), 0);?>
 
 
 
@@ -113,25 +111,26 @@ echo $_smarty_tpl->tpl_vars['comments']->value;
                <?php if (isset($_smarty_tpl->tpl_vars['dimensions']->value)) {?>value="<?php echo $_smarty_tpl->tpl_vars['dimensions']->value;?>
 "<?php }?>><br>
 
-        Add Image:<br>
-        <?php if (isset($_smarty_tpl->tpl_vars['photos']->value)) {?>
-            <table class="row">
-                <tr class="col-md-4">
-                    <?php  $_smarty_tpl->tpl_vars['pic'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['pic']->_loop = false;
- $_from = $_smarty_tpl->tpl_vars['photos']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
-foreach ($_from as $_smarty_tpl->tpl_vars['pic']->key => $_smarty_tpl->tpl_vars['pic']->value) {
-$_smarty_tpl->tpl_vars['pic']->_loop = true;
-?>
-                        <th class="col-md-12 multiple-images">
-                            <img src="img/<?php echo $_smarty_tpl->tpl_vars['pic']->value['Photo_Name'];?>
-" class="glossarypic"><br>
-                                     <?php echo $_smarty_tpl->tpl_vars['pic']->value['Caption'];?>
+        
+        
+        
+            
 
-                        </th>
-                    <?php } ?>
-                </tr>
-            </table><br>
-        <?php }?>
+
+        
+        
+            
+                
+                    
+                        
+                            
+                                     
+                        
+                    
+                
+            
+
+        
 
         <div id="addingImages">
             <div class="uploadDiv">
@@ -139,9 +138,19 @@ $_smarty_tpl->tpl_vars['pic']->_loop = true;
             </div>
             Caption: <input type="text" class="form-control" name="caption"/><br>
             </div>
-        <input type="button" id="addDiv" class="btn btn-default form-control sub resetSpace" value="Add Another Photo">
-        <input type="submit" class="btn btn-default btn-md add form-control resetSpace" value="Update" name="updateSpecies">
-        <input type="submit" class="btn btn-danger btn-md add form-control resetSpace" name="reset" value="Reset">
+
+        
+
+        
+        
+
+        
+
+
+        
+        
+        
+
 
     </form>
 

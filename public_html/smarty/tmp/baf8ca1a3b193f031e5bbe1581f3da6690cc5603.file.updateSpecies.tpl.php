@@ -1,12 +1,12 @@
 <?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-07 04:51:20
-         compiled from "smarty\views\updateSpecies.tpl" */ ?>
+         compiled from "smarty\templates\updateSpecies.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:2356457280e70108af8-25069815%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'baf8ca1a3b193f031e5bbe1581f3da6690cc5603' => 
     array (
-      0 => 'smarty\\views\\updateSpecies.tpl',
+      0 => 'smarty\\templates\\updateSpecies.tpl',
       1 => 1462589480,
       2 => 'file',
     ),

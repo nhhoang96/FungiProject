@@ -1,12 +1,12 @@
 <?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-07 04:45:37
-         compiled from "smarty\views\updateShape.tpl" */ ?>
+         compiled from "smarty\templates\updateShape.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:25651572d56d16c9f99-23622930%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '6803e4047e1db0993a74950d09d32991ab88040e' => 
     array (
-      0 => 'smarty\\views\\updateShape.tpl',
+      0 => 'smarty\\templates\\updateShape.tpl',
       1 => 1462588386,
       2 => 'file',
     ),

@@ -1,12 +1,12 @@
 <?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-07 04:44:12
-         compiled from "smarty\views\deleteAdmin.tpl" */ ?>
+         compiled from "smarty\templates\deleteAdmin.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:29488572d567cd98d90-21706748%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '1726155f889b47b52689f1247971ec5499500945' => 
     array (
-      0 => 'smarty\\views\\deleteAdmin.tpl',
+      0 => 'smarty\\templates\\deleteAdmin.tpl',
       1 => 1462304782,
       2 => 'file',
     ),
