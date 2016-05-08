@@ -18,7 +18,7 @@ body {
 }
 
 .hs{
-	width:912px;
+	width:auto;
 	margin:auto;
 }
 
@@ -38,7 +38,7 @@ body {
 	/* Set it so we could calculate the offsetLeft */
 	position: relative;
 	height: 300px;
-	width:1000px;
+	width:1143px;
 	/* Add scroll-bars */
 	overflow: auto;
 	float:left;

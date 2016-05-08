@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-07 21:15:41
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-08 23:26:37
          compiled from "smarty\views\updateSpecies.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:8764572ce31d9c4dd3-87736313%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'd5c872dcb9169f023dc69f6cbecb17570cd2d736' => 
     array (
       0 => 'smarty\\views\\updateSpecies.tpl',
-      1 => 1462648534,
+      1 => 1462742791,
       2 => 'file',
     ),
   ),
@@ -113,57 +113,43 @@ echo $_smarty_tpl->tpl_vars['comments']->value;
                <?php if (isset($_smarty_tpl->tpl_vars['dimensions']->value)) {?>value="<?php echo $_smarty_tpl->tpl_vars['dimensions']->value;?>
 "<?php }?>><br>
 
-        Add Image:<br>
+        Image:<br>
 
-        <div class="hs">
-            <div class="showcase">
-                <ul style="width:2000px;">
-                    <table>
-                        <tr class="row">
-                            <?php  $_smarty_tpl->tpl_vars['pic'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['pic']->_loop = false;
+
+        <?php if (isset($_smarty_tpl->tpl_vars['photos']->value)) {?>
+            <?php if (!is_null($_smarty_tpl->tpl_vars['photos']->value)) {?>
+                <?php if (!empty($_smarty_tpl->tpl_vars['photos']->value)) {?>
+                    <div class="hs">
+                        <div class="showcase">
+                            <ul style="width:2000px;">
+                                <table>
+                                    <tr class="row">
+                                        <?php  $_smarty_tpl->tpl_vars['pic'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['pic']->_loop = false;
  $_from = $_smarty_tpl->tpl_vars['photos']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
 foreach ($_from as $_smarty_tpl->tpl_vars['pic']->key => $_smarty_tpl->tpl_vars['pic']->value) {
 $_smarty_tpl->tpl_vars['pic']->_loop = true;
 ?>
-                                <th class = "col-md-1 imageBox">
-                                    <img src="img/<?php echo $_smarty_tpl->tpl_vars['pic']->value['Photo_Name'];?>
+                                            <th class = "col-md-1 imageBox">
+                                                <img src="img/<?php echo $_smarty_tpl->tpl_vars['pic']->value['Photo_Name'];?>
 " width="250" height="200"><br>
-                                    <input name="checkbox[]" type="checkbox" value="<?php echo $_smarty_tpl->tpl_vars['pic']->value['Photo_ID'];?>
+                                                <input name="checkbox[]" type="checkbox" value="<?php echo $_smarty_tpl->tpl_vars['pic']->value['Photo_ID'];?>
 />
-                                    <div class="col-md-12">
-                                        <?php echo $_smarty_tpl->tpl_vars['pic']->value['Caption'];?>
+                                                <div class="col-md-12">
+                                                    <?php echo $_smarty_tpl->tpl_vars['pic']->value['Caption'];?>
 
-                                    </div>
-                                </th>
-                            <?php } ?>
-                        </tr>
-                    </table>
-                </ul>
-            </div>
-        </div>
-
-
-        
-            
-                
-                    
-                        
-                            
-                                
-                                    
-                                    
-                                             
-
-                                
-                            
-                        
-                    
-                
-            
-        
-
-
-        <div id="addingImages">
+                                                </div>
+                                            </th>
+                                        <?php } ?>
+                                    </tr>
+                                </table>
+                            </ul>
+                        </div>
+                    </div>
+                <?php }?>
+            <?php }?>
+        <?php }?>
+        **Check boxes to delete image
+<div id="addingImages">
             <div class="uploadDiv">
                 <input name="file[]" type="file" id="file"/>
             </div>
@@ -176,7 +162,7 @@ $_smarty_tpl->tpl_vars['pic']->_loop = true;
     </form>
 
 
-   <--- JQuery function to upload more images--->
+   <!--- JQuery function to upload more images--->
     <?php echo '<script'; ?>
 >
         var uploadDiv = "<div class='uploadDiv'><input name='file[]' type='file' id='file'/></div>Caption: <input type='text' class='form-control' name='caption'/><br>"

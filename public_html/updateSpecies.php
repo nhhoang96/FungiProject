@@ -102,35 +102,39 @@ if(!isset($_SESSION['admin'])){
 
         //Upload multiple images
 
-        if(!empty($_FILES["file"]["name"])) {
-            if (is_array($_FILES["file"]["tmp_name"])) {
-                for ($i = 0; $i < count($_FILES["file"]["tmp_name"]); $i++) {
-                    $temp = $_FILES["file"]["tmp_name"][$i];
-                    $name = $_FILES["file"]["name"][$i];
-                    move_uploaded_file($temp, "img/" . $name);
 
-                    $query2 = "INSERT INTO photo (Photo_ID, Photo_Name, Caption, Species_FK) VALUES
-               (DEFAULT, :photoName, :caption, :speciesID)";
-                    $statement2 = $pdo->prepare($query2);
-                    $statement2->bindValue(':photoName', $name);
-                    $statement2->bindValue(':caption', $_POST['caption']);
-                    $statement2->bindValue(':speciesID', $_POST['speciesID']);
-                    $statement2->execute();
+                if (is_array($_FILES["file"]["tmp_name"])) {
+                    for ($i = 0; $i < count($_FILES["file"]["tmp_name"]); $i++) {
+                        if (is_uploaded_file($_FILES["file"]["tmp_name"][$i])) {
+                            $temp = $_FILES["file"]["tmp_name"][$i];
+                            $name = $_FILES["file"]["name"][$i];
+                            move_uploaded_file($temp, "img/" . $name);
+
+                            $query2 = "INSERT INTO photo (Photo_ID, Photo_Name, Caption, Species_FK) VALUES
+                   (DEFAULT, :photoName, :caption, :speciesID)";
+                            $statement2 = $pdo->prepare($query2);
+                            $statement2->bindValue(':photoName', $name);
+                            $statement2->bindValue(':caption', $_POST['caption']);
+                            $statement2->bindValue(':speciesID', $_POST['speciesID']);
+                            $statement2->execute();
+                        }
+                    }
                 }
 
-//        } else {
-//            move_uploaded_file($_FILES["file"]["tmp_name"], "img/" . $_FILES["file"]["name"]);
-//
-//            $query2 = "INSERT INTO photo (Photo_ID, Photo_Name, Caption, Species_FK) VALUES
-//               (DEFAULT, :photoName, :caption, :speciesID)";
-//            $statement2 = $pdo->prepare($query2);
-//            $statement2->bindValue(':photoName', $name);
-//            $statement2->bindValue(':caption', $_POST['caption']);
-//            $statement2->bindValue(':speciesID', $_POST['speciesID']);
-//            $statement2->execute();
-//        }
-            }
-        }
+                else {
+                        move_uploaded_file($_FILES["file"]["tmp_name"], "img/" . $_FILES["file"]["name"]);
+
+                        $query2 = "INSERT INTO photo (Photo_ID, Photo_Name, Caption, Species_FK) VALUES
+                   (DEFAULT, :photoName, :caption, :speciesID)";
+                        $statement2 = $pdo->prepare($query2);
+                        $statement2->bindValue(':photoName', $name);
+                        $statement2->bindValue(':caption', $_POST['caption']);
+                        $statement2->bindValue(':speciesID', $_POST['speciesID']);
+                        $statement2->execute();
+                    }
+
+
+
 
 
         $msg = $msg . "<br>";
@@ -178,19 +182,22 @@ if(!isset($_SESSION['admin'])){
         $query = "SELECT species.Species_ID, .species.Common_Name,
                   species.Name_Derivation, species.Scientific_Name, species.Phylum, species.Sp_Order,
                   species.Family, species.Comments,
-                  species.Wood_Substrate, species.Dimensions, species.Shape_FK, photo.Photo_ID, photo.Photo_Name, photo.Caption
+                  species.Wood_Substrate, species.Dimensions, species.Shape_FK
                   FROM species
-                  JOIN photo ON
-                  species.Species_ID = photo.Species_FK
                   WHERE species.Species_ID = :speciesID";
-
-
         $statement = $pdo->prepare($query);
         $statement->bindValue(':speciesID', $_POST["speciesID"]);
         $statement->execute();
         $shapeResults = array();
+
+        $query2 = "SELECT * FROM photo WHERE Species_FK = :speciesID";
+        $statement2 = $pdo->prepare($query2);
+        $statement2->bindValue(':speciesID', $_POST["speciesID"]);
+        $statement2->execute();
+
         if ($statement->rowCount() > 0) {
             while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
+
                 $speciesID = $row['Species_ID'];
                 $commonName = $row['Common_Name'];
                 $nameDerivation = $row['Name_Derivation'];
@@ -203,52 +210,42 @@ if(!isset($_SESSION['admin'])){
                 $dimensions = $row['Dimensions'];
                 $shapeID = $row['Shape_FK'];
 //                $photoName = $row['Photo_Name'];
-                $photos[] = array (
-                        "Photo_ID" => $row['Photo_ID'],
-                        "Photo_Name" => $row['Photo_Name'],
-                        "Caption" => $row['Caption']
+                if($statement2->rowCount() > 0) {
+                    while ($row = $statement2->fetch(PDO::FETCH_ASSOC)) {
+                        $photos[] = array(
+                            "Photo_ID" => $row['Photo_ID'],
+                            "Photo_Name" => $row['Photo_Name'],
+                            "Caption" => $row['Caption']
 
-                    );
+                        );
+                    } $smarty->assign('photos', $photos);
+                }
 
-                $smarty->assign("speciesID", $speciesID);
-                $smarty->assign("commonName", $commonName);
-                $smarty->assign("nameDerivation", $nameDerivation);
-                $smarty->assign("scientificName", $scientificName);
-                $smarty->assign("phylum", $phylum);
-                $smarty->assign("order", $order);
-                $smarty->assign("family", $family);
+                    $smarty->assign("speciesID", $speciesID);
+                    $smarty->assign("commonName", $commonName);
+                    $smarty->assign("nameDerivation", $nameDerivation);
+                    $smarty->assign("scientificName", $scientificName);
+                    $smarty->assign("phylum", $phylum);
+                    $smarty->assign("order", $order);
+                    $smarty->assign("family", $family);
 
-                $comments = preg_replace('/\s\s+/', ' ', $comments);
-                $smarty->assign("comments", $comments);
+                    $comments = preg_replace('/\s\s+/', ' ', $comments);
+                    $smarty->assign("comments", $comments);
 
-                $woodSubstrate = preg_replace('/\s\s+/', ' ', $woodSubstrate);
-                $smarty->assign("woodSubstrate", $woodSubstrate);
+                    $woodSubstrate = preg_replace('/\s\s+/', ' ', $woodSubstrate);
+                    $smarty->assign("woodSubstrate", $woodSubstrate);
 
-                $dimensions = preg_replace('/\s\s+/', ' ', $dimensions);
-                $smarty->assign("dimensions", $dimensions);
-                $smarty->assign("shapeID", $shapeID);
+                    $dimensions = preg_replace('/\s\s+/', ' ', $dimensions);
+                    $smarty->assign("dimensions", $dimensions);
+                    $smarty->assign("shapeID", $shapeID);
 //                $smarty->assign("photoName", $photoName);
-                $smarty->assign('photos', $photos);
 
 
-//                $query = "SELECT Photo_ID, Photo_Name, Caption FROM photo WHERE Species_FK = :id";
-//                $statement = $pdo->prepare($query);
-//                $statement->bindParam(':id', $speciesID, PDO::PARAM_STR);
-//                $statement->execute();
-//                $photos = array();
-//
-//                while($row = $statement->fetch(PDO::FETCH_ASSOC)){
-//
-//                    $photos[] = array (
-//                        "Photo_Name" => $row['Photo_Name'],
-//                        "Caption" => $row['Caption']
-//
-//                    );
-//                }
-//
-//                $smarty->assign('photos', $photos);
             }
-        } else {
+        }
+
+
+        else {
             $smarty->assign("error1", 'Database Error');
         }
     }

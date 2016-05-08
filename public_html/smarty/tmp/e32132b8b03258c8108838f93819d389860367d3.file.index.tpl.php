@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-08 19:15:06
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-08 23:17:10
          compiled from "smarty\views\index.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:19494572cfae00c46d6-74507192%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'e32132b8b03258c8108838f93819d389860367d3' => 
     array (
       0 => 'smarty\\views\\index.tpl',
-      1 => 1462727704,
+      1 => 1462735298,
       2 => 'file',
     ),
   ),
@@ -28,8 +28,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
         <div class="row">
             <div class="col-lg-12">
                 
-                <h2 class="tagline"><strong>Fungi Growing on Wood</strong><br>
-                    Keys, Photographs, and Descriptions <br>of fungi using wood as a substrate</h2>
+                <h2 class="tagline">a website devoted to the <br><strong>identification</strong>
+                    and <strong>appreciation</strong><br> of fungi growing
+                    in close association <br> with living and dead wood</h2>
+            </div>
         </div>
     </div>
 </header>

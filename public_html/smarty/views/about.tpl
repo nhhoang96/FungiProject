@@ -5,7 +5,8 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
-					<h2 class="tagline2"><strong>Messiah College</strong><br>Department of Biological Sciences</h2>
+					<h1 class="tagline">Messiah College</h1><small class=
+					"tagline">Department of Biological Sciences</small>
 				</div>
 			</div>
 		</div>
@@ -134,20 +135,6 @@
 			<div class="col-sm-4">
 				<img alt="" class="img-rounded img-responsive img-right" src=
 				"img/Emberger.jpg">
-			</div>
-		</div>
-		<hr>
-		<div class="row">
-			<div class="col-sm-6">
-
-				<h2>The Development Team</h2>
-
-				<p>This is a very small blurb about the development team</p>
-			</div>
-			<div class="col-sm-6">
-				<img alt="" class="img-rounded img-responsive img-right" src=
-				"img/Emberger.jpg">
-			</div>
 		</div>
 		{include "footer.tpl"}
 	</div><!-- /.container -->

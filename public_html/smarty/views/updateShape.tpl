@@ -39,11 +39,7 @@
 
         Update Image:<br>
         {if isset($editShapeImage)}
-            {if !is_null($editShapeImage)}
-                {if !empty($editShapeImage)}
-                    <img class="pic glossarypic" src="img/{$editShapeImage}">
-                {/if}
-            {/if}
+            <img class="pic glossarypic" src="img/{$editShapeImage}">
         {/if}
         <input type="file" name="myimage"><br>
 

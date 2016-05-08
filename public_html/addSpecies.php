@@ -126,32 +126,38 @@ if (isset($_POST["addSpecies"])) {
     $speciesFK = $pdo->lastInsertId();
 
 
-    if (is_array($_FILES["file"]["tmp_name"])) {
-        for ($i = 0; $i < count($_FILES["file"]["tmp_name"]); $i++) {
-            $temp = $_FILES["file"]["tmp_name"][$i];
-            $name = $_FILES["file"]["name"][$i];
-            move_uploaded_file($temp, "img/" . $name);
+    if(!empty($_FILES["file"]["tmp_name"])) {
+        if (!is_null($_FILES["file"]["tmp_name"])) {
+            if (is_array($_FILES["file"]["tmp_name"])) {
+                for ($i = 0; $i < count($_FILES["file"]["tmp_name"]); $i++) {
+                    if (is_uploaded_file($_FILES["file"]["tmp_name"][$i])) {
+                        $temp = $_FILES["file"]["tmp_name"][$i];
+                        $name = $_FILES["file"]["name"][$i];
+                        move_uploaded_file($temp, "img/" . $name);
 
-            $query2 = "INSERT INTO photo (Photo_ID, Photo_Name, Caption, Species_FK) VALUES
-               (DEFAULT, :photoName, :caption, :speciesFK)";
-            $statement2 = $pdo->prepare($query2);
-            $statement2->bindValue(':photoName', $name);
-            $statement2->bindValue(':caption', $_POST['caption']);
-            $statement2->bindValue(':speciesFK', $speciesFK);
-            $statement2->execute();
+                        $query2 = "INSERT INTO photo (Photo_ID, Photo_Name, Caption, Species_FK) VALUES
+                   (DEFAULT, :photoName, :caption, :speciesFK)";
+                        $statement2 = $pdo->prepare($query2);
+                        $statement2->bindValue(':photoName', $name);
+                        $statement2->bindValue(':caption', $_POST['caption']);
+                        $statement2->bindValue(':speciesFK', $speciesFK);
+                        $statement2->execute();
+
+                    }
+                }
+            } else {
+                move_uploaded_file($_FILES["file"]["tmp_name"], "img/" . $_FILES["file"]["name"]);
+
+                $query2 = "INSERT INTO photo (Photo_ID, Photo_Name, Caption, Species_FK) VALUES
+                       (DEFAULT, :photoName, :caption, :speciesFK)";
+                $statement2 = $pdo->prepare($query2);
+                $statement2->bindValue(':photoName', $name);
+                $statement2->bindValue(':caption', $_POST['caption']);
+                $statement2->bindValue(':speciesFK', $speciesFK);
+                $statement2->execute();
+            }
         }
-    } else {
-        move_uploaded_file($_FILES["file"]["tmp_name"], "img/" . $_FILES["file"]["name"]);
-
-        $query2 = "INSERT INTO photo (Photo_ID, Photo_Name, Caption, Species_FK) VALUES
-               (DEFAULT, :photoName, :caption, :speciesFK)";
-        $statement2 = $pdo->prepare($query2);
-        $statement2->bindValue(':photoName', $name);
-        $statement2->bindValue(':caption', $_POST['caption']);
-        $statement2->bindValue(':speciesFK', $speciesFK);
-        $statement2->execute();
     }
-
     $msg3 = "Add Successful!";
 }
 //} elseif (isset($_POST["updateSpecies"])){

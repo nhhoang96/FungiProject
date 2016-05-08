@@ -52,30 +52,36 @@
         <input type="text" class="form-control" name="dimensions"
                {if isset($dimensions)}value="{$dimensions}"{/if}><br>
 
-        Add Image:<br>
+        Image:<br>
 
 
         {if isset($photos)}
             {if !is_null($photos)}
                 {if !empty($photos)}
-                    <table class="row">
-                        <tr class="col-md-4">
-                            {foreach $photos as $pic}
-                                <th class="col-md-12 multiple-images">
-                                    <img src="img/{$pic['Photo_Name']}" class="glossarypic"><br>
-                                    <input name="checkbox[]" type="checkbox" value="{$pic['Photo_ID']}/>
-                                             {$pic['Caption']}
-
-                                </th>
-                            {/foreach}
-                        </tr>
-                    </table><br>
+                    <div class="hs">
+                        <div class="showcase">
+                            <ul style="width:2000px;">
+                                <table>
+                                    <tr class="row">
+                                        {foreach $photos as $pic}
+                                            <th class = "col-md-1 imageBox">
+                                                <img src="img/{$pic['Photo_Name']}" width="250" height="200"><br>
+                                                <input name="checkbox[]" type="checkbox" value="{$pic['Photo_ID']}/>
+                                                <div class="col-md-12">
+                                                    {$pic['Caption']}
+                                                </div>
+                                            </th>
+                                        {/foreach}
+                                    </tr>
+                                </table>
+                            </ul>
+                        </div>
+                    </div>
                 {/if}
             {/if}
         {/if}
-        
-
-        <div id="addingImages">
+        **Check boxes to delete image
+<div id="addingImages">
             <div class="uploadDiv">
                 <input name="file[]" type="file" id="file"/>
             </div>
@@ -88,7 +94,7 @@
     </form>
 
 
-   <--- JQuery function to upload more images--->
+   <!--- JQuery function to upload more images--->
     <script>
         var uploadDiv = "<div class='uploadDiv'><input name='file[]' type='file' id='file'/></div>Caption: <input type='text' class='form-control' name='caption'/><br>"
 

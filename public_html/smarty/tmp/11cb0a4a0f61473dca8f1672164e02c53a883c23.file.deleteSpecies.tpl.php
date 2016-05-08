@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-07 16:38:15
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-08 21:52:52
          compiled from "smarty\views\deleteSpecies.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:11796572dfdd70d2d75-87656961%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:13554572f9914a53a77-40272787%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '11cb0a4a0f61473dca8f1672164e02c53a883c23' => 
     array (
       0 => 'smarty\\views\\deleteSpecies.tpl',
-      1 => 1462236917,
+      1 => 1462729910,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '11796572dfdd70d2d75-87656961',
+  'nocache_hash' => '13554572f9914a53a77-40272787',
   'function' => 
   array (
   ),
@@ -23,9 +23,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.21-dev',
-  'unifunc' => 'content_572dfdd71bd007_19219391',
+  'unifunc' => 'content_572f9914adc1f8_84751228',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_572dfdd71bd007_19219391')) {function content_572dfdd71bd007_19219391($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("head.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('title'=>"Admin",'pageName'=>"admin"), 0);?>
+<?php if ($_valid && !is_callable('content_572f9914adc1f8_84751228')) {function content_572f9914adc1f8_84751228($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("head.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('title'=>"Admin",'pageName'=>"admin"), 0);?>
 
 
 
@@ -51,7 +51,6 @@ $_smarty_tpl->tpl_vars['item']->_loop = true;
             <?php } ?>
         </select><br>
         <input type="submit" class="btn btn-default btn-md add form-control" value="Delete" name="deleteSpecies">
-        <p>-Shape is now deleted.-</p>
     </form>
 
     <?php echo $_smarty_tpl->getSubTemplate ("footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
