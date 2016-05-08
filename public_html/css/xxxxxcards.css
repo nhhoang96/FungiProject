@@ -1,13 +1,5 @@
 
-.index-header {
-  height: 400px;
-  background: url('../img/newHomeFungi.jpg') center center no-repeat scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  /*margin-top: -30px;*/
-}
+
 .tagline {
   text-shadow: 0 0 10px #000;
   color: #fff;

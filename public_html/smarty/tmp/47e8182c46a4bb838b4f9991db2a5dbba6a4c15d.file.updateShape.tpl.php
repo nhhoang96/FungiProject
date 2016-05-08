@@ -1,13 +1,23 @@
+<<<<<<< HEAD
 <?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-06 22:40:49
          compiled from "smarty\templates\updateShape.tpl" */ ?>
+=======
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-07 21:06:52
+         compiled from "smarty\views\updateShape.tpl" */ ?>
+>>>>>>> 2dfc690b47791314e3d0e87c32033748467b9b0a
 <?php /*%%SmartyHeaderCode:29449572cdb29c0c0e4-06200615%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '47e8182c46a4bb838b4f9991db2a5dbba6a4c15d' => 
     array (
+<<<<<<< HEAD
       0 => 'smarty\\templates\\updateShape.tpl',
       1 => 1462567246,
+=======
+      0 => 'smarty\\views\\updateShape.tpl',
+      1 => 1462648008,
+>>>>>>> 2dfc690b47791314e3d0e87c32033748467b9b0a
       2 => 'file',
     ),
   ),
@@ -85,8 +95,12 @@ echo $_smarty_tpl->tpl_vars['editShapeDescription']->value;
 
         Update Image:<br>
         <?php if (isset($_smarty_tpl->tpl_vars['editShapeImage']->value)) {?>
-            <img class="pic glossarypic" src="img/<?php echo $_smarty_tpl->tpl_vars['editShapeImage']->value;?>
+            <?php if (!is_null($_smarty_tpl->tpl_vars['editShapeImage']->value)) {?>
+                <?php if (!empty($_smarty_tpl->tpl_vars['editShapeImage']->value)) {?>
+                    <img class="pic glossarypic" src="img/<?php echo $_smarty_tpl->tpl_vars['editShapeImage']->value;?>
 ">
+                <?php }?>
+            <?php }?>
         <?php }?>
         <input type="file" name="myimage"><br>
 
