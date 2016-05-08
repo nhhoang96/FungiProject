@@ -54,46 +54,26 @@
 
         Add Image:<br>
 
-        <div class="hs">
-            <div class="showcase">
-                <ul style="width:2000px;">
-                    <table>
-                        <tr class="row">
+
+        {if isset($photos)}
+            {if !is_null($photos)}
+                {if !empty($photos)}
+                    <table class="row">
+                        <tr class="col-md-4">
                             {foreach $photos as $pic}
-                                <th class = "col-md-1 imageBox">
-                                    <img src="img/{$pic['Photo_Name']}" width="250" height="200"><br>
+                                <th class="col-md-12 multiple-images">
+                                    <img src="img/{$pic['Photo_Name']}" class="glossarypic"><br>
                                     <input name="checkbox[]" type="checkbox" value="{$pic['Photo_ID']}/>
-                                    <div class="col-md-12">
-                                        {$pic['Caption']}
-                                    </div>
+                                             {$pic['Caption']}
+
                                 </th>
                             {/foreach}
                         </tr>
-                    </table>
-                </ul>
-            </div>
-        </div>
-
-
-        {*{if isset($photos)}*}
-            {*{if !is_null($photos)}*}
-                {*{if !empty($photos)}*}
-                    {*<table class="row">*}
-                        {*<tr class="col-md-4">*}
-                            {*{foreach $photos as $pic}*}
-                                {*<th class="col-md-12 multiple-images">*}
-                                    {*<img src="img/{$pic['Photo_Name']}" class="glossarypic"><br>*}
-                                    {*<input name="checkbox[]" type="checkbox" value="{$pic['Photo_ID']}/>*}
-                                             {*{$pic['Caption']}*}
-
-                                {*</th>*}
-                            {*{/foreach}*}
-                        {*</tr>*}
-                    {*</table><br>*}
-                {*{/if}*}
-            {*{/if}*}
-        {*{/if}*}
-
+                    </table><br>
+                {/if}
+            {/if}
+        {/if}
+        
 
         <div id="addingImages">
             <div class="uploadDiv">

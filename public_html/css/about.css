@@ -9,6 +9,15 @@
 }
 /*Customize the text color and shadow color and to optimize text legibility. */
 .tagline2 {
+    text-shadow: 20px 20px 20px black;
+    color: #fff;
+    font-weight: normal;
+    padding-top: 160px;
+    text-align: left;
+    float: right;
+    margin-right: 150px;
+}
+.tagline3 {
     text-shadow: 2px 2px 10px black;
     color: #fff;
     padding-top: 160px;

@@ -102,7 +102,7 @@ if(!isset($_SESSION['admin'])){
 
         //Upload multiple images
 
-        if(is_uploaded_file($_FILES["file"]["name"])) {
+        if(!empty($_FILES["file"]["name"])) {
             if (is_array($_FILES["file"]["tmp_name"])) {
                 for ($i = 0; $i < count($_FILES["file"]["tmp_name"]); $i++) {
                     $temp = $_FILES["file"]["tmp_name"][$i];

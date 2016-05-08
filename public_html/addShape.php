@@ -1,101 +1,95 @@
 <?php
 session_start();
 include "../private_html/setup.php";
-include_once WEB_PATH . 'CAS_includes/CAS.php';
-phpCAS::client(CAS_VERSION_2_0, 'sso.messiah.edu', 443, '/cas/',false);
-phpCAS::setNoCasServerValidation();
-phpCAS::handleLogoutRequests(false);
-phpCAS::forceAuthentication();
-$logout_url = "https://sso.messiah.edu/cas/logout";
-$_SERVER['REMOTE_USER'] = strtolower(phpCAS::getUser());
 
 if(!isset($_SESSION['admin'])){
     $smarty->display('index.tpl');
     exit();
 }
 
-    $smarty->assign("isAdmin", true);
-    $smarty->assign("adminActive", "active");
-    $smarty->assign("title", "Admin");
+
+$smarty->assign("isAdmin", true);
+$smarty->assign("adminActive", "active");
+$smarty->assign("title", "Admin");
 
 //----- Check if the add shape submit button was hit ----
-    if (isset($_POST["addShape"])) {
+if (isset($_POST["addShape"])) {
 
-        $errorFlag = false;
-        $smarty->assign('errorFlag', $errorFlag);
+    $errorFlag = false;
+    $smarty->assign('errorFlag', $errorFlag);
 
-        $msg = "<strong>Missing Information!</strong>";
-        $msg2 = "<strong>Add failed!</strong><br>";
+    $msg = "<strong>Missing Information!</strong>";
+    $msg2 = "<strong>Add failed!</strong><br>";
 
-        // ------ Input Error Checking ------
-        if ($_POST["shapeName"] == "") {
-            $errorFlag = true;
-            $msg .= "<br>Shape Name: empty";
-        } else {
-            $smarty->assign('shapeName', $_POST["shapeName"]);
-        }
-        if ($_POST["description"] == "") {
-            $errorFlag = true;
-            $msg .= "<br>Shape Text: empty";
-        } else {
-            $smarty->assign('description', $_POST["description"]);
-        }
+    // ------ Input Error Checking ------
+    if ($_POST["shapeName"] == "") {
+        $errorFlag = true;
+        $msg .= "<br>Shape Name: empty";
+    } else {
+        $smarty->assign('shapeName', $_POST["shapeName"]);
+    }
+    if ($_POST["description"] == "") {
+        $errorFlag = true;
+        $msg .= "<br>Shape Text: empty";
+    } else {
+        $smarty->assign('description', $_POST["description"]);
+    }
 
-        move_uploaded_file($_FILES["myimage"]["tmp_name"], "img/" . $_FILES["myimage"]["name"]);
-
-
-        if ($errorFlag) {
-            $msg = $msg . "<br>";
-            $smarty->assign('msg', $msg);
-            $smarty->display('addShape.tpl');
-            exit();
-        }
+    move_uploaded_file($_FILES["myimage"]["tmp_name"], "img/" . $_FILES["myimage"]["name"]);
 
 
-        // ------ Queries ------
-        $query = "INSERT INTO shape (Shape_Category_ID, Name, Description, Image)
+    if ($errorFlag) {
+        $msg = $msg . "<br>";
+        $smarty->assign('msg', $msg);
+        $smarty->display('addShape.tpl');
+        exit();
+    }
+
+
+    // ------ Queries ------
+    $query = "INSERT INTO shape (Shape_Category_ID, Name, Description, Image)
               VALUES (DEFAULT, :shapeName, :description, :image)";
 
 
 //            $testImage = "testImage.jpg";
-        $statement = $pdo->prepare($query);
-        $statement->bindValue(':shapeName', $_POST["shapeName"]);
-        $statement->bindValue(':description', $_POST["description"]);
-        $statement->bindValue(':image', $_FILES["myimage"]["name"]);
-        $statement->execute();
+    $statement = $pdo->prepare($query);
+    $statement->bindValue(':shapeName', $_POST["shapeName"]);
+    $statement->bindValue(':description', $_POST["description"]);
+    $statement->bindValue(':image', $_FILES["myimage"]["name"]);
+    $statement->execute();
 
 
-        $msg3 = "Add Successful!";
-    } elseif (isset($_POST["addAdmin"])) {
-        $errorFlag = false;
-        $smarty->assign('errorFlag', $errorFlag);
+    $msg3 = "Add Successful!";
+} elseif (isset($_POST["addAdmin"])) {
+    $errorFlag = false;
+    $smarty->assign('errorFlag', $errorFlag);
 
-        $msg = "<strong>Missing Information!</strong>";
+    $msg = "<strong>Missing Information!</strong>";
 
-        // ------ Input Error Checking ------
-        if ($_POST["newAdmin"] == "") {
-            $errorFlag = true;
-            $msg .= "<br>Shape Admin Email: empty";
-        } else {
-            $smarty->assign('newAdmin', $_POST["newAdmin"]);
-        }
-
-        if ($errorFlag) {
-            $msg = $msg . "<br>";
-            $smarty->assign('msg', $msg);
-            $smarty->display('addShape.tpl');
-            exit();
-        }
-
-        $testImage = "testImage.jpg";
-        $statement = $pdo->prepare($query);
-        $statement->bindValue(':shapeName', $_POST["shapeName"]);
-        $statement->bindValue(':description', $_POST["description"]);
-        $statement->bindValue(':image', $testImage);
-        $statement->execute();
-
-        $msg3 = "Add Successful!";
+    // ------ Input Error Checking ------
+    if ($_POST["newAdmin"] == "") {
+        $errorFlag = true;
+        $msg .= "<br>Shape Admin Email: empty";
+    } else {
+        $smarty->assign('newAdmin', $_POST["newAdmin"]);
     }
+
+    if ($errorFlag) {
+        $msg = $msg . "<br>";
+        $smarty->assign('msg', $msg);
+        $smarty->display('addShape.tpl');
+        exit();
+    }
+
+    $testImage = "testImage.jpg";
+    $statement = $pdo->prepare($query);
+    $statement->bindValue(':shapeName', $_POST["shapeName"]);
+    $statement->bindValue(':description', $_POST["description"]);
+    $statement->bindValue(':image', $testImage);
+    $statement->execute();
+
+    $msg3 = "Add Successful!";
+}
 //} elseif (isset($_POST["updateShape"])){
 //
 //        $errorFlag = false;
@@ -198,22 +192,22 @@ if(!isset($_SESSION['admin'])){
 //
 //}
 
-    //------ Build Associative Shape Array ------
-    $query = "SELECT Shape_Category_ID, Name FROM shape";
+//------ Build Associative Shape Array ------
+$query = "SELECT Shape_Category_ID, Name FROM shape";
 
-    $statement = $pdo->prepare($query);
-    $statement->execute();
-    $shapeResults = array();
-    if ($statement->rowCount() > 0) {
-        while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
-            $shapeResults[$row['Shape_Category_ID']] = $row['Name'];
-        }
-    } else {
-        $smarty->assign("error1", 'Database Error');
+$statement = $pdo->prepare($query);
+$statement->execute();
+$shapeResults = array();
+if ($statement->rowCount() > 0) {
+    while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
+        $shapeResults[$row['Shape_Category_ID']] = $row['Name'];
     }
-    $smarty->assign("shapeArray", $shapeResults);
-    if (isset($msg3)) {
-        $smarty->assign('success', $msg3);
-    }
-    $smarty->display('addShape.tpl');
+} else {
+    $smarty->assign("error1", 'Database Error');
+}
+$smarty->assign("shapeArray", $shapeResults);
+if (isset($msg3)) {
+    $smarty->assign('success', $msg3);
+}
+$smarty->display('addShape.tpl');
 

@@ -14,7 +14,6 @@
             {/foreach}
         </select><br>
         <input type="submit" class="btn btn-default btn-md add form-control" value="Delete" name="deleteSpecies">
-        <p>-Shape is now deleted.-</p>
     </form>
 
     {include "footer.tpl"}

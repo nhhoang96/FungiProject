@@ -43,7 +43,29 @@ if(!isset($_SESSION['admin'])){
         if(!empty($_FILES["myimage"]["tmp_name"])){
             if(is_uploaded_file($_FILES["myimage"]["tmp_name"])) {
                 move_uploaded_file($_FILES["myimage"]["tmp_name"], "img/" . $_FILES["myimage"]["name"]);
+
+                $query = "UPDATE shape
+              SET Name = :updateShapeName, Description = :updateShapeDescription, Image = :image
+              WHERE Shape_Category_ID = :shapeID";
+
+                $statement = $pdo->prepare($query);
+                $statement->bindValue(':updateShapeName', $_POST["updateShapeName"]);
+                $statement->bindValue(':updateShapeDescription', $_POST["updateShapeDescription"]);
+                $statement->bindValue(':shapeID', $_POST["shapeID"]);
+                $statement->bindValue(':image', $_FILES["myimage"]["name"]);
+                $statement->execute();
             }
+        }
+        else {
+            $query = "UPDATE shape
+              SET Name = :updateShapeName, Description = :updateShapeDescription
+              WHERE Shape_Category_ID = :shapeID";
+
+            $statement = $pdo->prepare($query);
+            $statement->bindValue(':updateShapeName', $_POST["updateShapeName"]);
+            $statement->bindValue(':updateShapeDescription', $_POST["updateShapeDescription"]);
+            $statement->bindValue(':shapeID', $_POST["shapeID"]);
+            $statement->execute();
         }
 
         if ($errorFlag) {
@@ -53,19 +75,11 @@ if(!isset($_SESSION['admin'])){
             exit();
         }
 
-        $query = "UPDATE shape
-              SET Name = :updateShapeName, Description = :updateShapeDescription, Image = :image
-              WHERE Shape_Category_ID = :shapeID";
 
-        $statement = $pdo->prepare($query);
-        $statement->bindValue(':updateShapeName', $_POST["updateShapeName"]);
-        $statement->bindValue(':updateShapeDescription', $_POST["updateShapeDescription"]);
-        $statement->bindValue(':shapeID', $_POST["shapeID"]);
-        $statement->bindValue(':image', $_FILES["myimage"]["name"]);
-        $statement->execute();
 //        $statement->bindValue(':image', $testImage);
 
     } elseif (isset($_POST["selectShape"])) {
+
 
         $query = "SELECT Shape_Category_ID, Name, Description, Image FROM shape WHERE Shape_Category_ID = :shapeID";
 
