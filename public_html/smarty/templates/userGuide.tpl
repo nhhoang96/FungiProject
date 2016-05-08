@@ -3,6 +3,7 @@
 
 
 <h2>Administrator Panel Guide</h2>
+	<h6>*** To close the user guide, click on the exclamation mark next to control panel ***</h6>
 <select id="helpOption">
 	<option value="empty"><--Choose a Panel Guide--></option>
 	<option value="addSpecies">Add a Species</option>
@@ -33,6 +34,7 @@
 		<li>Click on species on the red sub navigation bar and select "Delete Species"</li>
 		<li>Choose the correct species from the dropdown</li>
 		<li>Click Delete, and you'll see a small message below confirming the addition</li>
+		<li>*** To close the user guide, click on the exclamation mark next to control panel ***</li>
 	</ol>
 </div>
 <div class="helpText" id="addCharacteristic">
@@ -42,7 +44,8 @@
 		<li>Click on Characteristic on the red sub navigation bar and select New Characteristic</li>
 		<li>Choose the appropriate shape in the Shape Association dropdown menu</li>
 		<li>Give the characteristic a Name in the characteristic box</li>
-		<li>See below to add exclusive or inclusive options for the given characteristic
+		<li>See below to add exclusive or inclusive options for the given characteristic</li>
+		<li>*** To close the user guide, click on the exclamation mark next to control panel ***</li>
 	</ol>
 </div>
 <div class="helpText" id="addOptions">
@@ -52,6 +55,7 @@
 		<li>Click on Characteristic on the red sub navigation bar and select New Characteristic Option</li>
 		<li>Choose the appropriate characteristic association from the dropdown</li>
 		<li>Name the characteristic Option</li>
+		<li>*** To close the user guide, click on the exclamation mark next to control panel ***</li>
 	</ol>
 </div>
 <div class="helpText" id="addShape">
@@ -63,6 +67,7 @@
 		<li>Add a description</li>
 		<li>Add an example photo in the image upload</li>
 		<li>Click Upload</li>
+		<li>*** To close the user guide, click on the exclamation mark next to control panel ***</li>
 	</ol>
 </div>
 <div class="helpText" id="updateShape">
@@ -75,6 +80,7 @@
 		<li>Put in a new name or description as needed</li>
 		<li>Add a new example photo in the image upload if needed</li>
 		<li>Click Update</li>
+		<li>*** To close the user guide, click on the exclamation mark next to control panel ***</li>
 	</ol>
 </div>
 <div class="helpText" id="deleteShape">
@@ -84,6 +90,7 @@
 		<li>Click on Shape on the red sub navigation bar and select New Shape</li>
 		<li>Choose the appropriate shape to delete</li>
 		<li>Click Delete</li>
+		<li>*** To close the user guide, click on the exclamation mark next to control panel ***</li>
 	</ol>
 </div>
 <div class="helpText" id="addAdmin">
@@ -92,6 +99,7 @@
 	<ol>
 		<li>Click on Admin on the red sub navigation bar and select New Shape</li>
 		<li>Enter the new user's email, and click Add</li>
+		<li>*** To close the user guide, click on the exclamation mark next to control panel ***</li>
 	</ol>
 </div>
 <div class="helpText" id="deleteAdmin">
@@ -100,6 +108,7 @@
 	<ol>
 		<li>Click on admin on the red sub navigation bar and select Delete Admin</li>
 		<li>Choose the user's email from the dropdown, and click Delete</li>
+		<li>*** To close the user guide, click on the exclamation mark next to control panel ***</li>
 	</ol>
 </div>
 <div class="helpText" id="imageUpload">
@@ -110,6 +119,7 @@
 		<li>First crop files as necessary to achieve the desired aspect ratio, while keeping the image as big as possible</li>
 		<li>Then SCALE the image down to reduce the size as necessary</li>
 		<li>Finally, crop the image to highlight the desired part of the image, maintaining the aspect ratio.</li>
+		<li>*** To close the user guide, click on the exclamation mark next to control panel ***</li>
 	</ol>
 </div>
 
