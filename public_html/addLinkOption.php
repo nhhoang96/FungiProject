@@ -119,7 +119,6 @@ if (isset($_POST["selectSpecies"])) {
     if (isset ($_POST['optionIDs'])) {
         if (is_array($_POST['optionIDs'])) {
             foreach ($_POST['optionIDs'] as $optionID) {
-                echo "array";
                 $query = "INSERT INTO species_option (Species_FK , Option_FK )
               VALUES (:speciesID, :optionID)";
 
