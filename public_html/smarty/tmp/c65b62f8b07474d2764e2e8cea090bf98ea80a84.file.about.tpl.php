@@ -1,4 +1,26 @@
-{include "head.tpl" title="About"}
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-09 00:03:58
+         compiled from "smarty\templates\about.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:1233572fb048b1f315-48567694%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    'c65b62f8b07474d2764e2e8cea090bf98ea80a84' => 
+    array (
+      0 => 'smarty\\templates\\about.tpl',
+      1 => 1462745037,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '1233572fb048b1f315-48567694',
+  'function' => 
+  array (
+  ),
+  'version' => 'Smarty-3.1.21-dev',
+  'unifunc' => 'content_572fb048b62c64_11729300',
+  'has_nocache_code' => false,
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_572fb048b62c64_11729300')) {function content_572fb048b62c64_11729300($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("head.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('title'=>"About"), 0);?>
+
 <link href="css/about.css" type=text/css rel="stylesheet" />
 
 	<header class="business-header">
@@ -134,15 +156,24 @@
 				<img alt="" class="img-rounded img-responsive img-right" src=
 				"img/Emberger.jpg">
 		</div>
-		{include "footer.tpl"}
+		<?php echo $_smarty_tpl->getSubTemplate ("footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
+
 	</div><!-- /.container -->
 	<!-- jQuery -->
-	<script src="js/jquery.js"></script> <!-- Bootstrap Core JavaScript -->
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/read_more.js"></script>
-		<script>
+	<?php echo '<script'; ?>
+ src="js/jquery.js"><?php echo '</script'; ?>
+> <!-- Bootstrap Core JavaScript -->
+		<?php echo '<script'; ?>
+ src="js/bootstrap.min.js"><?php echo '</script'; ?>
+>
+		<?php echo '<script'; ?>
+ src="js/read_more.js"><?php echo '</script'; ?>
+>
+		<?php echo '<script'; ?>
+>
 			$(document).ready(function(){
 				$('[data-toggle="tooltip"]').tooltip();
 			});
-		</script>
-	</body>
+		<?php echo '</script'; ?>
+>
+	</body><?php }} ?>
