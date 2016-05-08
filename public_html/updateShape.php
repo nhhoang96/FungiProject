@@ -40,7 +40,11 @@ if(!isset($_SESSION['admin'])){
             $smarty->assign('updateShapeDescription', $_POST["updateShapeDescription"]);
         }
 
-        move_uploaded_file($_FILES["myimage"]["tmp_name"], "img/" . $_FILES["myimage"]["name"]);
+        if(!empty($_FILES["myimage"]["tmp_name"])){
+            if(is_uploaded_file($_FILES["myimage"]["tmp_name"])) {
+                move_uploaded_file($_FILES["myimage"]["tmp_name"], "img/" . $_FILES["myimage"]["name"]);
+            }
+        }
 
         if ($errorFlag) {
             $msg = $msg . "<br>";
@@ -50,7 +54,7 @@ if(!isset($_SESSION['admin'])){
         }
 
         $query = "UPDATE shape
-              SET Name = :updateShapeName, Description = :updateShapeDescription, Image = :image,
+              SET Name = :updateShapeName, Description = :updateShapeDescription, Image = :image
               WHERE Shape_Category_ID = :shapeID";
 
         $statement = $pdo->prepare($query);

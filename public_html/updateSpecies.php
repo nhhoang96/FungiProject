@@ -102,37 +102,53 @@ if(!isset($_SESSION['admin'])){
 
         //Upload multiple images
 
-        if (is_array($_FILES["file"]["tmp_name"])) {
-            for ($i = 0; $i < count($_FILES["file"]["tmp_name"]); $i++) {
-                $temp = $_FILES["file"]["tmp_name"][$i];
-                $name = $_FILES["file"]["name"][$i];
-                move_uploaded_file($temp, "img/" . $name);
+        if(is_uploaded_file($_FILES["file"]["name"])) {
+            if (is_array($_FILES["file"]["tmp_name"])) {
+                for ($i = 0; $i < count($_FILES["file"]["tmp_name"]); $i++) {
+                    $temp = $_FILES["file"]["tmp_name"][$i];
+                    $name = $_FILES["file"]["name"][$i];
+                    move_uploaded_file($temp, "img/" . $name);
 
-                $query2 = "INSERT INTO photo (Photo_ID, Photo_Name, Caption, Species_FK) VALUES
+                    $query2 = "INSERT INTO photo (Photo_ID, Photo_Name, Caption, Species_FK) VALUES
                (DEFAULT, :photoName, :caption, :speciesID)";
-                $statement2 = $pdo->prepare($query2);
-                $statement2->bindValue(':photoName', $name);
-                $statement2->bindValue(':caption', $_POST['caption']);
-                $statement2->bindValue(':speciesID', $_POST['speciesID']);
-                $statement2->execute();
+                    $statement2 = $pdo->prepare($query2);
+                    $statement2->bindValue(':photoName', $name);
+                    $statement2->bindValue(':caption', $_POST['caption']);
+                    $statement2->bindValue(':speciesID', $_POST['speciesID']);
+                    $statement2->execute();
+                }
+
+//        } else {
+//            move_uploaded_file($_FILES["file"]["tmp_name"], "img/" . $_FILES["file"]["name"]);
+//
+//            $query2 = "INSERT INTO photo (Photo_ID, Photo_Name, Caption, Species_FK) VALUES
+//               (DEFAULT, :photoName, :caption, :speciesID)";
+//            $statement2 = $pdo->prepare($query2);
+//            $statement2->bindValue(':photoName', $name);
+//            $statement2->bindValue(':caption', $_POST['caption']);
+//            $statement2->bindValue(':speciesID', $_POST['speciesID']);
+//            $statement2->execute();
+//        }
             }
-        } else {
-            move_uploaded_file($_FILES["file"]["tmp_name"], "img/" . $_FILES["file"]["name"]);
-
-            $query2 = "INSERT INTO photo (Photo_ID, Photo_Name, Caption, Species_FK) VALUES
-               (DEFAULT, :photoName, :caption, :speciesID)";
-            $statement2 = $pdo->prepare($query2);
-            $statement2->bindValue(':photoName', $name);
-            $statement2->bindValue(':caption', $_POST['caption']);
-            $statement2->bindValue(':speciesID', $_POST['speciesID']);
-            $statement2->execute();
         }
+
 
         $msg = $msg . "<br>";
         if ($errorFlag) {
             $smarty->assign('msg', $msg);
             $smarty->display('addSpecies.tpl');
             exit();
+        }
+
+        if (is_array($_POST['checkbox'])) {
+            for ($i = 0; $i < count($_POST['checkbox']); $i++) {
+
+                $checked = $_POST['checkbox'][$i];
+
+                $query2 = "DELETE FROM photo WHERE Photo_ID = '$checked'";
+                $statement2 = $pdo->prepare($query2);
+                $statement2->execute();
+            }
         }
 
         //---- Update Query
@@ -162,7 +178,7 @@ if(!isset($_SESSION['admin'])){
         $query = "SELECT species.Species_ID, .species.Common_Name,
                   species.Name_Derivation, species.Scientific_Name, species.Phylum, species.Sp_Order,
                   species.Family, species.Comments,
-                  species.Wood_Substrate, species.Dimensions, species.Shape_FK, photo.Photo_Name, photo.Caption
+                  species.Wood_Substrate, species.Dimensions, species.Shape_FK, photo.Photo_ID, photo.Photo_Name, photo.Caption
                   FROM species
                   JOIN photo ON
                   species.Species_ID = photo.Species_FK
@@ -188,6 +204,7 @@ if(!isset($_SESSION['admin'])){
                 $shapeID = $row['Shape_FK'];
 //                $photoName = $row['Photo_Name'];
                 $photos[] = array (
+                        "Photo_ID" => $row['Photo_ID'],
                         "Photo_Name" => $row['Photo_Name'],
                         "Caption" => $row['Caption']
 
@@ -210,7 +227,7 @@ if(!isset($_SESSION['admin'])){
                 $dimensions = preg_replace('/\s\s+/', ' ', $dimensions);
                 $smarty->assign("dimensions", $dimensions);
                 $smarty->assign("shapeID", $shapeID);
-                //$smarty->assign("photoName", $photoName);
+//                $smarty->assign("photoName", $photoName);
                 $smarty->assign('photos', $photos);
 
 

@@ -1,4 +1,26 @@
-{include "head.tpl" title="About"}
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-08 19:46:16
+         compiled from "smarty\views\about.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:18625572f75519af9d4-38059143%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    '6fb9bd86d46ffa37ff2e705764ab98ec34bf7c98' => 
+    array (
+      0 => 'smarty\\views\\about.tpl',
+      1 => 1462729575,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '18625572f75519af9d4-38059143',
+  'function' => 
+  array (
+  ),
+  'version' => 'Smarty-3.1.21-dev',
+  'unifunc' => 'content_572f7551a0dba0_08674183',
+  'has_nocache_code' => false,
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_572f7551a0dba0_08674183')) {function content_572f7551a0dba0_08674183($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("head.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('title'=>"About"), 0);?>
+
 <link href="css/about.css" type=text/css rel="stylesheet" />
 
 	<header class="business-header">
@@ -149,15 +171,24 @@
 				"img/Emberger.jpg">
 			</div>
 		</div>
-		{include "footer.tpl"}
+		<?php echo $_smarty_tpl->getSubTemplate ("footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
+
 	</div><!-- /.container -->
 	<!-- jQuery -->
-	<script src="js/jquery.js"></script> <!-- Bootstrap Core JavaScript -->
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/read_more.js"></script>
-		<script>
+	<?php echo '<script'; ?>
+ src="js/jquery.js"><?php echo '</script'; ?>
+> <!-- Bootstrap Core JavaScript -->
+		<?php echo '<script'; ?>
+ src="js/bootstrap.min.js"><?php echo '</script'; ?>
+>
+		<?php echo '<script'; ?>
+ src="js/read_more.js"><?php echo '</script'; ?>
+>
+		<?php echo '<script'; ?>
+>
 			$(document).ready(function(){
 				$('[data-toggle="tooltip"]').tooltip();
 			});
-		</script>
-	</body>
+		<?php echo '</script'; ?>
+>
+	</body><?php }} ?>

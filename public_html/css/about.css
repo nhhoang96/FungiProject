@@ -1,6 +1,6 @@
 /**************************BANNER************************************/
 .business-header {
-    background: url('../img/mushroomontree.jpg') center center no-repeat scroll;
+    background: url('../img/thumbnail_Indian Steps.jpg') center center no-repeat scroll;
     height: 400px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -8,9 +8,13 @@
     -o-background-size: cover;
 }
 /*Customize the text color and shadow color and to optimize text legibility. */
-.tagline {
-    text-shadow: 0 0 20px #000;
+.tagline2 {
+    text-shadow: 2px 2px 10px black;
     color: #fff;
+    padding-top: 160px;
+    text-align: left;
+    float: right;
+    margin-right: 150px;
 }
 u {
     border-bottom: 1px dotted #000;

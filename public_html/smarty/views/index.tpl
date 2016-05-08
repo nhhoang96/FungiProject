@@ -6,10 +6,8 @@
         <div class="row">
             <div class="col-lg-12">
                 {*<h1 class="tagline">Messiah College</h1><small class="tagline">Department of Biological Sciences</small>*}
-                <h2 class="tagline">a website devoted to the <br><strong>identification</strong>
-                    and <strong>appreciation</strong><br> of fungi growing
-                    in close association <br> with living and dead wood</h2>
-            </div>
+                <h2 class="tagline"><strong>Fungi Growing on Wood</strong><br>
+                    Keys, Photographs, and Descriptions <br>of fungi using wood as a substrate</h2>
         </div>
     </div>
 </header>
