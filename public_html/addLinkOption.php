@@ -121,6 +121,8 @@ if (isset($_POST["selectSpecies"])) {
                 $statement->bindValue(':speciesID', $_POST['speciesID']);
                 $statement->bindValue(':optionID', $optionID);
                 $statement->execute();
+
+                $msg3 = "Update Successful!";
             }
         }
     }
