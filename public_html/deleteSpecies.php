@@ -1,7 +1,13 @@
 <?php
-
+session_start();
 include "../private_html/setup.php";
 
+if(!isset($_SESSION['admin'])){
+    $smarty->display('index.tpl');
+    exit();
+}
+
+$smarty->assign("isAdmin", true);
 $smarty->assign("adminActive", "active");
 $smarty->assign("title", "Admin");
 
@@ -28,13 +34,26 @@ if (isset($_POST["deleteSpecies"])) {
         exit();
     }
 
+    //---Query to remove image from img file---
+    $query2 = "SELECT Photo_Name FROM photo WHERE Species_FK = :removedSpecies";
+    $statement2 = $pdo->prepare($query2);
+    $statement2->bindValue(':removedSpecies', $_POST["removedSpecies"]);
+    $statement2->execute();
+
+
+    if ($statement2->rowCount() > 0) {
+        while ($row = $statement2->fetch(PDO::FETCH_ASSOC)) {
+            unlink('img/' . $row['Photo_Name']);
+        }
+    }
+
     //---- Delete Query -----
     $query = "DELETE FROM species WHERE Species_ID = :removedSpecies";
 
     $statement = $pdo->prepare($query);
     $statement->bindValue(':removedSpecies', $_POST["removedSpecies"]);
+    //echo $query . "<br>" . $_POST["removedSpecies"]; exit();
     $statement->execute();
-
     $msg3 = "Removal Successful!";
 }
 
@@ -46,11 +65,11 @@ $statement = $pdo->prepare($query);
 $statement->execute();
 $speciesResults = array();
 if ($statement->rowCount() > 0) {
-while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
-$speciesResults[$row['Species_ID']] = $row['Common_Name'];
-}
+    while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
+        $speciesResults[$row['Species_ID']] = $row['Common_Name'];
+    }
 } else {
-$smarty->assign("error1", 'Database Error');
+    $smarty->assign("error1", 'Database Error');
 }
 $smarty->assign("speciesArray", $speciesResults);
 
@@ -60,12 +79,12 @@ $query = "SELECT Shape_Category_ID, Name FROM shape";
 $statement = $pdo->prepare($query);
 $statement->execute();
 $shapeResults = array();
-if ($statement -> rowCount() > 0){
-while ($row = $statement->fetch(PDO::FETCH_ASSOC)){
-$shapeResults[$row['Shape_Category_ID']] = $row['Name'];
-}
-}else{
-$smarty->assign("error1", 'Database Error');
+if ($statement->rowCount() > 0) {
+    while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
+        $shapeResults[$row['Shape_Category_ID']] = $row['Name'];
+    }
+} else {
+    $smarty->assign("error1", 'Database Error');
 }
 $smarty->assign("shapeArray", $shapeResults);
 
@@ -75,15 +94,15 @@ $query = "SELECT Shape_Category_ID, Name FROM shape";
 $statement = $pdo->prepare($query);
 $statement->execute();
 $shapeResults = array();
-if ($statement -> rowCount() > 0){
-while ($row = $statement->fetch(PDO::FETCH_ASSOC)){
-$shapeResults[$row['Shape_Category_ID']] = $row['Name'];
-}
-}else{
-$smarty->assign("error1", 'Database Error');
+if ($statement->rowCount() > 0) {
+    while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
+        $shapeResults[$row['Shape_Category_ID']] = $row['Name'];
+    }
+} else {
+    $smarty->assign("error1", 'Database Error');
 }
 $smarty->assign("shapeArray", $shapeResults);
-if(isset($msg3)){
+if (isset($msg3)) {
     $smarty->assign('success', $msg3);
 }
 $smarty->display('deleteSpecies.tpl');

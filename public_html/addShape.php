@@ -1,7 +1,14 @@
 <?php
-
+session_start();
 include "../private_html/setup.php";
 
+if(!isset($_SESSION['admin'])){
+    $smarty->display('index.tpl');
+    exit();
+}
+
+
+$smarty->assign("isAdmin", true);
 $smarty->assign("adminActive", "active");
 $smarty->assign("title", "Admin");
 
@@ -50,6 +57,7 @@ if (isset($_POST["addShape"])) {
     $statement->bindValue(':description', $_POST["description"]);
     $statement->bindValue(':image', $_FILES["myimage"]["name"]);
     $statement->execute();
+
 
     $msg3 = "Add Successful!";
 } elseif (isset($_POST["addAdmin"])) {
@@ -184,21 +192,21 @@ if (isset($_POST["addShape"])) {
 //
 //}
 
-    //------ Build Associative Shape Array ------
-    $query = "SELECT Shape_Category_ID, Name FROM shape";
+//------ Build Associative Shape Array ------
+$query = "SELECT Shape_Category_ID, Name FROM shape";
 
-    $statement = $pdo->prepare($query);
-    $statement->execute();
-    $shapeResults = array();
-    if ($statement -> rowCount() > 0){
-        while ($row = $statement->fetch(PDO::FETCH_ASSOC)){
-            $shapeResults[$row['Shape_Category_ID']] = $row['Name'];
-        }
-    }else{
-        $smarty->assign("error1", 'Database Error');
+$statement = $pdo->prepare($query);
+$statement->execute();
+$shapeResults = array();
+if ($statement->rowCount() > 0) {
+    while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
+        $shapeResults[$row['Shape_Category_ID']] = $row['Name'];
     }
-    $smarty->assign("shapeArray", $shapeResults);
-if(isset($msg3)){
+} else {
+    $smarty->assign("error1", 'Database Error');
+}
+$smarty->assign("shapeArray", $shapeResults);
+if (isset($msg3)) {
     $smarty->assign('success', $msg3);
 }
 $smarty->display('addShape.tpl');

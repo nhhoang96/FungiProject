@@ -1,13 +1,13 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Admin
- * Date: 4/26/2016
- * Time: 2:28 PM
- */
-
+session_start();
 include "../private_html/setup.php";
 
+if(!isset($_SESSION['admin'])){
+    $smarty->display('index.tpl');
+    exit();
+}
+
+$smarty->assign("isAdmin", true);
 $smarty->assign("adminActive", "active");
 $smarty->assign("title", "Admin");
 
@@ -57,11 +57,11 @@ $query = "SELECT Shape_Category_ID, Name FROM shape";
 $statement = $pdo->prepare($query);
 $statement->execute();
 $shapeResults = array();
-if ($statement -> rowCount() > 0){
-    while ($row = $statement->fetch(PDO::FETCH_ASSOC)){
+if ($statement->rowCount() > 0) {
+    while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
         $shapeResults[$row['Shape_Category_ID']] = $row['Name'];
     }
-}else{
+} else {
     $smarty->assign("error1", 'Database Error');
 }
 $smarty->assign("shapeArray", $shapeResults);
@@ -82,10 +82,8 @@ if ($statement->rowCount() > 0) {
 
 $smarty->assign("charArray", $speciesResults);
 
-if(isset($msg3)){
+if (isset($msg3)) {
     $smarty->assign('success', $msg3);
 }
 
 $smarty->display('addCharOption.tpl');
-
-

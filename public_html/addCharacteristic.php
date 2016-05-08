@@ -1,15 +1,17 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Admin
- * Date: 4/26/2016
- * Time: 2:28 PM
- */
 
+session_start();
 include "../private_html/setup.php";
 
+if(!isset($_SESSION['admin'])){
+    $smarty->display('index.tpl');
+    exit();
+}
+
+$smarty->assign("isAdmin", true);
 $smarty->assign("adminActive", "active");
 $smarty->assign("title", "Admin");
+
 
 //----- Check if the select characteristic shape submit button was hit ----
 if (isset($_POST["selectCharShape"])) {
@@ -73,39 +75,37 @@ if (isset($_POST["selectCharShape"])) {
 
     $msg3 = "Add Successful!";
 }
-    //------ Build Associative Shape Array ------
-    $query = "SELECT Shape_Category_ID, Name FROM shape";
+//------ Build Associative Shape Array ------
+$query = "SELECT Shape_Category_ID, Name FROM shape";
 
-    $statement = $pdo->prepare($query);
-    $statement->execute();
-    $shapeResults = array();
-    if ($statement -> rowCount() > 0){
-        while ($row = $statement->fetch(PDO::FETCH_ASSOC)){
-            $shapeResults[$row['Shape_Category_ID']] = $row['Name'];
-        }
-    }else{
-        $smarty->assign("error1", 'Database Error');
+$statement = $pdo->prepare($query);
+$statement->execute();
+$shapeResults = array();
+if ($statement->rowCount() > 0) {
+    while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
+        $shapeResults[$row['Shape_Category_ID']] = $row['Name'];
     }
-    $smarty->assign("shapeArray", $shapeResults);
+} else {
+    $smarty->assign("error1", 'Database Error');
+}
+$smarty->assign("shapeArray", $shapeResults);
 
-    //------ Build Associative Characteristic Array ------
-    $query = "SELECT Characteristic_ID, Name FROM characteristic";
+//------ Build Associative Characteristic Array ------
+$query = "SELECT Characteristic_ID, Name FROM characteristic";
 
-    $statement = $pdo->prepare($query);
-    $statement->execute();
-    $speciesResults = array();
-    if ($statement->rowCount() > 0) {
-        while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
-            $speciesResults[$row['Characteristic_ID']] = $row['Name'];
-        }
-    } else {
-        $smarty->assign("error1", 'Database Error');
+$statement = $pdo->prepare($query);
+$statement->execute();
+$speciesResults = array();
+if ($statement->rowCount() > 0) {
+    while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
+        $speciesResults[$row['Characteristic_ID']] = $row['Name'];
     }
+} else {
+    $smarty->assign("error1", 'Database Error');
+}
 
-    $smarty->assign("charArray", $speciesResults);
-if(isset($msg3)){
+$smarty->assign("charArray", $speciesResults);
+if (isset($msg3)) {
     $smarty->assign('success', $msg3);
 }
-    $smarty->display('addCharacteristic.tpl');
-
-
+$smarty->display('addCharacteristic.tpl');

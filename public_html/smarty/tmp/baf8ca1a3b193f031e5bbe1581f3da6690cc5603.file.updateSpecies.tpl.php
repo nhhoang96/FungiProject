@@ -1,13 +1,13 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-03 21:43:07
-         compiled from "smarty\views\updateSpecies.tpl" */ ?>
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-07 04:51:20
+         compiled from "smarty\templates\updateSpecies.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:2356457280e70108af8-25069815%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'baf8ca1a3b193f031e5bbe1581f3da6690cc5603' => 
     array (
-      0 => 'smarty\\views\\updateSpecies.tpl',
-      1 => 1462304585,
+      0 => 'smarty\\templates\\updateSpecies.tpl',
+      1 => 1462589480,
       2 => 'file',
     ),
   ),
@@ -32,7 +32,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'comments' => 0,
     'woodSubstrate' => 0,
     'dimensions' => 0,
-    'photoName' => 0,
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
@@ -98,9 +97,11 @@ $_smarty_tpl->tpl_vars['item']->_loop = true;
                <?php if (isset($_smarty_tpl->tpl_vars['family']->value)) {?>value="<?php echo $_smarty_tpl->tpl_vars['family']->value;?>
 "<?php }?>><br>
         Comment:
-        <input type="text" class="form-control" name="comments"
-               <?php if (isset($_smarty_tpl->tpl_vars['comments']->value)) {?>value="<?php echo $_smarty_tpl->tpl_vars['comments']->value;?>
-"<?php }?>><br>
+        <textarea type="text" class="form-control" name="comments">
+               <?php if (isset($_smarty_tpl->tpl_vars['comments']->value)) {
+echo $_smarty_tpl->tpl_vars['comments']->value;
+}?>
+        </textarea><br>
         Wood Substrate:
         <input type="text" class="form-control" name="woodSubstrate"
                <?php if (isset($_smarty_tpl->tpl_vars['woodSubstrate']->value)) {?>value="<?php echo $_smarty_tpl->tpl_vars['woodSubstrate']->value;?>
@@ -109,33 +110,61 @@ $_smarty_tpl->tpl_vars['item']->_loop = true;
         <input type="text" class="form-control" name="dimensions"
                <?php if (isset($_smarty_tpl->tpl_vars['dimensions']->value)) {?>value="<?php echo $_smarty_tpl->tpl_vars['dimensions']->value;?>
 "<?php }?>><br>
-        Add Image:<br>
-        <?php if (isset($_smarty_tpl->tpl_vars['photoName']->value)) {?>
-            <img class="pic glossarypic" src="img/<?php echo $_smarty_tpl->tpl_vars['photoName']->value;?>
-">
-        <?php }?>
+
         
-        <div class = "uploadDiv">
-        <input type="file" id="file" name="files[]" multiple="multiple" accept="image/*" /><br>
-        Caption: <input type=""text" name = "caption"/><br>
-            <input type="button" value = "Add Photo" id="addDiv"/>
-        </div>
+        
+        
+            
+
+
+        
+        
+            
+                
+                    
+                        
+                            
+                                     
+                        
+                    
+                
+            
+
+        
+
+        <div id="addingImages">
+            <div class="uploadDiv">
+                <input name="file[]" type="file" id="file"/>
+            </div>
+            Caption: <input type="text" class="form-control" name="caption"/><br>
+            </div>
+
+        <input type="button" id="addDiv" value="Add More Photo"/><br><br>
 
         <input type="submit" class="btn btn-default btn-md add form-control" value="Update" name="updateSpecies">
-        <p>-Shape is now updated.-</p>
-        <hr>
+        <input type="submit" name="reset" value="Reset">
+
+        
 
 
-        <?php echo '<script'; ?>
+        <input type="button" id="addDiv" class="btn btn-default form-control sub resetSpace" value="Add Another Photo">
+        <input type="submit" class="btn btn-default btn-md add form-control resetSpace" value="Update" name="updateSpecies">
+        <input type="submit" class="btn btn-danger btn-md add form-control" name="reset" value="Reset">
+
+
+    </form>
+
+
+   <--- JQuery function to upload more images--->
+    <?php echo '<script'; ?>
 >
-            var uploadDiv = "<div class = "uploadDiv">
-                             <input type="file" name="files[]" /><br>
-                             Caption: <input type=""text" name = "caption"/><br>
-                             <input type="button" value = "Add Photo" id="addDiv"/></div>";
-            $("#addDiv").click(function() {
-                $(".uploadDiv : last-of-type").insertAfter(uploadDiv);
-            })
-        <?php echo '</script'; ?>
+        var uploadDiv = "<div class='uploadDiv'><input name='file[]' type='file' id='file'/></div>Caption: <input type='text' class='form-control' name='caption'/><br>"
+
+        $("#addDiv").click(function() {
+            $("#addingImages").append(uploadDiv);
+        });
+
+    <?php echo '</script'; ?>
 >
 
     <?php echo $_smarty_tpl->getSubTemplate ("footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>

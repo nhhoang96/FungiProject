@@ -21,8 +21,10 @@ $stmt->execute();
 if($stmt->rowCount() == 0){
     //Jump back to whatever page you’re on
     $smarty->display("index.tpl");
-    Exit();
+    exit();
 } else {
+    $_SESSION['admin'] = true;
+    $smarty->assign("isAdmin", true);
     //Display to Admin Dashboard tpl
     //echo "You are on the admin Dashboard";
 

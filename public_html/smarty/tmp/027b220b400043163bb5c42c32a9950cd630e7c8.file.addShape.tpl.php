@@ -1,25 +1,25 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-03 04:31:43
-         compiled from "smarty\views\addShape.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:129157156962574c41-26288091%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-07 04:44:15
+         compiled from "smarty\templates\addShape.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:23465572d567f464167-66564673%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '027b220b400043163bb5c42c32a9950cd630e7c8' => 
     array (
-      0 => 'smarty\\views\\addShape.tpl',
-      1 => 1462241771,
+      0 => 'smarty\\templates\\addShape.tpl',
+      1 => 1462304782,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '129157156962574c41-26288091',
+  'nocache_hash' => '23465572d567f464167-66564673',
   'function' => 
   array (
   ),
-  'version' => 'Smarty-3.1.21-dev',
-  'unifunc' => 'content_571569625d3fe5_14471434',
   'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.21-dev',
+  'unifunc' => 'content_572d567f4a0bc2_04136051',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_571569625d3fe5_14471434')) {function content_571569625d3fe5_14471434($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("head.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('title'=>"Admin",'pageName'=>"admin"), 0);?>
+<?php if ($_valid && !is_callable('content_572d567f4a0bc2_04136051')) {function content_572d567f4a0bc2_04136051($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("head.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('title'=>"Admin",'pageName'=>"admin"), 0);?>
 
 
 
@@ -38,12 +38,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
             Image:
         <input type="file" name="myimage"><br>
         <input type="submit" name="addShape"  class="btn btn-default btn-md add form-control" value="Upload">
-        <p>-New shape has been created.-</p>
-
-        <hr>
     </form>
 
-
+    <?php echo $_smarty_tpl->getSubTemplate ("footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
 
 
 </div><?php }} ?>

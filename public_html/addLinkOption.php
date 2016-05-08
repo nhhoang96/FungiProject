@@ -5,9 +5,15 @@
  * Date: 5/3/2016
  * Time: 3:16 PM
  */
-
+session_start();
 include "../private_html/setup.php";
 
+if(!isset($_SESSION['admin'])){
+    $smarty->display('index.tpl');
+    exit();
+}
+
+$smarty->assign("isAdmin", true);
 $smarty->assign("adminActive", "active");
 $smarty->assign("title", "Admin");
 
@@ -49,10 +55,10 @@ if (isset($_POST["selectSpecies"])) {
     $cc = -1;
     $charList = array();
 
-    while ($row=$stmt->fetch(PDO::FETCH_ASSOC)) {
-        if($cc != $row['Characteristic_ID']) {
+    while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+        if ($cc != $row['Characteristic_ID']) {
             $varCount = $varCount + 1;
-            if($cc != - 1) {
+            if ($cc != -1) {
                 $char['options'] = $opt;
                 $charList[$cc] = $char;
             }
@@ -72,12 +78,12 @@ if (isset($_POST["selectSpecies"])) {
     if (isset ($opt)) {
         $char['options'] = $opt;
     }
-        if (isset ($opt)) {
-            $charList[$cc] = $char;
-        }
+    if (isset ($opt)) {
+        $charList[$cc] = $char;
+    }
 
-    $smarty ->assign("charID", $charID);
-    $smarty ->assign("charList", $charList);
+    $smarty->assign("charID", $charID);
+    $smarty->assign("charList", $charList);
 
     $query = "SELECT Option_FK FROM species_option
               WHERE Species_FK = :speciesID";
@@ -98,7 +104,7 @@ if (isset($_POST["selectSpecies"])) {
     }
 
     // ------- Check if the add links submit button was hit
-}elseif (isset($_POST['addLinks'])) {
+} elseif (isset($_POST['addLinks'])) {
 
     //------ Delete old links so there are no duplicates or outdated values -----
 
@@ -149,11 +155,11 @@ $query = "SELECT Shape_Category_ID, Name FROM shape";
 $statement = $pdo->prepare($query);
 $statement->execute();
 $shapeResults = array();
-if ($statement -> rowCount() > 0){
-    while ($row = $statement->fetch(PDO::FETCH_ASSOC)){
+if ($statement->rowCount() > 0) {
+    while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
         $shapeResults[$row['Shape_Category_ID']] = $row['Name'];
     }
-}else{
+} else {
     $smarty->assign("error1", 'Database Error');
 }
 $smarty->assign("shapeArray", $shapeResults);
@@ -173,7 +179,7 @@ if ($statement->rowCount() > 0) {
 }
 
 $smarty->assign("charArray", $speciesResults);
-if(isset($msg3)){
+if (isset($msg3)) {
     $smarty->assign('success', $msg3);
 }
 
