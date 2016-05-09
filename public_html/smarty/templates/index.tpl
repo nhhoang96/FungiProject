@@ -1,4 +1,4 @@
-{include "head.tpl" title="Fungi" pageName=home}
+{include "head.tpl" title="Fungi" pageName="home"}
 
 <header class="index-header">
     <link href="css/index.css" type=text/css rel="stylesheet" />

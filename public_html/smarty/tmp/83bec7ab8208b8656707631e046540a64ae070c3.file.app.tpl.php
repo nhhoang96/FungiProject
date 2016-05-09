@@ -55,7 +55,7 @@ $_smarty_tpl->tpl_vars['shape']->_loop = true;
 </p>
 				</div>
 				<div class="col-lg-6 paragraph_1">
-					<a href="query.php?id=<?php echo $_smarty_tpl->tpl_vars['shape']->value['Shape_Category_ID'];?>
+					<a href="multiKey.php?id=<?php echo $_smarty_tpl->tpl_vars['shape']->value['Shape_Category_ID'];?>
 " class="btn btn-default btn-md form-control space">Key</a>
 					
 					</div>

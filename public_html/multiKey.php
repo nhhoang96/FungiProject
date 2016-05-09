@@ -50,34 +50,16 @@ $char['options'] = $opt;
 if (isset($char)){
 $charList[$cc] = $char;
 }
+
 $smarty ->assign("charID", $charID);
 $smarty ->assign("charList", $charList);
-$var = 0;
+
 
 //<!--Process form-->
 $urlToBePassed = array();
 $count = 1;
 
-//------ Queries for list of Characteristics Scientific Name -------
-//$query3 = "SELECT DISTINCT k.Common_Name, Species_ID, count(*) AS num
-//			FROM species_option LEFT JOIN species k ON Species_ID = Species_FK
-//			GROUP BY Species_ID";
-//$stmt3 = $pdo->prepare($query3);
-//$stmt3->execute();
-////----- Populate the rows with url of Scientific Names of Species----
-//while($row2=$stmt3->fetch(PDO::FETCH_ASSOC)){
-//	if ($row2['num'] == 7){
-//
-//	$urlToBePassed[$count] = urlencode($row2['Common_Name']);
-//	$commonName[$count] = $row2['Common_Name'];
-//		$count = $count + 1;
-//	}
-//}
-//$smarty->assign("urlToBePassed",$urlToBePassed);
-//$smarty->assign("commonName", $commonName);
-
 // ----- Check if Submit button is clicked ----
-//if (isset($_POST['test'])) {
 if (isset($_POST["selectSpecies"])) {
 
 	$c = count($_POST) - 1;
@@ -98,33 +80,33 @@ if (isset($_POST["selectSpecies"])) {
 
 }
 
-
-
-	//------ Queries for shortened list of species -------
-	$query = "SELECT DISTINCT Species_ID, k.Common_Name
+	//------ Queries for shortened list of species based on chosen options-------
+	$query = "SELECT DISTINCT Species_ID, k.Scientific_Name
 			FROM species_option LEFT JOIN species k ON Species_ID = Species_FK
 			WHERE $build
 			GROUP BY Species_ID";
 
 	$stmt = $pdo->prepare($query);
 	$stmt->execute();
-	//----- Populate the rows with url of Scientific Names of Species----
-	echo $build;
-	echo $stmt->rowCount();
+
+	//----- Populate the rows with url of Scientific Names of chosen species----
+
+	$scientificName = array();
+
 	if ($stmt->rowCount() > 0) {
 		while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 			//if ($row2['Scientific_Name'] == )
-			$urlToBePassed[$count] = urlencode($row['Common_Name']);
-			$commonName[$count] = $row['Common_Name'];
+			$urlToBePassed[$count] = urlencode($row['Scientific_Name']);
+			$scientificName[$count] = $row['Scientific_Name'];
 			$count = $count + 1;
-
 		}
 	}else{
 
 		$smarty->assign("error1", 'Database Error');
 	}
+
 	$smarty->assign("urlToBePassed",$urlToBePassed);
-	$smarty->assign("commonName", $commonName);
+	$smarty->assign("scientificName", $scientificName);
 } else {
 
 	//------ Queries for full list of species -------
@@ -134,20 +116,20 @@ if (isset($_POST["selectSpecies"])) {
 	$stmt4->bindParam(':parameter2', $id, PDO::PARAM_STR);
 	$stmt4->execute();
 
-	$common = array();
+	$sciName = array();
 	$url = array();
 	$count1 = 1;
 
+	//---- Populate rows with url of full list of species ----
 	while($row2=$stmt4->fetch(PDO::FETCH_ASSOC)){
-		$url[$count1] = urlencode($row2['Common_Name']);
-		$common[$count1] = $row2['Common_Name'];
+		$url[$count1] = urlencode($row2['Scientific_Name']);
+		$sciName[$count1] = $row2['Scientific_Name'];
 		$count1= $count1 + 1;
 	}
-	$smarty->assign("common", $common);
+
+	$smarty->assign("sciName", $sciName);
 	$smarty->assign("url", $url);
 }
-if(isset($msg3)){
-	$smarty->assign('success', $msg3);
-}
-$smarty->display('query.tpl');
+
+$smarty->display('multiKey.tpl');
 ?>

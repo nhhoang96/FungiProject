@@ -11,6 +11,6 @@ include "../private_html/setup.php";
 $smarty->assign("appActive", "active");
 $smarty->assign("title", "Multi-Access Key");
 
-$smarty->display('key.tpl');
+$smarty->display('XXXXXkey.tpl');
 
 ?>
