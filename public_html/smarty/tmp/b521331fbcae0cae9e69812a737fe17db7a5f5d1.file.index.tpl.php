@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-08 23:54:25
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-09 03:22:55
          compiled from "smarty\templates\index.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:7437572fb04c4b3546-62746659%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'b521331fbcae0cae9e69812a737fe17db7a5f5d1' => 
     array (
       0 => 'smarty\\templates\\index.tpl',
-      1 => 1462744453,
+      1 => 1462756974,
       2 => 'file',
     ),
   ),
@@ -51,7 +51,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                     website are often referred to as <u data-toggle="tooltip" data-placement="top" title="Fungi that decays wood
                     by attacking the carbohydrates in wood and decaying lignin">lignicolous fungi</u>.
                     Most species are illustrated with multiple images to show as many diagnostic details as possible.</p>
-                <p><a class="btn btn-default btn-md" href="app.php">Try Application
+                <p><a class="btn btn-default btn-lg" href="app.php">Choose Shape
                         &raquo;</a></p>
                 <hr>
 
