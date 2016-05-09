@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-09 00:03:58
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-09 00:10:57
          compiled from "smarty\templates\about.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1233572fb048b1f315-48567694%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'c65b62f8b07474d2764e2e8cea090bf98ea80a84' => 
     array (
       0 => 'smarty\\templates\\about.tpl',
-      1 => 1462745037,
+      1 => 1462745455,
       2 => 'file',
     ),
   ),
@@ -153,9 +153,22 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 				presented itself to pursue this project. I started work on the web site in 2003.</p>
 			</div>
 			<div class="col-sm-4">
-				<img alt="" class="img-rounded img-responsive img-right" src=
-				"img/Emberger.jpg">
+				<img alt="" class="img-rounded img-responsive img-right" src="img/Emberger.jpg">
+			</div>
 		</div>
+		<hr>
+
+		<div class="row">
+
+			<div class="col-sm-6">
+
+				<h2>The Development Team</h2>
+
+				<p>This is the development team.</p>
+			</div>
+			<div class="col-sm-6">
+				<img alt="" class="img-rounded img-responsive img-right" src="img/Emberger.jpg">
+			</div>
 		<?php echo $_smarty_tpl->getSubTemplate ("footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
 
 	</div><!-- /.container -->
