@@ -80,7 +80,9 @@
                 {/if}
             {/if}
         {/if}
-        **Check boxes to delete image
+
+        <p>**Check boxes to delete image</p>
+
 <div id="addingImages">
             <div class="uploadDiv">
                 <input name="file[]" type="file" id="file"/>
