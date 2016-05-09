@@ -22,7 +22,7 @@
         {if !isset($speciesID)}
             <input type="submit" class="btn btn-default btn-md add form-control" value="Select" name="selectSpecies">
         {/if}
-
+        {if isset($speciesID)}
         Scientific Name:
         <input type="text" class="form-control" name="scientificName"
                {if isset($scientificName)}value="{$scientificName}"{/if}><br>
@@ -90,7 +90,7 @@
         <input type="button" id="addDiv" class="btn btn-default form-control sub resetSpace" value="Add Another Photo">
         <input type="submit" class="btn btn-default btn-md add form-control resetSpace" value="Update" name="updateSpecies">
         <input type="submit" class="btn btn-danger btn-md add form-control" name="reset" value="Reset">
-
+{/if}
     </form>
 
 

@@ -1,9 +1,3 @@
-/*footer {*/
-    /*border-top: 0;*/
-/*}*/
-/*.container {*/
-    /*border-bottom: none;*/
-/*}*/
 /**********************Admin Navigation************************/
 .adminNavBar {
     background-color: darkolivegreen;
@@ -26,6 +20,10 @@ a.active {
 }
 .dropdown-menu li > a:hover, .dropdown-menu li > a:focus, .dropdown-submenu:hover > a {
     background-color: darkolivegreen;
+}
+
+#alert {
+    text-shadow: 2px 2px 2px #1d9b6c;
 }
 /***********************UPDATE SPECIES*********************************/
 .sub {

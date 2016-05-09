@@ -1,9 +1,9 @@
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 
 
 <h2>Administrator Panel Guide</h2>
-	<h6>*** To close the user guide, click on the exclamation mark next to control panel ***</h6>
+<h6>*** To close the user guide, click on the exclamation mark next to control panel ***</h6>
 <select id="helpOption">
 	<option value="empty"><--Choose a Panel Guide--></option>
 	<option value="addSpecies">Add a Species</option>
@@ -26,7 +26,7 @@
 			are absolutely required to enter a new species.</li>
 		<li>Click, Add, and you'll see a small message below confirming the addition</li>
 	</ol>
-	</div>
+</div>
 <div class="helpText" id="deleteSpecies">
 	<h3>Deleting a Species</h3>
 	<p>To delete a species, first</p>
@@ -124,8 +124,8 @@
 </div>
 
 <script>$("#helpOption").change(function(){
-	$(".helpText").hide();
-	var help = "#" + $("#helpOption option:selected").val();
-			$(help).show();
-})
+		$(".helpText").hide();
+		var help = "#" + $("#helpOption option:selected").val();
+		$(help).show();
+	})
 </script>

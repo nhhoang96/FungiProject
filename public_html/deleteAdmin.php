@@ -29,7 +29,7 @@ if (isset($_POST["deleteAdmin"])) {
     if ($errorFlag) {
         $msg = $msg . "<br>";
         $smarty->assign('msg', $msg);
-        $smarty->display('admin.tpl');
+        $smarty->display('XXXXadmin.tpl');
         exit();
     }
 

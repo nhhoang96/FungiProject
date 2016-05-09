@@ -43,15 +43,16 @@
 	</div>
 </nav>
 
-<form action ="{$serverID}" method="post">
+<form action="query.php?id={$id}" method="post">
 	{foreach $charList as $char}
 		<div class="panel panel-default">
 			<div class="panel-heading">
 				<h4 class="panel-title">
 					{foreach $charID as $id}
 						{if $char.ID == $id}
-							<a data-toggle="collapse" data-parent="#accordion" href="#collapse{$id}"	><span class="glyphicon glyphicon-th-list">
-							</span> {$char.Name} </a>
+							<a data-toggle="collapse" data-parent="#accordion" href="#collapse{$id}" ><span class="glyphicon glyphicon-th-list">
+							</span> {$char.Name}
+							</a>
 						{/if}
 					{/foreach}
 
@@ -73,23 +74,32 @@
 
 		</div>
 	{/foreach}
-	<input  type = "submit" name = "submit" value = "Submit">
+	<div>
+		{*<input  type = "submit" name = "test" value = "Submit">*}
+		<input type="submit" class="btn btn-default btn-md add form-control" value="Remove" name="deleteAdmin">
+	</div>
 
 </form>
-<h3>Species:</h3> <ul>
-	{foreach $urlToBePassed as $url}
-	{foreach $commonName as $common}
-	<li><a href='result.php?name={$url}'>{$common}</a>
-		{/foreach}
-		{/foreach}
-	</li>
-</ul>
-<br> All species will display until selections are made.<br><h3>Species:</h3> <ul>
-	{foreach $urlToBePassed as $url}
-	<li>{$url}
-		{/foreach}
-	</li>
+{if isset($success)}<h3>{$success}</h3>{/if}
+{if isset($commonName)}
+	<h3>Species:</h3> <ul>
+	{for $i = 1 to {$commonName|@count}}
+		<li><a href='result.php?name={$urlToBePassed[{$i}]}'> {$commonName[{$i}]} </a>
 
+		</li>
+	{/for}
 </ul>
+{/if}
 
+<br>
+
+{if isset($common)}
+	All species will display until selections are made.<br><h3>Species:</h3> <ul>
+
+	{for $i = 1 to {$common|@count}}
+		<li><a href='result.php?name={$url[{$i}]}'> {$common[{$i}]} </a>
+		</li>
+	{/for}
+</ul>
+{/if}
 </html>
