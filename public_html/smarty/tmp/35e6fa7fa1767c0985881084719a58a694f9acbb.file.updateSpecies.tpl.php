@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-09 06:09:24
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-09 20:18:08
          compiled from "smarty\templates\updateSpecies.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:647572f9e4284b323-65037815%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '35e6fa7fa1767c0985881084719a58a694f9acbb' => 
     array (
       0 => 'smarty\\templates\\updateSpecies.tpl',
-      1 => 1462766958,
+      1 => 1462767122,
       2 => 'file',
     ),
   ),
@@ -148,7 +148,7 @@ $_smarty_tpl->tpl_vars['pic']->_loop = true;
                 <?php }?>
             <?php }?>
         <?php }?>
-        <p> </p>
+
         <p>**Check boxes to delete image</p>
 
 <div id="addingImages">

@@ -25,6 +25,10 @@ a.active {
 #alert {
     text-shadow: 2px 2px 2px #1d9b6c;
 }
+
+#warning {
+    text-shadow: 2px 2px 2px #ff0000;
+}
 /***********************UPDATE SPECIES*********************************/
 .sub {
     background-color: #556B2f;

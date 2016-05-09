@@ -3,6 +3,7 @@
 <div class="container">
 
     {include "adminNav.tpl"}
+    {if isset($msg)}<h3 id="warning">{$msg}</h3>{/if}
 
     <!--Add new species-->
     <form action="addSpecies.php" method="post" id="newSpecies" enctype="multipart/form-data">
@@ -47,6 +48,7 @@
         <input type="button" id="addDiv" class="btn btn-default form-control sub resetSpace" value="Add More Photo"/>
 
         <input type="submit" class="btn btn-default btn-md add form-control" value="Add" name="addSpecies">
+
     </form>
 
     <script>
@@ -61,4 +63,5 @@
     {include "footer.tpl"}
 
 </div>
+
 
