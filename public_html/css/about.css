@@ -34,3 +34,14 @@ footer {
 a, a:hover, a:focus  {
     color: darkolivegreen;
 }
+/*******************************LINKS*****************/
+.links {
+    text-decoration: underline;
+    font-weight: bold;
+    color: #556b2f;
+}
+/***************ACKNOWLEGMENTS****************************/
+.team {
+    height: 350px;
+    width: 550px;
+}

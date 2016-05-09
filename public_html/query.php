@@ -78,40 +78,50 @@ $count = 1;
 
 // ----- Check if Submit button is clicked ----
 //if (isset($_POST['test'])) {
-if (isset($_POST["deleteAdmin"])) {
-	$msg3 = "Add Successful!";
+if (isset($_POST["selectSpecies"])) {
+
 	$c = count($_POST) - 1;
 	$firstTime = 1;
 	$build = "";
-	foreach($_POST as $key=>$val){
-		if(strcmp("$val", "Submit") == 0){}
-		else{
-			if($firstTime == 1){
-				$build = $build."Option_FK = ".$val;
-			} else {
-				$build = $build." OR Option_FK = ".$val;
-			}
-			$firstTime = $firstTime + 1;
-		}
+	foreach ($_POST as $key => $val) {
 
+		if(strcmp("$val", "Select") == 0){}
+		else{
+		if ($firstTime == 1) {
+
+			$build = $build . "Option_FK = " . $val;
+		} else {
+			$build = $build . " OR Option_FK = " . $val;
+		}
+		$firstTime = $firstTime + 1;
 	}
 
+}
+
+
+
 	//------ Queries for shortened list of species -------
-	$query3 = "SELECT DISTINCT Species_ID, k.Common_Name
+	$query = "SELECT DISTINCT Species_ID, k.Common_Name
 			FROM species_option LEFT JOIN species k ON Species_ID = Species_FK
-			WHERE :options
+			WHERE $build
 			GROUP BY Species_ID";
-	$stmt3 = $pdo->prepare($query3);
-	$stmt3->bindParam(':options', $build);
-	$stmt3->execute();
+
+	$stmt = $pdo->prepare($query);
+	$stmt->execute();
 	//----- Populate the rows with url of Scientific Names of Species----
+	echo $build;
+	echo $stmt->rowCount();
+	if ($stmt->rowCount() > 0) {
+		while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+			//if ($row2['Scientific_Name'] == )
+			$urlToBePassed[$count] = urlencode($row['Common_Name']);
+			$commonName[$count] = $row['Common_Name'];
+			$count = $count + 1;
 
-	while($row2=$stmt3->fetch(PDO::FETCH_ASSOC)){
-		//if ($row2['Scientific_Name'] == )
+		}
+	}else{
 
-		$urlToBePassed[$count] = urlencode($row2['Common_Name']);
-		$commonName[$count] = $row2['Common_Name'];
-		$count = $count + 1;
+		$smarty->assign("error1", 'Database Error');
 	}
 	$smarty->assign("urlToBePassed",$urlToBePassed);
 	$smarty->assign("commonName", $commonName);

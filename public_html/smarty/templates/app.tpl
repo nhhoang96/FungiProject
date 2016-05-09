@@ -2,6 +2,13 @@
 
 	<div class="container">
 
+		<div class="page-header">
+			<h1 class="glossarytitle">Shape Key</h1>
+		</div>
+		<p>The Fungi in this database are organized in 10 categories. Read and choose the descriptions and choose the shape
+		that best fits your specimen.</p>
+		<hr>
+
 		{foreach $shapeData as $shape}
 
 			<div class="col-lg-6 shape">

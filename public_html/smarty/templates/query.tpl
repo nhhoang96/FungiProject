@@ -76,7 +76,7 @@
 	{/foreach}
 	<div>
 		{*<input  type = "submit" name = "test" value = "Submit">*}
-		<input type="submit" class="btn btn-default btn-md add form-control" value="Remove" name="deleteAdmin">
+		<input type="submit" class="btn btn-default btn-md add form-control" value="Select" name="selectSpecies">
 	</div>
 
 </form>

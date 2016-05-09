@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-09 00:39:01
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-09 06:36:58
          compiled from "smarty\templates\userGuide.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:18999572fb04993ef61-84016972%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'e639650dfc9ad8d07810da962bc68828dcea5583' => 
     array (
       0 => 'smarty\\templates\\userGuide.tpl',
-      1 => 1462747134,
+      1 => 1462768576,
       2 => 'file',
     ),
   ),
@@ -20,13 +20,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_572fb049947506_03553140')) {function content_572fb049947506_03553140($_smarty_tpl) {?>
-	<?php echo '<script'; ?>
+<?php echo '<script'; ?>
  src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"><?php echo '</script'; ?>
 >
 
 
 <h2>Administrator Panel Guide</h2>
-	<h6>*** To close the user guide, click on the exclamation mark next to control panel ***</h6>
+<h6>*** To close the user guide, click on the exclamation mark next to control panel ***</h6>
 <select id="helpOption">
 	<option value="empty"><--Choose a Panel Guide--></option>
 	<option value="addSpecies">Add a Species</option>
@@ -49,7 +49,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 			are absolutely required to enter a new species.</li>
 		<li>Click, Add, and you'll see a small message below confirming the addition</li>
 	</ol>
-	</div>
+</div>
 <div class="helpText" id="deleteSpecies">
 	<h3>Deleting a Species</h3>
 	<p>To delete a species, first</p>
@@ -148,10 +148,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 <?php echo '<script'; ?>
 >$("#helpOption").change(function(){
-	$(".helpText").hide();
-	var help = "#" + $("#helpOption option:selected").val();
-			$(help).show();
-})
+		$(".helpText").hide();
+		var help = "#" + $("#helpOption option:selected").val();
+		$(help).show();
+	})
 <?php echo '</script'; ?>
 >
 <?php }} ?>

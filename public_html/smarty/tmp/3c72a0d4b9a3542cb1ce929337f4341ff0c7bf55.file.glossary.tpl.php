@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-08 23:31:52
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-09 06:43:13
          compiled from "smarty\templates\glossary.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:26616572fb048429bc3-06442169%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '3c72a0d4b9a3542cb1ce929337f4341ff0c7bf55' => 
     array (
       0 => 'smarty\\templates\\glossary.tpl',
-      1 => 1462743056,
+      1 => 1462768991,
       2 => 'file',
     ),
   ),
@@ -15,6 +15,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.21-dev',
+  'unifunc' => 'content_572fb04847e8e8_93974022',
   'variables' => 
   array (
     'terms' => 0,
@@ -22,8 +24,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'image' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.21-dev',
-  'unifunc' => 'content_572fb04847e8e8_93974022',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_572fb04847e8e8_93974022')) {function content_572fb04847e8e8_93974022($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("head.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('title'=>"Glossary",'pageName'=>"glossary"), 0);?>
 
