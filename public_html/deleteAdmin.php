@@ -35,7 +35,7 @@ if (isset($_POST["deleteAdmin"])) {
 
     //------ Delete Query -----
 
-    $query = "DELETE FROM Administrator WHERE Admin_ID = :removeAdmin";
+    $query = "DELETE FROM administrator WHERE Admin_ID = :removeAdmin";
 
     $statement = $pdo->prepare($query);
     $statement->bindValue(':removeAdmin', $_POST["removeAdmin"]);
@@ -45,7 +45,7 @@ if (isset($_POST["deleteAdmin"])) {
 }
 
 //------ Build Associative Admin Array ------
-$query = "SELECT Admin_ID, Username FROM Administrator";
+$query = "SELECT Admin_ID, Username FROM administrator";
 
 $statement = $pdo->prepare($query);
 $statement->execute();
