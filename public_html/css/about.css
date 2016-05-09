@@ -1,26 +1,29 @@
-/* Header Image Background - Change the URL below to your image path (example: ../images/background.jpg) */
-
-body {
-	padding-top: 50px;
-}
-.dev-padding {
-	/*That's us! **/
-	padding-top: 10px;
-	padding-bottom: 10px;
-}
+/**************************BANNER************************************/
 .business-header {
-    background: url('../img/mushroomontree.jpg') center center no-repeat scroll;
+    background: url('../img/thumbnail_Indian Steps.jpg') center center no-repeat scroll;
     height: 400px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
 }
-/* Customize the text color and shadow color and to optimize text legibility. */
-
+/*Customize the text color and shadow color and to optimize text legibility.*/
+.tagline2 {
+    text-shadow: 20px 20px 20px black;
+    color: #fff;
+    font-weight: normal;
+    padding-top: 160px;
+    text-align: left;
+    float: right;
+    margin-right: 100px;
+}
 .tagline {
     text-shadow: 0 0 20px #000;
     color: #fff;
+}
+u {
+    border-bottom: 1px dotted #000;
+    text-decoration: none;
 }
 .img-center {
     margin: 0 auto;

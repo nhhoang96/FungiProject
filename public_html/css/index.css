@@ -1,146 +1,46 @@
-/*
-.shape-box {
-		width: 200px;
-		height: 325px;
-		
-		padding: 5px;
-		background-color: #CCCCFF;
-		float:left;
-		margin: 25px;
-	}
-	
-	#left {
-		margin-left: 150px;
-	}
-	
-	#nest{
-		content: url("../img/birds nest.jpg");
-		width: 150px;
-		height: 150px;
-		margin-left: 25px;
-	}
-	.text{
-		color: #000033;
-		text-align: center;
-	}
-	
-	.text:hover {
-		color: white;
-		text-decoration: underline;
-		
-	}
-	
-	.description{
-		border: 2px solid black;
-		width: 500px;
-		height: 100px;
-		visibility: hidden;
-	}
-	
-	#description-box{
-		position: fixed;
-		bottom: 3px;
-		left: 12.5%;
-		height: 150px;
-		width: 75%;
-		border: 2px solid black;
-		background: white;
-	}
-	
-	.button-wrap{
-		text-align: center;
-	}
-	
-	.long-title{
-		font-size: 23px;
-	}
-	
-	#des-box-top {
-		width: 100%;
-		height: 25px;
-		background: #00005C;
-	}
-	
-	#des-title {
-		color: white;
-		margin-top: 0;
-	}
-	
-	.des-wrapper {
-		!*margin-left: 20%;*!
-		margin: 0px auto;
-		width: 1000px;
-		!*padding-left: 50px;
-		padding-right: 50px;*!
-		height: 1500px;
-		background-color: white; !*#FFD685;*!
-	}
-	
-	body {
-		margin: 0px;
-		padding: 0px;
-		background: #D7D3B8;
-		text-align: center;
-		text-indent: 10px;
-		font-family: Verdana, Arial, Helvetica, sans-serif;
-		font-size: 13px;
-		color: #283851;
-	}
-	
-	!************* MENU ************!
-
-	#menu {
-		width: 1000px;
-		margin: 0px auto;
-		text-align: left;
-		padding: 5px 0px 5px 0px;
-		background-color:  #3C5277;
-	}
-
-	#menu ul {
-		margin: 0px;
-		padding: 0px;
-		list-style: none;
-		text-align: center;
-	}
-
-	#menu li {
-		display: inline;
-	}
-
-	#menu a {
-		padding: 5px 15px;
-		text-transform: uppercase;
-		text-decoration: none;
-		font-size: 14px;
-		font-weight: bold;
-		text-align: left;
-		color: #D7D3B8;
-	}
-
-	#menu a:hover {
-		color: #FFFFFF;
-
-	}
-	
-	#header {
-		width: 1000px;
-		height: 115px;
-		margin: 0px auto;
-		background:  url('img/header.jpg');
-	}
-*/
-
-.tagline {
-	text-shadow: 0 0 10px #000;
-	color: #fff;
-	padding-top: 100px;
+/********************NAVIGATION****************************/
+a, a:hover, a:focus {
+	color: white;
+	text-decoration: none;
 }
-
+.nav > li > a:hover, .nav > li > a:focus {
+	background-color:black;
+}
+#admin li.admin, #app li.appnav, #species li.speciesnav,#about li.about, #glossary li.glossary  {
+	/*background-color: rgba(255,255,255,.3);*/
+	background-color: darkolivegreen;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+	background-color: darkolivegreen;
+}
+.form-group {
+	padding: 0;
+}
+u {
+	border-bottom: 1px dotted #000;
+	text-decoration: none;
+}
+/*********************BANNER*****************************/
+.index-header {
+	height: 400px;
+	background: url('../img/newHomeFungi.jpg') center center no-repeat scroll;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+	/*margin-top: -30px;*/
+}
+.tagline {
+	text-shadow: 20px 20px 20px black;
+	color: #fff;
+	padding-top: 180px;
+	margin-right: 170px;
+	float: right;
+}
 .img-center {
 	margin: 0 auto;
 }
-
+/**********************FOOTER****************************/
 footer {
 	margin: 50px 0;
 }

@@ -1,26 +1,25 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-04-07 02:05:46
-         compiled from "smarty\views\footer.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:430056e9e7d0cbae72-88668611%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-07 04:40:28
+         compiled from "smarty\templates\footer.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:31914572d559c131419-35636997%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '27031e6d405fcee4389e3d50d47cb1ed3875535c' => 
     array (
-      0 => 'smarty\\views\\footer.tpl',
-      1 => 1459987525,
+      0 => 'smarty\\templates\\footer.tpl',
+      1 => 1462223588,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '430056e9e7d0cbae72-88668611',
+  'nocache_hash' => '31914572d559c131419-35636997',
   'function' => 
   array (
   ),
-  'version' => 'Smarty-3.1.21-dev',
-  'unifunc' => 'content_56e9e7d0cc1401_36232655',
   'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.21-dev',
+  'unifunc' => 'content_572d559c133d92_48861079',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_56e9e7d0cc1401_36232655')) {function content_56e9e7d0cc1401_36232655($_smarty_tpl) {?>
-<!-- Footer -->
+<?php if ($_valid && !is_callable('content_572d559c133d92_48861079')) {function content_572d559c133d92_48861079($_smarty_tpl) {?><!-- Footer -->
 
 <footer>
     <div class="row">
@@ -28,5 +27,5 @@ $_valid = $_smarty_tpl->decodeProperties(array (
             <hr>
             <p>Copyright &copy; Messiah College</p>
         </div>
-    </div><!-- /.row -->
+    </div>
 </footer><?php }} ?>
