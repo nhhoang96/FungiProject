@@ -43,4 +43,4 @@
     <li><a class="tab" href="logout.php">Logout</a></li>
 </ul>
 
-{if isset($success)}<h3>{$success}</h3>{/if}
+{if isset($success)}<h3 id="alert">{$success}</h3>{/if}

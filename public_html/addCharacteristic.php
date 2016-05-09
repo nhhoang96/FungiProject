@@ -59,7 +59,7 @@ if (isset($_POST["selectCharShape"])) {
     if ($errorFlag) {
         $msg = $msg . "<br>";
         $smarty->assign('msg', $msg);
-        $smarty->display('admin.tpl');
+        $smarty->display('XXXXadmin.tpl');
         exit();
     }
 
