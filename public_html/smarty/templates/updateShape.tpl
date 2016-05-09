@@ -25,7 +25,7 @@
         {if !isset($editShapeID)}
             <input type="submit" class="btn btn-default btn-md add form-control" value="Select" name="selectShape">
         {/if}
-
+        {if isset($editShapeID)}
         Name:
         <input type="text" class="form-control" name="updateShapeName"
                {if isset($editShapeName)}value="{$editShapeName}"{/if}>
@@ -45,7 +45,9 @@
 
         <input type="submit" class="btn btn-default btn-md add form-control resetSpace" value="Update" name="updateShape">
         <input type="submit" class="btn btn-danger btn-md add form-control" name="reset" value="Reset">
+        {/if}
     </form>
+
 
     {include "footer.tpl"}
 

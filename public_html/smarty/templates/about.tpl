@@ -131,9 +131,22 @@
 				presented itself to pursue this project. I started work on the web site in 2003.</p>
 			</div>
 			<div class="col-sm-4">
-				<img alt="" class="img-rounded img-responsive img-right" src=
-				"img/Emberger.jpg">
+				<img alt="" class="img-rounded img-responsive img-right" src="img/Emberger.jpg">
+			</div>
 		</div>
+		<hr>
+
+		<div class="row">
+
+			<div class="col-sm-6">
+
+				<h2>The Development Team</h2>
+
+				<p>This is the development team.</p>
+			</div>
+			<div class="col-sm-6">
+				<img alt="" class="img-rounded img-responsive img-right" src="img/Emberger.jpg">
+			</div>
 		{include "footer.tpl"}
 	</div><!-- /.container -->
 	<!-- jQuery -->

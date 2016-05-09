@@ -37,7 +37,7 @@ if (isset($_POST["deleteShape"])) {
     // ------ Queries ------
 
     //---Query to remove image from img file---
-    $query2 = "SELECT Image FROM Shape WHERE Shape_Category_ID = :shapeID";
+    $query2 = "SELECT Image FROM shape WHERE Shape_Category_ID = :shapeID";
     $statement2 = $pdo->prepare($query2);
     $statement2->bindValue(':shapeID', $_POST["shapeID"]);
     $statement2->execute();
@@ -52,6 +52,8 @@ if (isset($_POST["deleteShape"])) {
 
     $statement = $pdo->prepare($query);
     $statement->bindValue(':shapeID', $_POST["shapeID"]);
+
+
     $statement->execute();
 
     $msg3 = "Delete Successful!";

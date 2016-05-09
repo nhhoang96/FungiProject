@@ -17,10 +17,6 @@
             {/if}
         </select><br>
 
-        {if !isset($charShapeID)}
-            <input type="submit" class="btn btn-default btn-md add form-control" value="Select" name="selectCharShape">
-        {/if}
-
         Name:
         <input type="text" class="form-control" name="newCharName"><br>
         <input type="submit" class="btn btn-default btn-md add form-control" value="Add" name="addChar">

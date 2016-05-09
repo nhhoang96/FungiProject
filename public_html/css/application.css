@@ -18,12 +18,13 @@
     padding: 10px 10px 10px 10px;
 }
 .left {
-    float: left;
-}
+     float: left;
+ }
 .right {
     padding-left: 10px;
     margin: 0;
-    height: 280px;
+    height: 300px;;
+
 }
 .space {
     margin-bottom: 10px;
