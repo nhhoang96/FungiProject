@@ -36,7 +36,7 @@ if (isset($_POST["addCharOpt"])) {
     if ($errorFlag) {
         $msg = $msg . "<br>";
         $smarty->assign('msg', $msg);
-        $smarty->display('admin.tpl');
+        $smarty->display('XXXXadmin.tpl');
         exit();
     }
 

@@ -29,7 +29,7 @@
                     website are often referred to as <u data-toggle="tooltip" data-placement="top" title="Fungi that decays wood
                     by attacking the carbohydrates in wood and decaying lignin">lignicolous fungi</u>.
                     Most species are illustrated with multiple images to show as many diagnostic details as possible.</p>
-                <p><a class="btn btn-default btn-md" href="app.php">Try Application
+                <p><a class="btn btn-default btn-lg" href="app.php">Choose Shape
                         &raquo;</a></p>
                 <hr>
 

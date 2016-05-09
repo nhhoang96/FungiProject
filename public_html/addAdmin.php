@@ -49,7 +49,7 @@ if($stmt->rowCount() == 0){
         if ($errorFlag) {
             $msg = $msg . "<br>";
             $smarty->assign('msg', $msg);
-            $smarty->display('admin.tpl');
+            $smarty->display('XXXXadmin.tpl');
             exit();
         }
 
@@ -81,7 +81,7 @@ if($stmt->rowCount() == 0){
 //    if ($errorFlag) {
 //        $msg = $msg . "<br>";
 //        $smarty->assign('msg', $msg);
-//        $smarty->display('admin.tpl');
+//        $smarty->display('XXXXadmin.tpl');
 //        exit();
 //    }
 //
@@ -141,7 +141,7 @@ if($stmt->rowCount() == 0){
 //        if ($errorFlag) {
 //            $msg = $msg . "<br>";
 //            $smarty->assign('msg', $msg);
-//            $smarty->display('admin.tpl');
+//            $smarty->display('XXXXadmin.tpl');
 //            exit();
 //        }
 //
@@ -199,7 +199,7 @@ if($stmt->rowCount() == 0){
 //        if ($errorFlag) {
 //            $msg = $msg . "<br>";
 //            $smarty->assign('msg', $msg);
-//            $smarty->display('admin.tpl');
+//            $smarty->display('XXXXadmin.tpl');
 //            exit();
 //        }
 //

@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-08 23:31:53
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-09 06:36:58
          compiled from "smarty\templates\adminNav.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:2980572fb04995eb71-57780602%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'c66c1355a38cef2cdcf8db3ef045828486d5edc2' => 
     array (
       0 => 'smarty\\templates\\adminNav.tpl',
-      1 => 1462743056,
+      1 => 1462768576,
       2 => 'file',
     ),
   ),
@@ -15,13 +15,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.21-dev',
+  'unifunc' => 'content_572fb04996ef20_32501265',
   'variables' => 
   array (
     'success' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.21-dev',
-  'unifunc' => 'content_572fb04996ef20_32501265',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_572fb04996ef20_32501265')) {function content_572fb04996ef20_32501265($_smarty_tpl) {?><h2>Admin Dashboard</h2>
 <hr>
@@ -68,5 +68,5 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     <li><a class="tab" href="logout.php">Logout</a></li>
 </ul>
 
-<?php if (isset($_smarty_tpl->tpl_vars['success']->value)) {?><h3><?php echo $_smarty_tpl->tpl_vars['success']->value;?>
+<?php if (isset($_smarty_tpl->tpl_vars['success']->value)) {?><h3 id="alert"><?php echo $_smarty_tpl->tpl_vars['success']->value;?>
 </h3><?php }?><?php }} ?>

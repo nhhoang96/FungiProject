@@ -1,5 +1,4 @@
 {include "head.tpl" title="Admin" pageName="admin"}
-{*<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>*}
 
 <div class="container">
 
@@ -38,7 +37,7 @@
         {if isset($photoName)}
             <img class="pic glossarypic" src="img/{$photoName}">
         {/if}
-        {*<input type="file" name="myimage"><br>*}
+
         <div id="addingImages">
             <div class="uploadDiv">
                 <input name="file[]" type="file" id="file"/>
