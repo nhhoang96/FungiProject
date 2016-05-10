@@ -43,23 +43,28 @@
             <div class="uploadDiv">
                 <input name="file[]" type="file" id="file"/>
             </div>
-            Caption: <input type="text" class="form-control" name="caption"/><br>
+            Caption: <input type="text" class="form-control" name="caption[0]"/><br>
         </div>
         <input type="button" id="addDiv" class="btn btn-default form-control sub resetSpace" value="Add More Photo"/>
 
         <input type="submit" class="btn btn-default btn-md add form-control" value="Add" name="addSpecies">
 
     </form>
-
     <script>
-        var uploadDiv = "<div class='uploadDiv'><input name='file[]' type='file' id='file'/></div>Caption: <input type='text' class='form-control' name='caption'/><br>"
+        var count = 0;
+    </script>
+
+    <!--- JQuery function to upload more images--->
+    <script>
 
         $("#addDiv").click(function() {
+            count = count + 1;
+            var uploadDiv = "<div class='uploadDiv'><input name='file[]' type='file' id='file'/></div>" +
+                    "Caption: <input type='text' class='form-control'  name='caption["+count+"]'/><br>";
             $("#addingImages").append(uploadDiv);
         });
 
     </script>
-
     {include "footer.tpl"}
 
 </div>

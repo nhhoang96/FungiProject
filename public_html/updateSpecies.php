@@ -96,6 +96,7 @@ if (isset($_POST["updateSpecies"])) {
     //Upload multiple images
 
 
+
     if (is_array($_FILES["file"]["tmp_name"])) {
         for ($i = 0; $i < count($_FILES["file"]["tmp_name"]); $i++) {
             if (is_uploaded_file($_FILES["file"]["tmp_name"][$i])) {
@@ -107,9 +108,10 @@ if (isset($_POST["updateSpecies"])) {
                    (DEFAULT, :photoName, :caption, :speciesID)";
                 $statement2 = $pdo->prepare($query2);
                 $statement2->bindValue(':photoName', $name);
-                $statement2->bindValue(':caption', $_POST['caption']);
+                $statement2->bindValue(':caption', $_POST["caption"][$i]);
                 $statement2->bindValue(':speciesID', $_POST['speciesID']);
                 $statement2->execute();
+
             }
         }
     }
@@ -120,8 +122,8 @@ if (isset($_POST["updateSpecies"])) {
         $query2 = "INSERT INTO photo (Photo_ID, Photo_Name, Caption, Species_FK) VALUES
                    (DEFAULT, :photoName, :caption, :speciesID)";
         $statement2 = $pdo->prepare($query2);
-        $statement2->bindValue(':photoName', $name);
-        $statement2->bindValue(':caption', $_POST['caption']);
+        $statement2->bindValue(':photoName',  $name);
+        $statement2->bindValue(':caption', $_POST["caption"][$i]);
         $statement2->bindValue(':speciesID', $_POST['speciesID']);
         $statement2->execute();
     }
@@ -165,6 +167,8 @@ if (isset($_POST["updateSpecies"])) {
     $statement->bindValue(':dimensions', $_POST['dimensions']);
     $statement->bindValue(':speciesID', $_POST['speciesID']);
     $statement->execute();
+
+    $msg3 = "Update Successful!";
 
 } elseif (isset($_POST["selectSpecies"])) {
 
@@ -236,7 +240,9 @@ if (isset($_POST["updateSpecies"])) {
     else {
         $smarty->assign("error1", 'Database Error');
     }
+
 }
+
 //------ Build Associative Species Array ------
 $query = "SELECT Species_ID, Common_Name FROM species";
 
@@ -267,20 +273,20 @@ if ($statement->rowCount() > 0) {
 }
 $smarty->assign("shapeArray", $shapeResults);
 
-//------ Build Associative Shape Array ------
-$query = "SELECT Shape_Category_ID, Name FROM shape";
-
-$statement = $pdo->prepare($query);
-$statement->execute();
-$shapeResults = array();
-if ($statement->rowCount() > 0) {
-    while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
-        $shapeResults[$row['Shape_Category_ID']] = $row['Name'];
-    }
-} else {
-    $smarty->assign("error1", 'Database Error');
-}
-$smarty->assign("shapeArray", $shapeResults);
+////------ Build Associative Shape Array ------
+//$query = "SELECT Shape_Category_ID, Name FROM shape";
+//
+//$statement = $pdo->prepare($query);
+//$statement->execute();
+//$shapeResults = array();
+//if ($statement->rowCount() > 0) {
+//    while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
+//        $shapeResults[$row['Shape_Category_ID']] = $row['Name'];
+//    }
+//} else {
+//    $smarty->assign("error1", 'Database Error');
+//}
+//$smarty->assign("shapeArray", $shapeResults);
 if (isset($msg3)) {
     $smarty->assign('success', $msg3);
 }

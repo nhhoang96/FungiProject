@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-09 20:18:08
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-10 16:24:43
          compiled from "smarty\templates\updateSpecies.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:647572f9e4284b323-65037815%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '35e6fa7fa1767c0985881084719a58a694f9acbb' => 
     array (
       0 => 'smarty\\templates\\updateSpecies.tpl',
-      1 => 1462767122,
+      1 => 1462889512,
       2 => 'file',
     ),
   ),
@@ -133,7 +133,7 @@ $_smarty_tpl->tpl_vars['pic']->_loop = true;
                                                 <img src="img/<?php echo $_smarty_tpl->tpl_vars['pic']->value['Photo_Name'];?>
 " width="250" height="200"><br>
                                                 <input name="checkbox[]" type="checkbox" value="<?php echo $_smarty_tpl->tpl_vars['pic']->value['Photo_ID'];?>
-/>
+"/>
                                                 <div class="col-md-12">
                                                     <?php echo $_smarty_tpl->tpl_vars['pic']->value['Caption'];?>
 
@@ -151,25 +151,32 @@ $_smarty_tpl->tpl_vars['pic']->_loop = true;
 
         <p>**Check boxes to delete image</p>
 
+
 <div id="addingImages">
             <div class="uploadDiv">
                 <input name="file[]" type="file" id="file"/>
             </div>
-            Caption: <input type="text" class="form-control" name="caption"/><br>
+            Caption: <input type="text" class="form-control" name="caption[0]"/><br>
             </div>
         <input type="button" id="addDiv" class="btn btn-default form-control sub resetSpace" value="Add Another Photo">
         <input type="submit" class="btn btn-default btn-md add form-control resetSpace" value="Update" name="updateSpecies">
         <input type="submit" class="btn btn-danger btn-md add form-control" name="reset" value="Reset">
 <?php }?>
     </form>
-
-
-   <!--- JQuery function to upload more images--->
     <?php echo '<script'; ?>
 >
-        var uploadDiv = "<div class='uploadDiv'><input name='file[]' type='file' id='file'/></div>Caption: <input type='text' class='form-control' name='caption'/><br>"
+        var count = 0;
+    <?php echo '</script'; ?>
+>
+
+    <!--- JQuery function to upload more images--->
+    <?php echo '<script'; ?>
+>
 
         $("#addDiv").click(function() {
+            count = count + 1;
+            var uploadDiv = "<div class='uploadDiv'><input name='file[]' type='file' id='file'/></div>" +
+                    "Caption: <input type='text' class='form-control'  name='caption["+count+"]'/><br>";
             $("#addingImages").append(uploadDiv);
         });
 
