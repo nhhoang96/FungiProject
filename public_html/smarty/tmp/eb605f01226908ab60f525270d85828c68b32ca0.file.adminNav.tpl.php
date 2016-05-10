@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-10 00:52:10
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-10 02:57:31
          compiled from "smarty\templates\adminNav.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:24826572f9e37f33f63-24525645%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'eb605f01226908ab60f525270d85828c68b32ca0' => 
     array (
       0 => 'smarty\\templates\\adminNav.tpl',
-      1 => 1462834244,
+      1 => 1462841847,
       2 => 'file',
     ),
   ),
@@ -60,6 +60,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
             <li><a href="addCharacteristic.php">New Characteristic</a></li>
             <li><a href="addCharOption.php">New Characteristic Option</a></li>
             <li><a href="addLinkOption.php">Link Characteristic Options</a></li>
+            <li><a href="deleteCharacteristic.php">Delete Characteristic</a></li>
         </ul>
     </li>
     
