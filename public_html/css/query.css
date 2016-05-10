@@ -1,4 +1,10 @@
-a, a:hover, a:focus {
+/*************************SPECIES LINKS*********************************/
+a {
+    color: darkolivegreen;
+    text-decoration: none;
+}
+
+a:hover, a:focus {
     color: black;
     text-decoration: none;
 }
