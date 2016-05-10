@@ -47,7 +47,7 @@
             </ul>
             <div>
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="admin"><a href="addAdmin.php">Control Panel</a></li>
+                    <li class="admin"><a href="addAdmin.php">Admin</a></li>
                     {if isset($isAdmin)}
                     <li><button id="helpBtn" class="btn btn-default">
                         <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>

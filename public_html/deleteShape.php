@@ -44,7 +44,9 @@ if (isset($_POST["deleteShape"])) {
 
     if ($statement2->rowCount() > 0) {
         while ($row = $statement2->fetch(PDO::FETCH_ASSOC)) {
-            unlink('img/' . $row['Image']);
+            if(!empty($row['Image'])){
+                unlink('img/' . $row['Image']);
+            }
         }
     }
 

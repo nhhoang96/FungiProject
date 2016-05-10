@@ -13,7 +13,7 @@ $_SERVER['REMOTE_USER'] = strtolower(phpCAS::getUser());
 //echo strtolower(phpCAS::getUser());
 
 //::getUser();
-$sql = "SELECT * FROM Administrator WHERE Username = :e";
+$sql = "SELECT * FROM administrator WHERE Username = :e";
 $stmt = $pdo->prepare($sql);
 $stmt->bindParam(":e", strtolower(phpCAS::getUser()));
 $stmt->execute();
@@ -55,7 +55,7 @@ if($stmt->rowCount() == 0){
 
         //------ Insert Query -----
 
-        $query = "INSERT INTO Administrator (Admin_ID, Username)
+        $query = "INSERT INTO administrator (Admin_ID, Username)
               VALUES (DEFAULT, :newAdmin)";
 
         $statement = $pdo->prepare($query);
@@ -218,7 +218,7 @@ if($stmt->rowCount() == 0){
 //    }
 
     //------ Build Associative Admin Array ------
-    $query = "SELECT Admin_ID, Username FROM Administrator";
+    $query = "SELECT Admin_ID, Username FROM administrator";
 
     $statement = $pdo->prepare($query);
     $statement->execute();

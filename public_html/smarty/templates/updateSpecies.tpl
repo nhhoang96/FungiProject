@@ -66,7 +66,7 @@
                                         {foreach $photos as $pic}
                                             <th class = "col-md-1 imageBox">
                                                 <img src="img/{$pic['Photo_Name']}" width="250" height="200"><br>
-                                                <input name="checkbox[]" type="checkbox" value="{$pic['Photo_ID']}/>
+                                                <input name="checkbox[]" type="checkbox" value="{$pic['Photo_ID']}"/>
                                                 <div class="col-md-12">
                                                     {$pic['Caption']}
                                                 </div>
@@ -80,25 +80,32 @@
                 {/if}
             {/if}
         {/if}
-        **Check boxes to delete image
+
+        <p>**Check boxes to delete image</p>
+
+
 <div id="addingImages">
             <div class="uploadDiv">
                 <input name="file[]" type="file" id="file"/>
             </div>
-            Caption: <input type="text" class="form-control" name="caption"/><br>
+            Caption: <input type="text" class="form-control" name="caption[0]"/><br>
             </div>
         <input type="button" id="addDiv" class="btn btn-default form-control sub resetSpace" value="Add Another Photo">
         <input type="submit" class="btn btn-default btn-md add form-control resetSpace" value="Update" name="updateSpecies">
         <input type="submit" class="btn btn-danger btn-md add form-control" name="reset" value="Reset">
 {/if}
     </form>
-
-
-   <!--- JQuery function to upload more images--->
     <script>
-        var uploadDiv = "<div class='uploadDiv'><input name='file[]' type='file' id='file'/></div>Caption: <input type='text' class='form-control' name='caption'/><br>"
+        var count = 0;
+    </script>
+
+    <!--- JQuery function to upload more images--->
+    <script>
 
         $("#addDiv").click(function() {
+            count = count + 1;
+            var uploadDiv = "<div class='uploadDiv'><input name='file[]' type='file' id='file'/></div>" +
+                    "Caption: <input type='text' class='form-control'  name='caption["+count+"]'/><br>";
             $("#addingImages").append(uploadDiv);
         });
 

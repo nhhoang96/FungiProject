@@ -126,7 +126,11 @@ if (isset($_POST["addSpecies"])) {
     $speciesFK = $pdo->lastInsertId();
 
 
-    if(!empty($_FILES["file"]["tmp_name"])) {
+//    if(!empty($_FILES["file"]["tmp_name"])) {
+//        foreach($_POST as $key=>$value){
+//            echo "$key = $value <br>";
+//        }
+//        exit();
         if (!is_null($_FILES["file"]["tmp_name"])) {
             if (is_array($_FILES["file"]["tmp_name"])) {
                 for ($i = 0; $i < count($_FILES["file"]["tmp_name"]); $i++) {
@@ -139,7 +143,7 @@ if (isset($_POST["addSpecies"])) {
                    (DEFAULT, :photoName, :caption, :speciesFK)";
                         $statement2 = $pdo->prepare($query2);
                         $statement2->bindValue(':photoName', $name);
-                        $statement2->bindValue(':caption', $_POST['caption']);
+                        $statement2->bindValue(':caption', $_POST["caption"][$i]);
                         $statement2->bindValue(':speciesFK', $speciesFK);
                         $statement2->execute();
 
@@ -157,7 +161,6 @@ if (isset($_POST["addSpecies"])) {
                 $statement2->execute();
             }
         }
-    }
     $msg3 = "Add Successful!";
 }
 //} elseif (isset($_POST["updateSpecies"])){

@@ -3,6 +3,7 @@
 <div class="container">
 
     {include "adminNav.tpl"}
+    {if isset($msg)}<h3 id="warning">{$msg}</h3>{/if}
 
     <!--Add new species-->
     <form action="addSpecies.php" method="post" id="newSpecies" enctype="multipart/form-data">
@@ -69,23 +70,30 @@
             <div class="uploadDiv">
                 <input name="file[]" type="file" id="file"/>
             </div>
-            Caption: <input type="text" name = "caption"/><br>
+            Caption: <input type="text" class="form-control" name="caption[0]"/><br>
         </div>
-        <input type="button" id="addDiv" value="Add More Photo"/>
+        <input type="button" id="addDiv" class="btn btn-default form-control sub resetSpace" value="Add More Photo"/>
 
         <input type="submit" class="btn btn-default btn-md add form-control" value="Add" name="addSpecies">
-    </form>
 
+    </form>
     <script>
-        var uploadDiv = "<div class='uploadDiv'><input name='file[]' type='file' id='file'/></div>Caption: <input type='text' name = 'caption'/><br>"
+        var count = 0;
+    </script>
+
+    <!--- JQuery function to upload more images--->
+    <script>
 
         $("#addDiv").click(function() {
+            count = count + 1;
+            var uploadDiv = "<div class='uploadDiv'><input name='file[]' type='file' id='file'/></div>" +
+                    "Caption: <input type='text' class='form-control'  name='caption["+count+"]'/><br>";
             $("#addingImages").append(uploadDiv);
         });
 
     </script>
-
     {include "footer.tpl"}
 
 </div>
+
 

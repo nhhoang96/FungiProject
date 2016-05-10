@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-08 23:33:08
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-10 03:46:10
          compiled from "smarty\templates\updateSpecies.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:11210572fb094896a98-00215464%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'bea207968c60b318aed53b0e1cf2d23c2f8bd227' => 
     array (
       0 => 'smarty\\templates\\updateSpecies.tpl',
-      1 => 1462743056,
+      1 => 1462836795,
       2 => 'file',
     ),
   ),
@@ -15,6 +15,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.21-dev',
+  'unifunc' => 'content_572fb094944f03_67965758',
   'variables' => 
   array (
     'speciesID' => 0,
@@ -34,8 +36,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'pic' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.21-dev',
-  'unifunc' => 'content_572fb094944f03_67965758',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_572fb094944f03_67965758')) {function content_572fb094944f03_67965758($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("head.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('title'=>"Admin",'pageName'=>"admin"), 0);?>
 
@@ -73,7 +73,7 @@ $_smarty_tpl->tpl_vars['item']->_loop = true;
         <?php if (!isset($_smarty_tpl->tpl_vars['speciesID']->value)) {?>
             <input type="submit" class="btn btn-default btn-md add form-control" value="Select" name="selectSpecies">
         <?php }?>
-
+        <?php if (isset($_smarty_tpl->tpl_vars['speciesID']->value)) {?>
         Scientific Name:
         <input type="text" class="form-control" name="scientificName"
                <?php if (isset($_smarty_tpl->tpl_vars['scientificName']->value)) {?>value="<?php echo $_smarty_tpl->tpl_vars['scientificName']->value;?>
@@ -148,7 +148,9 @@ $_smarty_tpl->tpl_vars['pic']->_loop = true;
                 <?php }?>
             <?php }?>
         <?php }?>
-        **Check boxes to delete image
+
+        <p>**Check boxes to delete image</p>
+
 <div id="addingImages">
             <div class="uploadDiv">
                 <input name="file[]" type="file" id="file"/>
@@ -158,7 +160,7 @@ $_smarty_tpl->tpl_vars['pic']->_loop = true;
         <input type="button" id="addDiv" class="btn btn-default form-control sub resetSpace" value="Add Another Photo">
         <input type="submit" class="btn btn-default btn-md add form-control resetSpace" value="Update" name="updateSpecies">
         <input type="submit" class="btn btn-danger btn-md add form-control" name="reset" value="Reset">
-
+<?php }?>
     </form>
 
 

@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-08 22:14:21
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-10 00:52:33
          compiled from "smarty\templates\head.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:12227572f9e1d476227-60091196%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'e793b158e9e53386739798075922c6a03e97668a' => 
     array (
       0 => 'smarty\\templates\\head.tpl',
-      1 => 1462738348,
+      1 => 1462834343,
       2 => 'file',
     ),
   ),
@@ -15,6 +15,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.21-dev',
+  'unifunc' => 'content_572f9e1d4a7bd7_52501801',
   'variables' => 
   array (
     'title' => 0,
@@ -22,8 +24,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'isAdmin' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.21-dev',
-  'unifunc' => 'content_572f9e1d4a7bd7_52501801',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_572f9e1d4a7bd7_52501801')) {function content_572f9e1d4a7bd7_52501801($_smarty_tpl) {?><!DOCTYPE html>
 <html lang="en">
@@ -76,7 +76,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
             </ul>
             <div>
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="admin"><a href="addAdmin.php">Control Panel</a></li>
+                    <li class="admin"><a href="addAdmin.php">Admin</a></li>
                     <?php if (isset($_smarty_tpl->tpl_vars['isAdmin']->value)) {?>
                     <li><button id="helpBtn" class="btn btn-default">
                         <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>

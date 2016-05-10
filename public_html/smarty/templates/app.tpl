@@ -21,8 +21,8 @@
 					<p>{$shape['Description']}</p>
 				</div>
 				<div class="col-lg-6 paragraph_1">
-					<a href="query.php?id={$shape['Shape_Category_ID']}" class="btn btn-default btn-md form-control space">Key</a>
-					{*<a href="query.php?id={$shape['Shape_Category_ID']}" class="btn btn-default btn-md">Dichotomous Key</a>*}
+					<a href="multiKey.php?id={$shape['Shape_Category_ID']}" class="btn btn-default btn-md form-control space">Key</a>
+					{*<a href="multiKey.php?id={$shape['Shape_Category_ID']}" class="btn btn-default btn-md">Dichotomous Key</a>*}
 					</div>
 					<div class="col-lg-6 paragraph_2">
 

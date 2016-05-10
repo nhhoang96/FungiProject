@@ -3,6 +3,7 @@
 <div class="container">
 
     {include "adminNav.tpl"}
+    {if isset($msg)}<h3 id="warning">{$msg}</h3>{/if}
 
     <!--Add new shape-->
     <form action="addShape.php" method="post" id="newShape" enctype="multipart/form-data">
