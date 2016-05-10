@@ -68,7 +68,7 @@ if (isset($_POST["updateShape"])) {
         exit();
     }
 
-
+    $msg3 = "Update Successful!";
 //        $statement->bindValue(':image', $testImage);
 
 } elseif (isset($_POST["selectShape"])) {
@@ -82,10 +82,33 @@ if (isset($_POST["updateShape"])) {
     $shapeResults = array();
     if ($statement->rowCount() > 0) {
         while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
+            if(!empty($row['Image'])){
             $editShapeID = $row['Shape_Category_ID'];
             $editShapeName = $row['Name'];
             $editShapeDescription = $row['Description'];
             $editShapeImage = $row['Image'];
+
+                $smarty->assign("editShapeID", $editShapeID);
+                $smarty->assign("editShapeName", $editShapeName);
+                //remove extra white spaces from description string to improve readability
+                //$editShapeDescription = trim($editShapeDescription);
+                $editShapeDescription = preg_replace('/\s\s+/', ' ', $editShapeDescription);
+                $smarty->assign("editShapeDescription", $editShapeDescription);
+                $smarty->assign("editShapeImage", $editShapeImage);
+            }
+            else {
+
+                $editShapeID = $row['Shape_Category_ID'];
+                $editShapeName = $row['Name'];
+                $editShapeDescription = $row['Description'];
+
+                $smarty->assign("editShapeID", $editShapeID);
+                $smarty->assign("editShapeName", $editShapeName);
+                //remove extra white spaces from description string to improve readability
+                //$editShapeDescription = trim($editShapeDescription);
+                $editShapeDescription = preg_replace('/\s\s+/', ' ', $editShapeDescription);
+                $smarty->assign("editShapeDescription", $editShapeDescription);
+            }
 
         }
     } else {
@@ -93,13 +116,7 @@ if (isset($_POST["updateShape"])) {
     }
 
 
-    $smarty->assign("editShapeID", $editShapeID);
-    $smarty->assign("editShapeName", $editShapeName);
-    //remove extra white spaces from description string to improve readability
-    //$editShapeDescription = trim($editShapeDescription);
-    $editShapeDescription = preg_replace('/\s\s+/', ' ', $editShapeDescription);
-    $smarty->assign("editShapeDescription", $editShapeDescription);
-    $smarty->assign("editShapeImage", $editShapeImage);
+
 
 }
 //------ Build Associative Shape Array ------
