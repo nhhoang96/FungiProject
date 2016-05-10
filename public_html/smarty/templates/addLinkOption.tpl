@@ -51,7 +51,7 @@
                 });
             </script>
 
-            <input type="submit" class="btn btn-default btn-md add form-control" value="Add" name="addLinks">
+            <input type="submit" class="btn btn-default btn-md add form-control resetSpace" value="Add" name="addLinks">
             <input type="submit" class="btn btn-danger btn-md add form-control" name="reset" value="Reset">
         {/if}
 

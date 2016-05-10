@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-08 22:15:04
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-10 16:32:55
          compiled from "smarty\templates\addCharOption.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:21981572f9e4819f854-77151041%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '65af17b45b8c612e85f7b7b1a8f0a2646ec469e3' => 
     array (
       0 => 'smarty\\templates\\addCharOption.tpl',
-      1 => 1462459842,
+      1 => 1462890768,
       2 => 'file',
     ),
   ),
@@ -15,6 +15,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.21-dev',
+  'unifunc' => 'content_572f9e481dcf67_23990191',
   'variables' => 
   array (
     'charID' => 0,
@@ -23,8 +25,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'item' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.21-dev',
-  'unifunc' => 'content_572f9e481dcf67_23990191',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_572f9e481dcf67_23990191')) {function content_572f9e481dcf67_23990191($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("head.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('title'=>"Admin",'pageName'=>"admin"), 0);?>
 
@@ -56,8 +56,8 @@ $_smarty_tpl->tpl_vars['item']->_loop = true;
 
         Name:
         <input type="text" class="form-control" name="newOptName"><br>
-        <input type="submit" class="btn btn-default btn-md add form-control" value="Add" name="addCharOpt">
-        <input type="submit" name="reset" value="Reset">
+        <input type="submit" class="btn btn-default btn-md add form-control resetSpace" value="Add" name="addCharOpt">
+        <input type="submit" class="btn btn-danger btn-md add form-control" name="reset" value="Reset">
     </form>
 
     <?php echo $_smarty_tpl->getSubTemplate ("footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
