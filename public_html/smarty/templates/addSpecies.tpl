@@ -9,23 +9,50 @@
         <h3>New Species:</h3>
 
         Scientific Name:
-        <input type="text" name="commonName" class="form-control"><br>
+        <input type="text" name="commonName"
+                {if isset($commonName)}
+                    value="{$commonName}"{/if}
+               class="form-control"><br>
         Common Name:
-        <input type="text" class="form-control" name="nameDerivation"><br>
+        <input type="text" class="form-control"
+                {if isset($nameDerivation)}
+                    value="{$nameDerivation}"{/if}
+               name="nameDerivation"><br>
         Name Derivation:
-        <input type="text" class="form-control" name="scientificName"><br>
+        <input type="text" class="form-control"
+                {if isset($scientificName)}
+                    value="{$scientificName}"{/if}
+               name="scientificName"><br>
         Phylum:
-        <input type="text" class="form-control" name="phylum"><br>
+        <input type="text" class="form-control"
+                {if isset($phylum)}
+                    value="{$phylum}"{/if}
+               name="phylum"><br>
         Order:
-        <input type="text" class="form-control" name="order"><br>
+        <input type="text" class="form-control"
+                {if isset($order)}
+                    value="{$order}"{/if}
+               name="order"><br>
         Family:
-        <input type="text" class="form-control" name="family"><br>
+        <input type="text" class="form-control"
+                {if isset($family)}
+                    value="{$family}"{/if}
+               name="family"><br>
         Comment:
-        <input type="text" class="form-control" name="comments"><br>
+        <input type="text" class="form-control"
+                {if isset($comments)}
+                    value="{$comments}"{/if}
+               name="comments"><br>
         Wood Substrate:
-        <input type="text" class="form-control" name="woodSubstrate"><br>
+        <input type="text" class="form-control"
+                {if isset($woodSubstrate)}
+                    value="{$woodSubstrate}"{/if}
+               name="woodSubstrate"><br>
         Dimensions:
-        <input type="text" class="form-control" name="dimensions"><br>
+        <input type="text" class="form-control"
+                {if isset($dimensions)}
+                    value="{$dimensions}"{/if}
+               name="dimensions"><br>
         Shape Association:
         <select name="shape" class="form-control">
             {foreach from=$shapeArray key=key item=item}

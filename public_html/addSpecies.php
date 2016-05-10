@@ -38,61 +38,61 @@ if (isset($_POST["addSpecies"])) {
         $errorFlag = true;
         $msg .= "<br>Common Name: empty";
     } else {
-        //$smarty->assign('commonName', $_POST["commonName"]);
+        $smarty->assign('commonName', $_POST["commonName"]);
     }
     if ($_POST["nameDerivation"] == "") {
         $errorFlag = true;
         $msg .= "<br>Name Derivation: empty";
     } else {
-        //$smarty->assign('nameDerivation', $_POST["nameDerivation"]);
+        $smarty->assign('nameDerivation', $_POST["nameDerivation"]);
     }
     if ($_POST["scientificName"] == "") {
         $errorFlag = true;
         $msg .= "<br>Scientific Name: empty";
     } else {
-        //$smarty->assign('scientificName', $_POST["scientificName"]);
+        $smarty->assign('scientificName', $_POST["scientificName"]);
     }
     if ($_POST["phylum"] == "") {
         $errorFlag = true;
         $msg .= "<br>Phylum: empty";
     } else {
-        // $smarty->assign('phylum', $_POST["phylum"]);
+        $smarty->assign('phylum', $_POST["phylum"]);
     }
     if ($_POST["order"] == "") {
         $errorFlag = true;
         $msg .= "<br>Order: empty";
     } else {
-        //$smarty->assign('order', $_POST["order"]);
+        $smarty->assign('order', $_POST["order"]);
     }
     if ($_POST["family"] == "") {
         $errorFlag = true;
         $msg .= "<br>Family: empty";
     } else {
-        //$smarty->assign('family', $_POST["family"]);
+        $smarty->assign('family', $_POST["family"]);
     }
     if ($_POST["comments"] == "") {
         $errorFlag = true;
         $msg .= "<br>Comments: empty";
     } else {
-        //$smarty->assign('comments', $_POST["comments"]);
+        $smarty->assign('comments', $_POST["comments"]);
     }
     if ($_POST["woodSubstrate"] == "") {
         $errorFlag = true;
         $msg .= "<br>Wood Substrate: empty";
     } else {
-        //$smarty->assign('woodSubstrate', $_POST["woodSubstrate"]);
+        $smarty->assign('woodSubstrate', $_POST["woodSubstrate"]);
     }
     if ($_POST["dimensions"] == "") {
         $errorFlag = true;
         $msg .= "<br>Dimensions: empty";
     } else {
-        //$smarty->assign('dimensions', $_POST["dimensions"]);
+        $smarty->assign('dimensions', $_POST["dimensions"]);
     }
     if ($_POST["shape"] == "") {
         $errorFlag = true;
         $msg .= "<br>Shape: empty";
     } else {
-        //$smarty->assign('shape', $_POST["shape"]);
+        $smarty->assign('shape', $_POST["shape"]);
     }
 
 
