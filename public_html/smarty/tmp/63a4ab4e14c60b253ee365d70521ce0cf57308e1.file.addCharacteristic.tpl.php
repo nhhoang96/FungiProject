@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-09 01:24:06
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-05-10 03:45:39
          compiled from "smarty\templates\addCharacteristic.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:343572fca967cea41-22871923%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '63a4ab4e14c60b253ee365d70521ce0cf57308e1' => 
     array (
       0 => 'smarty\\templates\\addCharacteristic.tpl',
-      1 => 1462743056,
+      1 => 1462768576,
       2 => 'file',
     ),
   ),
@@ -15,6 +15,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.21-dev',
+  'unifunc' => 'content_572fca96859271_01814178',
   'variables' => 
   array (
     'charShapeID' => 0,
@@ -24,8 +26,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'item' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.21-dev',
-  'unifunc' => 'content_572fca96859271_01814178',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_572fca96859271_01814178')) {function content_572fca96859271_01814178($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("head.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('title'=>"Admin",'pageName'=>"admin"), 0);?>
 
@@ -57,10 +57,6 @@ $_smarty_tpl->tpl_vars['item']->_loop = true;
                 <?php } ?>
             <?php }?>
         </select><br>
-
-        <?php if (!isset($_smarty_tpl->tpl_vars['charShapeID']->value)) {?>
-            <input type="submit" class="btn btn-default btn-md add form-control" value="Select" name="selectCharShape">
-        <?php }?>
 
         Name:
         <input type="text" class="form-control" name="newCharName"><br>
